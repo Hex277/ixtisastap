@@ -54,7 +54,13 @@ function setupEventListeners() {
   altSelect.removeEventListener("change", applyFilters);
   locationSelect.removeEventListener("change", applyFilters);
 
-  searchInput.addEventListener("input", applyFilters);
+  if (window.innerWidth > 768) {
+    searchInput.addEventListener("input", applyFilters); // Yalnız masaüstündə input dəyişdikcə işləsin
+  } else {
+    const searchBtn = document.getElementById("searchBtn");
+    searchBtn.addEventListener("click", applyFilters); // Mobil üçün sadəcə düymə ilə işləsin
+  }
+  
   tehsilSelect.addEventListener("change", applyFilters);
   dilSelect.addEventListener("change", applyFilters);
   altSelect.addEventListener("change", applyFilters);
