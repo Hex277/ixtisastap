@@ -287,7 +287,7 @@ body.dark-mode #menu-bar a:hover {
   margin-top: 3px;
 }
 #toggle-dark-mode:hover {
-  background-color: #41a5ee;
+  background-color: #1E90FF;
 }
 
 .white-icon {
@@ -305,7 +305,7 @@ body.dark-mode #menu-bar a:hover {
     top: 13px;
     right: 15px;
     padding: 4px 10px;
-    background-color: #41a5ee;
+    background-color: #1E90FF;
     color: white;
     width: 40px;
     font-size: 20px;
@@ -356,7 +356,7 @@ body.dark-mode #menu-bar a:hover {
     top: 13px;
     right: 15px;
     padding: 4px 10px;
-    background-color: #41a5ee;
+    background-color: #1E90FF;
     color: white;
     width: 40px;
     font-size: 20px;

@@ -92,13 +92,6 @@
   function setupTableView() {
     const table = document.createElement('table');
     const thead = document.createElement('thead');
-    thead.innerHTML = `
-      <tr>
-        <th>#</th>
-        <th>Ad</th>
-        <th>Qiymət</th>
-      </tr>
-    `;
     table.appendChild(thead);
 
     const tbody = document.createElement('tbody');
@@ -110,11 +103,6 @@
     function createRow(index) {
       const tr = document.createElement('tr');
       tr.style.height = rowHeight + 'px';
-      tr.innerHTML = `
-        <td>${index + 1}</td>
-        <td>Ad ${index + 1}</td>
-        <td>${Math.floor(Math.random() * 100)}</td>
-      `;
       return tr;
     }
 
@@ -144,11 +132,6 @@
     for (let i = 0; i < totalRows; i++) {
       const card = document.createElement('div');
       card.className = 'card-item';
-      card.innerHTML = `
-        <p><strong>#${i + 1}</strong></p>
-        <p>Ad: Ad ${i + 1}</p>
-        <p>Qiymət: ${Math.floor(Math.random() * 100)}</p>
-      `;
       cardContainer.appendChild(card);
     }
   }
@@ -165,11 +148,20 @@
     }
   }
 
-  renderView();
+  let currentIsMobile = isMobile();
+
   window.addEventListener('resize', () => {
-    location.reload(); // Daha sadə yol.
+    const newIsMobile = isMobile();
+    if (newIsMobile !== currentIsMobile) {
+      currentIsMobile = newIsMobile;
+      renderView(); // sadəcə görünüşü yenilə, reload etmə
+    }
   });
+
 </script>
+
+
+
 
 <script src="script.js"></script>
 </body>

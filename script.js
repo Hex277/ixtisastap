@@ -16,6 +16,17 @@ fetch(jsonFile)
     globalData = data;
     renderData(data);
     setupEventListeners();
+
+    // Buraya əlavə et:
+    window.addEventListener('resize', () => {
+      renderData(globalData);
+      setupEventListeners();
+    });
+
+    window.addEventListener('orientationchange', () => {
+      renderData(globalData);
+      setupEventListeners();
+    });
   })
   .catch(error => {
     console.error('Error loading data:', error);

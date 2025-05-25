@@ -1,114 +1,21 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haqqımızda - IxtisasTap.com</title>
-  <link rel="stylesheet" href="qruplar.css" />
+  <link rel="stylesheet" href="qruplar.css">
   <style>
-    /* Haqqımızda üçün sadə və geniş stil */
-    html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        overflow-y: auto;
-    }
-
-    .main-content {
-        max-width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        overflow: visible !important; /* lazım gələrsə */
-        flex-grow: 1;
-    }
-    .haqqimizda-container {
-      max-width: 100%; /* Tam genişlik */
-      margin: 20px auto;
-      padding: 20px 20px;
-      margin-bottom: 40px;
-      background-color: transparent; /* Arxa fon yoxdur */
-      color: #222;
-      line-height: 1.7;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    .haqqimizda-container h1 {
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 2.2rem;
-      color: #1E90FF;
-    }
-    body.dark-mode .haqqimizda-container {
-      color: #ddd;
-      background-color: transparent;
-    }
-    body.dark-mode .haqqimizda-container h1 {
-        color: #1E90FF;
-    }
-    .elaqe-container {
-        max-width: 100%;
-        margin: 40px auto 20px;
-        padding: 20px 20px;
-        color: #222;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        line-height: 1.6;
-        background-color: transparent; /* Arxa fon yoxdur */
-    }
-
-    .elaqe-container h1 {
-        font-size: 2.2rem;
-        margin-bottom: 20px;
-        color: #1E90FF;
-        font-weight: 700;
-    }
-
-    .elaqe-container p {
-        margin-bottom: 10px;
-        font-size: 1rem;
-    }
-
-    .elaqe-container ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 10px;
-    }
-
-    .elaqe-container ul li {
-        margin-bottom: 8px;
-    }
-
-    .elaqe-container ul li a {
-        text-decoration: none;
-        color: #1E90FF;
-        transition: color 0.3s ease;
-    }
-
-    .elaqe-container ul li a:hover {
-        color: #104e8b;
-    }
-
-    /* Dark mode üçün əlaqə bölməsi */
-    body.dark-mode .elaqe-container {
-        color: #ddd;
-        background-color: transparent;
-    }
-
-    body.dark-mode .elaqe-container h1 {
-        color: #1E90FF;
-    }
-
-    body.dark-mode .elaqe-container ul li a {
-        color: #1E90FF;
-    }
-
-    body.dark-mode .elaqe-container ul li a:hover {
-        color: #82b1ff;
+    .text-bar p{
+      justify-content: center;
+      padding: 3px 20px;
     }
   </style>
 </head>
 <body>
+
   <button id="menu-toggle">
-    <img id="menu" src="menu-bar.png" alt="menu" width="20" class="menu" loading="lazy" />
+    <img id="menu" src="menu-bar.png" alt="menu" width="20" class="menu" loading="lazy">
   </button>
   <nav id="menu-bar" class="hidden">
     <p id="name-text">IxtisasTap.com</p>
@@ -118,51 +25,37 @@
       <li><a href="./3ciqrup.html">3ci Qrup</a></li>
       <li><a href="./4ciqrup.html">4ci Qrup</a></li>
       <li><a href="./5ciqrup.html">5ci Qrup</a></li>
-      <li><a href="./haqqimizda.html">Haqqımızda</a></li>
+      <li><a href="./haqqimizda.html" class="active">Haqqımızda</a></li>
     </ul>
   </nav>
 
   <div class="main-content">
     <button id="toggle-dark-mode">
-      <img
-        id="icon"
-        src="sun.png"
-        alt="rejim"
-        width="20"
-        class="white-icon"
-        loading="lazy"
-      />
+      <img id="icon" src="sun.png" alt="rejim" width="20" class="white-icon" loading="lazy">
     </button>
 
-    <div class="haqqimizda-container">
+    <div class="text-bar">
       <h1>Haqqımızda</h1>
-      <p>
-        Sayt Azərbaycanda ixtisas seçimi prosesini köklü şəkildə dəyişdirmək üçün yaradılıb. Təhsil sahəsində mövcud olan məlumatların çoxluğu və dağınıqlığı istifadəçilərin doğru ixtisas tapmasına mane olur. Məqsədimiz, tələbələrə və ixtisas axtaranlara ən dolğun, ən aktual və ən əlçatan məlumatları təqdim etməklə, seçim prosesini asanlaşdırmaqdır.
-      </p>
-      <p>
-        Saytımızda müxtəlif ixtisaslar və onlara aid geniş məlumat bazası bir araya gətirilib. Biz, ən yeni təhsil trendlərini izləyir, istifadəçilərimizin ehtiyaclarını nəzərə alaraq daima məlumat bazamızı yeniləyirik. İxtisaslar haqqında təqdim etdiyimiz məlumatlar, təhsil müəssisələrinin proqramları, ixtisasın gələcək perspektivləri və iş imkanları kimi vacib aspektləri əhatə edir.
-      </p>
-      <p>
-        Biz, istifadəçi təcrübəsini ön planda saxlayırıq. Saytımızda intuitiv axtarış sistemi, asan anlaşılan interfeys və geniş filtrasiya imkanları vasitəsilə hər kəs öz ehtiyacına uyğun ixtisası rahatlıqla tapa bilər. Məqsədimiz, Azərbaycanda təhsil sahəsində qabaqcıl və etibarlı platforma olmaqdır.
-      </p>
-      <p>
-        İstifadəçilərimizin rəyləri bizim üçün önəmlidir. Hər zaman sizin fikirlərinizi dinləyir, saytımızı daha da təkmilləşdirmək üçün çalışırıq. İxtisas seçiminizdə sizə yol göstərmək bizim əsas məqsədimizdir.
-      </p>
-    </div>
-    <div class="elaqe-container">
-        <h1>Əlaqə</h1>
-        <p><strong>Email:</strong> support@ixtisastap.com</p>
+
+      <section class="info-section">
+        <p>Sayt Azərbaycanda ixtisas seçimi prosesini köklü şəkildə dəyişdirmək üçün yaradılıb. Təhsil sahəsində mövcud olan məlumatların çoxluğu və dağınıqlığı istifadəçilərin doğru ixtisas tapmasına mane olur. Məqsədimiz, tələbələrə və ixtisas axtaranlara ən dolğun, ən aktual və ən əlçatan məlumatları təqdim etməklə, seçim prosesini asanlaşdırmaqdır.</p>
+
+        <p>Saytımızda müxtəlif ixtisaslar və onlara aid geniş məlumat bazası bir araya gətirilib. Biz, ən yeni təhsil trendlərini izləyir, istifadəçilərimizin ehtiyaclarını nəzərə alaraq daima məlumat bazamızı yeniləyirik. İxtisaslar haqqında təqdim etdiyimiz məlumatlar, təhsil müəssisələrinin proqramları, ixtisasın gələcək perspektivləri və iş imkanları kimi vacib aspektləri əhatə edir.</p>
+
+        <p>Biz, istifadəçi təcrübəsini ön planda saxlayırıq. Saytımızda intuitiv axtarış sistemi, asan anlaşılan interfeys və geniş filtrasiya imkanları vasitəsilə hər kəs öz ehtiyacına uyğun ixtisası rahatlıqla tapa bilər. Məqsədimiz, Azərbaycanda təhsil sahəsində qabaqcıl və etibarlı platforma olmaqdır.</p>
+
+        <p>İstifadəçilərimizin rəyləri bizim üçün önəmlidir. Hər zaman sizin fikirlərinizi dinləyir, saytımızı daha da təkmilləşdirmək üçün çalışırıq. İxtisas seçiminizdə sizə yol göstərmək bizim əsas məqsədimizdir.</p>
+      </section>
+
+      <h1>Əlaqə</h1>
+      <section class="info-section">
+        <p><strong>Email:</strong> info@ixtisastap.com</p>
         <p><strong>Telefon:</strong> +994 50 123 45 67</p>
-        <p><strong>Ünvan:</strong> Bakı şəhəri, Nizami küçəsi 100, Azərbaycan</p>
-        <p><strong>Sosial Media:</strong></p>
-        <ul>
-          <li><a href="https://facebook.com/ixtisastap" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-          <li><a href="https://twitter.com/ixtisastap" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-          <li><a href="https://instagram.com/ixtisastap" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        </ul>
-      </div>
+        <p><strong>Ünvan:</strong> Bakı, Azərbaycan</p>
+      </section>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
