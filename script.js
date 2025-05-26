@@ -256,13 +256,9 @@ const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
   if (window.innerWidth <= 768 && window.scrollY > 200) {
-    if (!scrollTopBtn.classList.contains("show")) {
-      scrollTopBtn.classList.add("show");
-    }
+    scrollTopBtn.classList.add("show");
   } else {
-    if (scrollTopBtn.classList.contains("show")) {
-      scrollTopBtn.classList.remove("show");
-    }
+    scrollTopBtn.classList.remove("show");
   }
 });
 
