@@ -156,6 +156,8 @@ button:hover {
 #menu-toggle img {
   width: 38px;
   height: 36px;
+  background: white;
+  border-radius: 10px;
 }
 
 #menu-bar {
@@ -277,6 +279,33 @@ body.dark-mode #menu-bar a {
 
 body.dark-mode #menu-bar a:hover {
   color: #00aced;
+}
+/* ==============================
+   ScrollBtn
+============================== */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  padding: 7px 12px;
+  background-color: #1E90FF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  display: none;
+  transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn.show {
+  display: block;
+}
+#scroll-up {
+  margin-top: 3px;
+  filter: invert(1);
 }
 
 /* ==============================

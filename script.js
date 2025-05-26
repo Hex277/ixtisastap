@@ -251,4 +251,17 @@ function toggleMore(link) {
   extraInfo.style.display = isVisible ? "none" : "block";
   link.innerText = isVisible ? "Daha çox" : "Daha az";
 }
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.innerWidth <= 768 && window.scrollY > 200) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+});
+
+scrollTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
