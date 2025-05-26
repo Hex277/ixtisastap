@@ -92,15 +92,14 @@ document.addEventListener('click', function(event) {
     menuContent.classList.add('hidden');
   }
 });
+tableContainer.innerHTML = "";
+cardContainer.innerHTML = "";
 
 function renderData(data) {
   const tableContainer = document.getElementById('table-container');
   const cardContainer = document.getElementById('card-container');
   
   const isMobile = window.innerWidth <= 768;
-
-  tableContainer.innerHTML = "";
-  cardContainer.innerHTML = "";
 
   if (isMobile) {
     let htmlCard = '';
