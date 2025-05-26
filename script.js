@@ -4,7 +4,6 @@ const groupNumber = groupMatch ? groupMatch[1] : '1'; // Default to '1' if not f
 const jsonFile = `qrup${groupNumber}.json`;
 
 let globalData = [];
-let filteredData = [];
 
 
 fetch(jsonFile)
@@ -19,16 +18,16 @@ fetch(jsonFile)
     renderData(data);
     setupEventListeners();
 
+    // Buraya əlavə et:
     window.addEventListener('resize', () => {
-      renderData(filteredData.length ? filteredData : globalData);
+      renderData(globalData);
       setupEventListeners();
     });
-    
+
     window.addEventListener('orientationchange', () => {
-      renderData(filteredData.length ? filteredData : globalData);
+      renderData(globalData);
       setupEventListeners();
     });
-    
   })
   .catch(error => {
     console.error('Error loading data:', error);
@@ -219,8 +218,6 @@ function applyFilters() {
   }
 
   renderData(filtered);
-  filteredData = filtered;
-
 }
 
 const toggleBtn = document.getElementById('toggle-dark-mode');
@@ -256,6 +253,7 @@ function toggleMore(link) {
   link.innerText = isVisible ? "Daha çox" : "Daha az";
 }
 const scrollTopBtn = document.getElementById("scrollTopBtn");
+
 window.addEventListener("scroll", () => {
   if (window.innerWidth <= 768 && window.scrollY > 200) {
     if (!scrollTopBtn.classList.contains("show")) {
@@ -267,6 +265,7 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
 scrollTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
