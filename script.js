@@ -19,12 +19,12 @@ fetch(jsonFile)
 
     // Buraya əlavə et:
     window.addEventListener('resize', () => {
-      renderData(globalData);
+      renderData();
       setupEventListeners();
     });
 
     window.addEventListener('orientationchange', () => {
-      renderData(globalData);
+      renderData();
       setupEventListeners();
     });
   })
