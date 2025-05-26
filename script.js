@@ -4,6 +4,8 @@ const groupNumber = groupMatch ? groupMatch[1] : '1'; // Default to '1' if not f
 const jsonFile = `qrup${groupNumber}.json`;
 
 let globalData = [];
+let filteredData = [];
+
 
 fetch(jsonFile)
   .then(response => {
@@ -17,16 +19,16 @@ fetch(jsonFile)
     renderData(data);
     setupEventListeners();
 
-    // Buraya əlavə et:
     window.addEventListener('resize', () => {
-      renderData();
+      renderData(filteredData.length ? filteredData : globalData);
       setupEventListeners();
     });
-
+    
     window.addEventListener('orientationchange', () => {
-      renderData();
+      renderData(filteredData.length ? filteredData : globalData);
       setupEventListeners();
     });
+    
   })
   .catch(error => {
     console.error('Error loading data:', error);
@@ -217,6 +219,8 @@ function applyFilters() {
   }
 
   renderData(filtered);
+  filteredData = filtered;
+
 }
 
 const toggleBtn = document.getElementById('toggle-dark-mode');
