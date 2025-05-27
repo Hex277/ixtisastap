@@ -5,7 +5,6 @@ const jsonFile = `qrup${groupNumber}.json`;
 
 let globalData = [];
 
-
 fetch(jsonFile)
   .then(response => {
     if (!response.ok) {
@@ -20,14 +19,19 @@ fetch(jsonFile)
 
     // Buraya əlavə et:
     window.addEventListener('resize', () => {
-      renderData(globalData);
+      const filters = getCurrentFilters();
+      const filtered = filterData(globalData, filters);
+      renderData(filtered);
       setupEventListeners();
     });
-
+    
     window.addEventListener('orientationchange', () => {
-      renderData(globalData);
+      const filters = getCurrentFilters();
+      const filtered = filterData(globalData, filters);
+      renderData(filtered);
       setupEventListeners();
     });
+    
   })
   .catch(error => {
     console.error('Error loading data:', error);
@@ -92,14 +96,15 @@ document.addEventListener('click', function(event) {
     menuContent.classList.add('hidden');
   }
 });
-tableContainer.innerHTML = "";
-cardContainer.innerHTML = "";
 
 function renderData(data) {
   const tableContainer = document.getElementById('table-container');
   const cardContainer = document.getElementById('card-container');
   
   const isMobile = window.innerWidth <= 768;
+
+  tableContainer.innerHTML = "";
+  cardContainer.innerHTML = "";
 
   if (isMobile) {
     let htmlCard = '';
@@ -222,27 +227,25 @@ function applyFilters() {
 const toggleBtn = document.getElementById('toggle-dark-mode');
 const toggleIcon = document.getElementById('icon');
 
-// Sayt açılarkən əvvəlki rejimi yoxla
+// Sayt yüklənəndə əvvəlki rejimi yoxla
 if (localStorage.getItem('darkMode') === 'enabled') {
   document.body.classList.add('dark-mode');
-  toggleIcon.src = "sun.png"; // Qaranlıq rejimdə ay ikonu
+  toggleIcon.src = "moon.png";
 } else {
   document.body.classList.remove('dark-mode');
-  toggleIcon.src = "moon.png"; // İşıqlı rejimdə günəş ikonu
+  toggleIcon.src = "sun.png";
 }
 
-// Kliklə rejimi dəyiş
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
   if (document.body.classList.contains('dark-mode')) {
     localStorage.setItem('darkMode', 'enabled');
-    toggleIcon.src = "sun.png"; // Qaranlıq rejim – ay
+    toggleIcon.src = "sun.png";
   } else {
     localStorage.setItem('darkMode', 'disabled');
-    toggleIcon.src = "moon.png"; // İşıqlı rejim – günəş
+    toggleIcon.src = "moon.png";
   }
 });
-
 
 
 function toggleMore(link) {
@@ -253,10 +256,35 @@ function toggleMore(link) {
   extraInfo.style.display = isVisible ? "none" : "block";
   link.innerText = isVisible ? "Daha çox" : "Daha az";
 }
-const scrollTopBtn = document.getElementById("scrollTopBtn");
 
+function getCurrentFilters() {
+  const query = document.getElementById("search").value.toLowerCase();
+  const selectedTehsil = document.getElementById("tehsilSelect").value;
+  const selectedDil = document.getElementById("dilSelect").value;
+  const selectedAlt = document.getElementById("altSelect").value;
+  const selectedLocation = document.getElementById("locationSelect").value;
 
-scrollTopBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
+  return { query, selectedTehsil, selectedDil, selectedAlt, selectedLocation };
+}
 
+function filterData(data, filters) {
+  const { query, selectedTehsil, selectedDil, selectedAlt, selectedLocation } = filters;
+
+  return data.map(qrup => {
+    const filteredUniversitetler = qrup.universitetler.map(uni => {
+      const matchedIxtisaslar = uni.ixtisaslar.filter(ixt => {
+        const nameMatch = ixt.ad.toLowerCase().includes(query);
+        const tehsilMatch = !selectedTehsil || ixt.tehsil_formasi === selectedTehsil;
+        const dilMatch = !selectedDil || ixt.dil === selectedDil;
+        const altMatch = !selectedAlt || ixt.alt_qrup === selectedAlt;
+        const locationMatch = !selectedLocation || uni.yer === selectedLocation;
+
+        return nameMatch && tehsilMatch && dilMatch && altMatch && locationMatch;
+      });
+
+      return matchedIxtisaslar.length > 0 ? { ...uni, ixtisaslar: matchedIxtisaslar } : null;
+    }).filter(Boolean);
+
+    return filteredUniversitetler.length > 0 ? { ...qrup, universitetler: filteredUniversitetler } : null;
+  }).filter(Boolean);
+}
