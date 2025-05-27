@@ -183,7 +183,7 @@ button:hover {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 50%;
+  margin-top: 10%;
 }
 
 #menu-bar li {
@@ -193,9 +193,9 @@ button:hover {
   display: block;                /* Makes it behave like a block/button */
   width: 100%;                   /* Make all links same width */
   padding: 5px 0;               /* Padding for height */
-  background-color: #1E90FF;     /* Button color */
-  color: white;                  /* Text color */
-  text-align: center;            /* Center text */
+  background-color: transparent;     /* Button color */
+  color: black;                  /* Text color */
+  text-align: left;            /* Center text */
   border: none;
   border-radius: 6px;            /* Rounded corners */
   font-size: 18px;
@@ -206,7 +206,6 @@ button:hover {
 }
 
 #menu-bar a:hover {
-  background-color: #007BFF;     /* Hover effect */
   transform: scale(1.02);        /* Slight zoom on hover */
 }
 
@@ -455,7 +454,7 @@ body.dark-mode #menu-bar a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 60%;
     height: 100%;
     transition: left 0.3s ease;
   }
@@ -464,4 +463,22 @@ body.dark-mode #menu-bar a:hover {
     display: none;
   }
 
+}
+
+/* filter-panel üçün stil */
+.filter-panel {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+/* gizlətmək üçün sinif */
+.hidden {
+  display: none;
 }

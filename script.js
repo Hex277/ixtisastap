@@ -222,25 +222,27 @@ function applyFilters() {
 const toggleBtn = document.getElementById('toggle-dark-mode');
 const toggleIcon = document.getElementById('icon');
 
-// Sayt yüklənəndə əvvəlki rejimi yoxla
+// Sayt açılarkən əvvəlki rejimi yoxla
 if (localStorage.getItem('darkMode') === 'enabled') {
   document.body.classList.add('dark-mode');
-  toggleIcon.src = "moon.png";
+  toggleIcon.src = "sun.png"; // Qaranlıq rejimdə ay ikonu
 } else {
   document.body.classList.remove('dark-mode');
-  toggleIcon.src = "sun.png";
+  toggleIcon.src = "moon.png"; // İşıqlı rejimdə günəş ikonu
 }
 
+// Kliklə rejimi dəyiş
 toggleBtn.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
   if (document.body.classList.contains('dark-mode')) {
     localStorage.setItem('darkMode', 'enabled');
-    toggleIcon.src = "sun.png";
+    toggleIcon.src = "sun.png"; // Qaranlıq rejim – ay
   } else {
     localStorage.setItem('darkMode', 'disabled');
-    toggleIcon.src = "moon.png";
+    toggleIcon.src = "moon.png"; // İşıqlı rejim – günəş
   }
 });
+
 
 
 function toggleMore(link) {
