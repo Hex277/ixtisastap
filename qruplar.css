@@ -170,13 +170,6 @@ button:hover {
   height: 100%;
   width: 60%;
 }
-#name-text {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 26px;
-  color: #1E90FF; 
-  text-align: center;
-  margin-top: 20px;
-}
 
 #menu-bar ul {
   list-style: none;
@@ -189,7 +182,7 @@ button:hover {
 #menu-bar li {
   margin-bottom: 10px;
 }
-#menu-bar a {
+#menu-bar a:not(#name-text) {
   display: block;                /* Makes it behave like a block/button */
   width: 100%;                   /* Make all links same width */
   padding: 5px 0;               /* Padding for height */
@@ -207,6 +200,17 @@ button:hover {
 
 #menu-bar a:hover {
   transform: scale(1.02);        /* Slight zoom on hover */
+}
+
+#name-text {
+  transition: none;
+  display: inline-block;
+  font-size: 23px;
+  color: #1E90FF !important; 
+  margin-top: 20px;
+  text-decoration: none;
+  margin-left: 5%;
+  cursor: default;
 }
 
 
@@ -272,7 +276,7 @@ body.dark-mode #menu-bar {
   border-color: #555;
 }
 
-body.dark-mode #menu-bar a {
+body.dark-mode #menu-bar a:not(#name-text) {
   color: #fff;
 }
 
