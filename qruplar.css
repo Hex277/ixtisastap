@@ -283,10 +283,40 @@ body.dark-mode #menu-bar a:not(#name-text) {
 body.dark-mode #menu-bar a:hover {
   color: #00aced;
 }
+
+
+#language-selector {
+  right: 60px;
+  top: 13px;
+  width: 43px;
+  height: 36px;
+  padding: 4px 0px;
+  font-size: 17px;
+  background-color: transparent;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body.dark-mode #language-selector option {
+  background-color: #222222;
+  color: white;
+}
+
+
 /* ==============================
    DARK MODE DÜYMƏSİ
 ============================== */
-
+#toggle-dark-mode {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  padding: 4px 10px;
+  background-color: #1E90FF;
+  color: white;
+  width: 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+}
 #toggle-dark-mode img {
   margin-top: 3px;
 }
@@ -306,16 +336,11 @@ body.dark-mode #menu-bar a:hover {
 @media (min-width: 769px) {
   #toggle-dark-mode {
     position: fixed;
-    top: 13px;
-    right: 15px;
-    padding: 4px 10px;
-    background-color: #1E90FF;
-    color: white;
-    width: 40px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
   }
+  #language-selector {
+    position: fixed;
+  }
+  
   .main-content {
     position: fixed;
     margin-left: 200px; /* Same width as your menu bar */
@@ -357,16 +382,11 @@ body.dark-mode #menu-bar a:hover {
 @media (max-width: 768px) {
   #toggle-dark-mode {
     position: absolute;
-    top: 13px;
-    right: 15px;
-    padding: 4px 10px;
-    background-color: #1E90FF;
-    color: white;
-    width: 40px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
   }
+  #language-selector {
+    position: absolute;
+  }
+
   #table-container {
     display: none;
   }
