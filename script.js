@@ -251,15 +251,18 @@ toggleBtn.addEventListener('click', () => {
   }
 });
 
-
 function toggleMore(link) {
   const card = link.closest('.card');
   const extraInfo = card.querySelector('.extra-info');
   const isVisible = extraInfo.style.display === "block";
 
+  const lang = localStorage.getItem("preferredLang") || "en";
+  const t = translations[lang];
+
   extraInfo.style.display = isVisible ? "none" : "block";
-  link.innerText = isVisible ? "Daha çox" : "Daha az";
+  link.innerText = isVisible ? t["dahaCox"] || "Daha çox" : t["dahaAz"] || "Daha az";
 }
+
 
 function getCurrentFilters() {
   const query = document.getElementById("search").value.toLowerCase();
@@ -335,6 +338,7 @@ const translations = {
     balOdenissiz: "Score (Free)",
     balOdenisli: "Score (Paid)",
     dahaCox: "More",
+    dahaAz: "Show less",
     aboutUs: "About Us",
     about: "About Us & Contact",
     aboutParagraph1: "This website was created to fundamentally transform the specialty selection process in Azerbaijan. The abundance and fragmentation of information in the education sector hinder users from finding the right specialty. Our goal is to simplify the selection process by providing the most comprehensive, up-to-date, and accessible information to students and specialty seekers.",
@@ -391,6 +395,7 @@ const translations = {
     balOdenissiz: "Bal (Ödənişsiz)",
     balOdenisli: "Bal (Ödənişli)",
     dahaCox: "Daha çox",
+    dahaAz: "Daha az",
     aboutUs: "Haqqımızda",
     about: "Haqqımızda və Əlaqə",
     aboutParagraph1: "Sayt Azərbaycanda ixtisas seçimi prosesini köklü şəkildə dəyişdirmək üçün yaradılıb. Təhsil sahəsində mövcud olan məlumatların çoxluğu və dağınıqlığı istifadəçilərin doğru ixtisas tapmasına mane olur. Məqsədimiz, tələbələrə və ixtisas axtaranlara ən dolğun, ən aktual və ən əlçatan məlumatları təqdim etməklə, seçim prosesini asanlaşdırmaqdır.",
@@ -447,6 +452,7 @@ const translations = {
     balOdenissiz: "Puan (Ücretsiz)",
     balOdenisli: "Puan (Ücretli)",
     dahaCox: "Daha fazla",
+    dahaAz: "Daha az",
     aboutUs: "Hakkımızda",
     about: "Hakkımızda ve İletişim",
     aboutParagraph1: "Bu site, Azerbaycan'da bölüm seçme sürecini köklü bir şekilde değiştirmek amacıyla oluşturulmuştur. Eğitim alanındaki bilgi fazlalığı ve dağınıklık, kullanıcıların doğru bölümü bulmalarını zorlaştırıyor. Amacımız, öğrencilere ve bölüm arayanlara en kapsamlı, en güncel ve en erişilebilir bilgileri sunarak seçim sürecini kolaylaştırmaktır.",
