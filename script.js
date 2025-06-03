@@ -231,18 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Ekran ölçüsü dəyişəndə avtomatik yenilə
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      filterBar.style.display = 'block';
-      filterToggleBtn.style.display = 'none';
-    } else {
-      filterBar.style.display = 'none';
-      filterToggleBtn.style.display = 'inline-block';
-      filterText.textContent = 'Filter';
-      filterIcon.style.display = 'inline';
-    }
-  });
+
 });
 
 function applyFilters() {
