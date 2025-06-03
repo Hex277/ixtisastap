@@ -59,35 +59,6 @@ navLinks.forEach(link => {
     link.classList.add('active');
   }
 });
-document.addEventListener('DOMContentLoaded', () => {
-  const menuBar = document.getElementById("menu-bar");
-  if (!menuBar) return; // əgər element yoxdursa çıx
-
-  let touchStartX = 0;
-  let touchEndX = 0;
-
-  function handleGesture() {
-    const swipeDistance = touchStartX - touchEndX;
-    const minSwipeDistance = 50; // Minimum sürüşdürmə məsafəsi (piksel)
-
-    // sola sürüşdürdüsə və məsafə kifayət qədərdirsə
-    if (swipeDistance > minSwipeDistance) {
-      menuBar.classList.add("hidden");
-    }
-  }
-
-  // Əgər ekran 768 piksel və ya kiçikdirsə, swipe aktivləşdirilir
-  if (window.innerWidth <= 768) {
-    menuBar.addEventListener("touchstart", (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-    });
-
-    menuBar.addEventListener("touchend", (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      handleGesture();
-    });
-  }
-});
 
 function setupEventListeners() {
   const searchInput = document.getElementById("search");
@@ -108,6 +79,11 @@ function setupEventListeners() {
     const searchBtn = document.getElementById("searchBtn");
     searchBtn.addEventListener("click", applyFilters); // Mobil üçün sadəcə düymə ilə işləsin
   }
+  
+  tehsilSelect.addEventListener("change", applyFilters);
+  dilSelect.addEventListener("change", applyFilters);
+  altSelect.addEventListener("change", applyFilters);
+  locationSelect.addEventListener("change", applyFilters);
 }
 
 const menuToggle = document.getElementById('menu-toggle');
@@ -206,33 +182,7 @@ function renderData(data) {
     tableContainer.style.display = "block";
   }
 }
-document.addEventListener('DOMContentLoaded', () => {
-  const filterBar = document.querySelector('.filter-bar');
-  const filterToggleBtn = document.getElementById('filterToggleBtn');
-  const filterText = filterToggleBtn.querySelector('span');
-  const filterIcon = filterToggleBtn.querySelector('img');
 
-  // Əvvəlcə filterlər gizlədilir (mobil üçün)
-  if (window.innerWidth <= 768) {
-    filterBar.style.display = 'none';
-  }
-
-  filterToggleBtn.addEventListener('click', () => {
-    const isVisible = filterBar.style.display === 'block';
-
-    if (isVisible) {
-      filterBar.style.display = 'none';
-      filterText.textContent = 'Filter';
-      filterIcon.style.display = 'inline';
-    } else {
-      filterBar.style.display = 'block';
-      filterText.textContent = 'Close';
-      filterIcon.style.display = 'none';
-    }
-  });
-
-
-});
 
 function applyFilters() {
   const query = document.getElementById("search").value.toLowerCase();
@@ -240,12 +190,6 @@ function applyFilters() {
   const selectedDil = document.getElementById("dilSelect").value;
   const selectedAlt = document.getElementById("altSelect").value;
   const selectedLocation = document.getElementById("locationSelect").value;
-  const minScoreInput = document.getElementById("minScore");
-  const maxScoreInput = document.getElementById("maxScore");
-
-  const minScore = minScoreInput.value ? parseFloat(minScoreInput.value) : null;
-  const maxScore = maxScoreInput.value ? parseFloat(maxScoreInput.value) : null;
-  
   let totalResults = 0;
 
   const filtered = globalData.map(qrup => {
@@ -257,18 +201,11 @@ function applyFilters() {
         const altMatch = !selectedAlt || ixt.alt_qrup === selectedAlt;
         const locationMatch = !selectedLocation || uni.yer === selectedLocation;
 
-        const score = ixt.bal_pulsuz;
-        const scorePullu = ixt.bal_pullu;
-        const scoreMatch = (
-          (minScore === null || (score !== undefined && score >= minScore)) &&
-          (maxScore === null || (score !== undefined && score <= maxScore)) &&
-          (maxScore === null || (score !== undefined && scorePullu <= maxScore))
-        );
-
-        return nameMatch && tehsilMatch && dilMatch && altMatch && locationMatch && scoreMatch;
+        return nameMatch && tehsilMatch && dilMatch && altMatch && locationMatch;
       });
 
       totalResults += matchedIxtisaslar.length;
+
       return matchedIxtisaslar.length > 0 ? { ...uni, ixtisaslar: matchedIxtisaslar } : null;
     }).filter(Boolean);
 
@@ -276,7 +213,7 @@ function applyFilters() {
   }).filter(Boolean);
 
   const resultCountElement = document.getElementById("resultCount");
-  if (query || selectedTehsil || selectedDil || selectedAlt || selectedLocation || minScore !== null || maxScore !== null) {
+  if (query || selectedTehsil || selectedDil || selectedAlt || selectedLocation) {
     if (totalResults > 0) {
       resultCountElement.innerText = `${totalResults} nəticə tapıldı.`;
       resultCountElement.style.display = "block";
@@ -287,49 +224,9 @@ function applyFilters() {
   } else {
     resultCountElement.style.display = "none";
   }
-
   const lang = localStorage.getItem("selectedLanguage") || "en";
   renderData(filtered, lang);
 }
-
-// ✅ Desktop və mobil üçün input hadisələrini idarə edən funksiya
-function setupEventListeners() {
-  const searchInput = document.getElementById("search");
-  const tehsilSelect = document.getElementById("tehsilSelect");
-  const dilSelect = document.getElementById("dilSelect");
-  const altSelect = document.getElementById("altSelect");
-  const locationSelect = document.getElementById("locationSelect");
-
-  const minScoreInput = document.getElementById("minScore");
-  const maxScoreInput = document.getElementById("maxScore");
-
-  // Əvvəlki hadisələri təmizlə
-  searchInput.removeEventListener("input", applyFilters);
-  tehsilSelect.removeEventListener("change", applyFilters);
-  dilSelect.removeEventListener("change", applyFilters);
-  altSelect.removeEventListener("change", applyFilters);
-  locationSelect.removeEventListener("change", applyFilters);
-  minScoreInput?.removeEventListener("input", applyFilters);
-  maxScoreInput?.removeEventListener("input", applyFilters);
-
-  if (window.innerWidth > 768) {
-    // ✅ Desktop üçün input hadisələri
-    searchInput.addEventListener("input", applyFilters);
-    minScoreInput?.addEventListener("input", applyFilters);
-    maxScoreInput?.addEventListener("input", applyFilters);
-  } else {
-    // ✅ Mobil üçün yalnız düymə ilə axtarış
-    const searchBtn = document.getElementById("searchBtn");
-    searchBtn.addEventListener("click", applyFilters);
-  }
-
-  // Hər iki rejimdə aşağıdakılar işə düşür
-  tehsilSelect.addEventListener("change", applyFilters);
-  dilSelect.addEventListener("change", applyFilters);
-  altSelect.addEventListener("change", applyFilters);
-  locationSelect.addEventListener("change", applyFilters);
-}
-
 
 const toggleBtn = document.getElementById('toggle-dark-mode');
 const toggleIcon = document.getElementById('icon');
@@ -414,7 +311,6 @@ const translations = {
     pageTitle5: "Group 5 Specialties 2025",
     searchBtn: "Search",
     searchPlaceholder: "Search for specialty...",
-    filterText: "Filters",
     eduAll: "Full-time / Part-time",
     eduEyani: "Full-time",
     eduQiyabi: "Part-time",
@@ -471,7 +367,6 @@ const translations = {
     pageTitle5: "5ci Qrup Ixtisaslar 2025",
     searchBtn: "Axtar",
     searchPlaceholder: "Ixtisas axtar...",
-    filterText: "Filterlər",
     eduAll: "Əyani / Qiyabi",
     eduEyani: "Əyani",
     eduQiyabi: "Qiyabi",
@@ -529,7 +424,6 @@ const translations = {
     pageTitle5: "5. Grup Bölümleri 2025",
     searchBtn: "Ara",
     searchPlaceholder: "Bölüm ara...",
-    filterText: "Filtre",
     eduAll: "Örgün / Uzaktan",
     eduEyani: "Örgün",
     eduQiyabi: "Uzaktan",
