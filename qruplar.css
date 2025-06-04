@@ -423,7 +423,9 @@ body.dark-mode .menu-button {
     padding-right: 0px;
     top: -30px;
   }
-
+  .search-bar {
+    gap: 10px;
+  }
   #resultCount {
     position: absolute;
     margin-top: 78px;
