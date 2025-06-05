@@ -489,7 +489,8 @@ body.dark-mode #language-selector option {
     }
     .filter-bar {
         padding: 0 30px 15px;
-        margin-top: 10px
+        margin-top: 10px;
+        gap: 8px;
     }
 }
 /* MOBILE THEME */
