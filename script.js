@@ -1,4 +1,65 @@
-const groupMatch=window.location.pathname.match(/(\d)ciqrup\.html$/),groupNumber=groupMatch?groupMatch[1]:"1",jsonFile=`qrup${groupNumber}.json`;let globalData=[];const groupNames={1:"1-ci Qrup",2:"2-ci Qrup",3:"3-c\xfc Qrup",4:"4-c\xfc Qrup",5:"5-ci Qrup"};function loadData(){fetch(jsonFile).then(e=>{if(!e.ok)throw Error(`Failed to fetch ${jsonFile}: ${e.statusText}`);return e.json()}).then(e=>{globalData=e,initPage()}).catch(e=>{console.error("Error loading data:",e)})}function initPage(){let e=localStorage.getItem("selectedLanguage")||"en",a=document.getElementById("group-title");a&&(a.textContent=groupNames[groupNumber]||"Qrup");let t=document.querySelectorAll("#menu-bar ul li a");function i(){let a=getCurrentFilters(),t=filterData(globalData,a);renderData(t,e),setupEventListeners()}t.forEach(e=>{e.classList.remove("active"),e.getAttribute("href")===`${groupNumber}ciqrup.html`&&e.classList.add("active")}),renderData(globalData,e),setupEventListeners(),window.addEventListener("resize",i),window.addEventListener("orientationchange",i)}function setupEventListeners(){let e=document.getElementById("search"),a=document.getElementById("tehsilSelect"),t=document.getElementById("dilSelect"),i=document.getElementById("altSelect"),l=document.getElementById("locationSelect"),n=document.getElementById("searchBtn"),r=document.getElementById("minScore"),s=document.getElementById("maxScore");e.removeEventListener("input",applyFilters),a.removeEventListener("change",applyFilters),t.removeEventListener("change",applyFilters),i.removeEventListener("change",applyFilters),l.removeEventListener("change",applyFilters),r.removeEventListener("input",applyFilters),s.removeEventListener("input",applyFilters),n&&n.removeEventListener("click",applyFilters),window.innerWidth>768?(e.addEventListener("input",applyFilters),r.addEventListener("input",applyFilters),s.addEventListener("input",applyFilters)):n&&n.addEventListener("click",applyFilters),a.addEventListener("change",applyFilters),t.addEventListener("change",applyFilters),i.addEventListener("change",applyFilters),l.addEventListener("change",applyFilters)}function renderData(e,a){let t=document.getElementById("table-container"),i=document.getElementById("card-container"),l=translations[a]||{},n=window.innerWidth<=768;if(t.innerHTML="",i.innerHTML="",n){let r="";e.forEach(e=>{e.universitetler.forEach(e=>{r+=`<div class="uni-basliq">${e.universitet}</div>`,e.ixtisaslar.forEach(e=>{r+=`
+const groupMatch = window.location.pathname.match(/(\d)ciqrup\.html$/),
+    groupNumber = groupMatch ? groupMatch[1] : "1",
+    jsonFile = `qrup${groupNumber}.json`;
+let globalData = [];
+const groupNames = {
+    1: "1-ci Qrup",
+    2: "2-ci Qrup",
+    3: "3-c\xfc Qrup",
+    4: "4-c\xfc Qrup",
+    5: "5-ci Qrup"
+};
+
+function loadData() {
+    fetch(jsonFile).then(e => {
+        if (!e.ok) throw Error(`Failed to fetch ${jsonFile}: ${e.statusText}`);
+        return e.json()
+    }).then(e => {
+        globalData = e, initPage()
+    }).catch(e => {
+        console.error("Error loading data:", e)
+    })
+}
+
+function initPage() {
+    let e = localStorage.getItem("selectedLanguage") || "en",
+        a = document.getElementById("group-title");
+    a && (a.textContent = groupNames[groupNumber] || "Qrup");
+    let t = document.querySelectorAll("#menu-bar ul li a");
+
+    function i() {
+        let a = getCurrentFilters(),
+            t = filterData(globalData, a);
+        renderData(t, e), setupEventListeners()
+    }
+    t.forEach(e => {
+        e.classList.remove("active"), e.getAttribute("href") === `${groupNumber}ciqrup.html` && e.classList.add("active")
+    }), renderData(globalData, e), setupEventListeners(), window.addEventListener("resize", i), window.addEventListener("orientationchange", i)
+}
+
+function setupEventListeners() {
+    let e = document.getElementById("search"),
+        a = document.getElementById("tehsilSelect"),
+        t = document.getElementById("dilSelect"),
+        i = document.getElementById("altSelect"),
+        l = document.getElementById("locationSelect"),
+        n = document.getElementById("searchBtn"),
+        r = document.getElementById("minScore"),
+        s = document.getElementById("maxScore");
+    e.removeEventListener("input", applyFilters), a.removeEventListener("change", applyFilters), t.removeEventListener("change", applyFilters), i.removeEventListener("change", applyFilters), l.removeEventListener("change", applyFilters), r.removeEventListener("input", applyFilters), s.removeEventListener("input", applyFilters), n && n.removeEventListener("click", applyFilters), window.innerWidth > 768 ? (e.addEventListener("input", applyFilters), r.addEventListener("input", applyFilters), s.addEventListener("input", applyFilters)) : n && n.addEventListener("click", applyFilters), a.addEventListener("change", applyFilters), t.addEventListener("change", applyFilters), i.addEventListener("change", applyFilters), l.addEventListener("change", applyFilters)
+}
+
+function renderData(e, a) {
+    let t = document.getElementById("table-container"),
+        i = document.getElementById("card-container"),
+        l = translations[a] || {},
+        n = window.innerWidth <= 768;
+    if (t.innerHTML = "", i.innerHTML = "", n) {
+        let r = "";
+        e.forEach(e => {
+            e.universitetler.forEach(e => {
+                r += `<div class="uni-basliq">${e.universitet}</div>`, e.ixtisaslar.forEach(e => {
+                    r += `
             <div class="card">
               <div class="field" id="ixtisasad"><strong>${l.ixtisas||"Ixtisas"}:</strong> ${e.ad}</div>
               <div class="field"><strong>${l.dil||"Dil"}:</strong> ${e.dil}</div>
@@ -9,7 +70,15 @@ const groupMatch=window.location.pathname.match(/(\d)ciqrup\.html$/),groupNumber
                 <div class="field"><strong>${l.altQrup||"Alt qrup"}:</strong> ${e.alt_qrup}</div>
               </div>
               <a href="#" class="toggle-more" onclick="toggleMore(this); return false;">${l.dahaCox||"Daha \xe7ox"}</a>
-            </div>`})})}),i.innerHTML=r,t.style.display="none",i.style.display="block"}else{let s="";e.forEach(e=>{e.universitetler.forEach(e=>{s+=`<div class="uni-basliq">${e.universitet}</div>`,s+=`
+            </div>`
+                })
+            })
+        }), i.innerHTML = r, t.style.display = "none", i.style.display = "block"
+    } else {
+        let s = "";
+        e.forEach(e => {
+            e.universitetler.forEach(e => {
+                s += `<div class="uni-basliq">${e.universitet}</div>`, s += `
           <table>
             <thead>
               <tr>
@@ -21,7 +90,8 @@ const groupMatch=window.location.pathname.match(/(\d)ciqrup\.html$/),groupNumber
                 <th>${l.balOdenisli||"Bal (\xd6dənişli)"}</th>
               </tr>
             </thead>
-            <tbody>`,e.ixtisaslar.forEach((e,a)=>{s+=`
+            <tbody>`, e.ixtisaslar.forEach((e, a) => {
+                    s += `
             <tr class="${a%2==0?"even-row":""}">
               <td>${e.ad}</td>
               <td>${e.tehsil_formasi}</td>
@@ -29,4 +99,243 @@ const groupMatch=window.location.pathname.match(/(\d)ciqrup\.html$/),groupNumber
               <td>${e.alt_qrup}</td>
               <td>${e.bal_pulsuz??"—"}</td>
               <td>${e.bal_pullu??"—"}</td>
-            </tr>`}),s+="</tbody></table>"})}),t.innerHTML=s,i.style.display="none",t.style.display="block"}}const menuToggle=document.getElementById("menu-toggle"),menuContent=document.getElementById("menu-bar");function applyFilters(){let e=getCurrentFilters(),a=filterData(globalData,e),t=0;a.forEach(e=>{e.universitetler.forEach(e=>{t+=e.ixtisaslar.length})});let i=document.getElementById("resultCount"),l=document.getElementById("resultNumber"),n=JSON.stringify(e)!==JSON.stringify({search:"",uni:"",qrup:"",type:""});n?(l.textContent=t,i.style.display="inline"):i.style.display="none";let r=localStorage.getItem("selectedLanguage")||"en";renderData(a,r),setupEventListeners(),changeLanguage(r)}function getCurrentFilters(){return{searchValue:document.getElementById("search").value.trim().toLowerCase(),tehsilValue:document.getElementById("tehsilSelect").value,dilValue:document.getElementById("dilSelect").value,altValue:document.getElementById("altSelect").value,locationValue:document.getElementById("locationSelect").value,minScore:parseInt(document.getElementById("minScore").value)||0,maxScore:parseInt(document.getElementById("maxScore").value)||700}}function filterData(e,{searchValue:a,tehsilValue:t,dilValue:i,altValue:l,locationValue:n,minScore:r,maxScore:s}){if(!e)return[];let o=e.map(e=>{let o=e.universitetler.map(e=>{let o=""===n||e.yer.toLowerCase().includes(n.toLowerCase());if(!o)return null;let d=e.ixtisaslar.filter(e=>{if(t&&e.tehsil_formasi!==t||i&&e.dil!==i||l&&e.alt_qrup!==l)return!1;let n=null!==e.bal_pulsuz&&void 0!==e.bal_pulsuz?parseInt(e.bal_pulsuz):null,o=null!==e.bal_pullu&&void 0!==e.bal_pullu?parseInt(e.bal_pullu):null,d=!0;return(null!==r||null!==s)&&(d=null!==n&&(null===r||n>=r)&&(null===s||n<=s)||null!==o&&(null===s||n<=s)&&(null===s||o<=s)),!!(d&&(!a||e.ad.toLowerCase().includes(a)))});return 0===d.length?null:{...e,ixtisaslar:d}}).filter(Boolean);return{...e,universitetler:o}}).filter(e=>e.universitetler.length>0);return o}menuToggle.addEventListener("click",()=>{menuContent.classList.toggle("hidden")}),document.addEventListener("click",function(e){let a=menuToggle.contains(e.target)||menuContent.contains(e.target);a||menuContent.classList.add("hidden")}),document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".filter-bar"),a=document.getElementById("filterToggleBtn"),t=a.querySelector("span"),i=a.querySelector("img");window.innerWidth<=768&&(e.style.display="none"),a.addEventListener("click",()=>{let a="block"===e.style.display;a?(e.style.display="none",t.textContent="Filter",i.style.display="inline"):(e.style.display="block",t.textContent="Close",i.style.display="none")})});const toggleBtn=document.getElementById("toggle-dark-mode"),toggleIcon=document.getElementById("icon");function toggleMore(e){let a=e.previousElementSibling;"none"===a.style.display?(a.style.display="block",e.textContent="az"===localStorage.getItem("selectedLanguage")?"Daha az":"Less"):(a.style.display="none",e.textContent="az"===localStorage.getItem("selectedLanguage")?"Daha \xe7ox":"More")}"enabled"===localStorage.getItem("darkMode")?(document.body.classList.add("dark-mode"),toggleIcon.src="moon.png"):(document.body.classList.remove("dark-mode"),toggleIcon.src="sun.png"),toggleBtn.addEventListener("click",()=>{document.body.classList.toggle("dark-mode"),document.body.classList.contains("dark-mode")?(localStorage.setItem("darkMode","enabled"),toggleIcon.src="sun.png"):(localStorage.setItem("darkMode","disabled"),toggleIcon.src="moon.png")}),document.addEventListener("DOMContentLoaded",()=>{loadData()});const translations={en:{siteName:"IxtisasTap.com",group1:"Group 1",group2:"Group 2",group3:"Group 3",group4:"Group 4",group5:"Group 5 (Coming soon)",about:"About Us",pageTitle1:"Group 1 Specialties 2025",pageTitle2:"Group 2 Specialties 2025",pageTitle3:"Group 3 Specialties 2025",pageTitle4:"Group 4 Specialties 2025",pageTitle5:"Group 5 Specialties 2025",searchBtn:"Search",searchPlaceholder:"Search for specialty...",found:"found.",eduAll:"Full-time / Part-time",eduEyani:"Full-time",eduQiyabi:"Part-time",langAll:"All languages",langAz:"Azerbaijani",langEn:"English",langTr:"Turkish",langRu:"Russian",langCh:"Chinese",langAr:"Arabic",langFa:"Persian",langUk:"Ukrainian",langFr:"French",langKo:"Korean",langCz:"Czech",langPo:"Polish",langIs:"Spanish",langEr:"Armenian",altAll:"All subgroups",cityAll:"All cities",ixtisas:"Specialty",tehsilFormasi:"Education type",dil:"Language",altQrup:"Subgroup",balOdenissiz:"Score (Free)",balOdenisli:"Score (Paid)",dahaCox:"More",dahaAz:"Show less",aboutUs:"About Us",about:"About Us & Contact",aboutParagraph1:"This website was created to fundamentally transform the specialty selection process in Azerbaijan. The abundance and fragmentation of information in the education sector hinder users from finding the right specialty. Our goal is to simplify the selection process by providing the most comprehensive, up-to-date, and accessible information to students and specialty seekers.",aboutParagraph2:"We have compiled a wide range of specialties and related information into one platform. We follow the latest educational trends and constantly update our database based on the needs of our users. The information we provide about specialties covers important aspects such as academic programs, future prospects, and career opportunities.",aboutParagraph3:"User experience is our top priority. With an intuitive search system, easy-to-understand interface, and extensive filtering options, everyone can easily find the specialty that suits their needs. Our goal is to be a leading and reliable platform in the field of education in Azerbaijan.",aboutParagraph4:"We value feedback from our users. We always listen to your opinions and strive to improve our website further. Guiding you in your specialty selection journey is our main mission.",contactTitle:"Contact",emailLabel:"Email",phoneLabel:"Phone",locationLabel:"Location",locationValue:"Baku, Azerbaijan",footerText:"All rights reserved."},az:{siteName:"IxtisasTap.com",group1:"1ci Qrup",group2:"2ci Qrup",group3:"3c\xfc Qrup",group4:"4c\xfc Qrup",group5:"5ci Qrup (Tezliklə)",about:"Haqqımızda",pageTitle1:"1ci Qrup Ixtisaslar 2025",pageTitle2:"2ci Qrup Ixtisaslar 2025",pageTitle3:"3ci Qrup Ixtisaslar 2025",pageTitle4:"4ci Qrup Ixtisaslar 2025",pageTitle5:"5ci Qrup Ixtisaslar 2025",searchBtn:"Axtar",searchPlaceholder:"Ixtisas axtar...",found:"nəticə tapıldı.",eduAll:"Əyani / Qiyabi",eduEyani:"Əyani",eduQiyabi:"Qiyabi",langAll:"B\xfct\xfcn dillər",langAz:"Azərbaycan dili",langEn:"İngilis dili",langTr:"T\xfcrk dili",langRu:"Rus dili",langCh:"\xc7in dili",langAr:"Ərəb dili",langFa:"Fars dili",langUk:"Ukrayna dili",langFr:"Fransız dili",langKo:"Koreya dili",langCz:"\xc7ex dili",langPo:"Polyak dili",langIs:"İspan dili",langEr:"Erməni dili",altAll:"B\xfct\xfcn alt qruplar",cityAll:"B\xfct\xfcn şəhərlər",ixtisas:"Ixtisas",tehsilFormasi:"Təhsil forması",dil:"Dil",altQrup:"Alt qrup",balOdenissiz:"Bal (\xd6dənişsiz)",balOdenisli:"Bal (\xd6dənişli)",dahaCox:"Daha \xe7ox",dahaAz:"Daha az",aboutUs:"Haqqımızda",about:"Haqqımızda və Əlaqə",aboutParagraph1:"Sayt Azərbaycanda ixtisas se\xe7imi prosesini k\xf6kl\xfc şəkildə dəyişdirmək \xfc\xe7\xfcn yaradılıb. Təhsil sahəsində m\xf6vcud olan məlumatların \xe7oxluğu və dağınıqlığı istifadə\xe7ilərin doğru ixtisas tapmasına mane olur. Məqsədimiz, tələbələrə və ixtisas axtaranlara ən dolğun, ən aktual və ən əl\xe7atan məlumatları təqdim etməklə, se\xe7im prosesini asanlaşdırmaqdır.",aboutParagraph2:"Saytımızda m\xfcxtəlif ixtisaslar və onlara aid geniş məlumat bazası bir araya gətirilib. Biz, ən yeni təhsil trendlərini izləyir, istifadə\xe7ilərimizin ehtiyaclarını nəzərə alaraq daima məlumat bazamızı yeniləyirik. İxtisaslar haqqında təqdim etdiyimiz məlumatlar, təhsil m\xfcəssisələrinin proqramları, ixtisasın gələcək perspektivləri və iş imkanları kimi vacib aspektləri əhatə edir.",aboutParagraph3:"Biz, istifadə\xe7i təcr\xfcbəsini \xf6n planda saxlayırıq. Saytımızda intuitiv axtarış sistemi, asan anlaşılan interfeys və geniş filtrasiya imkanları vasitəsilə hər kəs \xf6z ehtiyacına uyğun ixtisası rahatlıqla tapa bilər. Məqsədimiz, Azərbaycanda təhsil sahəsində qabaqcıl və etibarlı platforma olmaqdır.",aboutParagraph4:"İstifadə\xe7ilərimizin rəyləri bizim \xfc\xe7\xfcn \xf6nəmlidir. Hər zaman sizin fikirlərinizi dinləyir, saytımızı daha da təkmilləşdirmək \xfc\xe7\xfcn \xe7alışırıq. İxtisas se\xe7iminizdə sizə yol g\xf6stərmək bizim əsas məqsədimizdir.",contactTitle:"Əlaqə",emailLabel:"E-po\xe7t",phoneLabel:"Telefon",locationLabel:"\xdcnvan",locationValue:"Bakı, Azərbaycan",footerText:"B\xfct\xfcn h\xfcquqlar qorunur."},tr:{siteName:"IxtisasTap.com",group1:"1. Grup",group2:"2. Grup",group3:"3. Grup",group4:"4. Grup",group5:"5. Grup (Yakında)",about:"Hakkımızda",pageTitle1:"1. Grup B\xf6l\xfcmleri 2025",pageTitle2:"2. Grup B\xf6l\xfcmleri 2025",pageTitle3:"3. Grup B\xf6l\xfcmleri 2025",pageTitle4:"4. Grup B\xf6l\xfcmleri 2025",pageTitle5:"5. Grup B\xf6l\xfcmleri 2025",searchBtn:"Ara",searchPlaceholder:"B\xf6l\xfcm ara...",found:"sonu\xe7 bulundu.",eduAll:"\xd6rg\xfcn / Uzaktan",eduEyani:"\xd6rg\xfcn",eduQiyabi:"Uzaktan",langAll:"T\xfcm diller",langAz:"Azerbaycanca",langEn:"İngilizce",langTr:"T\xfcrk\xe7e",langRu:"Rus\xe7a",langCh:"\xc7ince",langAr:"Arap\xe7a",langFa:"Fars\xe7a",langUk:"Ukraynaca",langFr:"Fransızca",langKo:"Korece",langCz:"\xc7ek\xe7e",langPo:"Leh\xe7e",langIs:"İspanyolca",langEr:"Ermenice",altAll:"T\xfcm alt gruplar",cityAll:"T\xfcm şehirler",ixtisas:"B\xf6l\xfcm",tehsilFormasi:"Eğitim t\xfcr\xfc",dil:"Dil",altQrup:"Alt grup",balOdenissiz:"Puan (\xdccretsiz)",balOdenisli:"Puan (\xdccretli)",dahaCox:"Daha fazla",dahaAz:"Daha az",aboutUs:"Hakkımızda",about:"Hakkımızda ve İletişim",aboutParagraph1:"Bu site, Azerbaycan'da b\xf6l\xfcm se\xe7me s\xfcrecini k\xf6kl\xfc bir şekilde değiştirmek amacıyla oluşturulmuştur. Eğitim alanındaki bilgi fazlalığı ve dağınıklık, kullanıcıların doğru b\xf6l\xfcm\xfc bulmalarını zorlaştırıyor. Amacımız, \xf6ğrencilere ve b\xf6l\xfcm arayanlara en kapsamlı, en g\xfcncel ve en erişilebilir bilgileri sunarak se\xe7im s\xfcrecini kolaylaştırmaktır.",aboutParagraph2:"Sitemizde \xe7eşitli b\xf6l\xfcmler ve onlara ait geniş bir bilgi veritabanı bir araya getirilmiştir. En son eğitim trendlerini takip ediyor, kullanıcılarımızın ihtiya\xe7larını g\xf6z \xf6n\xfcnde bulundurarak veritabanımızı s\xfcrekli g\xfcncelliyoruz. B\xf6l\xfcmler hakkında sunduğumuz bilgiler; program detayları, gelecekteki olanaklar ve iş imkanları gibi \xf6nemli konuları kapsıyor.",aboutParagraph3:"Kullanıcı deneyimini \xf6n planda tutuyoruz. Sitemizde sezgisel arama sistemi, kolay anlaşılır aray\xfcz ve geniş filtreleme se\xe7enekleri sayesinde herkes ihtiyacına uygun b\xf6l\xfcm\xfc rahatlıkla bulabilir. Amacımız, Azerbaycan'da eğitim alanında \xf6nc\xfc ve g\xfcvenilir bir platform olmaktır.",aboutParagraph4:"Kullanıcılarımızın g\xf6r\xfcşleri bizim i\xe7in değerlidir. Her zaman fikirlerinizi dinliyor ve sitemizi daha da geliştirmek i\xe7in \xe7alışıyoruz. B\xf6l\xfcm se\xe7iminizde size yol g\xf6stermek bizim en temel amacımızdır.",contactTitle:"İletişim",emailLabel:"E-posta",phoneLabel:"Telefon",locationLabel:"Adres",locationValue:"Bak\xfc, Azerbaycan",footerText:"T\xfcm hakları saklıdır."}};function changeLanguage(e){let a=document.querySelectorAll("[data-i18n]");a.forEach(a=>{let t=a.getAttribute("data-i18n");translations[e][t]&&(a.innerText=translations[e][t])});let t=document.querySelector("[data-i18n-placeholder]");if(t){let i=t.getAttribute("data-i18n-placeholder");translations[e][i]&&t.setAttribute("placeholder",translations[e][i])}}document.getElementById("language-selector").addEventListener("change",function(){let e=this.value;localStorage.setItem("selectedLanguage",e),location.reload()}),window.addEventListener("DOMContentLoaded",()=>{let e=localStorage.getItem("selectedLanguage")||"en";document.getElementById("language-selector").value=e,changeLanguage(e),renderData(filteredData||originalData)});const tableContainer=document.getElementById("table-container"),cardContainer=document.getElementById("card-container"),isMobile=()=>window.innerWidth<=768;function setupTableView(){let e=document.createElement("table"),a=document.createElement("thead");e.appendChild(a);let t=document.createElement("tbody");e.appendChild(t),tableContainer.appendChild(e);let i=Math.ceil(tableContainer.clientHeight/rowHeight)+5;function l(e){let a=document.createElement("tr");return a.style.height=rowHeight+"px",a}function n(e){t.innerHTML="";let a=document.createDocumentFragment();for(let n=e;n<e+i&&n<totalRows;n++)a.appendChild(l(n));t.appendChild(a)}n(0),tableContainer.addEventListener("scroll",function e(){let a=tableContainer.scrollTop,t=Math.floor(a/rowHeight);n(t)})}function setupCardView(){cardContainer.innerHTML="";for(let e=0;e<totalRows;e++){let a=document.createElement("div");a.className="card-item",cardContainer.appendChild(a)}}function renderView(){isMobile()?(tableContainer.style.display="none",cardContainer.style.display="block",setupCardView()):(cardContainer.style.display="none",tableContainer.style.display="block",setupTableView())}let currentIsMobile=isMobile();window.addEventListener("resize",()=>{let e=isMobile();e!==currentIsMobile&&(currentIsMobile=e,renderView())});
+            </tr>`
+                }), s += "</tbody></table>"
+            })
+        }), t.innerHTML = s, i.style.display = "none", t.style.display = "block"
+    }
+}
+const menuToggle = document.getElementById("menu-toggle"),
+menuContent = document.getElementById("menu-bar");
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBar = document.getElementById("menu-bar");
+    if (!menuBar) return;
+  
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let isDragging = false;
+  
+    const maxWidth = menuBar.offsetWidth;
+  
+    function handleGesture() {
+      const swipeDistance = touchStartX - touchEndX;
+      const minSwipeDistance = 50;
+  
+      if (swipeDistance > minSwipeDistance) {
+        menuBar.classList.add("hidden");
+        menuBar.style.left = `-${maxWidth}px`; // bağlananda sola çıxar
+      }
+  
+      if (swipeDistance < -minSwipeDistance) {
+        menuBar.classList.remove("hidden");
+        menuBar.style.left = `0px`; // açılanda tam solda olsun
+      }
+    }
+  
+    document.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      isDragging = true;
+    });
+  
+    document.addEventListener("touchmove", (e) => {
+      if (!isDragging) return;
+      const currentX = e.touches[0].screenX;
+      const deltaX = currentX - touchStartX;
+  
+      if (menuBar.classList.contains("hidden") && deltaX > 0 && deltaX <= maxWidth) {
+        menuBar.style.transition = "none";
+        menuBar.classList.remove("hidden");
+        menuBar.style.left = `${-maxWidth + deltaX}px`;
+      }
+  
+      if (!menuBar.classList.contains("hidden") && deltaX < 0 && Math.abs(deltaX) <= maxWidth) {
+        menuBar.style.transition = "none";
+        menuBar.style.left = `${deltaX}px`;
+      }
+    });
+  
+    document.addEventListener("touchend", (e) => {
+      isDragging = false;
+      touchEndX = e.changedTouches[0].screenX;
+      menuBar.style.transition = "left 0.3s";
+  
+      const swipeDistance = touchEndX - touchStartX;
+  
+      if (menuBar.classList.contains("hidden") && swipeDistance > maxWidth / 3) {
+        menuBar.classList.remove("hidden");
+        menuBar.style.left = "0px";
+      } else if (!menuBar.classList.contains("hidden") && swipeDistance < -maxWidth / 3) {
+        menuBar.classList.add("hidden");
+        menuBar.style.left = `-${maxWidth}px`;
+      } else {
+        // Əgər sürüşmə kifayət qədər deyilsə, əvvəlki vəziyyətə qaytar
+        if (menuBar.classList.contains("hidden")) {
+          menuBar.style.left = `-${maxWidth}px`;
+        } else {
+          menuBar.style.left = "0px";
+        }
+      }
+    });
+  });
+  
+      
+function applyFilters() {
+    let e = getCurrentFilters(),
+        a = filterData(globalData, e),
+        t = 0;
+    a.forEach(e => {
+        e.universitetler.forEach(e => {
+            t += e.ixtisaslar.length
+        })
+    });
+    let i = document.getElementById("resultCount"),
+        l = document.getElementById("resultNumber"),
+        n = JSON.stringify(e) !== JSON.stringify({
+            search: "",
+            uni: "",
+            qrup: "",
+            type: ""
+        });
+    n ? (l.textContent = t, i.style.display = "inline") : i.style.display = "none";
+    let r = localStorage.getItem("selectedLanguage") || "en";
+    renderData(a, r), setupEventListeners(), changeLanguage(r)
+}
+
+function getCurrentFilters() {
+    return {
+        searchValue: document.getElementById("search").value.trim().toLowerCase(),
+        tehsilValue: document.getElementById("tehsilSelect").value,
+        dilValue: document.getElementById("dilSelect").value,
+        altValue: document.getElementById("altSelect").value,
+        locationValue: document.getElementById("locationSelect").value,
+        minScore: parseInt(document.getElementById("minScore").value) || 0,
+        maxScore: parseInt(document.getElementById("maxScore").value) || 700
+    }
+}
+
+function filterData(e, {
+    searchValue: a,
+    tehsilValue: t,
+    dilValue: i,
+    altValue: l,
+    locationValue: n,
+    minScore: r,
+    maxScore: s
+}) {
+    if (!e) return [];
+    let o = e.map(e => {
+        let o = e.universitetler.map(e => {
+            let o = "" === n || e.yer.toLowerCase().includes(n.toLowerCase());
+            if (!o) return null;
+            let d = e.ixtisaslar.filter(e => {
+                if (t && e.tehsil_formasi !== t || i && e.dil !== i || l && e.alt_qrup !== l) return !1;
+                let n = null !== e.bal_pulsuz && void 0 !== e.bal_pulsuz ? parseInt(e.bal_pulsuz) : null,
+                    o = null !== e.bal_pullu && void 0 !== e.bal_pullu ? parseInt(e.bal_pullu) : null,
+                    d = !0;
+                return (null !== r || null !== s) && (d = null !== n && (null === r || n >= r) && (null === s || n <= s) || null !== o && (null === s || n <= s) && (null === s || o <= s)), !!(d && (!a || e.ad.toLowerCase().includes(a)))
+            });
+            return 0 === d.length ? null : { ...e,
+                ixtisaslar: d
+            }
+        }).filter(Boolean);
+        return { ...e,
+            universitetler: o
+        }
+    }).filter(e => e.universitetler.length > 0);
+    return o
+}
+menuToggle.addEventListener("click", () => {
+    menuContent.classList.toggle("hidden")
+}), document.addEventListener("click", function(e) {
+    let a = menuToggle.contains(e.target) || menuContent.contains(e.target);
+    a || menuContent.classList.add("hidden")
+}), document.addEventListener("DOMContentLoaded", () => {
+    let e = document.querySelector(".filter-bar"),
+        a = document.getElementById("filterToggleBtn"),
+        t = a.querySelector("span"),
+        i = a.querySelector("img");
+    window.innerWidth <= 768 && (e.style.display = "none"), a.addEventListener("click", () => {
+        let a = "block" === e.style.display;
+        a ? (e.style.display = "none", t.textContent = "Filter", i.style.display = "inline") : (e.style.display = "block", t.textContent = "Close", i.style.display = "none")
+    })
+});
+const toggleBtn = document.getElementById("toggle-dark-mode"),
+    toggleIcon = document.getElementById("icon");
+
+function toggleMore(e) {
+    let a = e.previousElementSibling;
+    "none" === a.style.display ? (a.style.display = "block", e.textContent = "az" === localStorage.getItem("selectedLanguage") ? "Daha az" : "Less") : (a.style.display = "none", e.textContent = "az" === localStorage.getItem("selectedLanguage") ? "Daha \xe7ox" : "More")
+}
+"enabled" === localStorage.getItem("darkMode") ? (document.body.classList.add("dark-mode"), toggleIcon.src = "moon.png") : (document.body.classList.remove("dark-mode"), toggleIcon.src = "sun.png"), toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode"), document.body.classList.contains("dark-mode") ? (localStorage.setItem("darkMode", "enabled"), toggleIcon.src = "sun.png") : (localStorage.setItem("darkMode", "disabled"), toggleIcon.src = "moon.png")
+}), document.addEventListener("DOMContentLoaded", () => {
+    loadData()
+});
+
+
+function changeLanguage(e) {
+    let a = document.querySelectorAll("[data-i18n]");
+    a.forEach(a => {
+        let t = a.getAttribute("data-i18n");
+        translations[e][t] && (a.innerText = translations[e][t])
+    });
+    let t = document.querySelector("[data-i18n-placeholder]");
+    if (t) {
+        let i = t.getAttribute("data-i18n-placeholder");
+        translations[e][i] && t.setAttribute("placeholder", translations[e][i])
+    }
+}
+document.getElementById("language-selector").addEventListener("change", function() {
+    let e = this.value;
+    localStorage.setItem("selectedLanguage", e), location.reload()
+}), window.addEventListener("DOMContentLoaded", () => {
+    let e = localStorage.getItem("selectedLanguage") || "en";
+    document.getElementById("language-selector").value = e, changeLanguage(e), renderData(filteredData || originalData)
+});
+const tableContainer = document.getElementById("table-container"),
+    cardContainer = document.getElementById("card-container"),
+    isMobile = () => window.innerWidth <= 768;
+
+function setupTableView() {
+    let e = document.createElement("table"),
+        a = document.createElement("thead");
+    e.appendChild(a);
+    let t = document.createElement("tbody");
+    e.appendChild(t), tableContainer.appendChild(e);
+    let i = Math.ceil(tableContainer.clientHeight / rowHeight) + 5;
+
+    function l(e) {
+        let a = document.createElement("tr");
+        return a.style.height = rowHeight + "px", a
+    }
+
+    function n(e) {
+        t.innerHTML = "";
+        let a = document.createDocumentFragment();
+        for (let n = e; n < e + i && n < totalRows; n++) a.appendChild(l(n));
+        t.appendChild(a)
+    }
+    n(0), tableContainer.addEventListener("scroll", function e() {
+        let a = tableContainer.scrollTop,
+            t = Math.floor(a / rowHeight);
+        n(t)
+    })
+}
+
+function setupCardView() {
+    cardContainer.innerHTML = "";
+    for (let e = 0; e < totalRows; e++) {
+        let a = document.createElement("div");
+        a.className = "card-item", cardContainer.appendChild(a)
+    }
+} 
+
+function renderView() {
+    isMobile() ? (tableContainer.style.display = "none", cardContainer.style.display = "block", setupCardView()) : (cardContainer.style.display = "none", tableContainer.style.display = "block", setupTableView())
+}
+let currentIsMobile = isMobile();
+window.addEventListener("resize", () => {
+    let e = isMobile();
+    e !== currentIsMobile && (currentIsMobile = e, renderView())
+});

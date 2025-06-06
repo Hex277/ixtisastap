@@ -114,7 +114,7 @@ tr.even-row {
 
 .header,
 .menu-container {
-    padding: 40px 20px
+    padding: 40px 20px;
 }
 
 .filter-bar {
@@ -232,14 +232,13 @@ button:hover {
 
 #menu-toggle {
     position: absolute;
-    top: 3px;
-    left: -4px
+    top: 0;
+    left: -10px
 }
 
 #menu-toggle img {
-    width: 52px;
+    width: 48px;
     height: 48px;
-    background: #fff;
     border-radius: 15px
 }
 
@@ -250,8 +249,9 @@ button:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
     z-index: 999;
     height: 100%;
-    width: 60%
+    width: 60%;
 }
+
 
 #menu-bar ul {
     list-style: none;
@@ -270,7 +270,7 @@ button:hover {
     padding: 5px 0;
     color: #000;
     text-align: left;
-    border-radius: 6px;
+    border-radius: 7px;
     font-size: 18px;
     transition: background-color .3s, transform .2s;
     box-sizing: border-box;
@@ -302,7 +302,7 @@ button:hover {
     text-align: center;
     font-family: sans-serif;
     font-size: 14px;
-    margin-left: 120px;
+    left: 120px;
 }
   
 
@@ -329,7 +329,7 @@ body.dark-mode {
 body.dark-mode .qrup-basliq,
 body.dark-mode .uni-basliq,
 body.dark-mode h1 {
-    color: #e3f1ff
+    color: #f8fbff
 }
 
 body.dark-mode table {
@@ -362,13 +362,16 @@ body.dark-mode select, body.dark-mode #search {
     border: 2px solid #555
 }
 
-#toggle-dark-mode,
-#toggle-dark-mode:hover,
-.menu-button:hover,
-body.dark-mode button {
-    background-color: #1e90ff
+#toggle-dark-mode {
+    background-color: transparent;
+}
+body.dark-mode #toggle-dark-mode {
+    background-color: transparent;
 }
 
+body.dark-mode img {
+    filter: invert(1);
+}
 body.dark-mode button {
     color: #eee
 }
@@ -391,9 +394,9 @@ body.dark-mode #menu-bar a:hover {
 }
 
 #language-selector {
-    right: 70px;
-    top: 13px;
-    width: 43px;
+    right: 64px;
+    top: 10px;
+    width: 44px;
     height: 48px;
     padding: 4px 0;
     font-size: 18px;
@@ -431,8 +434,8 @@ body.dark-mode #language-selector option {
 
 #toggle-dark-mode {
     position: absolute;
-    top: 13px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
     padding: 10px;
     color: #fff;
     width: 52px;
@@ -442,11 +445,18 @@ body.dark-mode #language-selector option {
 }
 
 #toggle-dark-mode img {
-    margin-top: 2px
+    margin-top: 3px
+}
+
+.privacy-section, .terms-section {
+    margin-top: 30px;
 }
 
 .white-icon {
-    filter: invert(100%)
+    filter: invert(0)
+}
+.white-filter-icon {
+    filter: invert(1);
 }
 /* DESKTOP THEME */
 @media (min-width:769px) {
@@ -478,8 +488,10 @@ body.dark-mode #language-selector option {
     #card-container,
     #filterToggleBtn,
     #menu-toggle {
-        display: none
+        display: none;
     }
+
+
     #menu-bar {
         top: 0;
         left: 0;
@@ -491,6 +503,9 @@ body.dark-mode #language-selector option {
         padding: 0 30px 15px;
         margin-top: 10px;
         gap: 8px;
+    }
+    .header {
+        margin-left: 220px;
     }
 }
 /* MOBILE THEME */
@@ -509,6 +524,9 @@ body.dark-mode #language-selector option {
     }
     .button {
         height: 46px;
+    }
+    .main-content {
+        margin-left: 0px;
     }
     .filter-bar,
     .search-bar {
@@ -569,7 +587,7 @@ body.dark-mode #language-selector option {
         left: 0;
         width: 60%;
         height: 100%;
-        transition: left .3s
+        transition: left 0.8s cubic-bezier(.25,.8,.25,1);
     }
     #filterToggleBtn {
         position: relative;
