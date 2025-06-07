@@ -105,79 +105,107 @@ function renderData(e, a) {
         }), t.innerHTML = s, i.style.display = "none", t.style.display = "block"
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
+const menuToggle = document.getElementById("menu-toggle");
+const menuContent = document.getElementById("menu-bar");
+
+console.log("menuToggle:", menuToggle);  
+console.log("menuContent:", menuContent); 
+
+const maxWidth = menuContent.offsetWidth || 150;
+
+// Düymə klik event
+menuToggle.addEventListener("click", () => {
+    if (menuContent.classList.contains("hidden")) {
+        menuContent.classList.remove("hidden");
+        menuContent.style.left = "0px";
+    } else {
+        menuContent.classList.add("hidden");
+        menuContent.style.left = `-${maxWidth}px`;
+    }
+});
+});
+
 const menuToggle = document.getElementById("menu-toggle"),
-menuContent = document.getElementById("menu-bar");
+      menuContent = document.getElementById("menu-bar");
+
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menuBar = document.getElementById("menu-bar");
-    if (!menuBar) return;
-  
-    let touchStartX = 0;
-    let touchEndX = 0;
-    let isDragging = false;
-  
-    const maxWidth = menuBar.offsetWidth;
-  
-    function handleGesture() {
-      const swipeDistance = touchStartX - touchEndX;
-      const minSwipeDistance = 200;
-  
-      if (swipeDistance > minSwipeDistance) {
-        menuBar.classList.add("hidden");
-        menuBar.style.left = `-${maxWidth}px`; // bağlananda sola çıxar
-      }
-  
-      if (swipeDistance < -minSwipeDistance) {
-        menuBar.classList.remove("hidden");
-        menuBar.style.left = `0px`; // açılanda tam solda olsun
-      }
+const menuToggle = document.getElementById("menu-toggle");
+const menuContent = document.getElementById("menu-bar");
+
+if (!menuToggle || !menuContent) return;
+
+let maxWidth = 250;
+if (!menuContent.classList.contains("hidden")) {
+    maxWidth = menuContent.offsetWidth;
+} else {
+    menuContent.classList.remove("hidden");
+    maxWidth = menuContent.offsetWidth || 250;
+    menuContent.classList.add("hidden");
+}
+
+const swipeThreshold = window.innerWidth * 0.5;
+
+let touchStartX = 0;
+let touchStartY = 0;
+let isDragging = false;
+
+menuToggle.addEventListener("click", () => {
+    menuContent.style.transition = "left 0.3s";
+
+    if (menuContent.classList.contains("hidden")) {
+        menuContent.classList.remove("hidden");
+        menuContent.style.left = "0px";
+    } else {
+        menuContent.style.left = `-${maxWidth}px`;
+        setTimeout(() => menuContent.classList.add("hidden"), 300);
     }
-  
-    document.addEventListener("touchstart", (e) => {
-      touchStartX = e.changedTouches[0].screenX;
-      isDragging = true;
-    });
-  
-    document.addEventListener("touchmove", (e) => {
-      if (!isDragging) return;
-      const currentX = e.touches[0].screenX;
-      const deltaX = currentX - touchStartX;
-  
-      if (menuBar.classList.contains("hidden") && deltaX > 0 && deltaX <= maxWidth) {
-        menuBar.style.transition = "none";
-        menuBar.classList.remove("hidden");
-        menuBar.style.left = `${-maxWidth + deltaX}px`;
-      }
-  
-      if (!menuBar.classList.contains("hidden") && deltaX < 0 && Math.abs(deltaX) <= maxWidth) {
-        menuBar.style.transition = "none";
-        menuBar.style.left = `${deltaX}px`;
-      }
-    });
-  
-    document.addEventListener("touchend", (e) => {
-      isDragging = false;
-      touchEndX = e.changedTouches[0].screenX;
-      menuBar.style.transition = "left 0.3s";
-  
-      const swipeDistance = touchEndX - touchStartX;
-  
-      if (menuBar.classList.contains("hidden") && swipeDistance > maxWidth / 3) {
-        menuBar.classList.remove("hidden");
-        menuBar.style.left = "0px";
-      } else if (!menuBar.classList.contains("hidden") && swipeDistance < -maxWidth / 3) {
-        menuBar.classList.add("hidden");
-        menuBar.style.left = `-${maxWidth}px`;
-      } else {
-        // Əgər sürüşmə kifayət qədər deyilsə, əvvəlki vəziyyətə qaytar
-        if (menuBar.classList.contains("hidden")) {
-          menuBar.style.left = `-${maxWidth}px`;
+});
+
+document.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+    touchStartY = e.changedTouches[0].screenY;
+    isDragging = true;
+    menuContent.style.transition = "none";
+});
+
+// touchmove çıxarıldı və ya boş buraxıldı (artıq burada menyu tərpənmir)
+document.addEventListener("touchmove", (e) => {
+    // heç bir hərəkət etmə
+});
+
+document.addEventListener("touchend", (e) => {
+    isDragging = false;
+    const touchEndX = e.changedTouches[0].screenX;
+    const swipeDistance = touchEndX - touchStartX;
+    const verticalDistance = Math.abs(e.changedTouches[0].screenY - touchStartY);
+    const horizontalDistance = Math.abs(swipeDistance);
+
+    menuContent.style.transition = "left 0.3s";
+
+    if (horizontalDistance > verticalDistance) {
+        if (menuContent.classList.contains("hidden") && swipeDistance > swipeThreshold) {
+            // Yalnız uzun sürüşdürmə ilə aç
+            menuContent.classList.remove("hidden");
+            menuContent.style.left = "0px";
+        } else if (!menuContent.classList.contains("hidden") && swipeDistance < -swipeThreshold) {
+            menuContent.style.left = `-${maxWidth}px`;
+            setTimeout(() => menuContent.classList.add("hidden"), 300);
         } else {
-          menuBar.style.left = "0px";
+            if (menuContent.classList.contains("hidden")) {
+                menuContent.style.left = `-${maxWidth}px`;
+                setTimeout(() => menuContent.classList.add("hidden"), 300);
+            } else {
+                menuContent.style.left = "0px";
+            }
         }
-      }
-    });
-  });
+    }
+});
+});
+    
+
+
   
       
 function applyFilters() {

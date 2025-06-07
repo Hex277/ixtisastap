@@ -589,6 +589,11 @@ body.dark-mode #language-selector option {
         height: 100%;
         transition: left 0.8s cubic-bezier(.25,.8,.25,1);
     }
+    
+    .hidden {
+        left: -100%;
+    }
+    
     #filterToggleBtn {
         position: relative;
         margin-top: 10px;
