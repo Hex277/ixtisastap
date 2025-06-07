@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function handleGesture() {
       const swipeDistance = touchStartX - touchEndX;
-      const minSwipeDistance = 50;
+      const minSwipeDistance = 200;
   
       if (swipeDistance > minSwipeDistance) {
         menuBar.classList.add("hidden");
