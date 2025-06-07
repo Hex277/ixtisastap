@@ -145,14 +145,14 @@ if (!menuContent.classList.contains("hidden")) {
     menuContent.classList.add("hidden");
 }
 
-const swipeThreshold = window.innerWidth * 0.5;
+const swipeThreshold = window.innerWidth * 0.40;
 
 let touchStartX = 0;
 let touchStartY = 0;
 let isDragging = false;
 
 menuToggle.addEventListener("click", () => {
-    menuContent.style.transition = "left 0.3s";
+    menuContent.style.transition = "left 0.8s cubic-bezier(.25,.8,.25,1)";
 
     if (menuContent.classList.contains("hidden")) {
         menuContent.classList.remove("hidden");
@@ -182,7 +182,7 @@ document.addEventListener("touchend", (e) => {
     const verticalDistance = Math.abs(e.changedTouches[0].screenY - touchStartY);
     const horizontalDistance = Math.abs(swipeDistance);
 
-    menuContent.style.transition = "left 0.3s";
+    menuContent.style.transition = "left 0.8s cubic-bezier(.25,.8,.25,1)";
 
     if (horizontalDistance > verticalDistance) {
         if (menuContent.classList.contains("hidden") && swipeDistance > swipeThreshold) {
@@ -204,9 +204,6 @@ document.addEventListener("touchend", (e) => {
 });
 });
     
-
-
-  
       
 function applyFilters() {
     let e = getCurrentFilters(),
@@ -241,7 +238,6 @@ function getCurrentFilters() {
         maxScore: parseInt(document.getElementById("maxScore").value) || 700
     }
 }
-
 function filterData(e, {
     searchValue: a,
     tehsilValue: t,
@@ -252,27 +248,55 @@ function filterData(e, {
     maxScore: s
 }) {
     if (!e) return [];
+
     let o = e.map(e => {
         let o = e.universitetler.map(e => {
-            let o = "" === n || e.yer.toLowerCase().includes(n.toLowerCase());
+            // Yer filtri
+            let o = !n || e.yer.toLowerCase().includes(n.toLowerCase());
             if (!o) return null;
+
             let d = e.ixtisaslar.filter(e => {
-                if (t && e.tehsil_formasi !== t || i && e.dil !== i || l && e.alt_qrup !== l) return !1;
-                let n = null !== e.bal_pulsuz && void 0 !== e.bal_pulsuz ? parseInt(e.bal_pulsuz) : null,
-                    o = null !== e.bal_pullu && void 0 !== e.bal_pullu ? parseInt(e.bal_pullu) : null,
-                    d = !0;
-                return (null !== r || null !== s) && (d = null !== n && (null === r || n >= r) && (null === s || n <= s) || null !== o && (null === s || n <= s) && (null === s || o <= s)), !!(d && (!a || e.ad.toLowerCase().includes(a)))
+                // Digər filtrlər
+                if ((t && e.tehsil_formasi !== t) ||
+                    (i && e.dil !== i) ||
+                    (l && e.alt_qrup !== l)) return false;
+
+                // Bal filtiri
+                let bal_pulsuz = e.bal_pulsuz !== null && e.bal_pulsuz !== undefined ? parseInt(e.bal_pulsuz) : null;
+                let bal_pullu = e.bal_pullu !== null && e.bal_pullu !== undefined ? parseInt(e.bal_pullu) : null;
+
+                let balUygun = true;
+                if (r !== null || s !== null) {
+                    balUygun = false;
+
+                    if (bal_pulsuz !== null) {
+                        if ((r === null || bal_pulsuz >= r) && (s === null || bal_pulsuz <= s)) {
+                            balUygun = true;
+                        }
+                    }
+
+                    if (!balUygun && bal_pullu !== null) {
+                        if ((r === null || bal_pullu >= r) && (s === null || bal_pullu <= s)) {
+                            balUygun = true;
+                        }
+                    }
+                }
+
+                // Axtarış sözü
+                let axtarisUygun = !a || e.ad.toLowerCase().includes(a.toLowerCase());
+
+                return balUygun && axtarisUygun;
             });
-            return 0 === d.length ? null : { ...e,
-                ixtisaslar: d
-            }
+
+            return d.length === 0 ? null : { ...e, ixtisaslar: d };
         }).filter(Boolean);
-        return { ...e,
-            universitetler: o
-        }
-    }).filter(e => e.universitetler.length > 0);
-    return o
+
+        return o.length === 0 ? null : { ...e, universitetler: o };
+    }).filter(e => e !== null);
+
+    return o;
 }
+
 menuToggle.addEventListener("click", () => {
     menuContent.classList.toggle("hidden")
 }), document.addEventListener("click", function(e) {
