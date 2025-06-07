@@ -425,11 +425,11 @@ body.dark-mode #language-selector option {
     border-radius: 8px;
     color: #1e90ff;
     font-weight: 700;
-    transition: .3s
+    transition: .3s;
 }
 
 .menu-button:hover {
-    color: #fff
+    color: #1e90ff;
 }
 
 #toggle-dark-mode {
