@@ -312,18 +312,46 @@ menuToggle.addEventListener("click", () => {
         a ? (e.style.display = "none", t.textContent = "Filter", i.style.display = "inline") : (e.style.display = "block", t.textContent = "Close", i.style.display = "none")
     })
 });
-const toggleBtn = document.getElementById("toggle-dark-mode"),
-    toggleIcon = document.getElementById("icon");
+document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("toggle-dark-mode");
+    const toggleIcon = document.getElementById("icon");
 
+    // Dark mode statusunu yoxla və uyğun class + icon təyin et
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+        toggleIcon.src = "sun.png";
+    } else {
+        document.body.classList.remove("dark-mode");
+        toggleIcon.src = "moon.png";
+    }
+
+    // Dark mode düyməsinə klik edildikdə
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+            toggleIcon.src = "sun.png";
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+            toggleIcon.src = "moon.png";
+        }
+    });
+
+    // Məlumatları yüklə
+    loadData();
+});
+// "Daha çox / Daha az" funksiyası
 function toggleMore(e) {
     let a = e.previousElementSibling;
-    "none" === a.style.display ? (a.style.display = "block", e.textContent = "az" === localStorage.getItem("selectedLanguage") ? "Daha az" : "Less") : (a.style.display = "none", e.textContent = "az" === localStorage.getItem("selectedLanguage") ? "Daha \xe7ox" : "More")
+    if (a.style.display === "none") {
+        a.style.display = "block";
+        e.textContent = localStorage.getItem("selectedLanguage") === "az" ? "Daha az" : "Less";
+    } else {
+        a.style.display = "none";
+        e.textContent = localStorage.getItem("selectedLanguage") === "az" ? "Daha çox" : "More";
+    }
 }
-"enabled" === localStorage.getItem("darkMode") ? (document.body.classList.add("dark-mode"), toggleIcon.src = "moon.png") : (document.body.classList.remove("dark-mode"), toggleIcon.src = "sun.png"), toggleBtn.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode"), document.body.classList.contains("dark-mode") ? (localStorage.setItem("darkMode", "enabled"), toggleIcon.src = "sun.png") : (localStorage.setItem("darkMode", "disabled"), toggleIcon.src = "moon.png")
-}), document.addEventListener("DOMContentLoaded", () => {
-    loadData()
-});
 
 
 function changeLanguage(e) {
