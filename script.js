@@ -49,62 +49,84 @@ function setupEventListeners() {
     e.removeEventListener("input", applyFilters), a.removeEventListener("change", applyFilters), t.removeEventListener("change", applyFilters), i.removeEventListener("change", applyFilters), l.removeEventListener("change", applyFilters), r.removeEventListener("input", applyFilters), s.removeEventListener("input", applyFilters), n && n.removeEventListener("click", applyFilters), window.innerWidth > 768 ? (e.addEventListener("input", applyFilters), r.addEventListener("input", applyFilters), s.addEventListener("input", applyFilters)) : n && n.addEventListener("click", applyFilters), a.addEventListener("change", applyFilters), t.addEventListener("change", applyFilters), i.addEventListener("change", applyFilters), l.addEventListener("change", applyFilters)
 }
 
-function renderData(e, a) {
-    let t = document.getElementById("table-container"),
-        i = document.getElementById("card-container"),
-        l = translations[a] || {},
-        n = window.innerWidth <= 768;
-    if (t.innerHTML = "", i.innerHTML = "", n) {
-        let r = "";
-        e.forEach(e => {
-            e.universitetler.forEach(e => {
-                r += `<div class="uni-basliq">${e.universitet}</div>`, e.ixtisaslar.forEach(e => {
-                    r += `
-            <div class="card">
-              <div class="field" id="ixtisasad"><strong>${l.ixtisas||"Ixtisas"}:</strong> ${e.ad}</div>
-              <div class="field"><strong>${l.dil||"Dil"}:</strong> ${e.dil}</div>
-              <div class="field"><strong>${l.balOdenissiz||"Bal (\xd6dənişsiz)"}:</strong> ${e.bal_pulsuz??"—"}</div>
-              <div class="extra-info" style="display: none;">
-                <div class="field"><strong>${l.balOdenisli||"Bal (\xd6dənişli)"}:</strong> ${e.bal_pullu??"—"}</div>
-                <div class="field"><strong>${l.tehsilFormasi||"Təhsil forması"}:</strong> ${e.tehsil_formasi}</div>
-                <div class="field"><strong>${l.altQrup||"Alt qrup"}:</strong> ${e.alt_qrup}</div>
-              </div>
-              <a href="#" class="toggle-more" onclick="toggleMore(this); return false;">${l.dahaCox||"Daha \xe7ox"}</a>
-            </div>`
-                })
-            })
-        }), i.innerHTML = r, t.style.display = "none", i.style.display = "block"
+function renderData(data, lang) {
+    let tableContainer = document.getElementById("table-container"),
+        cardContainer = document.getElementById("card-container"),
+        l = translations[lang] || {},
+        isMobileView = window.innerWidth <= 768;
+
+    tableContainer.innerHTML = "";
+    cardContainer.innerHTML = "";
+
+    if (isMobileView) {
+        let html = "";
+        data.forEach(group => {
+            group.universitetler.forEach(univ => {
+                html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
+                univ.ixtisaslar.forEach(ixtisas => {
+                    let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
+                        ? ixtisas.tehsil_formasi_en
+                        : ixtisas.tehsil_formasi;
+                    html += `
+                    <div class="card">
+                      <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
+                      <div class="field"><strong>${l.dil || "Dil"}:</strong> ${ixtisas.dil}</div>
+                      <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
+                      <div class="extra-info" style="display: none;">
+                        <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
+                        <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
+                        <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
+                      </div>
+                      <a href="#" class="toggle-more" onclick="toggleMore(this); return false;">${l.dahaCox || "Daha çox"}</a>
+                    </div>`;
+                });
+            });
+        });
+        cardContainer.innerHTML = html;
+        tableContainer.style.display = "none";
+        cardContainer.style.display = "block";
     } else {
-        let s = "";
-        e.forEach(e => {
-            e.universitetler.forEach(e => {
-                s += `<div class="uni-basliq">${e.universitet}</div>`, s += `
-          <table>
-            <thead>
-              <tr>
-                <th>${l.ixtisas||"Ixtisas"}</th>
-                <th>${l.tehsilFormasi||"Təhsil forması"}</th>
-                <th>${l.dil||"Dil"}</th>
-                <th>${l.altQrup||"Alt qrup"}</th>
-                <th>${l.balOdenissiz||"Bal (\xd6dənişsiz)"}</th>
-                <th>${l.balOdenisli||"Bal (\xd6dənişli)"}</th>
-              </tr>
-            </thead>
-            <tbody>`, e.ixtisaslar.forEach((e, a) => {
-                    s += `
-            <tr class="${a%2==0?"even-row":""}">
-              <td>${e.ad}</td>
-              <td>${e.tehsil_formasi}</td>
-              <td>${e.dil}</td>
-              <td>${e.alt_qrup}</td>
-              <td>${e.bal_pulsuz??"—"}</td>
-              <td>${e.bal_pullu??"—"}</td>
-            </tr>`
-                }), s += "</tbody></table>"
-            })
-        }), t.innerHTML = s, i.style.display = "none", t.style.display = "block"
+        let html = "";
+        data.forEach(group => {
+            group.universitetler.forEach(univ => {
+                html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
+                html += `
+                <table>
+                    <thead>
+                        <tr>
+                            <th>${l.ixtisas || "Ixtisas"}</th>
+                            <th>${l.tehsilFormasi || "Təhsil forması"}</th>
+                            <th>${l.dil || "Dil"}</th>
+                            <th>${l.altQrup || "Alt qrup"}</th>
+                            <th>${l.balOdenissiz || "Bal (Ödənişsiz)"}</th>
+                            <th>${l.balOdenisli || "Bal (Ödənişli)"}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                `;
+                univ.ixtisaslar.forEach((ixtisas, idx) => {
+                    let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
+                        ? ixtisas.tehsil_formasi_en
+                        : ixtisas.tehsil_formasi;
+                    html += `
+                    <tr class="${idx % 2 === 0 ? "even-row" : ""}">
+                        <td>${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</td>
+                        <td>${tehsilFormasi}</td>
+                        <td>${ixtisas.dil}</td>
+                        <td>${ixtisas.alt_qrup}</td>
+                        <td>${ixtisas.bal_pulsuz ?? "—"}</td>
+                        <td>${ixtisas.bal_pullu ?? "—"}</td>
+                    </tr>`;
+                });
+                html += "</tbody></table>";
+            });
+        });
+        tableContainer.innerHTML = html;
+        cardContainer.style.display = "none";
+        tableContainer.style.display = "block";
     }
 }
+
 document.addEventListener('DOMContentLoaded', () => {
 const menuToggle = document.getElementById("menu-toggle");
 const menuContent = document.getElementById("menu-bar");
@@ -170,10 +192,7 @@ document.addEventListener("touchstart", (e) => {
     menuContent.style.transition = "none";
 });
 
-// touchmove çıxarıldı və ya boş buraxıldı (artıq burada menyu tərpənmir)
-document.addEventListener("touchmove", (e) => {
-    // heç bir hərəkət etmə
-});
+document.addEventListener("touchmove", (e) => {});
 
 document.addEventListener("touchend", (e) => {
     isDragging = false;
@@ -204,7 +223,6 @@ document.addEventListener("touchend", (e) => {
 });
 });
     
-      
 function applyFilters() {
     let e = getCurrentFilters(),
         a = filterData(globalData, e),
@@ -217,14 +235,20 @@ function applyFilters() {
     let i = document.getElementById("resultCount"),
         l = document.getElementById("resultNumber"),
         n = JSON.stringify(e) !== JSON.stringify({
-            search: "",
-            uni: "",
-            qrup: "",
-            type: ""
+            searchValue: "",
+            tehsilValue: "",
+            dilValue: "",
+            altValue: "",
+            locationValue: "",
+            minScore: 0,
+            maxScore: 700
         });
     n ? (l.textContent = t, i.style.display = "inline") : i.style.display = "none";
+
     let r = localStorage.getItem("selectedLanguage") || "en";
-    renderData(a, r), setupEventListeners(), changeLanguage(r)
+    renderData(a, r);
+    setupEventListeners();
+    changeLanguage(r);
 }
 
 function getCurrentFilters() {
@@ -238,64 +262,65 @@ function getCurrentFilters() {
         maxScore: parseInt(document.getElementById("maxScore").value) || 700
     }
 }
-function filterData(e, {
-    searchValue: a,
-    tehsilValue: t,
-    dilValue: i,
-    altValue: l,
-    locationValue: n,
-    minScore: r,
-    maxScore: s
+function filterData(data, {
+    searchValue,
+    tehsilValue,
+    dilValue,
+    altValue,
+    locationValue,
+    minScore,
+    maxScore
 }) {
-    if (!e) return [];
+    if (!data) return [];
 
-    let o = e.map(e => {
-        let o = e.universitetler.map(e => {
-            // Yer filtri
-            let o = !n || e.yer.toLowerCase().includes(n.toLowerCase());
-            if (!o) return null;
+    const selectedLang = localStorage.getItem("selectedLanguage") || "en";
 
-            let d = e.ixtisaslar.filter(e => {
-                // Digər filtrlər
-                if ((t && e.tehsil_formasi !== t) ||
-                    (i && e.dil !== i) ||
-                    (l && e.alt_qrup !== l)) return false;
+    return data.map(group => {
+        let filteredUniversities = group.universitetler.map(univ => {
+            if (locationValue && !univ.yer.toLowerCase().includes(locationValue.toLowerCase())) return null;
+
+            let filteredIxtisaslar = univ.ixtisaslar.filter(ixtisas => {
+                // Filtrlər
+                if ((tehsilValue && ixtisas.tehsil_formasi !== tehsilValue) ||
+                    (dilValue && ixtisas.dil !== dilValue) ||
+                    (altValue && ixtisas.alt_qrup !== altValue)) return false;
 
                 // Bal filtiri
-                let bal_pulsuz = e.bal_pulsuz !== null && e.bal_pulsuz !== undefined ? parseInt(e.bal_pulsuz) : null;
-                let bal_pullu = e.bal_pullu !== null && e.bal_pullu !== undefined ? parseInt(e.bal_pullu) : null;
+                let bal_pulsuz = ixtisas.bal_pulsuz !== null && ixtisas.bal_pulsuz !== undefined ? parseInt(ixtisas.bal_pulsuz) : null;
+                let bal_pullu = ixtisas.bal_pullu !== null && ixtisas.bal_pullu !== undefined ? parseInt(ixtisas.bal_pullu) : null;
 
                 let balUygun = true;
-                if (r !== null || s !== null) {
+                if (minScore !== null || maxScore !== null) {
                     balUygun = false;
-
+                
                     if (bal_pulsuz !== null) {
-                        if ((r === null || bal_pulsuz >= r) && (s === null || bal_pulsuz <= s)) {
+                        if ((minScore === null || bal_pulsuz >= minScore) && (maxScore === null || bal_pulsuz <= maxScore)) {
                             balUygun = true;
                         }
                     }
+                } 
+                
+                // Axtarış sözü — indi həm az, həm en üçün yoxlayırıq
+                let searchText = searchValue.toLowerCase();
+                let adAz = ixtisas.ad.toLowerCase();
+                let adEn = ixtisas.ad_en ? ixtisas.ad_en.toLowerCase() : "";
 
-                    if (!balUygun && bal_pullu !== null) {
-                        if ((r === null || bal_pullu >= r) && (s === null || bal_pullu <= s)) {
-                            balUygun = true;
-                        }
-                    }
-                }
-
-                // Axtarış sözü
-                let axtarisUygun = !a || e.ad.toLowerCase().includes(a.toLowerCase());
+                let axtarisUygun = !searchText || (selectedLang === "en" ? adEn.includes(searchText) : adAz.includes(searchText));
 
                 return balUygun && axtarisUygun;
             });
 
-            return d.length === 0 ? null : { ...e, ixtisaslar: d };
+            if (filteredIxtisaslar.length === 0) return null;
+
+            return { ...univ, ixtisaslar: filteredIxtisaslar };
         }).filter(Boolean);
 
-        return o.length === 0 ? null : { ...e, universitetler: o };
-    }).filter(e => e !== null);
+        if (filteredUniversities.length === 0) return null;
 
-    return o;
+        return { ...group, universitetler: filteredUniversities };
+    }).filter(Boolean);
 }
+
 
 menuToggle.addEventListener("click", () => {
     menuContent.classList.toggle("hidden")
