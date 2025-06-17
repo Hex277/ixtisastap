@@ -6,16 +6,19 @@
 <meta name=author content="IxtisasTap Team">
 <meta name="robots" content="noindex">
 <title>404 - page not found</title>
-<link rel=icon href=logo.png type=image/png>
+<meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+<link rel=icon href=/logo.webp type=image/webp>
 <link rel=stylesheet href=qruplar.css>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8653707665334072" crossorigin=anonymous></script>
-
-<style>body{font-family:Arial,sans-serif;background-color:#f3f3f3;margin:0;padding:0;text-align:center}a{top:13px;right:15px;padding:10px 15px;background-color:#1e90ff;color:#fff;font-size:20px;border:none;border-radius:10px;text-align:center;text-decoration:none;display:inline-block;cursor:pointer;margin-top:25px}#language-selector{color:#fff}</style>
+<style>body{font-family:Arial,sans-serif;background-color:#f3f3f3;margin:0;padding:0;text-align:center}a{top:13px;right:15px;padding:10px 15px;background-color:#1e90ff;color:#fff;font-size:20px;border:none;border-radius:10px;text-align:center;text-decoration:none;display:inline-block;cursor:pointer;margin-top:25px}#language-selector{color:#fff}.header{margin-left: 0px};body.dark-mode .menu, body.dark-mode .white-icon{filter: invert(1);}.menu, .white-icon{filter: invert(1);}</style>
+</head>
 <body>
 <button id=menu-toggle>
 </button>
 <button id=toggle-dark-mode>
-<img id=icon src=sun.png alt=rejim width=20 class=white-icon loading=lazy>
+<img id=icon src=sun.webp alt=rejim width=20 class=white-icon loading=lazy>
 </button>
 <select id=language-selector>
 <option value=en selected>EN</option>
@@ -26,6 +29,9 @@
 <h1 data-i18n=notfoundTitle>Page not fount 404</h1>
 <p data-i18n=backtomenuPrompt>Please go back to main menu</p>
 </header>
-<a href=index.html>Back to main menu</a>
+<a href=index.html data-i18n="backtomenuBtn">Back to main menu</a>
+<script src="translations.js"></script>
+<script src="script.js" defer></script>
 </body>
-</head></html>
+
+</html>

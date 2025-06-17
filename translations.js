@@ -98,7 +98,10 @@ const translations = {
              filtersystemText6: "Score range: By entering the minimum and maximum score, only qualifications that fit that range are displayed.",
              filtersystemText7: "Note: The score range works mainly according to the passing scores for free (budget) places.",
              ComfortablespeedTitle: "Convenient and fast use",
-             candsText: "The site's interface is optimized for both desktop and mobile devices, so you can fully utilize the site's features from any device."
+             candsText: "The site's interface is optimized for both desktop and mobile devices, so you can fully utilize the site's features from any device.",
+             notfoundTitle: "Page not found 404",
+             backtomenuPrompt: "Please go back to main menu",
+             backtomenuBtn: "Back to main menu"
 
     },
     az: {
@@ -200,7 +203,10 @@ const translations = {
              filtersystemText6: "Bal aralığı: Minimum və maksimum bal yazaraq, yalnız həmin aralığa uyğun ixtisaslar göstərilir",
              filtersystemText7: "Qeyd: Bal aralığı əsasən ödənişsiz (büdcə) yerlər üzrə keçid ballarına uyğun işləyir.",
              ComfortablespeedTitle: "Rahat və Sürətli İstifadə",
-             candsText: "Saytın interfeysi həm masaüstü, həm də mobil cihazlar üçün optimallaşdırılmışdır. Beləliklə, istənilən cihazdan sayt funksiyalarından tam istifadə edə bilərsiniz."
+             candsText: "Saytın interfeysi həm masaüstü, həm də mobil cihazlar üçün optimallaşdırılmışdır. Beləliklə, istənilən cihazdan sayt funksiyalarından tam istifadə edə bilərsiniz.",
+             notfoundTitle: "Səhifə tapılmadı 404",
+             backtomenuPrompt: "Zəhmət olmasa menyuya qayıdın.",
+             backtomenuBtn: "Menyuya qayıt"
     },
     tr: {
              siteName: "IxtisasTap.com",
@@ -301,6 +307,9 @@ const translations = {
              filtersystemText6: "Puan aralığı: Minimum ve maksimum puanı girerek, yalnızca bu aralığa uyan uzmanlıklar görüntülenir",
              filtersystemText7: "Not: Puan aralığı esas olarak ücretsiz (bütçe) yerler için geçme puanlarına göre çalışır.",
              ComfortablespeedTitle: "Rahat ve Hızlı Kullanım",
-             candsText: "Sitenin arayüzü hem masaüstü hem de mobil cihazlar için optimize edilmiştir. Böylece, sitenin işlevlerini herhangi bir cihazdan tam olarak kullanabilirsiniz."
+             candsText: "Sitenin arayüzü hem masaüstü hem de mobil cihazlar için optimize edilmiştir. Böylece, sitenin işlevlerini herhangi bir cihazdan tam olarak kullanabilirsiniz.",
+             notfoundTitle: "Sayfa bulunamadı 404",
+             backtomenuPrompt: "Lütfen ana menüye dönün",
+             backtomenuBtn: "Menüye dön"
     }
 };

@@ -131,9 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
 const menuToggle = document.getElementById("menu-toggle");
 const menuContent = document.getElementById("menu-bar");
 
-console.log("menuToggle:", menuToggle);  
-console.log("menuContent:", menuContent); 
-
 const maxWidth = menuContent.offsetWidth || 150;
 
 // Düymə klik event
@@ -344,10 +341,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Dark mode statusunu yoxla və uyğun class + icon təyin et
     if (localStorage.getItem("darkMode") === "enabled") {
         document.body.classList.add("dark-mode");
-        toggleIcon.src = "sun.png";
+        toggleIcon.src = "sun.webp";
     } else {
         document.body.classList.remove("dark-mode");
-        toggleIcon.src = "moon.png";
+        toggleIcon.src = "moon.webp";
     }
 
     // Dark mode düyməsinə klik edildikdə
@@ -356,10 +353,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (document.body.classList.contains("dark-mode")) {
             localStorage.setItem("darkMode", "enabled");
-            toggleIcon.src = "sun.png";
+            toggleIcon.src = "sun.webp";
         } else {
             localStorage.setItem("darkMode", "disabled");
-            toggleIcon.src = "moon.png";
+            toggleIcon.src = "moon.webp";
         }
     });
 
