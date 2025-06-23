@@ -22,7 +22,7 @@ function loadData() {
 }
 
 function initPage() {
-    let e = localStorage.getItem("selectedLanguage") || "en",
+    let e = localStorage.getItem("selectedLanguage") || "az",
         a = document.getElementById("group-title");
     a && (a.textContent = groupNames[groupNumber] || "Qrup");
     let t = document.querySelectorAll("#menu-bar ul li a");
@@ -241,7 +241,7 @@ function applyFilters() {
         });
     n ? (l.textContent = t, i.style.display = "inline") : i.style.display = "none";
 
-    let r = localStorage.getItem("selectedLanguage") || "en";
+    let r = localStorage.getItem("selectedLanguage") || "az";
     renderData(a, r);
     setupEventListeners();
     changeLanguage(r);
@@ -269,7 +269,7 @@ function filterData(data, {
 }) {
     if (!data) return [];
 
-    const selectedLang = localStorage.getItem("selectedLanguage") || "en";
+    const selectedLang = localStorage.getItem("selectedLanguage") || "az";
 
     return data.map(group => {
         let filteredUniversities = group.universitetler.map(univ => {
@@ -391,7 +391,7 @@ document.getElementById("language-selector").addEventListener("change", function
     let e = this.value;
     localStorage.setItem("selectedLanguage", e), location.reload()
 }), window.addEventListener("DOMContentLoaded", () => {
-    let e = localStorage.getItem("selectedLanguage") || "en";
+    let e = localStorage.getItem("selectedLanguage") || "az";
     document.getElementById("language-selector").value = e, changeLanguage(e), renderData(filteredData || originalData)
 });
 const tableContainer = document.getElementById("table-container"),
