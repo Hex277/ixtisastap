@@ -70,7 +70,7 @@ function renderData(data, lang) {
                     html += `
                     <div class="card">
                       <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
-                      <div class="field"><strong>${l.dil || "Dil"}:</strong> ${ixtisas.dil}</div>
+                      <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
                       <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
                       <div class="extra-info" style="display: none;">
                         <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
@@ -112,7 +112,7 @@ function renderData(data, lang) {
                     <tr class="${idx % 2 === 0 ? "even-row" : ""}">
                         <td>${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</td>
                         <td>${tehsilFormasi}</td>
-                        <td>${ixtisas.dil}</td>
+                        <td>${lang == "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</td>
                         <td>${ixtisas.alt_qrup}</td>
                         <td>${ixtisas.bal_pulsuz ?? "—"}</td>
                         <td>${ixtisas.bal_pullu ?? "—"}</td>
@@ -133,7 +133,6 @@ const menuContent = document.getElementById("menu-bar");
 
 const maxWidth = menuContent.offsetWidth || 150;
 
-// Düymə klik event
 menuToggle.addEventListener("click", () => {
     if (menuContent.classList.contains("hidden")) {
         menuContent.classList.remove("hidden");
