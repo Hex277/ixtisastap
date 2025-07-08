@@ -106,8 +106,9 @@ const translations = {
              candsText: "The site's interface is optimized for both desktop and mobile devices, so you can fully utilize the site's features from any device.",
              notfoundTitle: "Page not found 404",
              backtomenuPrompt: "Please go back to main menu",
-             backtomenuBtn: "Back to main menu"
-
+             backtomenuBtn: "Back to main menu",
+             ixtisasinfotext: "Specialization Guide",
+             aboutspec: "About Specializations",
     },
     az: {
              siteName: "IxtisasTap.com",
@@ -215,7 +216,9 @@ const translations = {
              candsText: "Saytın interfeysi həm masaüstü, həm də mobil cihazlar üçün optimallaşdırılmışdır. Beləliklə, istənilən cihazdan sayt funksiyalarından tam istifadə edə bilərsiniz.",
              notfoundTitle: "Səhifə tapılmadı 404",
              backtomenuPrompt: "Zəhmət olmasa menyuya qayıdın.",
-             backtomenuBtn: "Menyuya qayıt"
+             backtomenuBtn: "Menyuya qayıt",
+             ixtisasinfotext: "Qruplar Haqqında Məlumat",
+             aboutspec: "Qruplar Haqqında"
     },
     tr: {
              siteName: "IxtisasTap.com",
@@ -323,6 +326,8 @@ const translations = {
              candsText: "Sitenin arayüzü hem masaüstü hem de mobil cihazlar için optimize edilmiştir. Böylece, sitenin işlevlerini herhangi bir cihazdan tam olarak kullanabilirsiniz.",
              notfoundTitle: "Sayfa bulunamadı 404",
              backtomenuPrompt: "Lütfen ana menüye dönün",
-             backtomenuBtn: "Menüye dön"
+             backtomenuBtn: "Menüye dön",
+             ixtisasinfotext: "Bölümler Hakkında Bilgi Rehberi",
+             aboutspec: "Bölümler Hakkında"
     }
 };

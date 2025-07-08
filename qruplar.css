@@ -458,13 +458,78 @@ body.dark-mode #language-selector option {
 .white-filter-icon {
     filter: invert(1);
 }
+/* Başlıq (ixtisasın adı) */
+.specialization-title {
+    display: flex;
+    align-items: center;              /* Dikey ortala */
+    justify-content: space-between;  /* Solda mətn, sağda + ikonu */
+    background-color: #ffffff;
+    padding: 0 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    height: 50px;
+    margin-bottom: 0; /* Alt boşluq olmasın */
+    border: 1px solid #1e90ff;
+}
+
+/* Description açılanda title-ın alt radiusları silinsin */
+.specialization-title.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+    background-color: red;
+}
+
+/* + və - ikonları */
+.specialization-title::after {
+    content: "+";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    color: #666;
+}
+
+/* Açıq olanda ikon dəyişsin */
+.specialization-title.active::after {
+    content: "−";
+}
+
+/* Açılan mətn hissəsi */
+.specialization-description {
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border-left: 1px solid #007bff;
+    border-right: 1px solid #007bff;
+    border-bottom: 1px solid #007bff;
+    border-radius: 0 0 12px 12px; /* Yuxarı radiusları siləcəyik */
+    display: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Description üçün üst radiusları silinsin */
+.specialization-description {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 /* DESKTOP THEME */
 @media (min-width:769px) {
     #language-selector,
     #menu-bar,
     #toggle-dark-mode,
     .main-content {
-        position: fixed
+        position: fixed;
+        z-index: 99;
     }
     .main-content {
         margin-left: 200px;
@@ -472,7 +537,8 @@ body.dark-mode #language-selector option {
         top: -30px
     }
     .search-bar {
-        gap: 10px
+        gap: 10px;
+        margin-left: 220px;
     }
     #resultCount {
         position: absolute;
@@ -490,8 +556,15 @@ body.dark-mode #language-selector option {
     #menu-toggle {
         display: none;
     }
-
-
+    h1 {
+        margin-left: 220px;
+    }
+    .specialization-title {
+        margin-left: 220px;
+    }
+    .specialization-description {
+        margin-left: 220px;
+    }
     #menu-bar {
         top: 0;
         left: 0;
@@ -507,12 +580,13 @@ body.dark-mode #language-selector option {
     .header {
         margin-left: 220px;
     }
+    
 }
 /* MOBILE THEME */
 @media (max-width:768px) {
     #language-selector,
     #toggle-dark-mode {
-        position: absolute
+        position: absolute;
     }
     #table-container,
     .hidden {

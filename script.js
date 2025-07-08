@@ -244,7 +244,7 @@ function applyFilters() {
     let r = localStorage.getItem("selectedLanguage") || "az";
     renderData(a, r);
     setupEventListeners();
-    changeLanguage(r);
+    changeLanguage(r);  
 }
 
 function getCurrentFilters() {
@@ -296,7 +296,6 @@ function filterData(data, {
                     }
                 } 
                 
-                // Axtarış sözü — indi həm az, həm en üçün yoxlayırıq
                 let searchText = searchValue.toLowerCase();
                 let adAz = ixtisas.ad.toLowerCase();
                 let adEn = ixtisas.ad_en ? ixtisas.ad_en.toLowerCase() : "";
