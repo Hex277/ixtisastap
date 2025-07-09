@@ -217,8 +217,8 @@ const translations = {
              notfoundTitle: "Səhifə tapılmadı 404",
              backtomenuPrompt: "Zəhmət olmasa menyuya qayıdın.",
              backtomenuBtn: "Menyuya qayıt",
-             ixtisasinfotext: "Qruplar Haqqında Məlumat",
-             aboutspec: "Qruplar Haqqında"
+             ixtisasinfotext: "İxtisaslar Haqqında Məlumat",
+             aboutspec: "İxtisaslar Haqqında"
     },
     tr: {
              siteName: "IxtisasTap.com",

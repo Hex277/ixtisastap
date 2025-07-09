@@ -461,8 +461,8 @@ body.dark-mode #language-selector option {
 /* Başlıq (ixtisasın adı) */
 .specialization-title {
     display: flex;
-    align-items: center;              /* Dikey ortala */
-    justify-content: space-between;  /* Solda mətn, sağda + ikonu */
+    align-items: center;             
+    justify-content: space-between;  
     background-color: #ffffff;
     padding: 0 16px;
     font-weight: 600;
@@ -475,7 +475,10 @@ body.dark-mode #language-selector option {
     margin-bottom: 0; /* Alt boşluq olmasın */
     border: 1px solid #1e90ff;
 }
-
+body.dark-mode .specialization-title {
+    background: #1e1e1e;
+    color: #ddd
+}
 /* Description açılanda title-ın alt radiusları silinsin */
 .specialization-title.active {
     border-bottom-left-radius: 0;
@@ -515,6 +518,10 @@ body.dark-mode #language-selector option {
     color: #333;
     line-height: 1.5;
 }
+body.dark-mode .specialization-description {
+    background: #1e1e1e;
+    color: #ddd
+}
 
 /* Description üçün üst radiusları silinsin */
 .specialization-description {
@@ -538,7 +545,6 @@ body.dark-mode #language-selector option {
     }
     .search-bar {
         gap: 10px;
-        margin-left: 220px;
     }
     #resultCount {
         position: absolute;
@@ -556,9 +562,7 @@ body.dark-mode #language-selector option {
     #menu-toggle {
         display: none;
     }
-    h1 {
-        margin-left: 220px;
-    }
+    
     .specialization-title {
         margin-left: 220px;
     }
@@ -635,11 +639,11 @@ body.dark-mode #language-selector option {
     }
     .card .field {
         margin-bottom: 6px;
-        font-size: 14px
+        font-size: 15px
     }
     .card #ixtisasad {
         color: #010102;
-        font-size: 15px
+        font-size: 16px
     }
     body.dark-mode .card {
         background: #1e1e1e;

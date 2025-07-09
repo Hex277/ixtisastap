@@ -4,7 +4,7 @@
 <head>
     <meta charset=UTF-8>
     <meta name=viewport content="width=device-width,initial-scale=1">
-    <title>IxtisasTap – Qrup Seç</title>
+    <title>IxtisasTap – Qrup Seç, İxtisasını Tap!</title>
     <meta name="description" content="IxtisasTap.com – Azərbaycan təhsil qruplarına əsasən ixtisasları və universitetləri asanlıqla tapın. İmtahan balınıza uyğun ixtisasları araşdırın.">
     <meta name="keywords" content="ən yaxşı ixtisaslar, ixtisaslar, universitetlər, 2025 balları, I qrup ixtisasları, ixtisas seçimi, Azərbaycan universitetləri">
     <meta name="author" content="IxtisasTap Komandası">
@@ -57,11 +57,10 @@
         }
     </style>
 </head>
-
 <body>
     <button id=toggle-dark-mode>
-<img id=icon src=sun.webp alt=rejim width=20 class=white-icon loading=lazy>
-</button>
+        <img id=icon src="moon.webp" alt=rejim width=23 class=white-icon loading=lazy>
+    </button>
     <select id=language-selector>
         <option value="az" selected>AZ</option>
         <option value="en">EN</option>
@@ -76,7 +75,7 @@
         <a href=2ciqrup.html class=menu-button data-i18n=group2>2-ci Qrup</a>
         <a href=3ciqrup.html class=menu-button data-i18n=group3>3-cü Qrup</a>
         <a href=4ciqrup.html class=menu-button data-i18n=group4>4-cü Qrup</a>
-        <li><a href=./specializations.html data-i18n=aboutspec>Qruplar Haqqında</a></li>
+        <a href=./specializations.html class="menu-button" data-i18n=aboutspec>İxtisaslar Haqqında</a>
         <a href=./guide.html class=menu-button data-i18n="guide">Bələdçi</a>
     </main>
     <footer class="site-footer">
@@ -89,6 +88,15 @@
 
     <script src="translations.js" defer></script>
     <script src=script.js defer></script>
+    <script>
+        document.getElementById('toggle-dark-mode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    
+        document.getElementById('language-selector').addEventListener('change', function() {
+            const selectedLanguage = this.value;
+        });
+    </script>
 </body>
 
 </html>
