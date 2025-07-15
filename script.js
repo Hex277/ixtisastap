@@ -54,10 +54,8 @@ function renderData(data, lang) {
         cardContainer = document.getElementById("card-container"),
         l = translations[lang] || {},
         isMobileView = window.innerWidth <= 768;
-
     tableContainer.innerHTML = "";
     cardContainer.innerHTML = "";
-
     if (isMobileView) {
         let html = "";
         data.forEach(group => {
@@ -439,3 +437,420 @@ window.addEventListener("resize", () => {
     let e = isMobile();
     e !== currentIsMobile && (currentIsMobile = e, renderView())
 });
+function scrollToQrup(qrupId, clickedBtn) {
+    // Bütün qrup bloklarını gizlət
+    document.querySelectorAll(".qrup-blok").forEach(block => {
+      block.classList.remove("active");
+    });
+  
+    // Aktiv qrupu göstər
+    const target = document.getElementById(qrupId);
+    if (target) {
+      target.classList.add("active");
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  
+    // Bütün butonlardan 'active' class-ını sil
+    document.querySelectorAll(".qrup-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+  
+    // Kliklənən butona 'active' class əlavə et
+    if (clickedBtn) {
+      clickedBtn.classList.add("active");
+    }
+  }
+  
+  
+  window.addEventListener("DOMContentLoaded", () => {
+    const firstBtn = document.querySelector(".qrup-btn");
+    scrollToQrup("qrup1", firstBtn);
+  });
+  
+  function hesablaQrup1() {
+    const isMobile = window.innerWidth <= 768;
+    let toplam = 0;
+  
+    if (isMobile) {
+      const cards = document.querySelectorAll("#qrup1 .mobile-card");
+      cards.forEach((card, index) => {
+        let dogru = parseFloat(card.querySelector(".dogru")?.value) || 0;
+        let yanlis = parseFloat(card.querySelector(".yanlis")?.value) || 0;
+        let acikKod = parseFloat(card.querySelector(".acik-kod")?.value) || 0;
+        let acikYazili = parseFloat(card.querySelector(".acik-yazili")?.value) || 0;
+  
+        // Limit yoxlamaları (eyni qaydalar)
+        if (dogru + yanlis > 22) {
+          if (dogru > yanlis) {
+            dogru = 22 - yanlis;
+            card.querySelector(".dogru").value = dogru;
+          } else {
+            yanlis = 22 - dogru;
+            card.querySelector(".yanlis").value = yanlis;
+          }
+        }
+  
+        if (acikKod > 5) {
+          acikKod = 5;
+          card.querySelector(".acik-kod").value = 5;
+        }
+  
+        if (acikYazili > 3) {
+          acikYazili = 3;
+          card.querySelector(".acik-yazili").value = 3;
+        }
+  
+        if (acikKod + acikYazili > 8) {
+          if (acikKod > acikYazili) {
+            acikKod = 8 - acikYazili;
+            card.querySelector(".acik-kod").value = acikKod;
+          } else {
+            acikYazili = 8 - acikKod;
+            card.querySelector(".acik-yazili").value = acikYazili;
+          }
+        }
+  
+        // Bal hesablaması
+        let netice = 0;
+        if (index === 0 || index === 1) {
+          netice = (dogru * 4.5) - (yanlis * 1.05) + (acikKod * 4.5) + (acikYazili * 9.15);
+        } else if (index === 2) {
+          netice = (dogru * 3.0) - (yanlis * 0.7) + (acikKod * 3.0) + (acikYazili * 6.1);
+        }
+  
+        netice = Math.max(0, netice);
+        netice = Math.round(netice * 10) / 10;
+        toplam += netice;
+  
+        const result = card.querySelector(".netice");
+        if (result) result.textContent = netice.toFixed(1) + " bal";
+      });
+    } else {
+      const rows = document.querySelectorAll("#qrup1 .qiymetlendirme tbody tr");
+      rows.forEach((row, index) => {
+        let dogru = parseFloat(row.querySelector(".dogru")?.value) || 0;
+        let yanlis = parseFloat(row.querySelector(".yanlis")?.value) || 0;
+        let acikKod = parseFloat(row.querySelector(".acik-kod")?.value) || 0;
+        let acikYazili = parseFloat(row.querySelector(".acik-yazili")?.value) || 0;
+  
+        // Eyni limitlər
+        if (dogru + yanlis > 22) {
+          if (dogru > yanlis) {
+            dogru = 22 - yanlis;
+            row.querySelector(".dogru").value = dogru;
+          } else {
+            yanlis = 22 - dogru;
+            row.querySelector(".yanlis").value = yanlis;
+          }
+        }
+  
+        if (acikKod > 5) {
+          acikKod = 5;
+          row.querySelector(".acik-kod").value = 5;
+        }
+  
+        if (acikYazili > 3) {
+          acikYazili = 3;
+          row.querySelector(".acik-yazili").value = 3;
+        }
+  
+        if (acikKod + acikYazili > 8) {
+          if (acikKod > acikYazili) {
+            acikKod = 8 - acikYazili;
+            row.querySelector(".acik-kod").value = acikKod;
+          } else {
+            acikYazili = 8 - acikKod;
+            row.querySelector(".acik-yazili").value = acikYazili;
+          }
+        }
+  
+        let netice = 0;
+        if (index === 0 || index === 1) {
+          netice = (dogru * 4.5) - (yanlis * 1.05) + (acikKod * 4.5) + (acikYazili * 9.15);
+        } else if (index === 2) {
+          netice = (dogru * 3.0) - (yanlis * 0.7) + (acikKod * 3.0) + (acikYazili * 6.1);
+        }
+  
+        netice = Math.max(0, netice);
+        netice = Math.round(netice * 10) / 10;
+        toplam += netice;
+  
+        const resultCell = row.querySelector("td:last-child p");
+        if (resultCell) resultCell.textContent = netice.toFixed(1) + " bal";
+      });
+    }
+  
+    // Ümumi nəticəni göstər
+    const toplamNetice = document.getElementById("umumi-netice");
+    if (toplamNetice) {
+      toplamNetice.textContent = toplam.toFixed(1) + " bal";
+    }
+  }
+  
+  
+  const qrupFennleri = {
+    qrup1: ["Riyaziyyat", "Fizika", "Kimya / Informatika"],
+    qrup2: ["Riyaziyyat", "Coğrafiya", "Tarix"],
+    qrup3: ["Azərbaycan dili", "Tarix", "Ədəbiyyat / Coğrafiya"],
+    qrup4: ["Riyaziyyat", "Biologiya", "Kimya"],
+    qrup5: ["Azərbaycan dili", "Riyaziyyat", "Xarici dil"]
+  };
+  
+  function qrupuYenile(qrupId) {
+    if (qrupId === "qrup5") return;
+  
+    // Bütün qrup bloklarını gizlət
+    document.querySelectorAll(".qrup-blok").forEach(block => {
+      block.style.display = "none";
+    });
+  
+    // Aktiv qrup blokunu göstər
+    const activeDiv = document.getElementById("qrup1");
+    if (activeDiv) {
+      activeDiv.style.display = "block";
+    }
+  
+    // Buton aktivlik
+    document.querySelectorAll(".qrup-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+    const btnById = [...document.querySelectorAll(".qrup-btn")].find(btn => btn.getAttribute('data-qrup-id') === qrupId);
+    if (btnById) btnById.classList.add("active");
+  
+    // Başlıq
+    const basliq = document.getElementById("qrup-basliq");
+    if (!basliq) return;
+    basliq.textContent = btnById ? btnById.textContent + " üzrə balların hesablanması" : "";
+  
+    // Cədvəl və ya kart konteyneri
+    const tbody = document.getElementById("qiymetlendirme-body");
+    if (!tbody) return;
+    tbody.innerHTML = "";
+  
+    const fennler = qrupFennleri[qrupId] || [];
+  
+    const isMobile = window.innerWidth <= 768;
+  
+    fennler.forEach((fennAdı, index) => {
+      if (isMobile) {
+        // 📱 Mobil görünüş (kart stilində)
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        cell.colSpan = 6;
+        cell.innerHTML = `
+          <div class="mobile-card">
+            <strong>${fennAdı}</strong><br>
+            Qapalı - Doğru sayı: <input min="0" max="30" class="dogru" placeholder="0" oninput="hesablaQrup1()"><br>
+            Qapalı - Yanlış sayı: <input min="0" max="30" class="yanlis" placeholder="0" oninput="hesablaQrup1()"><br>
+            Kod - Açıq sual: <input min="0" max="5" class="acik-kod" placeholder="0" oninput="hesablaQrup1()"><br>
+            Yazılı - Açıq sual: <input min="0" max="9" class="acik-yazili" placeholder="0" oninput="hesablaQrup1()"><br>
+            <p class="netice">0 Bal</p>
+          </div>
+        `;
+        row.appendChild(cell);
+        tbody.appendChild(row);
+      } else {
+        // 💻 Desktop görünüş (cədvəl)
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${fennAdı}</td>
+          <td><input min="0" max="30" class="dogru" placeholder="0" oninput="hesablaQrup1()"/></td>
+          <td><input min="0" max="30" class="yanlis" placeholder="0" oninput="hesablaQrup1()"/></td>
+          <td><input min="0" max="5" class="acik-kod" placeholder="0" oninput="hesablaQrup1()"/></td>
+          <td><input min="0" max="9" class="acik-yazili" placeholder="0" oninput="hesablaQrup1()"/></td>
+          <td><p class="netice">0 Bal</p></td>
+        `;
+        tbody.appendChild(row);
+      }
+    });
+  
+    // Ümumi nəticə
+    const umumiRow = document.createElement("tr");
+    umumiRow.className = "umumi-netice-row";
+    umumiRow.innerHTML = `
+      <td colspan="${isMobile ? 1 : 5}" style="text-align: right;"><strong>Ümumi nəticə:</strong></td>
+      <td><p id="umumi-netice">0 bal</p></td>
+    `;
+    tbody.appendChild(umumiRow);
+  }
+  
+  
+  function qrupuYenileBuraxilis() {
+    // Bütün qrup bloklarını gizlət
+    document.querySelectorAll(".qrup-blok").forEach(block => {
+      block.style.display = "none";
+    });
+  
+    // Buraxılış blokunu göstər
+    const buraxilisDiv = document.getElementById("buraxilis");
+    if (buraxilisDiv) {
+      buraxilisDiv.style.display = "block";
+    }
+  
+    // Bütün butonlardan 'active' class-ını sil
+    document.querySelectorAll(".qrup-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+  
+    // Aktiv butona class əlavə et
+    const clickedBtn = [...document.querySelectorAll(".qrup-btn")]
+      .find(btn => btn.getAttribute("data-qrup-id") === "qrup5");
+    if (clickedBtn) clickedBtn.classList.add("active");
+  
+    // Cədvəli doldur
+    const tbody = document.getElementById("buraxilis-body");
+    tbody.innerHTML = "";
+  
+    const isMobile = window.innerWidth <= 768;
+  
+    const fennler = [
+      { ad: "Azərbaycan dili", hasKod: false, kodBal: 0, yaziliBal: 5, qapaliBal: 2.5 },
+      { ad: "Riyaziyyat", hasKod: true, kodBal: 3.1, yaziliBal: 6.3, qapaliBal: 3.1 },
+      { ad: "Xarici dil", hasKod: false, kodBal: 0, yaziliBal: 5.4, qapaliBal: 2.7 }
+    ];
+  
+    fennler.forEach((fenn, index) => {
+      if (isMobile) {
+        // 📱 Mobil görünüş (kart)
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        cell.colSpan = 5;
+        cell.innerHTML = `
+          <div class="mobile-card">
+            <strong>${fenn.ad}</strong><br>
+            Qapalı - Doğru sayı: <input min="0" max="30" class="qapali" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"><br>
+            ${fenn.hasKod ? `Kod - Açıq sual: <input min="0" max="5" class="kod" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"><br>` : ""}
+            Yazılı - Açıq sual: <input min="0" max="5" class="yazili" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"><br>
+            <p class="netice-hucresi">0 bal</p>
+          </div>
+        `;
+        row.appendChild(cell);
+        tbody.appendChild(row);
+      } else {
+        // 💻 Desktop görünüş (cədvəl)
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${fenn.ad}</td>
+          <td><input min="0" max="30" class="qapali" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"/></td>
+          ${fenn.hasKod ? `<td><input min="0" max="5" class="kod" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"/></td>` : `<td>-</td>`}
+          <td><input min="0" max="5" class="yazili" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"/></td>
+          <td><p class="netice-hucresi">0 bal</p></td>
+        `;
+        tbody.appendChild(row);
+      }
+    });
+  
+    // Ümumi nəticə satırı
+    const umumiRow = document.createElement("tr");
+    umumiRow.className = "umumi-netice-row";
+    umumiRow.innerHTML = `
+      <td colspan="${isMobile ? 1 : 4}" style="text-align: right;"><strong>Ümumi nəticə:</strong></td>
+      <td><p id="umumi-netice-buraxilis">0 bal</p></td>
+    `;
+    tbody.appendChild(umumiRow);
+  }
+  
+  function hesablaBuraxilis() {
+    const isMobile = window.innerWidth <= 768;
+    let toplam = 0;
+  
+    if (isMobile) {
+      const cards = document.querySelectorAll("#buraxilis .mobile-card");
+      cards.forEach((card, index) => {
+        const fennAdı = card.querySelector("strong")?.textContent?.trim();
+        const qapaliInput = card.querySelector(".qapali");
+        const yaziliInput = card.querySelector(".yazili");
+        const kodInput = card.querySelector(".kod");
+  
+        let qapali = parseFloat(qapaliInput?.value) || 0;
+        let yazili = parseFloat(yaziliInput?.value) || 0;
+        let kod = parseFloat(kodInput?.value) || 0;
+  
+        let bal = 0;
+  
+        if (fennAdı === "Azərbaycan dili") {
+          bal = qapali * 2.5 + yazili * 5;
+        } else if (fennAdı === "Riyaziyyat") {
+          bal = qapali * 3.1 + kod * 3.1 + yazili * 6.3;
+        } else if (fennAdı === "Xarici dil") {
+          bal = qapali * 2.7 + yazili * 5.4;
+        }
+  
+        bal = Math.round(bal * 10) / 10;
+        toplam += bal;
+  
+        const resultP = card.querySelector(".netice-hucresi");
+        if (resultP) resultP.textContent = bal.toFixed(1) + " bal";
+      });
+    } else {
+      const rows = document.querySelectorAll("#buraxilis-body tr");
+      rows.forEach((row) => {
+        const cells = row.querySelectorAll("td");
+        if (cells.length < 5) return;
+  
+        const fənnAdı = cells[0].textContent.trim();
+        const qapaliInput = row.querySelector(".qapali");
+        const yaziliInput = row.querySelector(".yazili");
+        const kodInput = row.querySelector(".kod");
+  
+        let qapali = parseFloat(qapaliInput?.value) || 0;
+        let yazili = parseFloat(yaziliInput?.value) || 0;
+        let kod = parseFloat(kodInput?.value) || 0;
+  
+        let bal = 0;
+  
+        if (fənnAdı === "Azərbaycan dili") {
+          bal = qapali * 2.5 + yazili * 5;
+        } else if (fənnAdı === "Riyaziyyat") {
+          bal = qapali * 3.1 + kod * 3.1 + yazili * 6.3;
+        } else if (fənnAdı === "Xarici dil") {
+          bal = qapali * 2.7 + yazili * 5.4;
+        }
+  
+        bal = Math.round(bal * 10) / 10;
+        toplam += bal;
+  
+        const resultCell = row.querySelector(".netice-hucresi");
+        if (resultCell) resultCell.textContent = bal.toFixed(1) + " bal";
+      });
+    }
+  
+    const neticeP = document.getElementById("umumi-netice-buraxilis");
+    if (neticeP) neticeP.textContent = toplam.toFixed(1) + " bal";
+  }
+  
+  function qrupSec(qrupId, clickedBtn) {
+    // Bütün blokları gizlət
+    document.querySelectorAll(".qrup-blok").forEach(block => {
+      block.style.display = "none";
+    });
+  
+    // Bütün butonlardan aktiv class-ı sil
+    document.querySelectorAll(".qrup-btn").forEach(btn => {
+      btn.classList.remove("active");
+    });
+  
+    // Aktiv qrupu göstər
+    const target = document.getElementById(qrupId);
+    if (target) {
+      target.style.display = "block";
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  
+    // Aktiv butonu vurğula
+    if (clickedBtn) {
+      clickedBtn.classList.add("active");
+    }
+  
+    // Əgər buraxılışdırsa fərqli funksiyanı çağır
+    if (qrupId === "qrup5") {
+      qrupuYenileBuraxilis(qrupId);
+    } else {
+      qrupuYenile(qrupId);
+    }
+  }
+  window.addEventListener("DOMContentLoaded", () => {
+    const firstBtn = document.querySelectorAll(".qrup-btn")[0];
+    qrupSec('qrup1', firstBtn);
+  });
+  

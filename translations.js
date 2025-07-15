@@ -5,6 +5,7 @@ const translations = {
              group2: "Group 2",
              group3: "Group 3",
              group4: "Group 4",
+             group5: "Graduation Exam",
              about: "About Us",
              pageTitle1: "Group 1 Specialties 2025",
              pageTitle2: "Group 2 Specialties 2025",
@@ -109,6 +110,15 @@ const translations = {
              backtomenuBtn: "Back to main menu",
              ixtisasinfotext: "Specialization Guide",
              aboutspec: "About Specializations",
+             ballarinhesablanmasih1: "Score Calculation",
+             h1buraxilis: "Score calculation for the graduation exam",
+             thfenn: "Subject",
+             thqapalidogru: "Multiple choice – Correct answers", 
+             thqapaliyanlis: "Multiple choice – Incorrect answers",
+             thacikyazili: "Open-ended – Written (detailed) question",
+             thacikkod: "Open-ended – Auto-graded question",
+             thnetice: "Result",
+             scorecalc: "Score Calculation"
     },
     az: {
              siteName: "IxtisasTap.com",
@@ -116,6 +126,7 @@ const translations = {
              group2: "2ci Qrup",
              group3: "3c\xfc Qrup",
              group4: "4c\xfc Qrup",
+             group5: "Buraxılış İmtahanı",
              about: "Haqqımızda",
              pageTitle1: "1ci Qrup Ixtisaslar 2025",
              pageTitle2: "2ci Qrup Ixtisaslar 2025",
@@ -218,7 +229,16 @@ const translations = {
              backtomenuPrompt: "Zəhmət olmasa menyuya qayıdın.",
              backtomenuBtn: "Menyuya qayıt",
              ixtisasinfotext: "İxtisaslar Haqqında Məlumat",
-             aboutspec: "İxtisaslar Haqqında"
+             aboutspec: "İxtisaslar Haqqında",
+             ballarinhesablanmasih1: "Balların Hesablanması",
+             h1buraxilis: "Buraxılış imtahanı üzrə balların hesablanması",
+             thfenn: "Fənn",
+             thqapalidogru: "Qapalı - Doğru", 
+             thqapaliyanlis: "Qapalı - Yanlış",
+             thacikyazili: "Açıq - Yazılı (ətraflı)",
+             thacikkod: "Açıq - Kodlaşdırılan",
+             thnetice: "Nəticə",
+             scorecalc: "Balların Hesablanması"
     },
     tr: {
              siteName: "IxtisasTap.com",
@@ -226,6 +246,7 @@ const translations = {
              group2: "2. Grup",
              group3: "3. Grup",
              group4: "4. Grup",
+             group5: "Mezuniyet Sınavı",
              about: "Hakkımızda",
              pageTitle1: "1. Grup B\xf6l\xfcmleri 2025",
              pageTitle2: "2. Grup B\xf6l\xfcmleri 2025",
@@ -328,6 +349,15 @@ const translations = {
              backtomenuPrompt: "Lütfen ana menüye dönün",
              backtomenuBtn: "Menüye dön",
              ixtisasinfotext: "Bölümler Hakkında Bilgi Rehberi",
-             aboutspec: "Bölümler Hakkında"
+             aboutspec: "Bölümler Hakkında",
+             ballarinhesablanmasih1: "Puanların Hesaplanması",
+             h1buraxilis: "Mezuniyet sınavı için puan hesaplama",
+             thfenn: "Ders",
+             thqapalidogru: "Seçmeli – Doğru sayısı", 
+             thqapaliyanlis: "Seçmeli – Yanlış sayısı",
+             thacikyazili: "Açık - Yazılı (Ayrıntılı)",
+             thacikkod: "Açık - Kodlamalı",
+             thnetice: "Sonuç",
+             scorecalc: "Puan hesaplama"
     }
 };

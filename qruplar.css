@@ -53,7 +53,7 @@ th {
 }
 
 h1 {
-    margin-top: 70px
+    margin-top: 70px;
 }
 
 .qrup-basliq {
@@ -233,7 +233,8 @@ button:hover {
 #menu-toggle {
     position: absolute;
     top: 0;
-    left: -10px
+    left: -10px;
+    z-index: 999
 }
 
 #menu-toggle img {
@@ -459,75 +460,8 @@ body.dark-mode #language-selector option {
     filter: invert(1);
 }
 /* Başlıq (ixtisasın adı) */
-.specialization-title {
-    display: flex;
-    align-items: center;             
-    justify-content: space-between;  
-    background-color: #ffffff;
-    padding: 0 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    position: relative;
-    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    height: 50px;
-    margin-bottom: 0; /* Alt boşluq olmasın */
-    border: 1px solid #1e90ff;
-}
-body.dark-mode .specialization-title {
-    background: #1e1e1e;
-    color: #ddd
-}
-/* Description açılanda title-ın alt radiusları silinsin */
-.specialization-title.active {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    box-shadow: none;
-    background-color: red;
-}
 
-/* + və - ikonları */
-.specialization-title::after {
-    content: "+";
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    transition: transform 0.3s ease;
-    color: #666;
-}
-
-/* Açıq olanda ikon dəyişsin */
-.specialization-title.active::after {
-    content: "−";
-}
-
-/* Açılan mətn hissəsi */
-.specialization-description {
-    padding: 10px 16px;
-    background-color: #ffffff;
-    border-left: 1px solid #007bff;
-    border-right: 1px solid #007bff;
-    border-bottom: 1px solid #007bff;
-    border-radius: 0 0 12px 12px; /* Yuxarı radiusları siləcəyik */
-    display: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    color: #333;
-    line-height: 1.5;
-}
-body.dark-mode .specialization-description {
-    background: #1e1e1e;
-    color: #ddd
-}
-
-/* Description üçün üst radiusları silinsin */
-.specialization-description {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
+  
 
 /* DESKTOP THEME */
 @media (min-width:769px) {
@@ -584,6 +518,165 @@ body.dark-mode .specialization-description {
     .header {
         margin-left: 220px;
     }
+
+    .specialization-title {
+        display: flex;
+        align-items: center;             
+        justify-content: space-between;  
+        background-color: #ffffff;
+        padding: 0 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        position: relative;
+        box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        height: 50px;
+        margin-bottom: 0; /* Alt boşluq olmasın */
+        border: 1px solid #3f3f3f;
+    }
+    body.dark-mode .specialization-title {
+        background: #1e1e1e;
+        color: #ddd
+    }
+    /* Description açılanda title-ın alt radiusları silinsin */
+    .specialization-title.active {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+    }
+    
+    /* + və - ikonları */
+    .specialization-title::after {
+        content: "+";
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        transition: transform 0.3s ease;
+        color: #666;
+    }
+    
+    /* Açıq olanda ikon dəyişsin */
+    .specialization-title.active::after {
+        content: "−";
+    }
+    
+    /* Açılan mətn hissəsi */
+    .specialization-description {
+        padding: 10px 16px;
+        background-color: #ffffff;
+        border-left: 1px solid #3f3f3f;
+        border-right: 1px solid #3f3f3f;
+        border-bottom: 1px solid #3f3f3f;
+        border-radius: 0 0 12px 12px; /* Yuxarı radiusları siləcəyik */
+        display: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        color: #333;
+        line-height: 1.5;
+    }
+    body.dark-mode .specialization-description {
+        background: #1e1e1e;
+        color: #ddd
+    }
+    
+    /* Description üçün üst radiusları silinsin */
+    .specialization-description {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .qrup-blok {
+        display: none;
+        min-height: 50vh;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+    
+    .qrup-blok.active {
+        display: block;
+        margin-right: 10px;
+    }
+    .qrup-menusu-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    
+    #qrup-menusu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #qrup-menusu button {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .qrup-btn {
+        border: 2px solid #1e90ff;
+        background-color: white;
+        color: #1e90ff;
+    }
+    body.dark-mode .qrup-btn {
+        border: 2px solid #1e90ff;
+        background-color: #1e1e1e;
+        color: #1e90ff;
+    }
+    .qrup-btn.active {
+        background-color: #1e90ff;
+        color: white;
+    }
+    
+    body.dark-mode .qrup-btn.active {
+        background-color: #1e90ff;
+        color: white;
+    }
+    table.qiymetlendirme {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        border: 2px solid #1e90ff;
+    
+    }
+    
+    table.qiymetlendirme th,
+    table.qiymetlendirme td {
+        border: 1px solid #1e90ff;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    table.qiymetlendirme input {
+        width: 100%;
+        text-align: center;
+        border: 0px;
+        font-size: 20px;
+        height: 60px;
+    }
+    table.qiymetlendirme input:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    body.dark-mode table.qiymetlendirme input {
+        background-color: #1e1e1e;
+        color: white;
+    }
+    table.qiymetlendirme #umumi-netice, #umumi-netice-text {
+        font-size: 18px;
+    }
+    
+      
+      
     
 }
 /* MOBILE THEME */
@@ -698,4 +791,39 @@ body.dark-mode .specialization-description {
         font-size: 14px;
         margin: auto;
     }
+    .mobile-card {
+        background: #f4f4f4;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+        display: grid;
+    }
+    body.dark-mode .mobile-card {
+        background-color: #121212;
+    }
+    body.dark-mode .mobile-card input {
+        background-color: #1e1e1e;
+        color: white;
+    }
+    .mobile-card input {
+        margin: 5px 0;
+        padding: 6px;
+        font-size: 17px;
+        border: 2px solid #4a90e2;
+        border-radius: 12px;
+        max-width: 700px;
+        border: 2px solid #1e90ff;
+        outline: none;
+    }
+    .mobile-card input {
+        transition: border-color 0.3s ease;
+    }
+      
+    .umumi-netice-row {
+        display: inline-block;
+        max-width: 600px;
+        min-width: 300px;
+    }
+    
 }
