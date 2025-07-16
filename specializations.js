@@ -113,7 +113,7 @@ function loadAllData() {
     Promise.all(promises)
         .then(dataArray => {
             const combinedData = dataArray.flat(); // Combine data from all groups
-            renderData(combinedData, localStorage.getItem("selectedLanguage") || "en");
+            renderData(combinedData, localStorage.getItem("selectedLanguage") || "az");
         })
         .catch(e => {
             console.error("Error loading data:", e);

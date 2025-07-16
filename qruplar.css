@@ -461,7 +461,73 @@ body.dark-mode #language-selector option {
 }
 /* Başlıq (ixtisasın adı) */
 
-  
+.specialization-title {
+    display: flex;
+    align-items: center;             
+    justify-content: space-between;  
+    background-color: #ffffff;
+    padding: 0 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    height: 50px;
+    margin-bottom: 0; /* Alt boşluq olmasın */
+    border: 1px solid #3f3f3f;
+}
+body.dark-mode .specialization-title {
+    background: #1e1e1e;
+    color: #ddd
+}
+/* Description açılanda title-ın alt radiusları silinsin */
+.specialization-title.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+}
+
+/* + və - ikonları */
+.specialization-title::after {
+    content: "+";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: transform 0.3s ease;
+    color: #666;
+}
+
+/* Açıq olanda ikon dəyişsin */
+.specialization-title.active::after {
+    content: "−";
+}
+
+/* Açılan mətn hissəsi */
+.specialization-description {
+    padding: 10px 16px;
+    background-color: #ffffff;
+    border-left: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
+    border-bottom: 1px solid #3f3f3f;
+    border-radius: 0 0 12px 12px; /* Yuxarı radiusları siləcəyik */
+    display: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    color: #333;
+    line-height: 1.5;
+}
+body.dark-mode .specialization-description {
+    background: #1e1e1e;
+    color: #ddd
+}
+
+.specialization-description {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
 
 /* DESKTOP THEME */
 @media (min-width:769px) {
@@ -519,74 +585,7 @@ body.dark-mode #language-selector option {
         margin-left: 220px;
     }
 
-    .specialization-title {
-        display: flex;
-        align-items: center;             
-        justify-content: space-between;  
-        background-color: #ffffff;
-        padding: 0 16px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        position: relative;
-        box-shadow: 0 3px 3px 0px rgba(0, 0, 0, 0.2);
-        border-radius: 12px;
-        height: 50px;
-        margin-bottom: 0; /* Alt boşluq olmasın */
-        border: 1px solid #3f3f3f;
-    }
-    body.dark-mode .specialization-title {
-        background: #1e1e1e;
-        color: #ddd
-    }
-    /* Description açılanda title-ın alt radiusları silinsin */
-    .specialization-title.active {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        box-shadow: none;
-    }
     
-    /* + və - ikonları */
-    .specialization-title::after {
-        content: "+";
-        position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 20px;
-        transition: transform 0.3s ease;
-        color: #666;
-    }
-    
-    /* Açıq olanda ikon dəyişsin */
-    .specialization-title.active::after {
-        content: "−";
-    }
-    
-    /* Açılan mətn hissəsi */
-    .specialization-description {
-        padding: 10px 16px;
-        background-color: #ffffff;
-        border-left: 1px solid #3f3f3f;
-        border-right: 1px solid #3f3f3f;
-        border-bottom: 1px solid #3f3f3f;
-        border-radius: 0 0 12px 12px; /* Yuxarı radiusları siləcəyik */
-        display: none;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        color: #333;
-        line-height: 1.5;
-    }
-    body.dark-mode .specialization-description {
-        background: #1e1e1e;
-        color: #ddd
-    }
-    
-    /* Description üçün üst radiusları silinsin */
-    .specialization-description {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
     .qrup-blok {
         display: none;
         min-height: 50vh;
