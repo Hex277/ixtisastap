@@ -856,4 +856,7 @@ body.dark-mode .specialization-description {
         background-color: white;
         color: black;
     }
+    body.dark-mode .mobile-card .form-row input, .form-row label{
+        color: white;
+    }
 }
