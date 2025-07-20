@@ -2,61 +2,67 @@
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ixtisastap.com/</loc>
-    <lastmod>2025-07-09</lastmod>
+    <lastmod>2025-07-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/1ciqrup.html</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-07-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/2ciqrup.html</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-07-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/3ciqrup.html</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-07-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/4ciqrup.html</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-07-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/specializations.html</loc>
-    <lastmod>2025-07-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-07-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ixtisastap.com/balhesab.html</loc>
+    <lastmod>2025-07-20</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/guide.html</loc>
-    <lastmod>2025-07-09</lastmod>
+    <lastmod>2025-07-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/about.html</loc>
-    <lastmod>2025-07-09</lastmod>
+    <lastmod>2025-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/privacy-policy.html</loc>
-    <lastmod>2025-07-09</lastmod>
+    <lastmod>2025-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://ixtisastap.com/terms-conditions.html</loc>
-    <lastmod>2025-07-09</lastmod>
+    <lastmod>2025-07-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>

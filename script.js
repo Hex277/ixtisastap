@@ -75,7 +75,7 @@ function renderData(data, lang) {
                         <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
                         <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
                       </div>
-                      <a href="#" class="toggle-more" onclick="toggleMore(this); return false;">${l.dahaCox || "Daha çox"}</a>
+                      <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
                     </div>`;
                 });
             });
@@ -360,15 +360,20 @@ document.addEventListener("DOMContentLoaded", () => {
     loadData();
 });
 // "Daha çox / Daha az" funksiyası
-function toggleMore(e) {
-    let a = e.previousElementSibling;
-    if (a.style.display === "none") {
-        a.style.display = "block";
-        e.textContent = localStorage.getItem("selectedLanguage") === "az" ? "Daha az" : "Less";
-    } else {
-        a.style.display = "none";
-        e.textContent = localStorage.getItem("selectedLanguage") === "az" ? "Daha çox" : "More";
-    }
+function toggleMore(btn) {
+  const content = btn.previousElementSibling;
+  const lang = localStorage.getItem("selectedLanguage") || "az";
+  const isCollapsed = btn.getAttribute("data-state") === "collapsed";
+
+  if (isCollapsed) {
+      content.style.display = "block";
+      btn.textContent = translations[lang].dahaAz || "Daha az";
+      btn.setAttribute("data-state", "expanded");
+  } else {
+      content.style.display = "none";
+      btn.textContent = translations[lang].dahaCox || "Daha çox";
+      btn.setAttribute("data-state", "collapsed");
+  }
 }
 
 
@@ -639,14 +644,32 @@ function scrollToQrup(qrupId, clickedBtn) {
         cell.colSpan = 6;
         cell.innerHTML = `
           <div class="mobile-card">
-            <strong>${fennAdı}</strong><br>
-            Qapalı - Doğru sayı: <input min="0" max="30" class="dogru" placeholder="0" oninput="hesablaQrup1()"><br>
-            Qapalı - Yanlış sayı: <input min="0" max="30" class="yanlis" placeholder="0" oninput="hesablaQrup1()"><br>
-            Kod - Açıq sual: <input min="0" max="5" class="acik-kod" placeholder="0" oninput="hesablaQrup1()"><br>
-            Yazılı - Açıq sual: <input min="0" max="9" class="acik-yazili" placeholder="0" oninput="hesablaQrup1()"><br>
+            <strong>${fennAdı}</strong><br><br>
+
+            <div class="form-row">
+              <label>Qapalı - Doğru sayı:</label>
+              <input min="0" max="30" class="dogru" placeholder="0" oninput="hesablaQrup1()">
+            </div>
+
+            <div class="form-row">
+              <label>Qapalı - Yanlış sayı:</label>
+              <input min="0" max="30" class="yanlis" placeholder="0" oninput="hesablaQrup1()">
+            </div>
+
+            <div class="form-row">
+              <label>Açıq - Kodlaşdırılan:</label>
+              <input min="0" max="5" class="acik-kod" placeholder="0" oninput="hesablaQrup1()">
+            </div>
+
+            <div class="form-row">
+              <label>Açıq - Yazılı (Ətraflı):</label>
+              <input min="0" max="9" class="acik-yazili" placeholder="0" oninput="hesablaQrup1()">
+            </div>
+
             <p class="netice">0 Bal</p>
           </div>
         `;
+
         row.appendChild(cell);
         tbody.appendChild(row);
       } else {
@@ -717,13 +740,29 @@ function scrollToQrup(qrupId, clickedBtn) {
         cell.colSpan = 5;
         cell.innerHTML = `
           <div class="mobile-card">
-            <strong>${fenn.ad}</strong><br>
-            Qapalı - Doğru sayı: <input min="0" max="30" class="qapali" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"><br>
-            ${fenn.hasKod ? `Kod - Açıq sual: <input min="0" max="5" class="kod" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"><br>` : ""}
-            Yazılı - Açıq sual: <input min="0" max="5" class="yazili" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()"><br>
+            <strong>${fenn.ad}</strong><br><br>
+
+            <div class="form-row">
+              <label>Qapalı - Doğru sayı:</label>
+              <input min="0" max="30" class="qapali" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()">
+            </div>
+
+            ${fenn.hasKod ? `
+            <div class="form-row">
+              <label>Açıq - Kodlaşdırılan:</label>
+              <input min="0" max="5" class="kod" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()">
+            </div>
+            ` : ''}
+
+            <div class="form-row">
+              <label>Açıq - Yazılı (Ətraflı):</label>
+              <input min="0" max="5" class="yazili" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()">
+            </div>
+
             <p class="netice-hucresi">0 bal</p>
           </div>
         `;
+
         row.appendChild(cell);
         tbody.appendChild(row);
       } else {
@@ -854,3 +893,134 @@ function scrollToQrup(qrupId, clickedBtn) {
     qrupSec('qrup1', firstBtn);
   });
   
+// Specializations ------------------------------------------------------------------------------------------------------------------
+
+function renderDataSpec(data, lang = "az") {
+  const container = document.getElementById("specializations-body"); // dəyişdi
+  if (!container) return;
+
+  const language = localStorage.getItem("selectedLanguage") || lang;
+
+  container.innerHTML = "";
+
+  const listWrapper = document.createElement("div");
+  listWrapper.className = "specialization-list";
+
+  data.forEach(item => {
+    const title = document.createElement("div");
+    title.className = "specialization-title";
+    title.style.cursor = "pointer";
+    title.style.marginTop = "15px";
+    title.style.fontWeight = "bold";
+
+    const description = document.createElement("div");
+    description.className = "specialization-description";
+    description.style.display = "none";
+    description.style.marginBottom = "10px";
+
+    if (language === "az") {
+      title.textContent = item.key;
+      description.textContent = item.az;
+    } else {
+      title.textContent = item.k_en;
+      description.textContent = item.en;
+    }
+
+    title.addEventListener("click", () => {
+      const isVisible = description.style.display === "block";
+      description.style.display = isVisible ? "none" : "block";
+    });
+
+    listWrapper.appendChild(title);
+    listWrapper.appendChild(description);
+  });
+
+  container.appendChild(listWrapper);
+}
+
+function loadSpecializations() {
+  fetch("qruplar_info.json")
+      .then(response => {
+          if (!response.ok) {
+              throw new Error("JSON faylı yüklənə bilmədi");
+          }
+          return response.json();
+      })
+      .then(data => {
+          globalData = data;
+          const lang = localStorage.getItem("selectedLanguage") || "az";
+          renderDataSpec(globalData, lang);
+      })
+      .catch(error => {
+          console.error("Xəta baş verdi:", error);
+      });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const selectedLanguage = localStorage.getItem("selectedLanguage") || "az";
+  document.getElementById("language-selector").value = selectedLanguage;
+  changeLanguage(selectedLanguage);
+  loadSpecializations();
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const searchInput = document.getElementById("search");
+  const searchBtn = document.getElementById("searchBtn");
+  const selectedLanguage = localStorage.getItem("selectedLanguage") || "az";
+  document.getElementById("language-selector").value = selectedLanguage;
+
+  changeLanguage(selectedLanguage);
+  loadSpecializations();
+
+  searchBtn.addEventListener("click", handleSearch);
+  const isMobile = () => window.innerWidth <= 768;
+  if (!isMobile()) {
+      searchInput.addEventListener("input", handleSearch);
+  }
+
+  searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+          handleSearch();
+      }
+  });
+});
+function loadAllData() {
+  const groupNumbers = [1, 2, 3, 4]; // Load all groups
+  const promises = groupNumbers.map(groupNumber => fetch(`qrup${groupNumber}.json`).then(response => {
+      if (!response.ok) throw Error(`Failed to fetch qrup${groupNumber}.json: ${response.statusText}`);
+      return response.json();
+  }));
+
+  Promise.all(promises)
+      .then(dataArray => {
+          const combinedData = dataArray.flat(); // Combine data from all groups
+          renderDataSpec(combinedData, localStorage.getItem("selectedLanguage") || "az");
+      })
+      .catch(e => {
+          console.error("Error loading data:", e);
+      });
+}
+
+
+loadAllData();
+function handleSearch() {
+  const query = document.getElementById("search").value.trim().toLowerCase();
+  const lang = localStorage.getItem("selectedLanguage") || "az";
+
+  if (!query) {
+      renderDataSpec(globalData, lang); // Show all if input is empty
+      return;
+  }
+
+  const filteredData = globalData.filter(item => {
+      if (lang === "en") {
+          return item.k_en.toLowerCase().includes(query);
+      } else {
+          return item.key.toLowerCase().includes(query);
+      }
+  });
+
+  renderDataSpec(filteredData, lang);
+}
+

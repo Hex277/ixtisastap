@@ -38,12 +38,6 @@
             } 
         }  
     </style>
-    <script>
-        if (!window.location.hash.includes("#reloaded")) {
-          window.location.hash = "#reloaded";
-          window.location.reload();
-        }
-    </script>
       
 </head>
 <body>
@@ -71,14 +65,13 @@
         <option value="en">EN</option>
         <option value="tr">TR</option>
     </select>
-    <div class="specializations-body">
-        <h1 data-i18n="ixtisasinfotext">İxtisaslar Haqqında Məlumat</h1>
-        <div class="search-bar">
-            <input id="search" data-i18n-placeholder="searchPlaceholder" placeholder="Ixtisas axtar...">
-            <button id="searchBtn" data-i18n="searchBtn">Axtar</button>
-        </div>
+    <h1 data-i18n="ixtisasinfotext">İxtisaslar Haqqında Məlumat</h1>
+    <div class="search-bar">
+        <input id="search" data-i18n-placeholder="searchPlaceholder" placeholder="Ixtisas axtar...">
+        <button id="searchBtn" data-i18n="searchBtn">Axtar</button>
     </div>
+    <div id="specializations-body"></div>
     
     <script src="translations.js" defer></script>
-    <script src="specializations.js" defer></script>
+    <script src="script.js" defer></script>
 </body>

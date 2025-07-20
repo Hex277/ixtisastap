@@ -46,7 +46,7 @@ const translations = {
              balOdenissiz: "Score (Free)",
              balOdenisli: "Score (Paid)",
              dahaCox: "More",
-             dahaAz: "Show less",
+             dahaAz: "Less",
              aboutUs: "About Us",
              about: "About Us & Contact",
              aboutParagraph1: "This website was created to fundamentally transform the specialty selection process in Azerbaijan. The abundance and fragmentation of information in the education sector hinder users from finding the right specialty. Our goal is to simplify the selection process by providing the most comprehensive, up-to-date, and accessible information to students and specialty seekers.",
