@@ -180,6 +180,12 @@
         "k_en": "Power engineering"
     },
     {
+        "key": "Əczaçılıq",
+        "az": "Əczaçılıq dərman vasitələrinin hazırlanması, tərkibinin öyrənilməsi, saxlanması, istifadəsi və yayılması ilə məşğul olan tibb və kimya yönümlü ixtisasdır. İxtisasın əsas sahələri farmakognoziya, farmakologiya, farmasevtik kimya, toksikologiya və dərman texnologiyasıdır. Məzunlar apteklərdə, dərman istehsalı müəssisələrində, tədqiqat laboratoriyalarında və səhiyyə sistemində çalışırlar. Dəqiqlik, kimyəvi biliklər və etik məsuliyyət vacibdir.",
+        "en": "Pharmacy involves the preparation, study, storage, use, and distribution of medicinal products, focusing on medicine and chemistry. The main areas of the specialty include pharmacognosy, pharmacology, pharmaceutical chemistry, toxicology, and drug technology. Graduates work in pharmacies, pharmaceutical manufacturing companies, research laboratories, and the healthcare system. Accuracy, chemical knowledge, and ethical responsibility are essential.",
+        "k_en": "Pharmacy"
+    },
+    {
         "key": "Filologiya",
         "az": "Filologiya dillərin, ədəbiyyatların və mədəniyyətlərin tarixi, strukturu və inkişafını öyrənən humanitar elmlər sahəsidir. İxtisasın əsas sahələri dilçilik, ədəbiyyatşünaslıq, mədəniyyətşünaslıq və tərcümədir. Məzunlar təhsil, tədqiqat, jurnalistika, tərcümə və mədəniyyət sahələrində fəaliyyət göstərirlər. Analitik düşüncə, dil bacarıqları və tədqiqat metodları vacibdir.",
         "en": "Philology is a field of humanitarian sciences that studies the history, structure, and development of languages, literatures, and cultures. The main areas of the specialty include linguistics, literary studies, cultural studies, and translation. Graduates work in education, research, journalism, translation, and cultural fields. Analytical thinking, language skills, and research methods are essential.",
@@ -277,9 +283,39 @@
     },
     {
         "key": "Informasiya texnologiyaları",
-        "az": "İnformasiya texnologiyaları məlumatların toplanması, işlənməsi, saxlanması və ötürülməsi üçün proqram təminatı və aparat vasitələrinin hazırlanması və tətbiqi ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri proqramlaşdırma, verilənlər bazası idarəetməsi, şəbəkə texnologiyaları, kibertəhlükəsizlik və sistem inteqrasiyasıdır. Məzunlar IT şirkətlərində, dövlət və özəl sektorda proqram inkişafı, sistem idarəetməsi və texniki dəstək sahələrində çalışırlar. Analitik düşüncə, proqramlaşdırma bacarıqları və problem həll etmə qabiliyyəti vacibdir.",
+        "az": "Informasiya texnologiyaları məlumatların toplanması, işlənməsi, saxlanması və ötürülməsi üçün proqram təminatı və aparat vasitələrinin hazırlanması və tətbiqi ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri proqramlaşdırma, verilənlər bazası idarəetməsi, şəbəkə texnologiyaları, kibertəhlükəsizlik və sistem inteqrasiyasıdır. Məzunlar IT şirkətlərində, dövlət və özəl sektorda proqram inkişafı, sistem idarəetməsi və texniki dəstək sahələrində çalışırlar. Analitik düşüncə, proqramlaşdırma bacarıqları və problem həll etmə qabiliyyəti vacibdir.",
         "en": "Information technology is a specialty that deals with the development and application of software and hardware tools for the collection, processing, storage, and transmission of data. The main areas of the specialty include programming, database management, network technologies, cybersecurity, and system integration. Graduates work in IT companies, government, and private sectors in software development, system management, and technical support. Skills in analytical thinking, programming, and problem-solving are essential.",
         "k_en": "Information technology"
+    },
+    {
+        "key": "Ibtidai sinif müəllimliyi",
+        "az": "İbtidai sinif müəllimliyi şagirdlərin əsas təhsil pilləsində tədris və tərbiyə işlərini həyata keçirən pedaqoji ixtisasdır. İxtisasın əsas sahələri təlim metodikası, pedaqogika, psixologiya, dil və ədəbiyyat, riyaziyyat və təbii elmlərin əsaslarıdır. Məzunlar ibtidai siniflərdə şagirdlərin bilik və bacarıqlarını inkişaf etdirir, onların sosial və intellektual inkişafına dəstək olurlar. Pedaqoji bacarıqlar, səbir və ünsiyyət qabiliyyəti vacibdir.",
+        "en": "Primary school teaching is a pedagogical specialty that carries out teaching and educational work for students at the primary education level. The main areas of the specialty include teaching methodology, pedagogy, psychology, language and literature, mathematics, and the basics of natural sciences. Graduates develop students' knowledge and skills in primary classes, supporting their social and intellectual development. Pedagogical skills, patience, and communication skills are essential.",
+        "k_en": "Elementary school teaching"
+    },
+    {
+        "key": "Ictimai səhiyyə",
+        "az": "İctimai səhiyyə cəmiyyətin sağlamlığının qorunması, xəstəliklərin qarşısının alınması və səhiyyə siyasətinin formalaşdırılması ilə məşğul olan səhiyyə sahəsidir. İxtisasın əsas sahələri epidemiologiya, sağlamlıq siyasəti, sağlamlıq təhsili, ətraf mühitin sağlamlığa təsiri və səhiyyə idarəçiliyidir. Məzunlar səhiyyə müəssisələrində, dövlət və qeyri-hökumət təşkilatlarında, tədqiqat və monitorinq mərkəzlərində çalışırlar. Analitik düşüncə, statistik biliklər və sosial məsuliyyət vacibdir.",
+        "en": "Public health involves the protection of community health, prevention of diseases, and the formation of health policies. The main areas of the specialty include epidemiology, health policy, health education, the impact of the environment on health, and health management. Graduates work in health institutions, government and non-governmental organizations, research and monitoring centers. Analytical thinking, statistical knowledge, and social responsibility are essential.",
+        "k_en": "Public health"
+    },
+    {
+        "key": "Idman menecmenti və kommunikasiya",
+        "az": "İdman menecmenti və kommunikasiya idman təşkilatlarının idarə olunması, tədbirlərin təşkili və idmanla bağlı ictimaiyyətlə əlaqələrin qurulması ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri idman marketinqi, media və kommunikasiya, tədbir menecmenti, idman hüququ və idarəetmə prinsipləridir. Məzunlar idman federasiyalarında, klublarda, media qurumlarında və təşkilat komitələrində çalışırlar. Təşkilatçılıq bacarığı, ünsiyyət qabiliyyəti və sahəyə maraq vacibdir.",
+        "en": "Sports management and communication involve the management of sports organizations, organizing events, and establishing public relations related to sports. The main areas of the specialty include sports marketing, media and communication, event management, sports law, and management principles. Graduates work in sports federations, clubs, media organizations, and organizing committees. Organizational skills, communication ability, and interest in the field are essential.",
+        "k_en": "Sports management and communications"
+    },
+    {
+        "key": "Iqtisadiyyat",
+        "az": "İqtisadiyyat resursların bölüşdürülməsi, istehsal, bölüşdürmə və istehlak proseslərinin təhlili ilə məşğul olan sosial elm sahəsidir. İxtisasın əsas sahələri mikroiqtisadiyyat, makroiqtisadiyyat, iqtisadi siyasət, maliyyə, beynəlxalq iqtisadi münasibətlər və statistik təhlildir. Məzunlar dövlət qurumlarında, bank sektorunda, analitik və tədqiqat mərkəzlərində, özəl şirkətlərdə çalışırlar. Analitik düşüncə, statistik biliklər və iqtisadi modellərlə işləmə bacarığı vacibdir.",
+        "en": "Economics is a social science that deals with the distribution of resources, production, distribution, and consumption processes. The main areas of the specialty include microeconomics, macroeconomics, economic policy, finance, international economic relations, and statistical analysis. Graduates work in government agencies, the banking sector, analytical and research centers, and private companies. Analytical thinking, statistical knowledge, and the ability to work with economic models are essential.",
+        "k_en": "Economics"
+    },
+    {
+        "key": "Islamşünaslıq",
+        "az": "İslamşünaslıq İslam dini, onun tarixi, mənbələri, hüquqi və fəlsəfi əsasları ilə bağlı elmi tədqiqat və tədrislə məşğul olan humanitar sahədir. İxtisasın əsas sahələri Qurani-Kərim və təfsir, hədis, İslam hüququ (fiqh), İslam fəlsəfəsi, İslam tarixi və dinlərarası münasibətlərdir. Məzunlar dini icmalarda, elmi-tədqiqat mərkəzlərində, təhsil müəssisələrində və mədəniyyət sahəsində çalışırlar. Elmi yanaşma, etik düşüncə və klassik mənbələrlə işləmə bacarığı vacibdir.",
+        "en": "Islamic studies involve scientific research and teaching related to the Islamic religion, its history, sources, legal and philosophical foundations. The main areas of the specialty include the Quran and its interpretation, hadith, Islamic law (fiqh), Islamic philosophy, Islamic history, and interfaith relations. Graduates work in religious communities, scientific research centers, educational institutions, and cultural fields. Scientific approach, ethical thinking, and the ability to work with classical sources are essential.",
+        "k_en": "Islamic studies"
     },
     {
         "key": "Informasiya təhlükəsizliyi",
@@ -299,6 +335,7 @@
         "en": "Civil engineering is a field of engineering that deals with the planning, design, construction, and technical supervision of construction projects. The main areas of the specialty include structural engineering, geotechnics, materials science, construction technologies, and project management. Graduates work in construction companies, design institutes, and government agencies. Skills in mathematical analysis, technical knowledge, and practical skills are essential.",
         "k_en": "Construction engineering"
     },
+
     {
         "key": "Jurnalistika",
         "az": "Jurnalistika xəbərlərin toplanması, hazırlanması, təhlili və yayılması ilə məşğul olan humanitar ixtisasdır. İxtisasın əsas sahələri yazılı və şifahi informasiya, media texnologiyaları, reportaj, redaktə və kommunikasiya nəzəriyyəsidir. Məzunlar televiziyada, radioda, qəzet və jurnallarda, onlayn media platformalarında fəaliyyət göstərirlər. Yaxşı ünsiyyət bacarıqları, tədqiqat və yazı qabiliyyəti vacibdir.",
@@ -648,6 +685,18 @@
         "k_en": "Art studies (history and theory of fine art)"
     },
     {
+        "key": "Şəhərsalma",
+        "az": "Şəhərsalma şəhərlərin planlaşdırılması, inkişafı və idarə olunması ilə məşğul olan mühəndislik və memarlıq yönümlü sahədir. İxtisasın əsas sahələri şəhər planlaşdırması, torpaq istifadəsi, nəqliyyat sistemləri, ekoloji balans, yaşayış məkanlarının təşkili və şəhər infrastrukturudur. Məzunlar dövlət və özəl qurumlarda, memarlıq və inşaat şirkətlərində, regional inkişaf və layihələndirmə institutlarında çalışırlar. Analitik düşüncə, layihə hazırlığı və texniki biliklər vacibdir.",
+        "en": "Urban planning involves the planning, development, and management of cities, focusing on engineering and architecture. The main areas of the specialty include urban planning, land use, transportation systems, ecological balance, organization of living spaces, and urban infrastructure. Graduates work in government and private organizations, architecture and construction companies, and regional development and design institutes. Analytical thinking, project preparation, and technical knowledge are essential.",
+        "k_en": "Urban planning"
+    },
+    {
+        "key": "Şərabçılıq",
+        "az": "Şərabçılıq üzümçülük məhsullarının emalı, fermentasiya prosesi, keyfiyyətə nəzarət və müxtəlif növ şərabların istehsalı ilə məşğul olan aqrar və texnoloji sahədir. İxtisasın əsas sahələri enologiya, üzüm sortları və becərilməsi, fermentasiya texnologiyaları, kimyəvi analizlər və şərabın saxlanması və qablaşdırılmasıdır. Məzunlar şərab zavodlarında, qida sənayesi müəssisələrində və aqrar tədqiqat institutlarında çalışırlar. Texnoloji biliklər, dad və keyfiyyət analizi bacarıqları vacibdir.",
+        "en": "Winemaking involves the processing of grape products, fermentation processes, quality control, and the production of various types of wine. The main areas of the specialty include enology, grape varieties and cultivation, fermentation technologies, chemical analyses, and the storage and packaging of wine. Graduates work in wineries, food industry enterprises, and agricultural research institutes. Technological knowledge, taste and quality analysis skills are essential.",
+        "k_en": "Winemaking"
+    },
+    {
         "key": "Tarix",
         "az": "Tarix insan cəmiyyətlərinin keçmişdəki hadisələri, inkişafı və mədəniyyətləri ilə bağlı araşdırmalar aparan humanitar elmlər sahəsidir. İxtisasın əsas sahələri qədim, orta və yeni dövrlər tarixi, arxeologiya, tarix metodologiyası, regional və dünya tarixidir. Məzunlar təhsil, tədqiqat institutları, muzeylər və dövlət idarələrində çalışırlar. Tədqiqat bacarıqları, analitik düşüncə və mətnlə işləmə qabiliyyəti vacibdir.",
         "en": "History is a field of humanitarian sciences that conducts research on the past events, development, and cultures of human societies. The main areas of the specialty include ancient, medieval, and modern history, archaeology, history methodology, regional and world history. Graduates work in education, research institutions, museums, and government agencies. Research skills, analytical thinking, and the ability to work with texts are essential.",
@@ -736,53 +785,5 @@
         "az": "Zoomühəndislik kənd təsərrüfatında su ehtiyatlarının idarə olunması, suvarma və drenaj sistemlərinin layihələndirilməsi və istismarı ilə məşğul olan mühəndislik sahəsidir. İxtisasın əsas sahələri hidrologiya, suvarma texnologiyaları, torpaq eroziyası, drenaj sistemləri və su resurslarının qorunmasıdır. Məzunlar kənd təsərrüfatı müəssisələrində, suvarma idarələrində və ekoloji tədqiqat institutlarında çalışırlar. Texniki biliklər, sahə təcrübəsi və ekoloji düşüncə vacibdir.",
         "en": "Water engineering involves the management of water resources in agriculture, designing and operating irrigation and drainage systems. The main areas of the specialty include hydrology, irrigation technologies, soil erosion, drainage systems, and water resource conservation. Graduates work in agricultural enterprises, irrigation departments, and ecological research institutes. Technical knowledge, field experience, and ecological thinking are essential.",
         "k_en": "Zoom engineering"
-    },
-    {
-        "key": "İbtidai sinif müəllimliyi",
-        "az": "İbtidai sinif müəllimliyi şagirdlərin əsas təhsil pilləsində tədris və tərbiyə işlərini həyata keçirən pedaqoji ixtisasdır. İxtisasın əsas sahələri təlim metodikası, pedaqogika, psixologiya, dil və ədəbiyyat, riyaziyyat və təbii elmlərin əsaslarıdır. Məzunlar ibtidai siniflərdə şagirdlərin bilik və bacarıqlarını inkişaf etdirir, onların sosial və intellektual inkişafına dəstək olurlar. Pedaqoji bacarıqlar, səbir və ünsiyyət qabiliyyəti vacibdir.",
-        "en": "Primary school teaching is a pedagogical specialty that carries out teaching and educational work for students at the primary education level. The main areas of the specialty include teaching methodology, pedagogy, psychology, language and literature, mathematics, and the basics of natural sciences. Graduates develop students' knowledge and skills in primary classes, supporting their social and intellectual development. Pedagogical skills, patience, and communication skills are essential.",
-        "k_en": "Elementary school teaching"
-    },
-    {
-        "key": "İctimai səhiyyə",
-        "az": "İctimai səhiyyə cəmiyyətin sağlamlığının qorunması, xəstəliklərin qarşısının alınması və səhiyyə siyasətinin formalaşdırılması ilə məşğul olan səhiyyə sahəsidir. İxtisasın əsas sahələri epidemiologiya, sağlamlıq siyasəti, sağlamlıq təhsili, ətraf mühitin sağlamlığa təsiri və səhiyyə idarəçiliyidir. Məzunlar səhiyyə müəssisələrində, dövlət və qeyri-hökumət təşkilatlarında, tədqiqat və monitorinq mərkəzlərində çalışırlar. Analitik düşüncə, statistik biliklər və sosial məsuliyyət vacibdir.",
-        "en": "Public health involves the protection of community health, prevention of diseases, and the formation of health policies. The main areas of the specialty include epidemiology, health policy, health education, the impact of the environment on health, and health management. Graduates work in health institutions, government and non-governmental organizations, research and monitoring centers. Analytical thinking, statistical knowledge, and social responsibility are essential.",
-        "k_en": "Public health"
-    },
-    {
-        "key": "İdman menecmenti və kommunikasiya",
-        "az": "İdman menecmenti və kommunikasiya idman təşkilatlarının idarə olunması, tədbirlərin təşkili və idmanla bağlı ictimaiyyətlə əlaqələrin qurulması ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri idman marketinqi, media və kommunikasiya, tədbir menecmenti, idman hüququ və idarəetmə prinsipləridir. Məzunlar idman federasiyalarında, klublarda, media qurumlarında və təşkilat komitələrində çalışırlar. Təşkilatçılıq bacarığı, ünsiyyət qabiliyyəti və sahəyə maraq vacibdir.",
-        "en": "Sports management and communication involve the management of sports organizations, organizing events, and establishing public relations related to sports. The main areas of the specialty include sports marketing, media and communication, event management, sports law, and management principles. Graduates work in sports federations, clubs, media organizations, and organizing committees. Organizational skills, communication ability, and interest in the field are essential.",
-        "k_en": "Sports management and communications"
-    },
-    {
-        "key": "İqtisadiyyat",
-        "az": "İqtisadiyyat resursların bölüşdürülməsi, istehsal, bölüşdürmə və istehlak proseslərinin təhlili ilə məşğul olan sosial elm sahəsidir. İxtisasın əsas sahələri mikroiqtisadiyyat, makroiqtisadiyyat, iqtisadi siyasət, maliyyə, beynəlxalq iqtisadi münasibətlər və statistik təhlildir. Məzunlar dövlət qurumlarında, bank sektorunda, analitik və tədqiqat mərkəzlərində, özəl şirkətlərdə çalışırlar. Analitik düşüncə, statistik biliklər və iqtisadi modellərlə işləmə bacarığı vacibdir.",
-        "en": "Economics is a social science that deals with the distribution of resources, production, distribution, and consumption processes. The main areas of the specialty include microeconomics, macroeconomics, economic policy, finance, international economic relations, and statistical analysis. Graduates work in government agencies, the banking sector, analytical and research centers, and private companies. Analytical thinking, statistical knowledge, and the ability to work with economic models are essential.",
-        "k_en": "Economics"
-    },
-    {
-        "key": "İslamşünaslıq",
-        "az": "İslamşünaslıq İslam dini, onun tarixi, mənbələri, hüquqi və fəlsəfi əsasları ilə bağlı elmi tədqiqat və tədrislə məşğul olan humanitar sahədir. İxtisasın əsas sahələri Qurani-Kərim və təfsir, hədis, İslam hüququ (fiqh), İslam fəlsəfəsi, İslam tarixi və dinlərarası münasibətlərdir. Məzunlar dini icmalarda, elmi-tədqiqat mərkəzlərində, təhsil müəssisələrində və mədəniyyət sahəsində çalışırlar. Elmi yanaşma, etik düşüncə və klassik mənbələrlə işləmə bacarığı vacibdir.",
-        "en": "Islamic studies involve scientific research and teaching related to the Islamic religion, its history, sources, legal and philosophical foundations. The main areas of the specialty include the Quran and its interpretation, hadith, Islamic law (fiqh), Islamic philosophy, Islamic history, and interfaith relations. Graduates work in religious communities, scientific research centers, educational institutions, and cultural fields. Scientific approach, ethical thinking, and the ability to work with classical sources are essential.",
-        "k_en": "Islamic studies"
-    },
-    {
-        "key": "Şəhərsalma",
-        "az": "Şəhərsalma şəhərlərin planlaşdırılması, inkişafı və idarə olunması ilə məşğul olan mühəndislik və memarlıq yönümlü sahədir. İxtisasın əsas sahələri şəhər planlaşdırması, torpaq istifadəsi, nəqliyyat sistemləri, ekoloji balans, yaşayış məkanlarının təşkili və şəhər infrastrukturudur. Məzunlar dövlət və özəl qurumlarda, memarlıq və inşaat şirkətlərində, regional inkişaf və layihələndirmə institutlarında çalışırlar. Analitik düşüncə, layihə hazırlığı və texniki biliklər vacibdir.",
-        "en": "Urban planning involves the planning, development, and management of cities, focusing on engineering and architecture. The main areas of the specialty include urban planning, land use, transportation systems, ecological balance, organization of living spaces, and urban infrastructure. Graduates work in government and private organizations, architecture and construction companies, and regional development and design institutes. Analytical thinking, project preparation, and technical knowledge are essential.",
-        "k_en": "Urban planning"
-    },
-    {
-        "key": "Şərabçılıq",
-        "az": "Şərabçılıq üzümçülük məhsullarının emalı, fermentasiya prosesi, keyfiyyətə nəzarət və müxtəlif növ şərabların istehsalı ilə məşğul olan aqrar və texnoloji sahədir. İxtisasın əsas sahələri enologiya, üzüm sortları və becərilməsi, fermentasiya texnologiyaları, kimyəvi analizlər və şərabın saxlanması və qablaşdırılmasıdır. Məzunlar şərab zavodlarında, qida sənayesi müəssisələrində və aqrar tədqiqat institutlarında çalışırlar. Texnoloji biliklər, dad və keyfiyyət analizi bacarıqları vacibdir.",
-        "en": "Winemaking involves the processing of grape products, fermentation processes, quality control, and the production of various types of wine. The main areas of the specialty include enology, grape varieties and cultivation, fermentation technologies, chemical analyses, and the storage and packaging of wine. Graduates work in wineries, food industry enterprises, and agricultural research institutes. Technological knowledge, taste and quality analysis skills are essential.",
-        "k_en": "Winemaking"
-    },
-    {
-        "key": "Əczaçılıq",
-        "az": "Əczaçılıq dərman vasitələrinin hazırlanması, tərkibinin öyrənilməsi, saxlanması, istifadəsi və yayılması ilə məşğul olan tibb və kimya yönümlü ixtisasdır. İxtisasın əsas sahələri farmakognoziya, farmakologiya, farmasevtik kimya, toksikologiya və dərman texnologiyasıdır. Məzunlar apteklərdə, dərman istehsalı müəssisələrində, tədqiqat laboratoriyalarında və səhiyyə sistemində çalışırlar. Dəqiqlik, kimyəvi biliklər və etik məsuliyyət vacibdir.",
-        "en": "Pharmacy involves the preparation, study, storage, use, and distribution of medicinal products, focusing on medicine and chemistry. The main areas of the specialty include pharmacognosy, pharmacology, pharmaceutical chemistry, toxicology, and drug technology. Graduates work in pharmacies, pharmaceutical manufacturing companies, research laboratories, and the healthcare system. Accuracy, chemical knowledge, and ethical responsibility are essential.",
-        "k_en": "Pharmacy"
     }
 ]
