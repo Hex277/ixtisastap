@@ -673,7 +673,6 @@ function scrollToQrup(qrupId, clickedBtn) {
         row.appendChild(cell);
         tbody.appendChild(row);
       } else {
-        // 💻 Desktop görünüş (cədvəl)
         const row = document.createElement("tr");
         row.innerHTML = `
           <td>${fennAdı}</td>
@@ -956,54 +955,39 @@ function loadSpecializations() {
       });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const selectedLanguage = localStorage.getItem("selectedLanguage") || "az";
-  document.getElementById("language-selector").value = selectedLanguage;
-  changeLanguage(selectedLanguage);
-  loadSpecializations();
-});
-
 
 document.addEventListener("DOMContentLoaded", () => {
+  if (!document.body.classList.contains("page-specializations")) return;
+
   const searchInput = document.getElementById("search");
   const searchBtn = document.getElementById("searchBtn");
-  const selectedLanguage = localStorage.getItem("selectedLanguage") || "az";
-  document.getElementById("language-selector").value = selectedLanguage;
+  const langSelector = document.getElementById("language-selector");
 
-  changeLanguage(selectedLanguage);
-  loadSpecializations();
-
-  searchBtn.addEventListener("click", handleSearch);
-  const isMobile = () => window.innerWidth <= 768;
-  if (!isMobile()) {
-      searchInput.addEventListener("input", handleSearch);
+  if (!langSelector || !searchInput || !searchBtn) {
+    console.warn("Zəruri elementlər tapılmadı. Kod dayandırıldı.");
+    return;
   }
 
+  const selectedLanguage = localStorage.getItem("selectedLanguage") || "az";
+  langSelector.value = selectedLanguage;
+
+  changeLanguage(selectedLanguage);
+  loadSpecializations();  // ✅ istifadə olunur
+
+  searchBtn.addEventListener("click", handleSearch);
   searchInput.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-          handleSearch();
-      }
+    if (e.key === "Enter") handleSearch();
+  });
+
+  langSelector.addEventListener("change", () => {
+    const newLang = langSelector.value;
+    localStorage.setItem("selectedLanguage", newLang);
+    changeLanguage(newLang);
+    renderDataSpec(globalData, newLang);
   });
 });
-function loadAllData() {
-  const groupNumbers = [1, 2, 3, 4]; // Load all groups
-  const promises = groupNumbers.map(groupNumber => fetch(`qrup${groupNumber}.json`).then(response => {
-      if (!response.ok) throw Error(`Failed to fetch qrup${groupNumber}.json: ${response.statusText}`);
-      return response.json();
-  }));
-
-  Promise.all(promises)
-      .then(dataArray => {
-          const combinedData = dataArray.flat(); // Combine data from all groups
-          renderDataSpec(combinedData, localStorage.getItem("selectedLanguage") || "az");
-      })
-      .catch(e => {
-          console.error("Error loading data:", e);
-      });
-}
 
 
-loadAllData();
 function handleSearch() {
   const query = document.getElementById("search").value.trim().toLowerCase();
   const lang = localStorage.getItem("selectedLanguage") || "az";
