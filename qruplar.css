@@ -529,7 +529,7 @@ body.dark-mode .specialization-description {
     border-top-right-radius: 0;
 }
 .adsterrabanner {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 100%;
