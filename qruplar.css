@@ -565,7 +565,7 @@ body.dark-mode .specialization-description {
         display: block;
         padding-right: 10px;
         height: 500px;
-        overflow-y: auto
+        overflow-y: auto;
     }
     #card-container,
     #filterToggleBtn,
@@ -695,8 +695,10 @@ body.dark-mode .specialization-description {
         left: auto !important;
         width: auto !important;
         z-index: 9999 !important;
-      }
-      
+    }
+    .adsterrabannerpc {
+        background-color: transparent;
+    }  
       
     
 }
@@ -889,5 +891,12 @@ body.dark-mode .specialization-description {
         bottom: auto !important;
         width: 100% !important;
         z-index: 9999 !important;
-      }
+    }
+    .bigads-bar {
+        background-color: transparent;
+    }
+    .adsterrabannerpc {
+        display: none;
+        position: fixed;
+    }
 }
