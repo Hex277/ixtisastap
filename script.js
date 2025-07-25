@@ -57,50 +57,60 @@ function renderData(data, lang) {
     tableContainer.innerHTML = "";
     cardContainer.innerHTML = "";
     if (isMobileView) {
-      let html = "";
-      data.forEach(group => {
-          group.universitetler.forEach((univ, index) => {
-  
-              // Yalnız 2-ci universitetdən etibarən reklam əlavə et
-              if (index > 0) {
-                  html += `
-                      <div class="bigads-bar" style="display: flex; justify-content: center; align-items: center; margin: 20px 0; height: 250px; width: 100%;">
-                          <div class="custom-ad-container">
-                              <iframe src="//www.highperformanceformat.com/591a4e25fceaa4d485e4ccd0981ef506/invoke.js" 
-                                  width="320" height="50" style="border:none;overflow:hidden;" 
-                                  loading="lazy"></iframe>
-                          </div>
-                      </div>
-                  `;
-              }
-  
-              html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
-  
-              univ.ixtisaslar.forEach(ixtisas => {
-                  let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
-                      ? ixtisas.tehsil_formasi_en
-                      : ixtisas.tehsil_formasi;
-  
-                  html += `
-                  <div class="card">
-                    <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
-                    <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
-                    <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
-                    <div class="extra-info" style="display: none;">
-                      <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
-                      <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
-                      <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
+    let html = "";
+    data.forEach(group => {
+        group.universitetler.forEach((univ, index) => {
+
+            // Yalnız 2-ci universitetdən etibarən reklam əlavə et
+            if (index > 0) {
+                html += `
+                    <div class="bigads-bar" style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+                        <div class="custom-ad-container" id="ad-container-${index}"></div>
                     </div>
-                    <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
-                  </div>`;
-              });
-          });
-      });
-  
-      cardContainer.innerHTML = html;
-      tableContainer.style.display = "none";
-      cardContainer.style.display = "block";
-  } else {
+                `;
+            }
+
+            html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
+
+            univ.ixtisaslar.forEach(ixtisas => {
+                let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
+                    ? ixtisas.tehsil_formasi_en
+                    : ixtisas.tehsil_formasi;
+
+                html += `
+                <div class="card">
+                  <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
+                  <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
+                  <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
+                  <div class="extra-info" style="display: none;">
+                    <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
+                    <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
+                    <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
+                  </div>
+                  <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
+                </div>`;
+            });
+        });
+    });
+
+    cardContainer.innerHTML = html;
+    tableContainer.style.display = "none";
+    cardContainer.style.display = "block";
+
+    // Reklam skriptlərini sonradan daxil et
+    data.forEach(group => {
+        group.universitetler.forEach((univ, index) => {
+            if (index > 0) {
+                const adContainer = document.getElementById(`ad-container-${index}`);
+                const adScript = document.createElement("script");
+                adScript.src = "//www.highperformanceformat.com/591a4e25fceaa4d485e4ccd0981ef506/invoke.js";
+                adScript.type = "text/javascript";
+                adScript.async = true;
+                adContainer.appendChild(adScript);
+            }
+        });
+    });
+} else {
         let html = "";
         data.forEach(group => {
             group.universitetler.forEach(univ => {
