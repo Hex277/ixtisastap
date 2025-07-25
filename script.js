@@ -64,7 +64,7 @@ function renderData(data, lang) {
             // Yalnız 2-ci universitetdən etibarən reklam əlavə et
             if (index > 0) {
                 html += `
-                    <div class="bigads-bar" style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+                    <div class="bigads-bar" style="display: flex; justify-content: center; align-items: center; margin: 20px 0; height: 300px; width: 100%;">
                         <div class="custom-ad-container" id="ad-container-${index}"></div>
                     </div>
                 `;
