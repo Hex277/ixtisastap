@@ -61,15 +61,16 @@ function renderData(data, lang) {
     data.forEach(group => {
         group.universitetler.forEach((univ, index) => {
 
-            // Yalnız 2-ci universitetdən etibarən reklam əlavə et
-            if (index > 0) {
-                html += `
-                    <div class="bigads-bar" style="display: flex; justify-content: center; align-items: center; margin: 20px 0; height: 300px; width: 100%;">
-                        <div class="custom-ad-container" id="ad-container-${index}"></div>
-                    </div>
-                `;
+            if (!isAnyFilterActive() && index > 0) {
+              const uniqueId = `ad-container-${index}-${Date.now()}`;
+              html += `
+                  <div class="bigads-bar" style="display: flex; justify-content: center; align-items: center; margin: 20px 0; height: 300px; width: 100%;">
+                      <div class="custom-ad-container" id="${uniqueId}"></div>
+                  </div>
+              `;
+              univ._adContainerId = uniqueId; // saxla ki, sonra scripti ora əlavə edək
             }
-
+        
             html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
 
             univ.ixtisaslar.forEach(ixtisas => {
@@ -98,18 +99,23 @@ function renderData(data, lang) {
     cardContainer.style.display = "block";
 
     // Reklam skriptlərini sonradan daxil et
-    data.forEach(group => {
-        group.universitetler.forEach((univ, index) => {
-            if (index > 0) {
-                const adContainer = document.getElementById(`ad-container-${index}`);
-                const adScript = document.createElement("script");
-                adScript.src = "//www.highperformanceformat.com/591a4e25fceaa4d485e4ccd0981ef506/invoke.js";
-                adScript.type = "text/javascript";
-                adScript.async = true;
-                adContainer.appendChild(adScript);
-            }
-        });
-    });
+    if (!filtersActive) {
+      data.forEach(group => {
+          group.universitetler.forEach((univ, index) => {
+              if (index > 0 && univ._adContainerId) {
+                  const adContainer = document.getElementById(univ._adContainerId);
+                  if (adContainer) {
+                      const adScript = document.createElement("script");
+                      adScript.src = "//www.highperformanceformat.com/591a4e25fceaa4d485e4ccd0981ef506/invoke.js";
+                      adScript.type = "text/javascript";
+                      adScript.async = true;
+                      adContainer.appendChild(adScript);
+                  }
+              }
+          });
+      });
+    }
+  
 } else {
         let html = "";
         data.forEach(group => {
@@ -283,6 +289,19 @@ function getCurrentFilters() {
         maxScore: parseInt(document.getElementById("maxScore").value) || 700
     }
 }
+function isAnyFilterActive() {
+  const filters = getCurrentFilters();
+  return (
+      filters.searchValue !== "" ||
+      filters.tehsilValue !== "" ||
+      filters.dilValue !== "" ||
+      filters.altValue !== "" ||
+      filters.locationValue !== "" ||
+      filters.minScore > 0 ||
+      filters.maxScore < 700
+  );
+}
+
 function filterData(data, {
     searchValue,
     tehsilValue,
