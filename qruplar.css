@@ -598,7 +598,6 @@ body.dark-mode .specialization-description {
     
     .qrup-blok {
         display: none;
-        min-height: 50vh;
         box-sizing: border-box;
         justify-content: center;
         align-items: center;

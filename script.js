@@ -480,114 +480,70 @@ function scrollToQrup(qrupId, clickedBtn) {
     const isMobile = window.innerWidth <= 768;
     let toplam = 0;
   
-    if (isMobile) {
-      const cards = document.querySelectorAll("#qrup1 .mobile-card");
-      cards.forEach((card, index) => {
-        let dogru = parseFloat(card.querySelector(".dogru")?.value) || 0;
-        let yanlis = parseFloat(card.querySelector(".yanlis")?.value) || 0;
-        let acikKod = parseFloat(card.querySelector(".acik-kod")?.value) || 0;
-        let acikYazili = parseFloat(card.querySelector(".acik-yazili")?.value) || 0;
+    const elements = isMobile
+      ? document.querySelectorAll("#qrup1 .mobile-card")
+      : document.querySelectorAll("#qrup1 .qiymetlendirme tbody tr");
   
-        // Limit yoxlamaları (eyni qaydalar)
-        if (dogru + yanlis > 22) {
-          if (dogru > yanlis) {
-            dogru = 22 - yanlis;
-            card.querySelector(".dogru").value = dogru;
-          } else {
-            yanlis = 22 - dogru;
-            card.querySelector(".yanlis").value = yanlis;
-          }
+    elements.forEach((el, index) => {
+      let dogru = parseFloat(el.querySelector(".dogru")?.value) || 0;
+      let yanlis = parseFloat(el.querySelector(".yanlis")?.value) || 0;
+      let acikKod = parseFloat(el.querySelector(".acik-kod")?.value) || 0;
+      let acikYazili = parseFloat(el.querySelector(".acik-yazili")?.value) || 0;
+  
+      // Limit yoxlamaları
+      if (dogru + yanlis > 22) {
+        if (dogru > yanlis) {
+          dogru = 22 - yanlis;
+          el.querySelector(".dogru").value = dogru;
+        } else {
+          yanlis = 22 - dogru;
+          el.querySelector(".yanlis").value = yanlis;
         }
+      }
   
-        if (acikKod > 5) {
-          acikKod = 5;
-          card.querySelector(".acik-kod").value = 5;
+      if (acikKod > 5) {
+        acikKod = 5;
+        el.querySelector(".acik-kod").value = 5;
+      }
+  
+      if (acikYazili > 3) {
+        acikYazili = 3;
+        el.querySelector(".acik-yazili").value = 3;
+      }
+  
+      if (acikKod + acikYazili > 8) {
+        if (acikKod > acikYazili) {
+          acikKod = 8 - acikYazili;
+          el.querySelector(".acik-kod").value = acikKod;
+        } else {
+          acikYazili = 8 - acikKod;
+          el.querySelector(".acik-yazili").value = acikYazili;
         }
+      }
   
-        if (acikYazili > 3) {
-          acikYazili = 3;
-          card.querySelector(".acik-yazili").value = 3;
-        }
+      // Hesablamalar rəsmi düstura əsasən
+      const NBqRaw = (dogru - yanlis / 4);
+      const NBq = Math.max(0, (100 / 33) * NBqRaw);
+      const NBa = (100 / 33) * (acikKod + 2 * acikYazili);
+      let netice = NBq + NBa;
   
-        if (acikKod + acikYazili > 8) {
-          if (acikKod > acikYazili) {
-            acikKod = 8 - acikYazili;
-            card.querySelector(".acik-kod").value = acikKod;
-          } else {
-            acikYazili = 8 - acikKod;
-            card.querySelector(".acik-yazili").value = acikYazili;
-          }
-        }
+      // Əmsal tətbiqi: ilk iki fənn 1.5 əmsalla
+      if (index === 0 || index === 1) {
+        netice *= 1.5;
+      }
   
-        // Bal hesablaması
-        let netice = 0;
-        if (index === 0 || index === 1) {
-          netice = (dogru * 4.5) - (yanlis * 1.05) + (acikKod * 4.5) + (acikYazili * 9.15);
-        } else if (index === 2) {
-          netice = (dogru * 3.0) - (yanlis * 0.7) + (acikKod * 3.0) + (acikYazili * 6.1);
-        }
+      netice = Math.round(netice * 10) / 10;
+      toplam += netice;
   
-        netice = Math.max(0, netice);
-        netice = Math.round(netice * 10) / 10;
-        toplam += netice;
-  
-        const result = card.querySelector(".netice");
+      // Nəticəni göstər
+      if (isMobile) {
+        const result = el.querySelector(".netice");
         if (result) result.textContent = netice.toFixed(1) + " bal";
-      });
-    } else {
-      const rows = document.querySelectorAll("#qrup1 .qiymetlendirme tbody tr");
-      rows.forEach((row, index) => {
-        let dogru = parseFloat(row.querySelector(".dogru")?.value) || 0;
-        let yanlis = parseFloat(row.querySelector(".yanlis")?.value) || 0;
-        let acikKod = parseFloat(row.querySelector(".acik-kod")?.value) || 0;
-        let acikYazili = parseFloat(row.querySelector(".acik-yazili")?.value) || 0;
-  
-        // Eyni limitlər
-        if (dogru + yanlis > 22) {
-          if (dogru > yanlis) {
-            dogru = 22 - yanlis;
-            row.querySelector(".dogru").value = dogru;
-          } else {
-            yanlis = 22 - dogru;
-            row.querySelector(".yanlis").value = yanlis;
-          }
-        }
-  
-        if (acikKod > 5) {
-          acikKod = 5;
-          row.querySelector(".acik-kod").value = 5;
-        }
-  
-        if (acikYazili > 3) {
-          acikYazili = 3;
-          row.querySelector(".acik-yazili").value = 3;
-        }
-  
-        if (acikKod + acikYazili > 8) {
-          if (acikKod > acikYazili) {
-            acikKod = 8 - acikYazili;
-            row.querySelector(".acik-kod").value = acikKod;
-          } else {
-            acikYazili = 8 - acikKod;
-            row.querySelector(".acik-yazili").value = acikYazili;
-          }
-        }
-  
-        let netice = 0;
-        if (index === 0 || index === 1) {
-          netice = (dogru * 4.5) - (yanlis * 1.05) + (acikKod * 4.5) + (acikYazili * 9.15);
-        } else if (index === 2) {
-          netice = (dogru * 3.0) - (yanlis * 0.7) + (acikKod * 3.0) + (acikYazili * 6.1);
-        }
-  
-        netice = Math.max(0, netice);
-        netice = Math.round(netice * 10) / 10;
-        toplam += netice;
-  
-        const resultCell = row.querySelector("td:last-child p");
+      } else {
+        const resultCell = el.querySelector("td:last-child p");
         if (resultCell) resultCell.textContent = netice.toFixed(1) + " bal";
-      });
-    }
+      }
+    });
   
     // Ümumi nəticəni göstər
     const toplamNetice = document.getElementById("umumi-netice");
@@ -595,6 +551,7 @@ function scrollToQrup(qrupId, clickedBtn) {
       toplamNetice.textContent = toplam.toFixed(1) + " bal";
     }
   }
+  
   
   
   const qrupFennleri = {
@@ -796,70 +753,67 @@ function scrollToQrup(qrupId, clickedBtn) {
     const isMobile = window.innerWidth <= 768;
     let toplam = 0;
   
-    if (isMobile) {
-      const cards = document.querySelectorAll("#buraxilis .mobile-card");
-      cards.forEach((card, index) => {
-        const fennAdı = card.querySelector("strong")?.textContent?.trim();
-        const qapaliInput = card.querySelector(".qapali");
-        const yaziliInput = card.querySelector(".yazili");
-        const kodInput = card.querySelector(".kod");
+    const selector = isMobile
+      ? "#buraxilis .mobile-card"
+      : "#buraxilis-body tr";
   
-        let qapali = parseFloat(qapaliInput?.value) || 0;
-        let yazili = parseFloat(yaziliInput?.value) || 0;
-        let kod = parseFloat(kodInput?.value) || 0;
+    const items = document.querySelectorAll(selector);
   
-        let bal = 0;
+    items.forEach((item) => {
+      const fənnAdı = isMobile
+        ? item.querySelector("strong")?.textContent?.trim()
+        : item.querySelector("td")?.textContent?.trim();
   
-        if (fennAdı === "Azərbaycan dili") {
-          bal = qapali * 2.5 + yazili * 5;
-        } else if (fennAdı === "Riyaziyyat") {
-          bal = qapali * 3.1 + kod * 3.1 + yazili * 6.3;
-        } else if (fennAdı === "Xarici dil") {
-          bal = qapali * 2.7 + yazili * 5.4;
-        }
+      const qapaliInput = item.querySelector(".qapali");
+      const yaziliInput = item.querySelector(".yazili");
+      const kodInput = item.querySelector(".kod");
   
-        bal = Math.round(bal * 10) / 10;
-        toplam += bal;
+      let qapali = parseFloat(qapaliInput?.value) || 0;
+      let yazili = parseFloat(yaziliInput?.value) || 0;
+      let kod = parseFloat(kodInput?.value) || 0;
   
-        const resultP = card.querySelector(".netice-hucresi");
-        if (resultP) resultP.textContent = bal.toFixed(1) + " bal";
-      });
-    } else {
-      const rows = document.querySelectorAll("#buraxilis-body tr");
-      rows.forEach((row) => {
-        const cells = row.querySelectorAll("td");
-        if (cells.length < 5) return;
+      // ✅ Limitlər
+      if (fənnAdı === "Azərbaycan dili") {
+        if (qapali > 20) { qapali = 20; qapaliInput.value = 20; }
+        if (yazili > 10) { yazili = 10; yaziliInput.value = 10; }
+      } else if (fənnAdı === "Riyaziyyat") {
+        if (qapali > 13) { qapali = 13; qapaliInput.value = 13; }
+        if (kod > 5)     { kod = 5; kodInput.value = 5; }
+        if (yazili > 7)  { yazili = 7; yaziliInput.value = 7; }
+      } else if (fənnAdı === "Xarici dil") {
+        if (qapali > 23) { qapali = 23; qapaliInput.value = 23; }
+        if (yazili > 7)  { yazili = 7; yaziliInput.value = 7; }
+      }
   
-        const fənnAdı = cells[0].textContent.trim();
-        const qapaliInput = row.querySelector(".qapali");
-        const yaziliInput = row.querySelector(".yazili");
-        const kodInput = row.querySelector(".kod");
+      // ✅ Hesablama
+      let bal = 0;
+      if (fənnAdı === "Azərbaycan dili") {
+        const maxTotal = 30; // 20 qapalı + 10 açıq
+        const faktikiTotal = qapali + yazili;
+        bal = (faktikiTotal / maxTotal) * 100;
+      } else if (fənnAdı === "Riyaziyyat") {
+        const maxTotal = 25; // 13 qapalı + 5 kod + 7 yazılı
+        const faktikiTotal = qapali + kod + yazili;
+        bal = (faktikiTotal / maxTotal) * 100;
+      } else if (fənnAdı === "Xarici dil") {
+        const maxTotal = 30; // 23 qapalı + 7 açıq
+        const faktikiTotal = qapali + yazili;
+        bal = (faktikiTotal / maxTotal) * 100;
+      }
   
-        let qapali = parseFloat(qapaliInput?.value) || 0;
-        let yazili = parseFloat(yaziliInput?.value) || 0;
-        let kod = parseFloat(kodInput?.value) || 0;
+      bal = Math.round(bal * 10) / 10;
+      toplam += bal;
   
-        let bal = 0;
-  
-        if (fənnAdı === "Azərbaycan dili") {
-          bal = qapali * 2.5 + yazili * 5;
-        } else if (fənnAdı === "Riyaziyyat") {
-          bal = qapali * 3.1 + kod * 3.1 + yazili * 6.3;
-        } else if (fənnAdı === "Xarici dil") {
-          bal = qapali * 2.7 + yazili * 5.4;
-        }
-  
-        bal = Math.round(bal * 10) / 10;
-        toplam += bal;
-  
-        const resultCell = row.querySelector(".netice-hucresi");
-        if (resultCell) resultCell.textContent = bal.toFixed(1) + " bal";
-      });
-    }
+      const resultCell = item.querySelector(".netice-hucresi");
+      if (resultCell) resultCell.textContent = bal.toFixed(1) + " bal";
+    });
   
     const neticeP = document.getElementById("umumi-netice-buraxilis");
-    if (neticeP) neticeP.textContent = toplam.toFixed(1) + " bal";
+    if (neticeP) {
+      neticeP.textContent = toplam.toFixed(1) + " bal";
+    }
   }
+  
   
   function qrupSec(qrupId, clickedBtn) {
     // Bütün blokları gizlət
