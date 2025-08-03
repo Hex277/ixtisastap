@@ -118,7 +118,8 @@ const translations = {
              thacikyazili: "Open-ended – Written (detailed) question",
              thacikkod: "Open-ended – Auto-graded question",
              thnetice: "Result",
-             scorecalc: "Score Calculation"
+             scorecalc: "Score Calculation",
+             scoreCalculation: "Score calculation for %s"
     },
     az: {
              siteName: "IxtisasTap.com",
@@ -239,7 +240,8 @@ const translations = {
              thacikyazili: "Açıq - Yazılı (ətraflı)",
              thacikkod: "Açıq - Kodlaşdırılan",
              thnetice: "Nəticə",
-             scorecalc: "Balların Hesablanması"
+             scorecalc: "Balların Hesablanması",
+             scoreCalculation: "%s üzrə balların hesablanması"
     },
     tr: {
              siteName: "IxtisasTap.com",
@@ -360,6 +362,7 @@ const translations = {
              thacikyazili: "Açık - Yazılı (Ayrıntılı)",
              thacikkod: "Açık - Kodlamalı",
              thnetice: "Sonuç",
-             scorecalc: "Puan hesaplama"
+             scorecalc: "Puan hesaplama",
+             scoreCalculation: "%s için puan hesaplama"
     }
 };

@@ -475,11 +475,12 @@ body.dark-mode #language-selector option {
     border-radius: 12px;
     height: 50px;
     margin-bottom: 0; /* Alt boşluq olmasın */
-    border: 1px solid #3f3f3f;
+    border: 1px solid #1e90ff;
 }
 body.dark-mode .specialization-title {
     background: #1e1e1e;
-    color: #ddd
+    color: #ddd;
+    border: 1px solid #3f3f3f;
 }
 /* Description açılanda title-ın alt radiusları silinsin */
 .specialization-title.active {
@@ -509,9 +510,9 @@ body.dark-mode .specialization-title {
 .specialization-description {
     padding: 10px 16px;
     background-color: #ffffff;
-    border-left: 1px solid #3f3f3f;
-    border-right: 1px solid #3f3f3f;
-    border-bottom: 1px solid #3f3f3f;
+    border-left: 1px solid #1e90ff;
+    border-right: 1px solid #1e90ff;
+    border-bottom: 1px solid #1e90ff;
     border-radius: 0 0 12px 12px; /* Yuxarı radiusları siləcəyik */
     display: none;
     transition: all 0.3s ease;
@@ -521,7 +522,10 @@ body.dark-mode .specialization-title {
 }
 body.dark-mode .specialization-description {
     background: #1e1e1e;
-    color: #ddd
+    color: #ddd;
+    border-left: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f;
+    border-bottom: 1px solid #3f3f3f;
 }
 
 .specialization-description {

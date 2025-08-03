@@ -586,7 +586,7 @@ function scrollToQrup(qrupId, clickedBtn) {
     // Başlıq
     const basliq = document.getElementById("qrup-basliq");
     if (!basliq) return;
-    basliq.textContent = btnById ? btnById.textContent + " üzrə balların hesablanması" : "";
+      basliq.textContent = btnById ? btnById.textContent + " üzrə balların hesablanması" : "";
   
     // Cədvəl və ya kart konteyneri
     const tbody = document.getElementById("qiymetlendirme-body");
@@ -608,26 +608,26 @@ function scrollToQrup(qrupId, clickedBtn) {
             <strong>${fennAdı}</strong><br><br>
 
             <div class="form-row">
-              <label>Qapalı - Doğru sayı:</label>
+              <label data-i18n="thqapalidogru">Qapalı - Doğru sayı:</label>
               <input min="0" max="30" class="dogru" placeholder="0" oninput="hesablaQrup1()">
             </div>
 
             <div class="form-row">
-              <label>Qapalı - Yanlış sayı:</label>
+              <label data-i18n="thqapaliyanlis">Qapalı - Yanlış sayı:</label>
               <input min="0" max="30" class="yanlis" placeholder="0" oninput="hesablaQrup1()">
             </div>
 
             <div class="form-row">
-              <label>Açıq - Kodlaşdırılan:</label>
+              <label data-i18n="thacikkod">Açıq - Kodlaşdırılan:</label>
               <input min="0" max="5" class="acik-kod" placeholder="0" oninput="hesablaQrup1()">
             </div>
 
             <div class="form-row">
-              <label>Açıq - Yazılı (Ətraflı):</label>
+              <label data-i18n="thaciqyazili">Açıq - Yazılı (Ətraflı):</label>
               <input min="0" max="9" class="acik-yazili" placeholder="0" oninput="hesablaQrup1()">
             </div>
 
-            <p class="netice">0 Bal</p>
+            <p class="netice" data-i18n="thnetice">0 Bal</p>
           </div>
         `;
 
@@ -703,7 +703,7 @@ function scrollToQrup(qrupId, clickedBtn) {
             <strong>${fenn.ad}</strong><br><br>
 
             <div class="form-row">
-              <label>Qapalı - Doğru sayı:</label>
+              <label data-i18n="thqapalidogru">Qapalı - Doğru sayı:</label>
               <input min="0" max="30" class="qapali" placeholder="0" data-index="${index}" oninput="hesablaBuraxilis()">
             </div>
 
@@ -726,7 +726,6 @@ function scrollToQrup(qrupId, clickedBtn) {
         row.appendChild(cell);
         tbody.appendChild(row);
       } else {
-        // 💻 Desktop görünüş (cədvəl)
         const row = document.createElement("tr");
         row.innerHTML = `
           <td>${fenn.ad}</td>
@@ -739,7 +738,6 @@ function scrollToQrup(qrupId, clickedBtn) {
       }
     });
   
-    // Ümumi nəticə satırı
     const umumiRow = document.createElement("tr");
     umumiRow.className = "umumi-netice-row";
     umumiRow.innerHTML = `
