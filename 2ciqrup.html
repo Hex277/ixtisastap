@@ -96,11 +96,46 @@
 <span id=resultNumber>0</span> <span data-i18n=found>found</span>
 </span>
 </div>
-<button id=filterToggleBtn class=mobile-filter-toggle>
-<img id=icon src=filter.webp alt=Filters width=16 class=white-filter-icon loading=lazy>
-<span data-i18n=filterText>Filters</span>
-</button>
-<!-- Reklam sahəsi -->
+<div class="filter_ixtisassec">
+  <button id="filterToggleBtn" class="mobile-filter-toggle">
+    <img id="icon" src="filter.webp" alt="Filters" width="16" class="white-filter-icon" loading="lazy">
+    <span data-i18n="filterText">Filters</span>
+  </button>
+
+  <button id="ixtisassec" class="ixtisassec-toggle">
+    <img id="icon" src="checklist.png" alt="ixtisas_select" width="16" class="white-filter-icon" loading="lazy">
+    <span data-i18n="ixtisassec">İxtisas Seç</span>
+  </button>
+</div>
+
+<!-- Tam ekran frame -->
+<div id="ixtisasFrame" class="fullscreen-frame">
+  <div class="frame-content">
+    <button id="closeFrame" class="close-btn"><img id="icon" src="close.png" alt="Go back" width="16" class="white-filter-icon" loading="lazy"></button>
+    <h2 id="ixtisassec2">İxtisas Seçimi</h2>
+    <div id="selectedContainer">
+      <div class="selected-cards">
+      </div>
+    </div>    
+  </div>
+</div>
+<div class="main-cards">
+
+<div id="ixtisaslar" class="fullscreen-ixtisaslar">
+  <div class="ixtisaslar-content">
+    <h2>İxtisas Seç</h2>
+    <div id="ixtisaslar-listesi"></div>
+  </div>
+</div>
+<div id="paymentModal" class="payment-modal">
+  <div class="modal-content">
+    <h3>Ödəniş formasını seçin</h3>
+    <button onclick="handlePaymentChoice('odenissiz')">Ödənişsiz</button>
+    <button onclick="handlePaymentChoice('odenisli')">Ödənişli</button>
+  </div>
+</div>
+
+
 
 <div id=table-container class=table-view style=height:500px;overflow-y:auto></div>
 <div id=card-container class=card-view></div>
@@ -109,5 +144,14 @@
 <script async data-id="5316218953" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
 <script src="translations.js" defer></script>
 <script src=script.js defer></script>
+<script>
+  const interval = setInterval(() => {
+    const branding = document.querySelector('a[href*="chatling.ai"]');
+    if (branding) {
+      branding.remove();
+      clearInterval(interval); // tapıldıqdan sonra intervalı dayandır
+    }
+  }, 500); // hər 500 ms-də bir yoxlayır
+</script>
 </body>
 </html>

@@ -541,7 +541,15 @@ body.dark-mode .specialization-description {
     height: 50px;
     background-color: transparent;
 }
-  
+a[href*="chatling.ai"],
+a[href*="chatling.ai"] *,
+div[data-v-77565f88] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 
 /* DESKTOP THEME */
 @media (min-width:769px) {
@@ -699,9 +707,21 @@ body.dark-mode .specialization-description {
         width: auto !important;
         z-index: 9999 !important;
     }
-    .adsterrabannerpc {
-        background-color: transparent;
-    }  
+    .ixtisassec-toggle {
+        display: none;
+    }
+    .ixtisassec-toggle,
+    .fullscreen-frame,
+    .close-btn,
+    .selected-cards,
+    #ixtisassec2,
+    .payment-modal,
+    .frame-content h2,
+    .ixtisaslar-content {
+        display: none;
+    }
+
+
       
     
 }
@@ -794,7 +814,6 @@ body.dark-mode .specialization-description {
     #filterToggleBtn {
         position: relative;
         margin-top: 10px;
-        margin-left: 6px;
         background-color: #1e90ff;
         color: #fff;
         width: 85px;
@@ -898,8 +917,291 @@ body.dark-mode .specialization-description {
     .bigads-bar {
         background-color: transparent;
     }
-    .adsterrabannerpc {
-        display: none;
-        position: fixed;
+    .filter_ixtisassec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px; 
+        margin-top: -10px;
     }
+    .ixtisassec-toggle {
+        position: relative;
+        margin-top: 10px;
+        margin-left: 6px;
+        background-color: #1e90ff;
+        color: #fff;
+        width: 132px;
+        font-size: 16px;
+        border: none;
+        border-radius: 12px;
+        display: flex;
+        gap: 6px;
+        padding: 8px 12px;
+        justify-content: center;
+        height: 33px;
+    }
+    .ixtisassec-toggle span {
+        margin-top: 1px;
+    }
+    .fullscreen-frame {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9997;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .frame-content {
+        background: #f0f0f0;
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        overflow: auto;
+    }
+    body.dark-mode .frame-content {
+        background: #121212;
+        color: #ddd;
+    }
+    .close-btn {
+        position: absolute;
+        top: 33px;
+        width: 48px;
+        height: 48px;
+        left: 3px;
+        cursor: pointer;
+        z-index: 9999;
+        background-color: transparent;
+    }
+    .close-btn img {
+        height:28px;
+        width: 28px;
+        margin-left: -5px;
+        margin-top: 7px;
+        filter: invert(0);
+    }
+    body.dark-mode .close-btn img {
+        filter: invert(1);
+    }
+    #ixtisassec2 {
+        margin-top: 70px;
+        font-size: 30px;
+    }
+    body.dark-mode #ixtisassec2 {
+        color: #ddd;
+    }
+    .selected-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 30px;
+        width: 100%;
+        position: relative;
+    }
+      
+    .selected-card {
+        width: 100%;
+        background: #f2f2f2;
+        border: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        text-align: center;
+        flex-direction: column;
+        border-radius: 16px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+    }
+    
+    
+    .card-inner {
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 10px; 
+    }
+    .selected-card-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+        position: relative;
+    }
+      
+    .card-index {
+        font-size: 18px;
+        font-weight: bold;
+        color: #474747;
+        min-width: 24px;
+        text-align: right;
+    }
+    .body.dark-mode .card-index {
+        color: #ececec;
+    }
+    .selected-card .plus-btn {
+        font-size: 65px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #7e7e7e;
+        width: 100%;
+        border: 1px solid rgb(131, 131, 131);
+    }
+    body.dark-mode .selected-card .plus-btn {
+        color: #ddd;
+        background-color: #1e1e1e;
+        border: 1px solid #555;
+    }
+    
+      
+    .selected-card.filled {
+        border-style: solid;
+        background: #fff;
+    } 
+    .fullscreen-ixtisaslar {
+        display: none; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 9998;
+        justify-content: center;
+        align-items: center;
+        background-color: #121212;
+        overflow: auto;
+    }
+      
+    .ixtisaslar-content {
+        padding: 30px;
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        position: relative;
+        text-align: center;
+        overflow-y: auto;
+        background-color: #f0f0f0;
+    }
+    .body.dark-mode .ixtisaslar-content {
+        background: #121212;
+        color: #ddd;
+    }
+    .frame-content h2, .ixtisaslar-content h2{
+        color: black;
+    }
+    body.dark-mode .frame-content h2 {
+        color: #ddd;
+    }
+    .card {
+        position: relative;
+        text-align: left;
+    }
+    .selected-ixtisas {
+        color: black;
+        text-align: left;
+        padding: 10px;
+        background: #f9f9f9;    
+        border-radius: 16px;
+        padding: 15px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
+    }
+    .body.dark-mode .selected-ixtisas {
+        background: #1e1e1e;
+        color: #ddd;
+    }   
+    .select-btn {
+        background-color: #1e90ff;
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+    }
+      
+    .select-btn:hover {
+        background-color: #45a049;
+    }
+    .payment-modal {
+        display: none; /* Başlanğıcda gizlidir */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(131, 131, 131, 0.13);
+        color: black;
+        z-index: 99999; /* Hər şeyin üstündə */
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal {
+        display: flex; /* başlanğıcda gizli */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+      
+    .modal-content {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .body.dark-mode .modal-content {
+        background: #1e1e1e;
+        color: #ddd;
+    }
+      
+    
+    .modal-content button {
+        margin: 10px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .searchIxtisas {
+        width: 100%;
+        padding-right: 100px;
+    }
+    #searchIxtisasInput {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #1e90ff;
+        border-radius: 12px;
+        background-color: #ffffff;
+        color: white;
+        transition: border-color 0.3s ease;
+        position: relative;
+    }
+    .body.dark-mode #searchIxtisasInput {
+        background-color: #222222;
+        color: white;
+        border: 2px solid #555;
+    }
+    
+    #closeIxtisaslar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #1e90ff;
+    }
+    
 }

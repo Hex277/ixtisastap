@@ -57,36 +57,36 @@ function renderData(data, lang) {
     tableContainer.innerHTML = "";
     cardContainer.innerHTML = "";
     if (isMobileView) {
-    let html = "";
-    data.forEach(group => {
-        group.universitetler.forEach((univ, index) => {
-
-            html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
-
-            univ.ixtisaslar.forEach(ixtisas => {
-                let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
-                    ? ixtisas.tehsil_formasi_en
-                    : ixtisas.tehsil_formasi;
-
-                html += `
-                <div class="card">
-                  <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
-                  <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
-                  <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
-                  <div class="extra-info" style="display: none;">
-                    <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
-                    <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
-                    <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
-                  </div>
-                  <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
-                </div>`;
-            });
-        });
-    });
-
-    cardContainer.innerHTML = html;
-    tableContainer.style.display = "none";
-    cardContainer.style.display = "block";
+      let html = "";
+      data.forEach(group => {
+          group.universitetler.forEach((univ, index) => {
+  
+              html += `<div class="uni-basliq">${lang === "en" && univ.universitet_en ? univ.universitet_en : univ.universitet}</div>`;
+  
+              univ.ixtisaslar.forEach(ixtisas => {
+                  let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
+                      ? ixtisas.tehsil_formasi_en
+                      : ixtisas.tehsil_formasi;
+  
+                  html += `
+                  <div class="card">
+                    <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
+                    <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
+                    <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
+                    <div class="extra-info" style="display: none;">
+                      <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
+                      <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
+                      <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
+                    </div>
+                    <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
+                  </div>`;
+              });
+          });
+      });
+  
+      cardContainer.innerHTML = html;
+      tableContainer.style.display = "none";
+      cardContainer.style.display = "block";
 } else {
         let html = "";
         data.forEach(group => {
@@ -246,7 +246,7 @@ function applyFilters() {
     let r = localStorage.getItem("selectedLanguage") || "az";
     renderData(a, r);
     setupEventListeners();
-    changeLanguage(r);  
+    changeLanguage(r);
 }
 
 function getCurrentFilters() {
@@ -851,7 +851,7 @@ function scrollToQrup(qrupId, clickedBtn) {
 // Specializations ------------------------------------------------------------------------------------------------------------------
 
 function renderDataSpec(data, lang = "az") {
-  const container = document.getElementById("specializations-body"); // dəyişdi
+  const container = document.getElementById("specializations-body"); 
   if (!container) return;
 
   const language = localStorage.getItem("selectedLanguage") || lang;
@@ -964,3 +964,171 @@ function handleSearch() {
   renderDataSpec(filteredData, lang);
 }
 
+
+// Ixtisas Sec Frame
+
+
+let tempIxtisasData = null;
+document.getElementById("ixtisassec").addEventListener("click", function() {
+  document.getElementById("ixtisasFrame").style.display = "flex";
+});
+document.getElementById("closeFrame").addEventListener("click", function() {
+  document.getElementById("ixtisasFrame").style.display = "none";
+});
+const selectedContainer = document.querySelector(".selected-cards");
+
+for (let i = 0; i < 15; i++) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "selected-card-wrapper";
+
+  const index = document.createElement("div");
+  index.className = "card-index";
+  index.textContent = `${i + 1}.`;
+
+  const card = document.createElement("div");
+  card.className = "selected-card";
+  card.dataset.index = i;
+
+  // "+" düyməsi və onclick funksiyası
+  card.innerHTML = `
+    <button class="plus-btn" onclick="openIxtisasSelection(${i})">+</button>
+  `;
+
+  wrapper.appendChild(index);
+  wrapper.appendChild(card);
+  selectedContainer.appendChild(wrapper);
+}
+
+function openIxtisasSelection(cardIndex) {
+  window.activeCardIndex = cardIndex;
+  document.getElementById("ixtisaslar").style.display = "flex";
+  renderIxtisasSelection(); 
+}
+
+
+function renderIxtisasSelection() {
+  const container = document.querySelector(".ixtisaslar-content");
+  container.innerHTML = `
+    <h2>İxtisas seçimi</h2>
+    <div class="searchIxtisas">
+      <input type="text" id="searchIxtisasInput" placeholder="Axtar...">
+      <button id="searchIxtisasBtn">Axtar</button>
+    </div>
+    <div id="ixtisasList"></div>
+  `;
+
+  const searchInput = document.getElementById("searchIxtisasInput");
+  const listContainer = document.getElementById("ixtisasList");
+
+  const lang = localStorage.getItem("selectedLanguage") || "az";
+  const l = translations[lang] || {};
+
+  function renderList(filter = "") {
+    listContainer.innerHTML = "";
+
+    globalData.forEach(group => {
+      group.universitetler.forEach(univ => {
+        const filteredIxtisaslar = univ.ixtisaslar.filter(ixtisas => {
+          const ad = lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad;
+          return ad.toLowerCase().includes(filter.toLowerCase());
+        });
+
+        if (filteredIxtisaslar.length > 0) {
+          const uniTitle = document.createElement("div");
+          uniTitle.className = "uni-basliq";
+          uniTitle.textContent = (lang === "en" && univ.universitet_en)
+            ? univ.universitet_en
+            : univ.universitet;
+          listContainer.appendChild(uniTitle);
+
+          filteredIxtisaslar.forEach(ixtisas => {
+            const tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
+              ? ixtisas.tehsil_formasi_en
+              : ixtisas.tehsil_formasi;
+
+            const ixtisasStr = lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad;
+
+            // Kart elementi
+            const card = document.createElement("div");
+            card.className = "card";
+
+            // Kartın içindəki HTML
+            card.innerHTML = `
+              <div class="field"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${ixtisasStr}</div>
+              <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
+              <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
+              <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
+              <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
+            `;
+
+            // Footer və button əlavə et
+            const footer = document.createElement("div");
+            footer.className = "card-footer";
+
+            const button = document.createElement("button");
+            button.className = "select-btn";
+            button.textContent = l.seç || "Seç";
+            
+            
+            button.addEventListener("click", () => {
+              selectIxtisas(ixtisas, univ.universitet, window.activeCardIndex);
+            });
+
+            footer.appendChild(button);
+            card.appendChild(footer);
+            listContainer.appendChild(card);
+          });
+        }
+      });
+    });
+  }
+
+  // İlk dəfə tam siyahını göstər
+  renderList();
+  const searchBtn = document.getElementById("searchIxtisasBtn");
+
+  searchBtn.addEventListener("click", () => {
+    const value = searchInput.value.trim();
+    renderList(value);
+  });
+
+  
+}
+function selectIxtisas(ixtisas, universitet, cardIndex) {
+  tempIxtisasData = {
+    ixtisas: ixtisas,
+    universitet: universitet,
+    cardIndex: cardIndex
+  };
+
+  document.getElementById("paymentModal").style.display = "flex";
+}
+
+function handlePaymentChoice(choice) {
+  const selectedCard = document.querySelector(`.selected-card[data-index='${tempIxtisasData.cardIndex}']`);
+  const ixtisas = tempIxtisasData.ixtisas;
+  const universitet = tempIxtisasData.universitet;
+
+  const lang = localStorage.getItem("selectedLanguage") || "az";
+  const l = translations[lang] || {};
+  const tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en ? ixtisas.tehsil_formasi_en : ixtisas.tehsil_formasi;
+  const chosenBal = choice === 'odenissiz' ? ixtisas.bal_pulsuz : ixtisas.bal_pullu;
+  const odemeStr = choice === 'odenissiz' ? (l.odenissiz || "Ödənişsiz") : (l.odenisli || "Ödənişli");
+
+  selectedCard.innerHTML = `
+    <div class="selected-ixtisas" onclick="openIxtisasSelection(${tempIxtisasData.cardIndex})" style="cursor: pointer;">
+      <strong>${l.universitet || "Universitet"}:</strong> ${universitet}<br>
+      <strong>${l.ixtisas || "Ixtisas"}:</strong> ${ixtisas.ad}<br>
+      <strong>${l.dil || "Dil"}:</strong> ${ixtisas.dil}<br>
+      <strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}<br>
+      <strong>${odemeStr} ${l.bal || "bal"}:</strong> ${chosenBal ?? "—"}
+    </div>
+  `;
+
+  document.getElementById("paymentModal").style.display = "none";
+  document.getElementById("ixtisaslar").style.display = "none";
+}
+
+document.getElementById("closeixtisaslarFrame").addEventListener("click", function() {
+  document.getElementById("ixtisaslar").style.display = "none";
+});
