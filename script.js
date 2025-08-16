@@ -485,41 +485,34 @@ function scrollToQrup(qrupId, clickedBtn) {
       : document.querySelectorAll("#qrup1 .qiymetlendirme tbody tr");
   
     elements.forEach((el, index) => {
-      let dogru = parseFloat(el.querySelector(".dogru")?.value) || 0;
-      let yanlis = parseFloat(el.querySelector(".yanlis")?.value) || 0;
-      let acikKod = parseFloat(el.querySelector(".acik-kod")?.value) || 0;
-      let acikYazili = parseFloat(el.querySelector(".acik-yazili")?.value) || 0;
+      const dogruInput = el.querySelector(".dogru");
+      const yanlisInput = el.querySelector(".yanlis");
+      const acikKodInput = el.querySelector(".acik-kod");
+      const acikYaziliInput = el.querySelector(".acik-yazili");
   
-      // Limit yoxlamaları
+      let dogru = parseFloat(dogruInput?.value) || 0;
+      let yanlis = parseFloat(yanlisInput?.value) || 0;
+      let acikKod = parseFloat(acikKodInput?.value) || 0;
+      let acikYazili = parseFloat(acikYaziliInput?.value) || 0;
+  
+      // Limit yoxlamaları və inputa tətbiq
       if (dogru + yanlis > 22) {
-        if (dogru > yanlis) {
-          dogru = 22 - yanlis;
-          el.querySelector(".dogru").value = dogru;
-        } else {
-          yanlis = 22 - dogru;
-          el.querySelector(".yanlis").value = yanlis;
-        }
+        if (dogru > yanlis) dogru = 22 - yanlis;
+        else yanlis = 22 - dogru;
       }
+      dogruInput.value = dogru;
+      yanlisInput.value = yanlis;
   
-      if (acikKod > 5) {
-        acikKod = 5;
-        el.querySelector(".acik-kod").value = 5;
-      }
-  
-      if (acikYazili > 3) {
-        acikYazili = 3;
-        el.querySelector(".acik-yazili").value = 3;
-      }
+      if (acikKod > 5) acikKod = 5;
+      if (acikYazili > 3) acikYazili = 3;
   
       if (acikKod + acikYazili > 8) {
-        if (acikKod > acikYazili) {
-          acikKod = 8 - acikYazili;
-          el.querySelector(".acik-kod").value = acikKod;
-        } else {
-          acikYazili = 8 - acikKod;
-          el.querySelector(".acik-yazili").value = acikYazili;
-        }
+        if (acikKod > acikYazili) acikKod = 8 - acikYazili;
+        else acikYazili = 8 - acikKod;
       }
+  
+      acikKodInput.value = acikKod;
+      acikYaziliInput.value = acikYazili;
   
       // Hesablamalar rəsmi düstura əsasən
       const NBqRaw = (dogru - yanlis / 4);
@@ -551,7 +544,6 @@ function scrollToQrup(qrupId, clickedBtn) {
       toplamNetice.textContent = toplam.toFixed(1) + " bal";
     }
   }
-  
   
   
   const qrupFennleri = {
@@ -1101,6 +1093,14 @@ function selectIxtisas(ixtisas, universitet, cardIndex) {
     cardIndex: cardIndex
   };
 
+  if (!window.selectedIxtisaslar) window.selectedIxtisaslar = [];
+
+  window.selectedIxtisaslar.push({
+    ixtisas,
+    universitet,
+    cardIndex
+  });
+
   document.getElementById("paymentModal").style.display = "flex";
 }
 
@@ -1132,3 +1132,88 @@ function handlePaymentChoice(choice) {
 document.getElementById("closeixtisaslarFrame").addEventListener("click", function() {
   document.getElementById("ixtisaslar").style.display = "none";
 });
+
+// Share function
+function renderSelectedIxtisaslar() {
+  const container = document.getElementById("selectedCardsContainer"); // sənin kart div-inin id-si
+  container.innerHTML = "";
+
+  const lang = localStorage.getItem("selectedLanguage") || "az";
+  const l = translations[lang] || {};
+
+  window.selectedIxtisaslar.forEach((item, index) => {
+      const ixtisas = item.ixtisas;
+      const tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
+          ? ixtisas.tehsil_formasi_en
+          : ixtisas.tehsil_formasi;
+
+      const chosenBal = ixtisas.bal_pulsuz ?? "—"; // default ödənişsiz göstərir
+
+      const card = document.createElement("div");
+      card.className = "selected-card";
+      card.dataset.index = index;
+      card.innerHTML = `
+          <div class="selected-ixtisas">
+            <strong>${l.ixtisas || "Ixtisas"}:</strong> ${ixtisas.ad}<br>
+            <strong>${l.dil || "Dil"}:</strong> ${ixtisas.dil}<br>
+            <strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}<br>
+            <strong>${l.odenissiz || "Ödənişsiz"} ${l.bal || "bal"}:</strong> ${chosenBal}
+          </div>
+      `;
+
+      // Kartın üzərinə klikləndikdə dəyişmə modalı açılsın
+      card.addEventListener("click", () => {
+          window.activeCardIndex = index;
+          openIxtisasSelection(index);
+      });
+
+      container.appendChild(card);
+  });
+}
+
+
+document.getElementById("shareBtn").addEventListener("click", () => {
+  if (!window.selectedIxtisaslar || window.selectedIxtisaslar.length === 0) {
+      alert("Paylaşmaq üçün ən azı bir ixtisas seçin!");
+      return;
+  }
+
+  // Seçilmiş ixtisasların ID-lərini yığırıq
+  const selectedIds = window.selectedIxtisaslar.map(item => item.ixtisas.id);
+  const shareUrl = `${window.location.origin}${window.location.pathname}?ixtisaslar=${selectedIds.join(",")}`;
+
+  navigator.clipboard.writeText(shareUrl)
+    .then(() => alert("Paylaşım linki panoya kopyalandı!"))
+    .catch(err => console.error("Link kopyalanarkən xəta:", err));
+});
+window.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const idsParam = params.get("ixtisaslar");
+
+  if (idsParam) {
+      const selectedIds = idsParam.split(",").map(Number);
+      const lang = localStorage.getItem("selectedLanguage") || "az";
+      const l = translations[lang] || {};
+
+      // Əgər array yoxdursa, yaradırıq
+      if (!window.selectedIxtisaslar) window.selectedIxtisaslar = [];
+
+      selectedIds.forEach(id => {
+          const ixtisas = globalData
+              .flatMap(group => group.universitetler.flatMap(u => u.ixtisaslar))
+              .find(ix => ix.id === id);
+
+          if (ixtisas) {
+              window.selectedIxtisaslar.push({
+                  ixtisas,
+                  cardIndex: window.selectedIxtisaslar.length // sıraya görə index
+              });
+          }
+      });
+
+      // Kartları göstər
+      renderSelectedIxtisaslar();
+  }
+});
+
+

@@ -549,6 +549,10 @@ div[data-v-77565f88] {
   opacity: 0 !important;
   pointer-events: none !important;
 }
+body.dark-mode .selected-ixtisas {
+    background-color: #1e1e1e;
+    color: #ddd;
+} 
 
 
 /* DESKTOP THEME */
@@ -940,9 +944,6 @@ div[data-v-77565f88] {
         justify-content: center;
         height: 33px;
     }
-    .ixtisassec-toggle span {
-        margin-top: 1px;
-    }
     .fullscreen-frame {
         display: none; 
         position: fixed;
@@ -991,8 +992,11 @@ div[data-v-77565f88] {
         filter: invert(1);
     }
     #ixtisassec2 {
-        margin-top: 70px;
         font-size: 30px;
+    }
+    #ixtisassec_info {
+        padding: 20px;
+        margin-top: -20px;
     }
     body.dark-mode #ixtisassec2 {
         color: #ddd;
@@ -1042,7 +1046,7 @@ div[data-v-77565f88] {
         min-width: 24px;
         text-align: right;
     }
-    .body.dark-mode .card-index {
+    body.dark-mode .card-index {
         color: #ececec;
     }
     .selected-card .plus-btn {
@@ -1080,7 +1084,7 @@ div[data-v-77565f88] {
     }
       
     .ixtisaslar-content {
-        padding: 30px;
+        padding: 16px;
         width: 100%;
         height: 100%;
         max-width: 600px;
@@ -1090,14 +1094,15 @@ div[data-v-77565f88] {
         overflow-y: auto;
         background-color: #f0f0f0;
     }
-    .body.dark-mode .ixtisaslar-content {
+    
+    body.dark-mode .ixtisaslar-content {
         background: #121212;
         color: #ddd;
     }
     .frame-content h2, .ixtisaslar-content h2{
-        color: black;
+        color: rgb(20, 20, 20);
     }
-    body.dark-mode .frame-content h2 {
+    body.dark-mode .frame-content h2, .ixtisaslar-content h2 {
         color: #ddd;
     }
     .card {
@@ -1113,10 +1118,7 @@ div[data-v-77565f88] {
         padding: 15px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, .1)
     }
-    .body.dark-mode .selected-ixtisas {
-        background: #1e1e1e;
-        color: #ddd;
-    }   
+      
     .select-btn {
         background-color: #1e90ff;
         color: white;
@@ -1164,7 +1166,7 @@ div[data-v-77565f88] {
         border-radius: 10px;
         text-align: center;
     }
-    .body.dark-mode .modal-content {
+    body.dark-mode .modal-content {
         background: #1e1e1e;
         color: #ddd;
     }
@@ -1185,23 +1187,54 @@ div[data-v-77565f88] {
         border: 2px solid #1e90ff;
         border-radius: 12px;
         background-color: #ffffff;
-        color: white;
+        color: #121212;
         transition: border-color 0.3s ease;
         position: relative;
     }
-    .body.dark-mode #searchIxtisasInput {
+    body.dark-mode #searchIxtisasInput {
         background-color: #222222;
         color: white;
         border: 2px solid #555;
     }
     
     #closeIxtisaslar {
-        position: absolute;
         top: 10px;
         right: 10px;
         font-size: 20px;
         cursor: pointer;
         color: #1e90ff;
+    }
+    .ixtisassec_buttons {
+        display: flex;
+        justify-content: space-between; /* biri sola, biri sağa getsin */
+        align-items: center; /* dikey ortalama */
+        width: 100%;
+        padding: 10px;
+    }
+      
+    .ixtisassec_buttons button {
+        background: transparent; /* arxa fon istəsən dəyiş */
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        justify-content: right;
+    }
+    .share-button {
+        background-color: transparent;
+        margin-right: 250px;
+        margin-top: 9px;
+    }
+        
+    .share-button:active,
+    .share-button:focus {
+        background-color: transparent !important; 
+        box-shadow: none;          /* bəzi brauzerlər kölgə əlavə edir */
+        outline: none;
+    }
+    .white-share-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
     }
     
 }
