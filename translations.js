@@ -21,6 +21,7 @@ const translations = {
              langAz: "Azerbaijani",
              langEn: "English",
              langTr: "Turkish",
+             langGe: "German",
              langRu: "Russian",
              langCh: "Chinese",
              langAr: "Arabic",
@@ -365,4 +366,5 @@ const translations = {
              scorecalc: "Puan hesaplama",
              scoreCalculation: "%s için puan hesaplama"
     }
+
 };
