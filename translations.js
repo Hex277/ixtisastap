@@ -144,6 +144,7 @@ const translations = {
              langAz: "Azərbaycan dili",
              langEn: "İngilis dili",
              langTr: "T\xfcrk dili",
+             langGe: "Alman",
              langRu: "Rus dili",
              langCh: "\xc7in dili",
              langAr: "Ərəb dili",
@@ -266,6 +267,7 @@ const translations = {
              langAz: "Azerbaycanca",
              langEn: "İngilizce",
              langTr: "T\xfcrk\xe7e",
+             langGe: "Almanca",
              langRu: "Rus\xe7a",
              langCh: "\xc7ince",
              langAr: "Arap\xe7a",
@@ -366,5 +368,4 @@ const translations = {
              scorecalc: "Puan hesaplama",
              scoreCalculation: "%s için puan hesaplama"
     }
-
 };
