@@ -132,17 +132,21 @@ function renderData(data, lang) {
 document.addEventListener('DOMContentLoaded', () => {
 const menuToggle = document.getElementById("menu-toggle");
 const menuContent = document.getElementById("menu-bar");
-
+const mainContent = document.getElementById("mainContent")
+const body_of_left_menu = document.body;
 const maxWidth = menuContent.offsetWidth || 150;
 
 menuToggle.addEventListener("click", () => {
     if (menuContent.classList.contains("hidden")) {
         menuContent.classList.remove("hidden");
         menuContent.style.left = "0px";
+
     } else {
         menuContent.classList.add("hidden");
         menuContent.style.left = `-${maxWidth}px`;
     }
+    
+    document.body.style.overflow = "hidden";
 });
 });
 
