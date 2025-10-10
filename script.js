@@ -132,23 +132,26 @@ function renderData(data, lang) {
 document.addEventListener('DOMContentLoaded', () => {
 const menuToggle = document.getElementById("menu-toggle");
 const menuContent = document.getElementById("menu-bar");
-const mainContent = document.getElementById("mainContent")
-const body_of_left_menu = document.body;
 const maxWidth = menuContent.offsetWidth || 150;
 
 menuToggle.addEventListener("click", () => {
     if (menuContent.classList.contains("hidden")) {
         menuContent.classList.remove("hidden");
         menuContent.style.left = "0px";
+        menuContent.style.transition = "left 0.5s ease";
+         
 
     } else {
         menuContent.classList.add("hidden");
         menuContent.style.left = `-${maxWidth}px`;
+        menuContent.style.transition = "none";
+        document.body.style.overflow = "";
     }
     
-    document.body.style.overflow = "hidden";
+    
 });
 });
+
 
 const menuToggle = document.getElementById("menu-toggle"),
       menuContent = document.getElementById("menu-bar");
@@ -163,10 +166,12 @@ if (!menuToggle || !menuContent) return;
 let maxWidth = 250;
 if (!menuContent.classList.contains("hidden")) {
     maxWidth = menuContent.offsetWidth;
+
 } else {
     menuContent.classList.remove("hidden");
     maxWidth = menuContent.offsetWidth || 250;
     menuContent.classList.add("hidden");
+    document.body.style.overflow = "";  
 }
 
 const swipeThreshold = window.innerWidth * 0.40;
@@ -177,13 +182,13 @@ let isDragging = false;
 
 menuToggle.addEventListener("click", () => {
     menuContent.style.transition = "left 0.8s cubic-bezier(.25,.8,.25,1)";
-
     if (menuContent.classList.contains("hidden")) {
         menuContent.classList.remove("hidden");
         menuContent.style.left = "0px";
     } else {
         menuContent.style.left = `-${maxWidth}px`;
         setTimeout(() => menuContent.classList.add("hidden"), 300);
+        document.body.style.overflow = ""; 
     }
 });
 
@@ -210,15 +215,19 @@ document.addEventListener("touchend", (e) => {
             // Yalnız uzun sürüşdürmə ilə aç
             menuContent.classList.remove("hidden");
             menuContent.style.left = "0px";
+            
         } else if (!menuContent.classList.contains("hidden") && swipeDistance < -swipeThreshold) {
             menuContent.style.left = `-${maxWidth}px`;
             setTimeout(() => menuContent.classList.add("hidden"), 300);
+            document.body.style.overflow = "";
         } else {
             if (menuContent.classList.contains("hidden")) {
                 menuContent.style.left = `-${maxWidth}px`;
                 setTimeout(() => menuContent.classList.add("hidden"), 300);
+                document.body.style.overflow = "";
             } else {
                 menuContent.style.left = "0px";
+                
             }
         }
     }
