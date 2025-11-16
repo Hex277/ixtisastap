@@ -169,7 +169,8 @@ select:focus, #search:focus {
 }
 
 select {
-    width: 150px
+    width: 150px;
+    background-color: white;
 }
 
 select:hover {
@@ -401,6 +402,7 @@ body.dark-mode #menu-bar a:hover {
     height: 48px;
     padding: 4px 0;
     font-size: 18px;
+    font-weight: bold;
     background-color: transparent;
     border: none
 }
@@ -651,6 +653,10 @@ body.dark-mode .selected-ixtisas {
         background-color: white;
         color: #1e90ff;
     }
+    .qrup-btn:hover {
+        background-color: #287ed4;
+        color: white;
+    }
     body.dark-mode .qrup-btn {
         border: 2px solid #1e90ff;
         background-color: #1e1e1e;
@@ -697,6 +703,9 @@ body.dark-mode .selected-ixtisas {
     }
     table.qiymetlendirme #umumi-netice, #umumi-netice-text {
         font-size: 18px;
+    }
+    #reveal-banner {
+        display: none;
     }
     /* Advertisement Banner */
     .adsterrabanner {
@@ -801,16 +810,28 @@ body.dark-mode .selected-ixtisas {
         display: block
     }
     #menu-bar {
-        background-color: #fff;
         position: fixed;
-        border-top-right-radius: 17px;
         top: 0;
-        left: 0;
+        height: 100vh;
+        background: white;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        transition: transform 0.8s cubic-bezier(.25,.8,.25,1);
+        z-index: 1000;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        border-top-right-radius: 20px;
         width: 60%;
-        height: 100%;
-        transition: left 0.8s cubic-bezier(.25,.8,.25,1);
+        height: 100vh;
+        transform: translateX(-100%);
     }
-    
+    #menu-bar:not(.hidden) {
+        transform: translateX(0);
+    }
+    #menu-bar.hidden {
+        left: 0;
+        pointer-events: none;
+    }
     .hidden {
         left: -100%;
     }
@@ -909,6 +930,17 @@ body.dark-mode .selected-ixtisas {
     body.dark-mode .mobile-card .form-row input, body.dark-mode .form-row label{
         color: white;
     }
+    
+    #secret-reveal {
+        transition: height 0.3s ease;
+        background: transparent;
+        color: #555;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+
+
     .social-bar {
         position: fixed !important;
         top: 0 !important;

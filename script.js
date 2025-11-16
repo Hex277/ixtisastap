@@ -73,8 +73,8 @@ function renderData(data, lang) {
                     <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
                     <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
                     <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
+                    <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
                     <div class="extra-info" style="display: none;">
-                      <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
                       <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
                       <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
                     </div>
@@ -129,29 +129,6 @@ function renderData(data, lang) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-const menuToggle = document.getElementById("menu-toggle");
-const menuContent = document.getElementById("menu-bar");
-const maxWidth = menuContent.offsetWidth || 150;
-
-menuToggle.addEventListener("click", () => {
-    if (menuContent.classList.contains("hidden")) {
-        menuContent.classList.remove("hidden");
-        menuContent.style.left = "0px";
-        menuContent.style.transition = "left 0.5s ease";
-         
-
-    } else {
-        menuContent.classList.add("hidden");
-        menuContent.style.left = `-${maxWidth}px`;
-        menuContent.style.transition = "none";
-        document.body.style.overflow = "";
-    }
-    
-    
-});
-});
-
 
 const menuToggle = document.getElementById("menu-toggle"),
       menuContent = document.getElementById("menu-bar");
@@ -180,17 +157,6 @@ let touchStartX = 0;
 let touchStartY = 0;
 let isDragging = false;
 
-menuToggle.addEventListener("click", () => {
-    menuContent.style.transition = "left 0.8s cubic-bezier(.25,.8,.25,1)";
-    if (menuContent.classList.contains("hidden")) {
-        menuContent.classList.remove("hidden");
-        menuContent.style.left = "0px";
-    } else {
-        menuContent.style.left = `-${maxWidth}px`;
-        setTimeout(() => menuContent.classList.add("hidden"), 300);
-        document.body.style.overflow = ""; 
-    }
-});
 
 document.addEventListener("touchstart", (e) => {
     touchStartX = e.changedTouches[0].screenX;
@@ -330,23 +296,104 @@ function filterData(data, {
         return { ...group, universitetler: filteredUniversities };
     }).filter(Boolean);
 }
+// 0-------------------------------
 
+document.addEventListener('DOMContentLoaded', () => {
+  // === DO NOTHING ON DESKTOP (width > 768px) ===
+  if (window.innerWidth > 768) return;
 
-menuToggle.addEventListener("click", () => {
-    menuContent.classList.toggle("hidden")
-}), document.addEventListener("click", function(e) {
-    let a = menuToggle.contains(e.target) || menuContent.contains(e.target);
-    a || menuContent.classList.add("hidden")
-}), document.addEventListener("DOMContentLoaded", () => {
-    let e = document.querySelector(".filter-bar"),
-        a = document.getElementById("filterToggleBtn"),
-        t = a.querySelector("span"),
-        i = a.querySelector("img");
-    window.innerWidth <= 768 && (e.style.display = "none"), a.addEventListener("click", () => {
-        let a = "block" === e.style.display;
-        a ? (e.style.display = "none", t.textContent = "Filter", i.style.display = "inline") : (e.style.display = "block", t.textContent = "Close", i.style.display = "none")
-    })
+  const menuToggle = document.getElementById("menu-toggle");
+  const menuContent = document.getElementById("menu-bar");
+  const filterBar = document.querySelector(".filter-bar");
+  const filterToggleBtn = document.getElementById("filterToggleBtn");
+
+  if (!menuToggle || !menuContent) return;
+
+  const MENU_WIDTH = 250;
+
+  // Toggle menu with animation
+  menuToggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    if (menuContent.classList.contains("hidden")) {
+      // OPEN
+      menuContent.classList.remove("hidden");
+      menuContent.style.left = "0px";
+      document.body.style.overflow = "hidden";
+    } else {
+      // CLOSE
+      menuContent.style.left = `-${MENU_WIDTH}px`;
+      document.body.style.overflow = "";
+      setTimeout(() => menuContent.classList.add("hidden"), 500);
+    }
+  });
+
+  // Close when clicking outside
+  document.addEventListener("click", (e) => {
+    const clickedInside = menuToggle.contains(e.target) || menuContent.contains(e.target);
+    if (!clickedInside && !menuContent.classList.contains("hidden")) {
+      menuToggle.click();
+    }
+  });
+
+  // === FILTER TOGGLE ===
+  if (filterBar && filterToggleBtn) {
+    const span = filterToggleBtn.querySelector("span");
+    const img = filterToggleBtn.querySelector("img");
+
+    filterBar.style.display = "none"; // Always hide on mobile
+
+    filterToggleBtn.addEventListener("click", () => {
+      const isOpen = filterBar.style.display === "block";
+      filterBar.style.display = isOpen ? "none" : "block";
+      span.textContent = isOpen ? "Filter" : "Close";
+      img.style.display = isOpen ? "inline" : "none";
+    });
+  }
 });
+
+
+
+if (window.location.pathname.endsWith("1ciqrup.html")) {
+
+  const revealBox = document.getElementById("secret-reveal");
+  let startY = 0;
+  let maxHeight = 120;
+  let isAtBottom = false;
+
+  // səhifənin ən altına çatdığını yoxla
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight;
+    const clientHeight = window.innerHeight;
+    isAtBottom = (scrollTop + clientHeight >= scrollHeight - 2);
+  });
+
+  // barmağı aşağı dartmağa başla
+  window.addEventListener("touchstart", (e) => {
+    if (isAtBottom) startY = e.touches[0].clientY;
+  });
+
+  // barmaqla dartma
+  window.addEventListener("touchmove", (e) => {
+    if (!isAtBottom) return;
+
+    let diff = e.touches[0].clientY - startY;
+    if (diff > 0) {
+      let move = Math.min(diff, maxHeight);
+      revealBox.style.height = move + "px";
+    }
+  });
+
+  // buraxanda geri qayıt
+  window.addEventListener("touchend", () => {
+    revealBox.style.height = "0px";
+  });
+
+}
+
+
+// -------------------------------
 document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = document.getElementById("toggle-dark-mode");
     const toggleIcon = document.getElementById("icon");
