@@ -44,7 +44,7 @@ body {
 .uni-basliq,
 h1 {
     text-align: center;
-    color: #222
+    color: #313131
 }
 
 button,
@@ -259,7 +259,8 @@ button:hover {
     list-style: none;
     margin: 10% 0 0;
     padding: 0;
-    text-align: center
+    text-align: center;
+    margin-top: 0px;
 }
 
 #menu-bar li {
@@ -292,6 +293,9 @@ button:hover {
     transition: none
 }
 
+.logopng {
+    filter: none !important; 
+}
 .header h1 {
     padding: 20px
 }
