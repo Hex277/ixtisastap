@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:title" content="IxtisasTap.com | About Specialties 2025">
     <meta property="og:description" content="All specialties informations.">
+    <meta property="og:image" content="https://ixtisastap.com/ixtisastap.jpg">
     <meta property="og:url" content="https://ixtisastap.com/specializations.html">
     <meta property="og:type" content="website">
     <meta name="keywords" content="best specialties, specialties, universities, 2025 scores, about specialties, specialty selection, Azerbaijan universities">
@@ -45,7 +46,7 @@
         <img id="menu" src="menu-bar.webp" alt="menu" width="20" class="menu" loading="lazy">
     </button>
     <nav id="menu-bar" class="hidden">
-        <a href=index.html id=name-text><img src="ixtisastap.png" alt="SiteName" style="width: 200px;"></a>
+        <a href=index.html id=name-text><img class="logopng" src="ixtisastap.png" alt="SiteName" style="width: 200px;"></a>
         <ul>
             <li><a href="./1ciqrup.html" data-i18n="group1">Group 1</a></li>
             <li><a href="./2ciqrup.html" data-i18n="group2">Group 2</a></li>
@@ -71,12 +72,21 @@
         <div class="button-resizer">
             <button id=searchBtn class="button" type="button" data-i18n=searchBtn>Axtar</button>
         </div>
-        <canvas class="canvas"></canvas>
-        <script src="https://codepen.io/nicolasjesenberger/pen/VwEzMrY/81eb6139c2c9b7dbc46e43d898e7d29b.js"></script>
     </div>
     <!-- Reklam sahəsi -->
     
     <div id="specializations-body"></div>
     <script src="translations.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "#c5eae7",
+            count: 30,
+            speed: 1.1,
+            minOpacity: 0.8,
+            minSize: 8,
+            maxSize: 18
+        });
+    </script>
 </body>

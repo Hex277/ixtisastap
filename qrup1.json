@@ -21,7 +21,7 @@
                         "ad": "Fizika müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 407.6,
@@ -29,7 +29,7 @@
                         "ad_en": "Physics Teaching"
                     },
                     {
-                        "ad": "İnformatika (rəqəmsal bacarıqlar) müəllimliyi",
+                        "ad": "Informatika (rəqəmsal bacarıqlar) müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -37,7 +37,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 325.6,
                         "bal_pullu": 325.6,
-                        "ad_en": "İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Riyaziyyat müəllimliyi",
@@ -54,7 +54,7 @@
                         "ad": "Riyaziyyat müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 597.5,
@@ -76,7 +76,7 @@
                         "ad": "Fizika",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 337.5,
@@ -98,7 +98,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 427.9,
@@ -142,7 +142,7 @@
                         "ad": "Riyaziyyat",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 515.0,
@@ -175,7 +175,7 @@
                         "ad": "Geologiya və geofizika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 266.1,
@@ -194,7 +194,7 @@
                         "ad_en": "Geomatics and Geodesy Engineering"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -202,13 +202,13 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 542.3,
                         "bal_pullu": 542.3,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kimya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 406.3,
@@ -312,7 +312,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 275.8,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching (Gazakh Branch)"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching (Gazakh Branch)"
                     }
                 ]
             },
@@ -335,7 +335,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 476.8,
@@ -368,7 +368,7 @@
                         "ad": "Cihaz mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 302.8,
@@ -379,7 +379,7 @@
                         "ad": "Data analitikası",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 562.8,
@@ -401,7 +401,7 @@
                         "ad": "Ekologiya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 291.6,
@@ -423,7 +423,7 @@
                         "ad": "Elektrik və elektronika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 453.0,
@@ -445,7 +445,7 @@
                         "ad": "Energetika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 388.1,
@@ -467,7 +467,7 @@
                         "ad": "Geologiya və geofizika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 254.3,
@@ -486,7 +486,7 @@
                         "ad_en": "Life Safety Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -494,21 +494,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 501.9,
                         "bal_pullu": 501.9,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 562.1,
                         "bal_pullu": 562.1,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -516,21 +516,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 523.1,
                         "bal_pullu": 523.1,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 587.5,
                         "bal_pullu": 587.5,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -541,10 +541,10 @@
                         "ad_en": "Civil Engineering"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 358.0,
@@ -566,7 +566,7 @@
                         "ad": "Kimya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 624.9,
@@ -588,7 +588,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 544.4,
@@ -610,7 +610,7 @@
                         "ad": "Qida mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 371.6,
@@ -632,7 +632,7 @@
                         "ad": "Logistika və nəqliyyat texnologiyaları mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 400.4,
@@ -676,7 +676,7 @@
                         "ad": "Mexanika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 315.9,
@@ -698,7 +698,7 @@
                         "ad": "Mexatronika və robototexnika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 415.6,
@@ -731,7 +731,7 @@
                         "ad": "Neft-qaz mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 435.8,
@@ -742,7 +742,7 @@
                         "ad": "Neft-qaz mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 587.8,
@@ -764,7 +764,7 @@
                         "ad": "Proseslərin avtomatlaşdırılması mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 450.2,
@@ -786,7 +786,7 @@
                         "ad": "Radiotexnika və telekommunikasiya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 263.1,
@@ -802,18 +802,18 @@
                         "alt_qrup": "RK",
                         "bal_pulsuz": 291.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     },
                     {
                         "ad": "Sənaye mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 474.4,
                         "bal_pullu": 474.4,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     }
                 ]
             },
@@ -825,7 +825,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 526.7,
@@ -921,18 +921,18 @@
                         "ad_en": "Life Safety Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 548.7,
                         "bal_pullu": 548.7,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -940,10 +940,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 433.2,
                         "bal_pullu": 433.2,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -951,21 +951,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 515.4,
                         "bal_pullu": null,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 475.2,
                         "bal_pullu": 475.2,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -973,7 +973,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 560.4,
                         "bal_pullu": 560.4,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kimya mühəndisliyi",
@@ -1001,7 +1001,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 538.0,
@@ -1012,7 +1012,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 503.5,
@@ -1177,7 +1177,7 @@
                         "ad": "Radiotexnika və telekommunikasiya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 262.0,
@@ -1204,7 +1204,7 @@
                         "alt_qrup": "RK",
                         "bal_pulsuz": 293.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     },
                     {
                         "ad": "Xüsusi rabitə vasitələri mühəndisliyi",
@@ -1242,7 +1242,7 @@
                 ]
             },
             {
-                "universitet": "Azərbaycan Memarlıq və İnşaat Universiteti",
+                "universitet": "Azərbaycan Memarlıq və Inşaat Universiteti",
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
@@ -1260,7 +1260,7 @@
                         "ad": "Ekologiya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 267.8,
@@ -1282,7 +1282,7 @@
                         "ad": "Elektrik və elektronika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 306.4,
@@ -1312,7 +1312,7 @@
                         "ad_en": "Life Safety Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1320,21 +1320,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 377.4,
                         "bal_pullu": 377.4,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 458.3,
                         "bal_pullu": 458.3,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1342,21 +1342,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 415.5,
                         "bal_pullu": 415.5,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 454.4,
                         "bal_pullu": 454.4,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1367,10 +1367,10 @@
                         "ad_en": "Civil Engineering"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 367.7,
@@ -1378,10 +1378,10 @@
                         "ad_en": "Civil Engineering"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 411.8,
@@ -1389,7 +1389,7 @@
                         "ad_en": "Civil Engineering"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1414,7 +1414,7 @@
                         "ad": "Kommunikasiya sistemləri mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 257.5,
@@ -1540,7 +1540,7 @@
                         "alt_qrup": "RK",
                         "bal_pulsuz": 294.1,
                         "bal_pullu": 200.0,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     },
                     {
                         "ad": "Şəhərsalma",
@@ -1601,7 +1601,7 @@
                         "ad": "Memarlıq",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 484.7,
@@ -1629,7 +1629,7 @@
                         "ad": "Fizika müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 365.6,
@@ -1637,7 +1637,7 @@
                         "ad_en": "Physics Teaching"
                     },
                     {
-                        "ad": "İnformatika (rəqəmsal bacarıqlar) müəllimliyi",
+                        "ad": "Informatika (rəqəmsal bacarıqlar) müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1645,18 +1645,18 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 307.6,
                         "bal_pullu": 307.3,
-                        "ad_en": "İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Informatics (Digital Skills) Teaching"
                     },
                     {
-                        "ad": "İnformatika (rəqəmsal bacarıqlar) müəllimliyi",
+                        "ad": "Informatika (rəqəmsal bacarıqlar) müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 313.5,
                         "bal_pullu": 313.5,
-                        "ad_en": "İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Riyaziyyat müəllimliyi",
@@ -1673,7 +1673,7 @@
                         "ad": "Riyaziyyat müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 497.4,
@@ -1700,7 +1700,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 231.6,
                         "bal_pullu": 230.5,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Fizika müəllimliyi (Şamaxı filialı)",
@@ -1722,10 +1722,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 256.2,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching (Shamaxi Branch)"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching (Shamaxi Branch)"
                     },
                     {
-                        "ad": "İnformatika (rəqəmsal bacarıqlar) müəllimliyi (Şəki filialı)",
+                        "ad": "Informatika (rəqəmsal bacarıqlar) müəllimliyi (Şəki filialı)",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1733,7 +1733,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 411.1,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformatics (Digital Skills) Teaching (Sheki Branch)"
+                        "ad_en": "Informatics (Digital Skills) Teaching (Sheki Branch)"
                     },
                     {
                         "ad": "Riyaziyyat və informatika (rəqəmsal bacarıqlar) müəllimliyi (Şəki filialı)",
@@ -1766,7 +1766,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 255.1,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformatics (Digital Skills) Teaching (Aghjabadi branch)"
+                        "ad_en": "Informatics (Digital Skills) Teaching (Aghjabadi branch)"
                     },
                     {
                         "ad": "Riyaziyyat müəllimliyi (Quba filialı)",
@@ -1788,12 +1788,12 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 268.8,
                         "bal_pullu": 268.8,
-                        "ad_en": "İnformatics (Digital Skills) Teaching (Quba branch)"
+                        "ad_en": "Informatics (Digital Skills) Teaching (Quba branch)"
                     }
                 ]
             },
             {
-                "universitet": "Azərbaycan Dövlət İqtisad Universiteti",
+                "universitet": "Azərbaycan Dövlət Iqtisad Universiteti",
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
@@ -1830,7 +1830,7 @@
                         "ad_en": "Electrical and Electronics Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1838,21 +1838,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 591.4,
                         "bal_pullu": 591.4,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 634.6,
                         "bal_pullu": 634.6,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1860,18 +1860,18 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 609.2,
                         "bal_pullu": 609.2,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 640.2,
                         "bal_pullu": 640.2,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kommunikasiya sistemləri mühəndisliyi",
@@ -1899,7 +1899,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 622.5,
@@ -1959,10 +1959,10 @@
                         "alt_qrup": "RK",
                         "bal_pulsuz": 337.6,
                         "bal_pullu": 337.6,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları (Zaqatala filialı)",
+                        "ad": "Informasiya texnologiyaları (Zaqatala filialı)",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -1970,7 +1970,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 249.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformasiya texnologiyaları (Zaqatala filialı)"
+                        "ad_en": "Informasiya texnologiyaları (Zaqatala filialı)"
                     }
                 ]
             },
@@ -1982,7 +1982,7 @@
                         "ad": "Fizika",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 260.4,
@@ -2004,7 +2004,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 516.1,
@@ -2015,7 +2015,7 @@
                         "ad": "Riyaziyyat",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 347.3,
@@ -2026,7 +2026,7 @@
                         "ad": "Data analitikası",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 556.4,
@@ -2048,7 +2048,7 @@
                         "ad": "Ekologiya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2070,7 +2070,7 @@
                         "ad": "Elektrik və elektronika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 281.0,
@@ -2089,18 +2089,18 @@
                         "ad_en": "Energy Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 415.2,
                         "bal_pullu": 415.2,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -2108,10 +2108,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 521.7,
                         "bal_pullu": 521.7,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -2119,21 +2119,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 488.1,
                         "bal_pullu": 488.1,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 564.7,
                         "bal_pullu": 564.7,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -2158,7 +2158,7 @@
                         "ad": "Kimya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 500.9,
@@ -2191,7 +2191,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 515.0,
@@ -2224,7 +2224,7 @@
                         "ad": "Logistika və nəqliyyat texnologiyaları mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 267.3,
@@ -2257,7 +2257,7 @@
                         "ad": "Mexanika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 252.3,
@@ -2290,7 +2290,7 @@
                         "ad": "Memarlıq",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 295.9,
@@ -2334,7 +2334,7 @@
                         "ad": "Proseslərin avtomatlaşdırılması mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 370.0,
@@ -2361,18 +2361,18 @@
                         "alt_qrup": "RK",
                         "bal_pulsuz": 293.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     },
                     {
                         "ad": "Sənaye mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 308.3,
                         "bal_pullu": 200.0,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     },
                     {
                         "ad": "Şəhərsalma",
@@ -2410,7 +2410,7 @@
                 ]
             },
             {
-                "universitet": "Azərbaycan Respublikası Preziden Dövlət İdarəçilik Akademiyası",
+                "universitet": "Azərbaycan Respublikası Preziden Dövlət Idarəçilik Akademiyası",
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
@@ -2434,7 +2434,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 692.6,
@@ -2445,7 +2445,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
@@ -2456,7 +2456,7 @@
                         "ad": "Riyaziyyat",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 640.8,
@@ -2467,7 +2467,7 @@
                         "ad": "Riyaziyyat",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2478,7 +2478,7 @@
                         "ad": "Elektrik və elektronika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2486,32 +2486,32 @@
                         "ad_en": "Electrical and Electronics Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 662.7,
                         "bal_pullu": null,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 642.8,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
                         "ad": "Kənd təsərrüfatı texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2522,7 +2522,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 655.8,
@@ -2533,7 +2533,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
@@ -2544,7 +2544,7 @@
                         "ad": "Qida texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2555,7 +2555,7 @@
                         "ad": "Memarlıq",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2566,7 +2566,7 @@
                         "ad": "Şəhərsalma",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2577,7 +2577,7 @@
                         "ad": "Heyvandarlıq",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -2639,7 +2639,7 @@
                         "ad": "Aerokosmik mühəndislik",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 412.2,
@@ -2661,7 +2661,7 @@
                         "ad": "Aviasiya təhlükəsizliyi mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 389.1,
@@ -2683,7 +2683,7 @@
                         "ad": "Cihaz mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 321.3,
@@ -2727,7 +2727,7 @@
                         "ad": "Hava nəqliyyatının hərəkətinin təşkili",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 358.4,
@@ -2735,7 +2735,7 @@
                         "ad_en": "Air Traffic Management"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -2743,24 +2743,24 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 421.9,
                         "bal_pullu": 421.9,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 489.9,
                         "bal_pullu": 489.9,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 414.0,
@@ -2782,7 +2782,7 @@
                         "ad": "Logistika və nəqliyyat texnologiyaları mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 412.2,
@@ -2826,7 +2826,7 @@
                         "ad": "Mexatronika və robototexnika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 369.3,
@@ -2870,7 +2870,7 @@
                         "ad": "Uçuş mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 415.5,
@@ -2909,7 +2909,7 @@
                         "ad": "Dəniz naviqasiyası mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 468.8,
@@ -2953,7 +2953,7 @@
                         "ad": "Gəmi energetik qurğularının istismarı mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 354.6,
@@ -2981,7 +2981,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 672.8,
@@ -2992,7 +2992,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
@@ -3003,7 +3003,7 @@
                         "ad": "Data analitikası",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 658.1,
@@ -3014,7 +3014,7 @@
                         "ad": "Data analitikası",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
@@ -3022,32 +3022,32 @@
                         "ad_en": "Data Analytics"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 681.0,
                         "bal_pullu": null,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 643.7,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kimya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 668.0,
@@ -3058,7 +3058,7 @@
                         "ad": "Kimya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -3069,7 +3069,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 662.2,
@@ -3080,7 +3080,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
@@ -3091,7 +3091,7 @@
                         "ad": "Neft-qaz mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 657.3,
@@ -3102,7 +3102,7 @@
                         "ad": "Neft-qaz mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -3113,7 +3113,7 @@
                         "ad": "Proseslərin avtomatlaşdırılması mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 643.0,
@@ -3124,7 +3124,7 @@
                         "ad": "Proseslərin avtomatlaşdırılması mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
@@ -3138,18 +3138,18 @@
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 493.6,
                         "bal_pullu": 493.6,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -3157,7 +3157,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 492.6,
                         "bal_pullu": 492.6,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     }
                 ]
             },
@@ -3210,7 +3210,7 @@
                         "ad_en": "Electrical and Electronics Engineering"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -3263,7 +3263,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 570.6,
@@ -3274,7 +3274,7 @@
                         "ad": " Qida mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 450.7,
@@ -3285,12 +3285,12 @@
                         "ad": "Sənaye mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 508.8,
                         "bal_pullu": null,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     }
                 ]
             },
@@ -3318,7 +3318,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 504.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Riyaziyyat müəllimliyi",
@@ -3398,7 +3398,7 @@
                         "ad_en": "Energy Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -3406,18 +3406,18 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 234.2,
                         "bal_pullu": 234.2,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 422.6,
                         "bal_pullu": 422.6,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
@@ -3434,7 +3434,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 256.0,
@@ -3445,7 +3445,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 263.6,
@@ -3521,7 +3521,7 @@
                 ]
             },
             {
-                "universitet": "Naxçıvan Müəllimlər İnstitutu",
+                "universitet": "Naxçıvan Müəllimlər Institutu",
                 "yer": "Naxçıvan",
                 "ixtisaslar": [
                     {
@@ -3533,7 +3533,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 200,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Texnologiya müəllimliyi",
@@ -3608,7 +3608,7 @@
                         "ad_en": "Life Safety Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -3616,7 +3616,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 232.0,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
@@ -3721,7 +3721,7 @@
                         "ad": "Aqronomluq",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 217.7,
@@ -3787,7 +3787,7 @@
                         "ad": "Torpaqşünaslıq və aqrokimya",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 204.1,
@@ -3856,7 +3856,7 @@
                         "ad_en": "Physics Teaching"
                     },
                     {
-                        "ad": "İnformatika (rəqəmsal bacarıqlar) müəllimliyi",
+                        "ad": "Informatika (rəqəmsal bacarıqlar) müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -3864,7 +3864,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 312.3,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Riyaziyyat və informatika (rəqəmsal bacarıqlar) müəllimliyi",
@@ -3875,7 +3875,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 486.0,
                         "bal_pullu": 299.7,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Riyaziyyat müəllimliyi",
@@ -3983,7 +3983,7 @@
                         "ad_en": "Life Safety Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -3991,10 +3991,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 206.7,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4002,7 +4002,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 426.5,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
@@ -4101,7 +4101,7 @@
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
                         "bal_pullu": 200.0,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     },
                     {
                         "ad": "Şərabçılıq",
@@ -4118,7 +4118,7 @@
                         "ad": "Şərabçılıq",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 189.4,
@@ -4143,7 +4143,7 @@
                         "ad_en": "Physics Teaching"
                     },
                     {
-                        "ad": "İnformatika (rəqəmsal bacarıqlar) müəllimliyi",
+                        "ad": "Informatika (rəqəmsal bacarıqlar) müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4151,7 +4151,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Riyaziyyat müəllimliyi",
@@ -4168,7 +4168,7 @@
                         "ad": "Riyaziyyat müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 508.8,
@@ -4184,7 +4184,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 229.3,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Fizika",
@@ -4242,7 +4242,7 @@
                         "ad_en": "Energy Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4250,10 +4250,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 298.1,
                         "bal_pullu": 298.1,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4261,7 +4261,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 397.5,
                         "bal_pullu": 249.5,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kimya mühəndisliyi",
@@ -4358,7 +4358,7 @@
                         "ad_en": "Physics Teaching"
                     },
                     {
-                        "ad": "İnformatika (rəqəmsal bacarıqlar) müəllimliyi",
+                        "ad": "Informatika (rəqəmsal bacarıqlar) müəllimliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4366,7 +4366,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Riyaziyyat müəllimliyi",
@@ -4388,7 +4388,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 241.2,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Texnologiya müəllimliyi",
@@ -4457,7 +4457,7 @@
                         "ad_en": "Life Safety"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4465,10 +4465,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 213.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4476,7 +4476,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 385.2,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
@@ -4509,7 +4509,7 @@
                         "alt_qrup": "RK",
                         "bal_pulsuz": 296.4,
                         "bal_pullu": 200.0,
-                        "ad_en": "İndustrial Engineering"
+                        "ad_en": "Industrial Engineering"
                     }
                 ]
             },
@@ -4548,7 +4548,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 255.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Texnologiya müəllimliyi",
@@ -4573,7 +4573,7 @@
                         "ad_en": "Agroengineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4581,10 +4581,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 224.2,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4592,7 +4592,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 397.4,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
@@ -4794,7 +4794,7 @@
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4802,10 +4802,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 319.4,
                         "bal_pullu": 319.4,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4813,18 +4813,18 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 290.6,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
@@ -4847,7 +4847,7 @@
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 252.2,
@@ -4888,18 +4888,18 @@
                         "ad_en": "Environmental Engineering"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 248.2,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4907,21 +4907,21 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 297.5,
                         "bal_pullu": 297.5,
-                        "ad_en": "İnformation Technologies"
+                        "ad_en": "Information Technologies"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 386.6,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -4929,13 +4929,13 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 279.3,
@@ -5034,13 +5034,13 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 276.8,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     },
                     {
                         "ad": "Kompüter elmləri",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 427.2,
@@ -5051,7 +5051,7 @@
                         "ad": "Elektrik və elektronika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 254.1,
@@ -5059,21 +5059,21 @@
                         "ad_en": "Electrical and Electronics Engineering"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 511.7,
                         "bal_pullu": 511.7,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
-                        "ad": "İnşaat mühəndisliyi",
+                        "ad": "Inşaat mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 315.2,
@@ -5084,7 +5084,7 @@
                         "ad": "Kimya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 417.1,
@@ -5095,7 +5095,7 @@
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 316.4,
@@ -5106,7 +5106,7 @@
                         "ad": "Mexanika mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 295.6,
@@ -5128,7 +5128,7 @@
                         "ad": "Memarlıq",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 326.2,
@@ -5139,7 +5139,7 @@
                         "ad": "Neft-qaz mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": 399.8,
@@ -5150,7 +5150,7 @@
                         "ad": "Radiotexnika və telekommunikasiya mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RK",
                         "bal_pulsuz": null,
@@ -5164,7 +5164,7 @@
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -5172,7 +5172,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 268.6,
                         "bal_pullu": 268.6,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     }
                 ]
             },
@@ -5189,7 +5189,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 225.9,
                         "bal_pullu": 200.0,
-                        "ad_en": "Mathematics and İnformatics (Digital Skills) Teaching"
+                        "ad_en": "Mathematics and Informatics (Digital Skills) Teaching"
                     }
                 ]
             },
@@ -5198,18 +5198,18 @@
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 289.0,
                         "bal_pullu": 289.0,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -5217,10 +5217,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 281.3,
                         "bal_pullu": 281.3,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -5228,13 +5228,13 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 403.1,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     },
                     {
                         "ad": "Kompüter mühəndisliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
-                        "dil": "İngilis",
+                        "dil": "Ingilis",
                         "dil_en": "English",
                         "alt_qrup": "RI",
                         "bal_pulsuz": 253.0,
@@ -5259,7 +5259,7 @@
                 "yer": "Bakı",
                 "ixtisaslar": [
                     {
-                        "ad": "İnformasiya texnologiyaları",
+                        "ad": "Informasiya texnologiyaları",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -5267,10 +5267,10 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": 246.5,
                         "bal_pullu": 246.5,
-                        "ad_en": "İnformation Technology"
+                        "ad_en": "Information Technology"
                     },
                     {
-                        "ad": "İnformasiya təhlükəsizliyi",
+                        "ad": "Informasiya təhlükəsizliyi",
                         "tehsil_formasi": "Əyani",
                         "tehsil_formasi_en": "Full-time",
                         "dil": "Azərbaycan",
@@ -5278,7 +5278,7 @@
                         "alt_qrup": "RI",
                         "bal_pulsuz": null,
                         "bal_pullu": 200.0,
-                        "ad_en": "İnformation Security"
+                        "ad_en": "Information Security"
                     }
                 ]
             }

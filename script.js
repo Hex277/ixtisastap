@@ -67,19 +67,18 @@ function renderData(data, lang) {
                   let tehsilFormasi = lang === "en" && ixtisas.tehsil_formasi_en
                       ? ixtisas.tehsil_formasi_en
                       : ixtisas.tehsil_formasi;
-  
                   html += `
-                  <div class="card">
-                    <div class="field" id="ixtisasad"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
-                    <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
-                    <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
-                    <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
-                    <div class="extra-info" style="display: none;">
-                      <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
-                      <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong> ${ixtisas.alt_qrup}</div>
-                    </div>
-                    <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
-                  </div>`;
+                      <div class="card">
+                        <div class="field" id="ixtisasad"><strong>${l.ixtisas || "İxtisas"}:</strong> ${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</div>
+                        <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
+                        <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
+                        <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
+                        <div class="extra-info" style="display: none;">
+                          <div class="field"><strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}</div>
+                          <div class="field"><strong>${l.altQrup || "Alt qrup"}:</strong>${ixtisas.alt_qrup ?? " — "}</div>
+                        </div>
+                        <a href="#" class="toggle-more" onclick="toggleMore(this); return false;" data-state="collapsed">${l.dahaCox || "Daha çox"}</a>
+                      </div>`;
               });
           });
       });
@@ -115,7 +114,7 @@ function renderData(data, lang) {
                         <td>${lang === "en" && ixtisas.ad_en ? ixtisas.ad_en : ixtisas.ad}</td>
                         <td>${tehsilFormasi}</td>
                         <td>${lang == "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</td>
-                        <td>${ixtisas.alt_qrup}</td>
+                        <td>${ixtisas.alt_qrup ?? "—"}</td>
                         <td>${ixtisas.bal_pulsuz ?? "—"}</td>
                         <td>${ixtisas.bal_pullu ?? "—"}</td>
                     </tr>`;
@@ -344,9 +343,11 @@ document.addEventListener('DOMContentLoaded', () => {
     filterBar.style.display = "none"; // Always hide on mobile
 
     filterToggleBtn.addEventListener("click", () => {
+      const lang = localStorage.getItem("selectedLanguage") || "az";
       const isOpen = filterBar.style.display === "block";
       filterBar.style.display = isOpen ? "none" : "block";
-      span.textContent = isOpen ? "Filter" : "Close";
+      span.textContent = isOpen ? "Filter" : translations[lang].closeFilterText || "Bağla";
+      
       img.style.display = isOpen ? "inline" : "none";
     });
   }
@@ -392,93 +393,7 @@ if (window.location.pathname.endsWith("1ciqrup.html") ||
     revealBox.style.height = "0px";
   });
 
-
-const canvas = document.querySelector('.canvas');
-const ctx = canvas.getContext('2d');
-
-const pixelRatio = window.devicePixelRatio || 1;
-
-const snowflakes = [];
-
-class Snowflake {
-  constructor() {
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-
-    const maxSize = 3;
-    this.size = Math.random() * (maxSize - 1) + 1;
-    this.velocity = this.size * 0.35;
-    const opacity = this.size / maxSize;
-    this.fill = `rgb(255 255 255 / ${opacity})`;
-
-    this.windSpeed = (Math.random() - 0.5) * 0.1;
-    this.windAngle = Math.random() * Math.PI * 2;
   }
-  isOutsideCanvas() {
-    return this.y > canvas.height + this.size;
-  }
-  reset() {
-    this.x = Math.random() * canvas.width;
-    this.y = -this.size;
-  }
-  update() {
-    this.windAngle += this.windSpeed;
-    this.wind = Math.cos(this.windAngle) * 0.5;
-
-    this.x += this.wind;
-    this.y += this.velocity;
-
-    if (this.isOutsideCanvas()) {
-      this.reset();
-    }
-  }
-  draw() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fillStyle = this.fill;
-    ctx.fill();
-    ctx.closePath();
-  }}
-
-
-const createSnowflakes = () => {
-  snowflakeCount = Math.floor(window.innerWidth * window.innerHeight / 1400);
-
-  for (let i = 0; i < snowflakeCount; i++) {
-    snowflakes.push(new Snowflake());
-  }
-};
-
-const resizeCanvas = () => {
-  const width = window.innerWidth;
-  const height = window.innerHeight;
-  canvas.width = width * pixelRatio;
-  canvas.height = height * pixelRatio;
-  canvas.style.width = `${width}px`;
-  canvas.style.height = `${height}px`;
-  ctx.scale(pixelRatio, pixelRatio);
-  snowflakes.length = 0;
-  createSnowflakes();
-};
-
-window.addEventListener('resize', resizeCanvas);
-
-resizeCanvas();
-
-const render = () => {
-  requestAnimationFrame(render);
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  snowflakes.forEach(snowflake => {
-    snowflake.update();
-    snowflake.draw();
-  });
-};
-
-render();
-//# sourceURL=pen.js
-    
-
-}
 
 
 // -------------------------------
@@ -1111,6 +1026,7 @@ function handleSearch() {
 let tempIxtisasData = null;
 document.getElementById("ixtisassec").addEventListener("click", function() {
   document.getElementById("ixtisasFrame").style.display = "flex";
+  document.getElementById("main-content").style.overflowY = "none";
 });
 document.getElementById("closeFrame").addEventListener("click", function() {
   document.getElementById("ixtisasFrame").style.display = "none";
@@ -1194,7 +1110,7 @@ function renderIxtisasSelection() {
 
             // Kartın içindəki HTML
             card.innerHTML = `
-              <div class="field"><strong>${l.ixtisas || "Ixtisas"}:</strong> ${ixtisasStr}</div>
+              <div class="field"><strong>${l.ixtisas || "İxtisas"}:</strong> ${ixtisasStr}</div>
               <div class="field"><strong>${l.dil || "Dil"}:</strong> ${lang === "en" && ixtisas.dil_en ? ixtisas.dil_en : ixtisas.dil}</div>
               <div class="field"><strong>${l.balOdenissiz || "Bal (Ödənişsiz)"}:</strong> ${ixtisas.bal_pulsuz ?? "—"}</div>
               <div class="field"><strong>${l.balOdenisli || "Bal (Ödənişli)"}:</strong> ${ixtisas.bal_pullu ?? "—"}</div>
@@ -1266,7 +1182,7 @@ function handlePaymentChoice(choice) {
   selectedCard.innerHTML = `
     <div class="selected-ixtisas" onclick="openIxtisasSelection(${tempIxtisasData.cardIndex})" style="cursor: pointer;">
       <strong>${l.universitet || "Universitet"}:</strong> ${universitet}<br>
-      <strong>${l.ixtisas || "Ixtisas"}:</strong> ${ixtisas.ad}<br>
+      <strong>${l.ixtisas || "İxtisas"}:</strong> ${ixtisas.ad}<br>
       <strong>${l.dil || "Dil"}:</strong> ${ixtisas.dil}<br>
       <strong>${l.tehsilFormasi || "Təhsil forması"}:</strong> ${tehsilFormasi}<br>
       <strong>${odemeStr} ${l.bal || "bal"}:</strong> ${chosenBal ?? "—"}

@@ -627,12 +627,6 @@ body.dark-mode .selected-ixtisas {
     opacity: 1;
   }
 }
-.canvas {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
 /* DESKTOP THEME */
 @media (min-width:769px) {
     #language-selector,
@@ -1050,7 +1044,7 @@ body.dark-mode .selected-ixtisas {
         gap: 6px;
         padding: 8px 12px;
         justify-content: center;
-        height: 33px;
+        height: 34px;
     }
     .fullscreen-frame {
         display: none; 

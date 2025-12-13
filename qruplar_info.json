@@ -120,10 +120,10 @@
         "k_en": "Geography teaching"
     },
     {
-        "key": "Davamlı inkişafın idarə edilməsi",
-        "az": "Davamlı inkişafın idarə edilməsi iqtisadi, sosial və ekoloji sistemlərin uzunmüddətli və balanslı şəkildə inkişafını təmin etmək üçün strategiyaların hazırlanması və həyata keçirilməsi ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri davamlı iqtisadiyyat, ətraf mühitin idarə olunması, sosial siyasət, ekoloji hüquq və strateji planlaşdırmadır. Məzunlar dövlət qurumlarında, beynəlxalq təşkilatlarda, ekoloji layihələrdə və inkişaf proqramlarında çalışırlar. Sistemli düşüncə, analitik bacarıqlar və siyasətlərin qiymətləndirilməsi qabiliyyəti vacibdir.",
-        "en": "Sustainable development management is a specialty that involves the preparation and implementation of strategies to ensure the long-term and balanced development of economic, social, and ecological systems. The main areas of the specialty include sustainable economics, environmental management, social policy, ecological law, and strategic planning. Graduates work in government agencies, international organizations, ecological projects, and development programs. Systematic thinking, analytical skills, and the ability to evaluate policies are essential.",
-        "k_en": "Managing sustainable growth"
+        "key": "Data analitikası",
+        "az": "Data analitikası ixtisası böyük həcmli məlumatların toplanması, emalı və təhlili yolu ilə qərarvermə proseslərinin dəstəklənməsi ilə məşğul olan sahədir. İxtisasın əsas istiqamətləri statistik analiz, məlumatların vizuallaşdırılması, verilənlər bazası idarəetməsi, maşın öyrənməsi əsasları və biznes analitikasıdır. Məzunlar bank sektorunda, texnologiya şirkətlərində, dövlət qurumlarında, marketinq və tədqiqat mərkəzlərində çalışırlar. Analitik düşüncə, problem həll etmə bacarığı və məlumat əsaslı qərarvermə qabiliyyəti vacibdir.",
+        "en": "Data analytics is a specialty focused on supporting decision-making processes through the collection, processing, and analysis of large volumes of data. The main areas of the specialty include statistical analysis, data visualization, database management, fundamentals of machine learning, and business analytics. Graduates work in the banking sector, technology companies, government institutions, and marketing and research centers. Analytical thinking, problem-solving skills, and data-driven decision-making abilities are essential.",
+        "k_en": "Data analytics"
     },
     {
         "key": "Dil və ədəbiyyat müəllimliyi",
@@ -282,56 +282,56 @@
         "k_en": "Life safety engineering"
     },
     {
-        "key": "Informasiya texnologiyaları",
-        "az": "Informasiya texnologiyaları məlumatların toplanması, işlənməsi, saxlanması və ötürülməsi üçün proqram təminatı və aparat vasitələrinin hazırlanması və tətbiqi ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri proqramlaşdırma, verilənlər bazası idarəetməsi, şəbəkə texnologiyaları, kibertəhlükəsizlik və sistem inteqrasiyasıdır. Məzunlar IT şirkətlərində, dövlət və özəl sektorda proqram inkişafı, sistem idarəetməsi və texniki dəstək sahələrində çalışırlar. Analitik düşüncə, proqramlaşdırma bacarıqları və problem həll etmə qabiliyyəti vacibdir.",
+        "key": "İnformasiya texnologiyaları",
+        "az": "İnformasiya texnologiyaları məlumatların toplanması, işlənməsi, saxlanması və ötürülməsi üçün proqram təminatı və aparat vasitələrinin hazırlanması və tətbiqi ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri proqramlaşdırma, verilənlər bazası idarəetməsi, şəbəkə texnologiyaları, kibertəhlükəsizlik və sistem inteqrasiyasıdır. Məzunlar IT şirkətlərində, dövlət və özəl sektorda proqram inkişafı, sistem idarəetməsi və texniki dəstək sahələrində çalışırlar. Analitik düşüncə, proqramlaşdırma bacarıqları və problem həll etmə qabiliyyəti vacibdir.",
         "en": "Information technology is a specialty that deals with the development and application of software and hardware tools for the collection, processing, storage, and transmission of data. The main areas of the specialty include programming, database management, network technologies, cybersecurity, and system integration. Graduates work in IT companies, government, and private sectors in software development, system management, and technical support. Skills in analytical thinking, programming, and problem-solving are essential.",
         "k_en": "Information technology"
     },
     {
-        "key": "Ibtidai sinif müəllimliyi",
+        "key": "İbtidai sinif müəllimliyi",
         "az": "İbtidai sinif müəllimliyi şagirdlərin əsas təhsil pilləsində tədris və tərbiyə işlərini həyata keçirən pedaqoji ixtisasdır. İxtisasın əsas sahələri təlim metodikası, pedaqogika, psixologiya, dil və ədəbiyyat, riyaziyyat və təbii elmlərin əsaslarıdır. Məzunlar ibtidai siniflərdə şagirdlərin bilik və bacarıqlarını inkişaf etdirir, onların sosial və intellektual inkişafına dəstək olurlar. Pedaqoji bacarıqlar, səbir və ünsiyyət qabiliyyəti vacibdir.",
         "en": "Primary school teaching is a pedagogical specialty that carries out teaching and educational work for students at the primary education level. The main areas of the specialty include teaching methodology, pedagogy, psychology, language and literature, mathematics, and the basics of natural sciences. Graduates develop students' knowledge and skills in primary classes, supporting their social and intellectual development. Pedagogical skills, patience, and communication skills are essential.",
         "k_en": "Elementary school teaching"
     },
     {
-        "key": "Ictimai səhiyyə",
+        "key": "İctimai səhiyyə",
         "az": "İctimai səhiyyə cəmiyyətin sağlamlığının qorunması, xəstəliklərin qarşısının alınması və səhiyyə siyasətinin formalaşdırılması ilə məşğul olan səhiyyə sahəsidir. İxtisasın əsas sahələri epidemiologiya, sağlamlıq siyasəti, sağlamlıq təhsili, ətraf mühitin sağlamlığa təsiri və səhiyyə idarəçiliyidir. Məzunlar səhiyyə müəssisələrində, dövlət və qeyri-hökumət təşkilatlarında, tədqiqat və monitorinq mərkəzlərində çalışırlar. Analitik düşüncə, statistik biliklər və sosial məsuliyyət vacibdir.",
         "en": "Public health involves the protection of community health, prevention of diseases, and the formation of health policies. The main areas of the specialty include epidemiology, health policy, health education, the impact of the environment on health, and health management. Graduates work in health institutions, government and non-governmental organizations, research and monitoring centers. Analytical thinking, statistical knowledge, and social responsibility are essential.",
         "k_en": "Public health"
     },
     {
-        "key": "Idman menecmenti və kommunikasiya",
+        "key": "İdman menecmenti və kommunikasiya",
         "az": "İdman menecmenti və kommunikasiya idman təşkilatlarının idarə olunması, tədbirlərin təşkili və idmanla bağlı ictimaiyyətlə əlaqələrin qurulması ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri idman marketinqi, media və kommunikasiya, tədbir menecmenti, idman hüququ və idarəetmə prinsipləridir. Məzunlar idman federasiyalarında, klublarda, media qurumlarında və təşkilat komitələrində çalışırlar. Təşkilatçılıq bacarığı, ünsiyyət qabiliyyəti və sahəyə maraq vacibdir.",
         "en": "Sports management and communication involve the management of sports organizations, organizing events, and establishing public relations related to sports. The main areas of the specialty include sports marketing, media and communication, event management, sports law, and management principles. Graduates work in sports federations, clubs, media organizations, and organizing committees. Organizational skills, communication ability, and interest in the field are essential.",
         "k_en": "Sports management and communications"
     },
     {
-        "key": "Iqtisadiyyat",
+        "key": "İqtisadiyyat",
         "az": "İqtisadiyyat resursların bölüşdürülməsi, istehsal, bölüşdürmə və istehlak proseslərinin təhlili ilə məşğul olan sosial elm sahəsidir. İxtisasın əsas sahələri mikroiqtisadiyyat, makroiqtisadiyyat, iqtisadi siyasət, maliyyə, beynəlxalq iqtisadi münasibətlər və statistik təhlildir. Məzunlar dövlət qurumlarında, bank sektorunda, analitik və tədqiqat mərkəzlərində, özəl şirkətlərdə çalışırlar. Analitik düşüncə, statistik biliklər və iqtisadi modellərlə işləmə bacarığı vacibdir.",
         "en": "Economics is a social science that deals with the distribution of resources, production, distribution, and consumption processes. The main areas of the specialty include microeconomics, macroeconomics, economic policy, finance, international economic relations, and statistical analysis. Graduates work in government agencies, the banking sector, analytical and research centers, and private companies. Analytical thinking, statistical knowledge, and the ability to work with economic models are essential.",
         "k_en": "Economics"
     },
     {
-        "key": "Islamşünaslıq",
+        "key": "İslamşünaslıq",
         "az": "İslamşünaslıq İslam dini, onun tarixi, mənbələri, hüquqi və fəlsəfi əsasları ilə bağlı elmi tədqiqat və tədrislə məşğul olan humanitar sahədir. İxtisasın əsas sahələri Qurani-Kərim və təfsir, hədis, İslam hüququ (fiqh), İslam fəlsəfəsi, İslam tarixi və dinlərarası münasibətlərdir. Məzunlar dini icmalarda, elmi-tədqiqat mərkəzlərində, təhsil müəssisələrində və mədəniyyət sahəsində çalışırlar. Elmi yanaşma, etik düşüncə və klassik mənbələrlə işləmə bacarığı vacibdir.",
         "en": "Islamic studies involve scientific research and teaching related to the Islamic religion, its history, sources, legal and philosophical foundations. The main areas of the specialty include the Quran and its interpretation, hadith, Islamic law (fiqh), Islamic philosophy, Islamic history, and interfaith relations. Graduates work in religious communities, scientific research centers, educational institutions, and cultural fields. Scientific approach, ethical thinking, and the ability to work with classical sources are essential.",
         "k_en": "Islamic studies"
     },
     {
-        "key": "Informasiya təhlükəsizliyi",
-        "az": "Informasiya təhlükəsizliyi məlumatların qorunması, kibertəhlükələrin qarşısının alınması və informasiya sistemlərinin müdafiəsi ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri şəbəkə təhlükəsizliyi, kriptoqrafiya, risk idarəetməsi, kibertəhlükə kəşfi və təhlükəsizlik siyasətləridir. Məzunlar dövlət strukturlarında, IT şirkətlərində, bank sektorunda və təhlükəsizlik xidmətlərində çalışırlar. Analitik düşüncə, proqramlaşdırma və təhlükəsizlik protokolları üzrə biliklər vacibdir.",
+        "key": "İnformasiya təhlükəsizliyi",
+        "az": "İnformasiya təhlükəsizliyi məlumatların qorunması, kibertəhlükələrin qarşısının alınması və informasiya sistemlərinin müdafiəsi ilə məşğul olan ixtisasdır. İxtisasın əsas sahələri şəbəkə təhlükəsizliyi, kriptoqrafiya, risk idarəetməsi, kibertəhlükə kəşfi və təhlükəsizlik siyasətləridir. Məzunlar dövlət strukturlarında, IT şirkətlərində, bank sektorunda və təhlükəsizlik xidmətlərində çalışırlar. Analitik düşüncə, proqramlaşdırma və təhlükəsizlik protokolları üzrə biliklər vacibdir.",
         "en": "Information security is a specialty that deals with the protection of data, prevention of cyber threats, and defense of information systems. The main areas of the specialty include network security, cryptography, risk management, cyber threat detection, and security policies. Graduates work in government structures, IT companies, the banking sector, and security services. Skills in analytical thinking, programming, and knowledge of security protocols are essential.",
         "k_en": "Informational security"
     },
     {
-        "key": "Informatika müəllimliyi",
+        "key": "İnformatika müəllimliyi",
         "az": "İnformatika müəllimliyi informatika elmi və proqramlaşdırma əsaslarını məktəb şagirdlərinə tədris etməyə yönəlmiş pedaqoji ixtisasdır. İxtisasın əsas sahələri proqramlaşdırma, informasiya texnologiyaları, kompüter sistemləri, algoritmlər və pedaqoji metodikadır. Məzunlar orta məktəblərdə informatika fənnini tədris edir, həmçinin tədris materiallarının hazırlanması və texnologiyaların tətbiqi ilə məşğul olurlar. Texniki biliklər, pedaqoji bacarıqlar və izah etmə qabiliyyəti vacibdir.",
         "en": "Informatics teaching is a pedagogical specialty aimed at teaching the basics of informatics and programming to school students. The main areas of the specialty include programming, information technology, computer systems, algorithms, and pedagogical methodology. Graduates teach informatics in secondary schools and are also involved in the preparation of teaching materials and the application of technologies. Skills in technical knowledge, pedagogical skills, and the ability to explain are essential.",
         "k_en": "Informatics teacher"
     },
     {
-        "key": "Inşaat mühəndisliyi",
-        "az": "Inşaat mühəndisliyi tikinti layihələrinin planlaşdırılması, layihələndirilməsi, qurulması və texniki nəzarəti ilə məşğul olan mühəndislik sahəsidir. İxtisasın əsas sahələri struktur mühəndisliyi, geotexnika, materialşünaslıq, tikinti texnologiyaları və layihə idarəçiliyidir. Məzunlar tikinti şirkətlərində, layihə institutlarında və dövlət qurumlarında fəaliyyət göstərirlər. Riyazi analiz, texniki biliklər və praktiki bacarıqlar vacibdir.",
+        "key": "İnşaat mühəndisliyi",
+        "az": "İnşaat mühəndisliyi tikinti layihələrinin planlaşdırılması, layihələndirilməsi, qurulması və texniki nəzarəti ilə məşğul olan mühəndislik sahəsidir. İxtisasın əsas sahələri struktur mühəndisliyi, geotexnika, materialşünaslıq, tikinti texnologiyaları və layihə idarəçiliyidir. Məzunlar tikinti şirkətlərində, layihə institutlarında və dövlət qurumlarında fəaliyyət göstərirlər. Riyazi analiz, texniki biliklər və praktiki bacarıqlar vacibdir.",
         "en": "Civil engineering is a field of engineering that deals with the planning, design, construction, and technical supervision of construction projects. The main areas of the specialty include structural engineering, geotechnics, materials science, construction technologies, and project management. Graduates work in construction companies, design institutes, and government agencies. Skills in mathematical analysis, technical knowledge, and practical skills are essential.",
         "k_en": "Construction engineering"
     },
@@ -773,6 +773,12 @@
         "az": "Xarici dil müəllimliyi müxtəlif xarici dillərin məktəb və ali təhsil səviyyəsində tədrisinə yönəlmiş pedaqoji ixtisasdır. İxtisasın əsas sahələri dilin qrammatikası, fonetikası, kommunikasiya bacarıqları, mədəniyyətlərarası ünsiyyət və pedaqoji metodikadır. Məzunlar ümumi təhsil müəssisələrində xarici dil fənnini tədris edir, tələbələrin danışıq, dinləmə, oxu və yazı bacarıqlarını inkişaf etdirirlər. Pedaqoji bacarıqlar, yüksək dil səviyyəsi və ünsiyyət qabiliyyəti vacibdir.",
         "en": "Foreign language teaching is a pedagogical specialty aimed at teaching various foreign languages at the school and higher education levels. The main areas of the specialty include grammar, phonetics, communication skills, intercultural communication, and pedagogical methodology. Graduates teach foreign language subjects in general education institutions, developing students' speaking, listening, reading, and writing skills. Pedagogical skills, high language proficiency, and communication skills are essential.",
         "k_en": "Foreign language teaching"
+    },
+    {
+        "key": "Xüsusi rabitə vasitələri mühəndisliyi",
+        "az": "Xüsusi rabitə vasitələri mühəndisliyi təhlükəsiz, dayanıqlı və yüksək etibarlı rabitə sistemlərinin layihələndirilməsi, qurulması və istismarı ilə məşğul olan ixtisasdır. İxtisasın əsas sahələrinə şifrələnmiş rabitə sistemləri, radio və peyk rabitəsi, fiber-optik texnologiyalar, informasiya təhlükəsizliyi, siqnal emalı və fövqəladə hallarda rabitə sistemləri daxildir. Məzunlar dövlət və təhlükəsizlik qurumlarında, müdafiə sənayesinde, telekommunikasiya şirkətlərində və xüsusi təyinatlı texnoloji layihələrdə çalışırlar. Texniki biliklər, analitik düşüncə, məxfilik prinsiplərinə riayət və məsuliyyət hissi mühüm əhəmiyyət daşıyır.",
+        "en": "Special communication systems engineering is a specialty focused on the design, deployment, and operation of secure, reliable, and resilient communication systems. The main areas include encrypted communication systems, radio and satellite communications, fiber-optic technologies, information security, signal processing, and emergency communication systems. Graduates work in government and security institutions, the defense industry, telecommunications companies, and specialized technological projects. Strong technical knowledge, analytical thinking, adherence to confidentiality, and a high sense of responsibility are essential.",
+        "k_en": "Special communication systems engineering"
     },
     {
         "key": "Yerquruluşu və daşınmaz əmlakın kadastrı",
