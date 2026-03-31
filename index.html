@@ -8,7 +8,7 @@
 <meta http-equiv=X-Frame-Options content=DENY>
 <meta http-equiv=Cross-Origin-Opener-Policy content=same-origin>
 <link rel=stylesheet href=qruplar.css>
-<link rel=icon href=/logo.webp type=image/webp>
+<link rel=icon href="./images/logo.webp" type=image/webp>
 <meta name=description content="imtahan balınıza və qrupunuza əsasən ixtisasları və universitetləri asanlıqla tapın. Qrup seç, ixtisasını tap, gələcəyini qur!">
 <meta name=author content="IxtisasTap Komandası">
 <meta property=og:title content="IxtisasTap.com – Qrup Seç, İxtisasını Tap!">
@@ -75,14 +75,16 @@
         padding: 3px 20px;
     }
 
-    body.dark-mode .menu,
-    body.dark-mode .white-icon {
+    body.dark-mode .menu {
         filter: invert(1);
     }
 
     .menu,
     .white-icon {
         filter: invert(1);
+    }
+    body.dark-mode .white-icon {
+        filter: invert(0);
     }
     #icon.white-icon {
         height: 23px;
@@ -103,11 +105,11 @@
 </style>
 <body>
 <button id=menu-toggle style="display: none;">
-<img id=menu src=menu-bar.webp alt=menu width=20 class=menu loading=lazy>
+<img id=menu src=/images/menu-bar.webp alt=menu width=20 class=menu loading=lazy>
 </button>
 
 <button id=toggle-dark-mode>
-<img id=icon src=sun.webp alt=rejim width=20 class=white-icon loading=lazy>
+<img id=icon src=/images/sun.webp alt=rejim width=20 class=white-icon loading=lazy>
 </button>
 <select id=language-selector>
 <option value=az selected>AZ</option>
@@ -125,7 +127,6 @@
     <a href=4ciqrup.html class=menu-button data-i18n=group4>4-cü Qrup</a>
     <a href=./specializations.html class=menu-button data-i18n=aboutspec>İxtisaslar Haqqında</a>
     <a href=./balhesab.html class=menu-button data-i18n="scorecalc">Balların Hesablanması</a>
-    <a href=./guide.html class=menu-button data-i18n="guide">Bələdçi</a>
 </div>
 <footer class="site-footer">
     <p>&copy; 2025 ixtisastap.com.</p>
@@ -136,6 +137,21 @@
 </footer>
 
 <script src=translations.js defer></script>
+<script src=".\theme.js"></script>
+<script src=".\menu.js"></script>
 <script src=script.js defer></script>
+<!--
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script>
+    var sf = new Snowflakes({
+        color: "#c5eae7",
+        count: 30,
+        speed: 1.1,
+        minOpacity: 0.8,
+        minSize: 8,
+        maxSize: 18
+    });
+</script>
+-->
 </body>
 </html>

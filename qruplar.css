@@ -1,3 +1,26 @@
+:root {
+  /* Default (Free) Theme */
+  --progress-color: #1e90ff;
+  --bg: var(--bg);
+  --border: #E5E9F2;
+  --top-bg: rgba(255, 255, 255, 0.575);
+  --text-color: #222;
+  --surface: #FFFFFF;
+  --surface2: #EFF2F8;
+  --correct: #e5f7ec;
+  --wrong: #fae9e7;
+}
+body.dark-theme {
+  --bg: #0F1117;
+  --border: #2A2F42;
+  --top-bg: #0F1117;
+  --text-color: #fff;
+  --surface: #1A1D27;
+  --surface2: #232736;
+  --correct: #1a2720;
+  --wrong: #271c1a;
+}
+
 #resultCount,
 #search,
 .filter-bar {
@@ -31,13 +54,14 @@ button {
 .toggle-more {
     text-decoration: none
 }
-
+#center-logo {
+    filter: invert(0);
+}
 body {
     font-family: Arial, sans-serif;
     background: #f0f0f0;
     color: #222;
     margin: 0;
-    padding: 20px
 }
 
 .qrup-basliq,
@@ -53,7 +77,7 @@ th {
 }
 
 h1 {
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .qrup-basliq {
@@ -123,7 +147,7 @@ tr.even-row {
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
-    z-index: 998
+    z-index: 95;
 }
 
 .search-bar {
@@ -151,7 +175,7 @@ body.dark-mode #search {
 
 body.dark-mode .filter-bar,
 body.dark-mode .menu-button {
-    background-color: #121212
+    background-color: #0F1117
 }
 
 input[type=text],
@@ -183,7 +207,12 @@ select:hover {
     align-items: center;
     gap: 5px
 }
-
+.logo {
+    width: 20%;
+}
+.logo img {
+    width: 200px;
+}
 #resultCount,
 .hidden {
     display: none
@@ -197,7 +226,7 @@ select:hover {
 
 body.dark-mode .score-range input {
     border: 2px solid #555;
-    background-color: #222;
+    background-color: #1A1D27;
     color: #eee
 }
 
@@ -214,7 +243,18 @@ button {
     border-radius: 12px;
     transition: background-color .3s
 }
-
+.top-bar {
+    height: 60px;
+    width: 100%;
+    background: white;
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    position: fixed;
+    margin: 0;
+    align-items: center;
+    z-index: 100;
+}
 #menu-bar a:not(#name-text),
 #menu-toggle {
     border: none;
@@ -230,7 +270,34 @@ button:hover {
     background-color: #1e90ff;
     color: #fff
 }
+.header h1 {
+    margin-top: 100px;
+}
+#abituriyent-header {
+    margin-top: 100px;
+}
+#telebe-header {
+    margin-top: 10px;
+}
 
+#abituriyent-header, #telebe-header {
+    cursor: default;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#abituriyent-menu {
+    padding-left: 10px  ;
+}
+#telebe-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#telebe-menu.open, #abituriyent-menu.open {
+    margin-top: 10px;
+    padding-left: 10px;
+}
 #menu-toggle {
     position: absolute;
     top: 0;
@@ -241,17 +308,22 @@ button:hover {
 #menu-toggle img {
     width: 48px;
     height: 48px;
-    border-radius: 15px
+    border-radius: 15px;
+    margin-top: -4px;
 }
 
 #menu-bar {
-    position: absolute;
-    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 210px;
+    margin-top: 61px;
     left: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    display: flex;
+    justify-content: center;
+    background-color: var(--surface); 
+    border-right: 1px solid var(--border);
+    transition: transform 0.3s ease;
     z-index: 999;
-    height: 100%;
-    width: 60%;
 }
 
 
@@ -260,7 +332,7 @@ button:hover {
     margin: 10% 0 0;
     padding: 0;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 #menu-bar li {
@@ -273,17 +345,34 @@ button:hover {
     padding: 5px 0;
     color: #000;
     text-align: left;
-    border-radius: 7px;
     font-size: 18px;
     transition: background-color .3s, transform .2s;
     box-sizing: border-box;
-    text-decoration: none
+    text-decoration: none;
+    border-bottom: 1px solid #E5E9F2;
+}
+body.dark-mode #menu-bar a:not(#name-text) {
+    border-bottom:1px solid #2A2F42;
 }
 
 #menu-bar a:hover {
     transform: scale(1.02)
 }
+/* Həm abituriyent, həm də tələbə menyusuna aid ortaq xüsusiyyətlər */
+#abituriyent-menu, #telebe-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out; /* 0.4 saniyəlik sürüşmə animasiyası */
+  display: flex;
+  flex-direction: column; /* Elementləri alt-alta düzürük */
+  margin: 0;
+  padding-left: 15px; /* Səliqəli görünməsi üçün boşluq */
+}
 
+/* Menyu açılanda işə düşəcək sinif */
+#abituriyent-menu.open, #telebe-menu.open {
+  max-height: 400px; /* Menyunun içindəkilərin hündürlüyündən böyük bir rəqəm */
+}
 #name-text {
     font-size: 23px;
     color: #1e90ff !important;
@@ -328,7 +417,7 @@ button:hover {
   text-decoration: underline;
 }
 body.dark-mode {
-    background: #121212;
+    background: #0F1117;
     color: #eee
 }
 
@@ -339,7 +428,7 @@ body.dark-mode h1 {
 }
 
 body.dark-mode table {
-    background: #1e1e1e;
+    background: #1A1D27;
     box-shadow: 0 0 10px rgba(255, 255, 255, .05)
 }
 
@@ -349,7 +438,7 @@ body.dark-mode th {
 }
 
 body.dark-mode td {
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #232736;
     color: #ccc
 }
 
@@ -358,12 +447,12 @@ body.dark-mode tr:hover {
 }
 
 body.dark-mode tr.even-row {
-    background-color: #2a2a2a
+    background-color: #232736
 }
 
 body.dark-mode input[type=text],
 body.dark-mode select, body.dark-mode #search {
-    background-color: #222;
+    background-color: #1A1D27;
     color: #eee;
     border: 2px solid #555
 }
@@ -386,8 +475,8 @@ body.dark-mode button:hover {
     background-color: #555
 }
 
-body.dark-mode #menu-bar {
-    background-color: #333;
+body.dark-mode #menu-bar, body.dark-mode .top-bar {
+    background-color: #1A1D27;
     border-color: #555
 }
 
@@ -401,7 +490,6 @@ body.dark-mode #menu-bar a:hover {
 
 #language-selector {
     right: 64px;
-    top: 10px;
     width: 47px;
     height: 48px;
     padding: 4px 0;
@@ -441,7 +529,6 @@ body.dark-mode #language-selector option {
 
 #toggle-dark-mode {
     position: absolute;
-    top: 10px;
     right: 10px;
     padding: 10px;
     color: #fff;
@@ -462,11 +549,17 @@ body.dark-mode #language-selector option {
 .white-icon {
     filter: invert(0)
 }
+body.dark-mode .white-icon {
+    filter: invert(0);
+}
 .white-filter-icon {
     filter: invert(1);
 }
 /* Başlıq (ixtisasın adı) */
-
+.page-specializations {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 .specialization-title {
     display: flex;
     align-items: center;             
@@ -484,7 +577,7 @@ body.dark-mode #language-selector option {
     border: 1px solid #1e90ff;
 }
 body.dark-mode .specialization-title {
-    background: #1e1e1e;
+    background: #1A1D27;
     color: #ddd;
     border: 1px solid #3f3f3f;
 }
@@ -523,11 +616,11 @@ body.dark-mode .specialization-title {
     display: none;
     transition: all 0.3s ease;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    color: #333;
+    color: #1A1D27;
     line-height: 1.5;
 }
 body.dark-mode .specialization-description {
-    background: #1e1e1e;
+    background: #1A1D27;
     color: #ddd;
     border-left: 1px solid #3f3f3f;
     border-right: 1px solid #3f3f3f;
@@ -538,15 +631,6 @@ body.dark-mode .specialization-description {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-.adsterrabanner {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 20px 0;
-    height: 50px;
-    background-color: transparent;
-}
 a[href*="chatling.ai"],
 a[href*="chatling.ai"] *,
 div[data-v-77565f88] {
@@ -556,24 +640,15 @@ div[data-v-77565f88] {
   pointer-events: none !important;
 }
 body.dark-mode .selected-ixtisas {
-    background-color: #1e1e1e;
+    background-color: #1A1D27;
     color: #ddd;
 } 
 
 
-.button-resizer {
-  padding: 12px;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  overflow: hidden;
-  resize: horizontal;
-  align-self: center;
-}
 
 .button {
   position: relative;
-  padding: 8px 16px;
+  padding: 10px 16px;
   width: 100%;
   min-width: 8em;
   text-align: center;
@@ -586,47 +661,7 @@ body.dark-mode .selected-ixtisas {
   will-change: transform;
   resize: both;
 }
-.button:active {
-  transform: scale(0.92);
-  filter: brightness(0.8);
-}
 
-.button::after {
-  --overflow-x: 4px;
-  --snow-image: url("https://assets.codepen.io/4175254/snow-cap-test-2.png");
-  content: "";
-  position: absolute;
-  top: -6px;
-  left: calc(var(--overflow-x) * -1);
-  border-image-source: var(--snow-image);
-  border-image-slice: calc(6 * 56 / 20) fill;
-  border-image-width: calc(28px / 3);
-  border-image-repeat: round;
-  width: calc(100% + var(--overflow-x) * 2);
-  height: 28px;
-  filter: drop-shadow(0 2px 1px rgba(0, 0, 0, 0.25));
-  opacity: 1;
-  -webkit-animation: fade-in 2s;
-          animation: fade-in 2s;
-}
-
-@-webkit-keyframes fade-in {
-  0%, 50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0%, 50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* DESKTOP THEME */
 @media (min-width:769px) {
     #language-selector,
@@ -638,8 +673,7 @@ body.dark-mode .selected-ixtisas {
     }
     .main-content {
         margin-left: 200px;
-        padding: 10px 0 10px 10px;
-        top: -30px
+        padding: 10px 0 10px 30px;
     }
     .search-bar {
         gap: 10px;
@@ -652,7 +686,7 @@ body.dark-mode .selected-ixtisas {
         position: relative;
         display: block;
         padding-right: 10px;
-        height: 500px;
+        height: 415px;
         overflow-y: auto;
     }
     #card-container,
@@ -660,7 +694,7 @@ body.dark-mode .selected-ixtisas {
     #menu-toggle {
         display: none;
     }
-    
+
     .specialization-title {
         margin-left: 220px;
     }
@@ -668,11 +702,17 @@ body.dark-mode .selected-ixtisas {
         margin-left: 220px;
     }
     #menu-bar {
-        top: 0;
+        margin-top: 0 !important;
         left: 0;
         height: 100%;
         width: 180px;
         display: block !important
+    }
+    #menu-bar img {
+        display: none;
+    }
+    .menu-toggle {
+        margin-top: 70px;
     }
     .filter-bar {
         padding: 0 30px 15px;
@@ -729,7 +769,7 @@ body.dark-mode .selected-ixtisas {
     }
     body.dark-mode .qrup-btn {
         border: 2px solid #1e90ff;
-        background-color: #1e1e1e;
+        background-color: #1A1D27;
         color: #1e90ff;
     }
     .qrup-btn.active {
@@ -768,7 +808,7 @@ body.dark-mode .selected-ixtisas {
         box-shadow: none;
     }
     body.dark-mode table.qiymetlendirme input {
-        background-color: #1e1e1e;
+        background-color: #1A1D27;
         color: white;
     }
     table.qiymetlendirme #umumi-netice, #umumi-netice-text {
@@ -810,6 +850,11 @@ body.dark-mode .selected-ixtisas {
 }
 /* MOBILE THEME */
 @media (max-width:768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     #language-selector,
     #toggle-dark-mode {
         position: absolute;
@@ -827,6 +872,12 @@ body.dark-mode .selected-ixtisas {
     }
     .main-content {
         margin-left: 0px;
+        position: absolute;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+    .logo {
+        display: none;
     }
     .filter-bar,
     .search-bar {
@@ -857,7 +908,7 @@ body.dark-mode .selected-ixtisas {
     .card h3 {
         margin-top: 0;
         font-size: 18px;
-        color: #333
+        color: #1A1D27
     }
     .card .field {
         margin-bottom: 6px;
@@ -868,8 +919,8 @@ body.dark-mode .selected-ixtisas {
         font-size: 16px
     }
     body.dark-mode .card {
-        background: #1e1e1e;
-        border: 1px solid #333;
+        background: #1A1D27;
+        border: 1px solid #1A1D27;
         color: #ddd
     }
     body.dark-mode .card #ixtisasad,
@@ -894,13 +945,24 @@ body.dark-mode .selected-ixtisas {
         width: 60%;
         height: 100vh;
         transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     #menu-bar:not(.hidden) {
         transform: translateX(0);
+        margin: 0;
     }
     #menu-bar.hidden {
         left: 0;
         pointer-events: none;
+    }
+    #menu-bar img {
+        display: flex;
+        width: 90%;
+    }
+    #abituriyent-header {
+        margin-top: 40px;
     }
     .hidden {
         left: -100%;
@@ -931,6 +993,9 @@ body.dark-mode .selected-ixtisas {
         font-size: 14px;
         margin: auto;
     }
+    .header, .menu-container {
+        width: 100%;
+    }
     .mobile-card {
         background: #f4f4f4;
         padding: 10px;
@@ -939,10 +1004,10 @@ body.dark-mode .selected-ixtisas {
         box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
     body.dark-mode .mobile-card {
-        background-color: #121212;
+        background-color: #1A1D27;
     }
     body.dark-mode .mobile-card input {
-        background-color: #1e1e1e;
+        background-color: #1A1D27;
         color: white;
     }
     .mobile-card input {
@@ -1162,7 +1227,7 @@ body.dark-mode .selected-ixtisas {
     }
     body.dark-mode .selected-card .plus-btn {
         color: #ddd;
-        background-color: #1e1e1e;
+        background-color: #1A1D27;
         border: 1px solid #555;
     }
     
@@ -1294,7 +1359,7 @@ body.dark-mode .selected-ixtisas {
         position: relative;
     }
     body.dark-mode #searchIxtisasInput {
-        background-color: #222222;
+        background-color: #1A1D27;
         color: white;
         border: 2px solid #555;
     }

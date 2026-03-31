@@ -24,17 +24,31 @@ function loadData() {
 function initPage() {
     let e = localStorage.getItem("selectedLanguage") || "az",
         a = document.getElementById("group-title");
-    a && (a.textContent = groupNames[groupNumber] || "Qrup");
+    
+    if (a) {
+        a.textContent = groupNames[groupNumber] || "Qrup";
+    }
+    
     let t = document.querySelectorAll("#menu-bar ul li a");
 
     function i() {
         let a = getCurrentFilters(),
             t = filterData(globalData, a);
-        renderData(t, e), setupEventListeners()
+        renderData(t, e);
+        setupEventListeners();
     }
-    t.forEach(e => {
-        e.classList.remove("active"), e.getAttribute("href") === `${groupNumber}ciqrup.html` && e.classList.add("active")
-    }), renderData(globalData, e), setupEventListeners(), window.addEventListener("resize", i), window.addEventListener("orientationchange", i)
+    
+    t.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `${groupNumber}ciqrup.html`) {
+            link.classList.add("active");
+        }
+    });
+
+    renderData(globalData, e);
+    setupEventListeners();
+    window.addEventListener("resize", i);
+    window.addEventListener("orientationchange", i);
 }
 
 function setupEventListeners() {
@@ -95,7 +109,7 @@ function renderData(data, lang) {
                 <table>
                     <thead>
                         <tr>
-                            <th>${l.ixtisas || "Ixtisas"}</th>
+                            <th>${l.ixtisas || "İxtisas"}</th>
                             <th>${l.tehsilFormasi || "Təhsil forması"}</th>
                             <th>${l.dil || "Dil"}</th>
                             <th>${l.altQrup || "Alt qrup"}</th>
@@ -129,75 +143,6 @@ function renderData(data, lang) {
 }
 
 
-const menuToggle = document.getElementById("menu-toggle"),
-      menuContent = document.getElementById("menu-bar");
-
-
-document.addEventListener('DOMContentLoaded', () => {
-const menuToggle = document.getElementById("menu-toggle");
-const menuContent = document.getElementById("menu-bar");
-
-if (!menuToggle || !menuContent) return;
-
-let maxWidth = 250;
-if (!menuContent.classList.contains("hidden")) {
-    maxWidth = menuContent.offsetWidth;
-
-} else {
-    menuContent.classList.remove("hidden");
-    maxWidth = menuContent.offsetWidth || 250;
-    menuContent.classList.add("hidden");
-    document.body.style.overflow = "";  
-}
-
-const swipeThreshold = window.innerWidth * 0.40;
-
-let touchStartX = 0;
-let touchStartY = 0;
-let isDragging = false;
-
-
-document.addEventListener("touchstart", (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-    touchStartY = e.changedTouches[0].screenY;
-    isDragging = true;
-    menuContent.style.transition = "none";
-});
-
-document.addEventListener("touchmove", (e) => {});
-
-document.addEventListener("touchend", (e) => {
-    isDragging = false;
-    const touchEndX = e.changedTouches[0].screenX;
-    const swipeDistance = touchEndX - touchStartX;
-    const verticalDistance = Math.abs(e.changedTouches[0].screenY - touchStartY);
-    const horizontalDistance = Math.abs(swipeDistance);
-
-    menuContent.style.transition = "left 0.8s cubic-bezier(.25,.8,.25,1)";
-
-    if (horizontalDistance > verticalDistance) {
-        if (menuContent.classList.contains("hidden") && swipeDistance > swipeThreshold) {
-            // Yalnız uzun sürüşdürmə ilə aç
-            menuContent.classList.remove("hidden");
-            menuContent.style.left = "0px";
-            
-        } else if (!menuContent.classList.contains("hidden") && swipeDistance < -swipeThreshold) {
-            menuContent.style.left = `-${maxWidth}px`;
-            setTimeout(() => menuContent.classList.add("hidden"), 300);
-            document.body.style.overflow = "";
-        } else {
-            if (menuContent.classList.contains("hidden")) {
-                menuContent.style.left = `-${maxWidth}px`;
-                setTimeout(() => menuContent.classList.add("hidden"), 300);
-                document.body.style.overflow = "";
-            } else {
-                menuContent.style.left = "0px";
-                
-            }
-        }
-    }
-});
-});
     
 function applyFilters() {
     let e = getCurrentFilters(),
@@ -295,63 +240,37 @@ function filterData(data, {
         return { ...group, universitetler: filteredUniversities };
     }).filter(Boolean);
 }
-// 0-------------------------------
-
 document.addEventListener('DOMContentLoaded', () => {
-  // === DO NOTHING ON DESKTOP (width > 768px) ===
-  if (window.innerWidth > 768) return;
+  const abituriyentMenu = document.getElementById('abituriyent-menu');
+  const abituriyentHeader = document.querySelector('[onclick*="abituriyent-menu"] .arrow');
+  
+  if (abituriyentMenu && abituriyentHeader) {
+      abituriyentMenu.classList.add('open');
+      abituriyentHeader.textContent = 'v';
+  }
 
-  const menuToggle = document.getElementById("menu-toggle");
-  const menuContent = document.getElementById("menu-bar");
-  const filterBar = document.querySelector(".filter-bar");
-  const filterToggleBtn = document.getElementById("filterToggleBtn");
+  if (window.innerWidth <= 768) {
+      const filterBar = document.querySelector(".filter-bar");
+      const filterToggleBtn = document.getElementById("filterToggleBtn");
 
-  if (!menuToggle || !menuContent) return;
+      if (filterBar && filterToggleBtn) {
+          const span = filterToggleBtn.querySelector("span");
+          const img = filterToggleBtn.querySelector("img");
 
-  const MENU_WIDTH = 250;
+          filterBar.style.display = "none";
 
-  // Toggle menu with animation
-  menuToggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-
-    if (menuContent.classList.contains("hidden")) {
-      // OPEN
-      menuContent.classList.remove("hidden");
-      menuContent.style.left = "0px";
-      document.body.style.overflow = "hidden";
-    } else {
-      // CLOSE
-      menuContent.style.left = `-${MENU_WIDTH}px`;
-      document.body.style.overflow = "";
-      setTimeout(() => menuContent.classList.add("hidden"), 500);
-    }
-  });
-
-  // Close when clicking outside
-  document.addEventListener("click", (e) => {
-    const clickedInside = menuToggle.contains(e.target) || menuContent.contains(e.target);
-    if (!clickedInside && !menuContent.classList.contains("hidden")) {
-      menuToggle.click();
-    }
-  });
-
-  // === FILTER TOGGLE ===
-  if (filterBar && filterToggleBtn) {
-    const span = filterToggleBtn.querySelector("span");
-    const img = filterToggleBtn.querySelector("img");
-
-    filterBar.style.display = "none"; // Always hide on mobile
-
-    filterToggleBtn.addEventListener("click", () => {
-      const lang = localStorage.getItem("selectedLanguage") || "az";
-      const isOpen = filterBar.style.display === "block";
-      filterBar.style.display = isOpen ? "none" : "block";
-      span.textContent = isOpen ? "Filter" : translations[lang].closeFilterText || "Bağla";
-      
-      img.style.display = isOpen ? "inline" : "none";
-    });
+          filterToggleBtn.addEventListener("click", () => {
+              const lang = localStorage.getItem("selectedLanguage") || "az";
+              const isOpen = filterBar.style.display === "block";
+              
+              filterBar.style.display = isOpen ? "none" : "block";
+              span.textContent = isOpen ? "Filter" : (translations[lang]?.closeFilterText || "Bağla");
+              img.style.display = isOpen ? "inline" : "none";
+          });
+      }
   }
 });
+
 
 if (window.location.pathname.endsWith("1ciqrup.html") || 
   window.location.pathname.endsWith("2ciqrup.html") ||
@@ -397,35 +316,7 @@ if (window.location.pathname.endsWith("1ciqrup.html") ||
 
 
 // -------------------------------
-document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("toggle-dark-mode");
-    const toggleIcon = document.getElementById("icon");
 
-    // Dark mode statusunu yoxla və uyğun class + icon təyin et
-    if (localStorage.getItem("darkMode") === "enabled") {
-        document.body.classList.add("dark-mode");
-        toggleIcon.src = "sun.webp";
-    } else {
-        document.body.classList.remove("dark-mode");
-        toggleIcon.src = "moon.webp";
-    }
-
-    // Dark mode düyməsinə klik edildikdə
-    toggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
-
-        if (document.body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "enabled");
-            toggleIcon.src = "sun.webp";
-        } else {
-            localStorage.setItem("darkMode", "disabled");
-            toggleIcon.src = "moon.webp";
-        }
-    });
-
-    // Məlumatları yüklə
-    loadData();
-});
 // "Daha çox / Daha az" funksiyası
 function toggleMore(btn) {
   const content = btn.previousElementSibling;
@@ -966,9 +857,11 @@ function loadSpecializations() {
       });
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
-  if (!document.body.classList.contains("page-specializations")) return;
+  // DƏYİŞDİRİLƏN HİSSƏ: Body class-ı yoxlamaq əvəzinə #specializations-body ID-sini yoxlayırıq.
+  // Əgər bu element səhifədə yoxdursa, kod işləməyəcək (başqa səhifələrdə xəta verməməsi üçün).
+  const container = document.getElementById("specializations-body");
+  if (!container) return; 
 
   const searchInput = document.getElementById("search");
   const searchBtn = document.getElementById("searchBtn");
@@ -998,7 +891,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 function handleSearch() {
   const query = document.getElementById("search").value.trim().toLowerCase();
   const lang = localStorage.getItem("selectedLanguage") || "az";
@@ -1018,8 +910,6 @@ function handleSearch() {
 
   renderDataSpec(filteredData, lang);
 }
-
-
 // Ixtisas Sec Frame
 
 

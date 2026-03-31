@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium | ixtisastap.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="fennler-menu.html">
+                <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+            </a>
+        </div>
+        <div class="menu-btn-bg">
+            <button id="menu-toggle">
+                <img src="../images/menu-bar.webp" alt="Menyu">
+            </button>
+        </div>
+        <div class="theme-mode">
+            <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
+        </div>
+        <a href="./profile.html" class="profile-bg">
+            <img src="../images/profile.webp" alt="profile">
+        </a>
+    </div>
+    <nav id="menu-bar" class="hidden">
+        <a href="./isindex.html" id="name-text">
+            <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
+        </a>
+        
+        <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+            Abituriyent <span class="arrow">&gt;</span>
+        </div>
+        
+        <ul id="abituriyent-menu" class="anim-menu">
+            <li><a href="../1ciqrup.html" data-i18n="group1">1ci Qrup</a></li>
+            <li><a href="../2ciqrup.html" data-i18n="group2">2ci Qrup</a></li>
+            <li><a href="../3ciqrup.html" data-i18n="group3">3cü Qrup</a></li>
+            <li><a href="../4ciqrup.html" data-i18n="group4">4cü Qrup</a></li>
+            <li><a href="../specializations.html" data-i18n="aboutspec">İxtisaslar haqqında</a></li>
+            <li><a href="../balhesab.html" data-i18n="scorecalc">Bal hesablanması</a></li>
+            <li><a href="../about.html" data-i18n="about">Haqqımızda</a></li>
+        </ul>
+
+        <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+            Tələbə <span class="arrow">&gt;</span>
+        </div>
+        
+        <div class="menu-bar anim-menu" id="telebe-menu">
+            <a href="./fennler-menu.html">Fənnlər</a>
+            <a href="./profile.html">Profil</a>
+            <a href="./aboutus.html">Haqqımızda və əlaqə</a>
+            <a href="./premium.html">Premium abunəlik</a>
+        </div>
+    </nav>
+    <div class="main-background">
+        <div class="main-content">
+            
+            <div class="header-bg">
+                <h1>Əzbərləməyi dayandır, öyrənməyə başla.</h1>
+            </div>
+            <div class="infotext-bg">
+                <p>Daha çox sual, daha dəqiq analiz və limitsiz AI izah ilə özünü real yoxla. Sadəcə sual həll etmə nəticəni gör, zəifliyini tap və güclən.</p>
+            </div>
+            <div class="plans-grid">
+                <!-- Free -->
+                <div class="plan-card plan-free">
+                    <div class="plan-name">Pulsuz</div>
+                    <div class="plan-price">0 <span>AZN</span></div>
+                    <div class="plan-desc">Sistemlə tanış ol və gündəlik özünü test et.</div>
+                    <ul class="plan-features">
+                    <li>Gündə 15 sual</li>
+                    <li>Qısa izah</li>
+                    <li>Günlük nəticə faizi</li>
+                    </ul>
+                    <button class="btn-plan btn-plan-current" disabled>Sənin plan</button>
+                </div>
+
+                <!-- 3-day -->
+                <div class="plan-card">
+                    <div class="plan-name">3 Günlük Premium</div>
+                    <div class="plan-price">1 <span>AZN</span></div>
+                    <div class="plan-desc">İmtahana yaxın sürətli təkrar üçün.</div>
+                    <ul class="plan-features">
+                    <li>Limitsiz sual</li>
+                    <li>Limitsiz AI izah</li>
+                    <li>Mövzu üzrə nəticə analizi</li>
+                    <li>Son 3 gün statistika</li>
+                    </ul>
+                    <button class="btn-plan btn-plan-active" onclick="activatePlan('3 Günlük')">Aktiv et</button>
+                </div>
+
+                <!-- 7-day recommended -->
+                <div class="plan-card recommended">
+                    <div class="plan-badge">⭐ Tövsiyə edilir</div>
+                    <div class="plan-name">7 Günlük Premium</div>
+                    <div class="plan-price">2 <span>AZN</span></div>
+                    <div class="plan-desc">Bir həftə fokuslan və zəif mövzunu bağla.</div>
+                    <ul class="plan-features">
+                    <li>Limitsiz sual</li>
+                    <li>Limitsiz AI izah</li>
+                    <li>Mövzu üzrə nəticə analizi</li>
+                    <li>Son 7 gün statistika</li>
+                    </ul>
+                    <button class="btn-plan btn-plan-active" onclick="activatePlan('7 Günlük')">Aktiv et</button>
+                </div>
+
+                <!-- 30-day -->
+                <div class="plan-card">
+                    <div class="plan-name">30 Günlük Premium</div>
+                    <div class="plan-price">5 <span>AZN</span></div>
+                    <div class="plan-desc">Davamlı hazırlaşmaq istəyənlər üçün.</div>
+                    <ul class="plan-features">
+                    <li>Limitsiz sual</li>
+                    <li>Limitsiz AI izah</li>
+                    <li>Mövzu üzrə nəticə analizi</li>
+                    <li>Son 30 gün statistika</li>
+                    </ul>
+                    <button class="btn-plan btn-plan-active" onclick="activatePlan('30 Günlük')">Aktiv et</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="action-overlay" id="actionOverlay" style="display:none;">
+        <div class="action-modal" id="actionModalContent">
+            
+        </div>
+    </div>
+    <div class="message-overlay" id="messageOverlay" style="display:none;">
+        <div class="message-bar">
+            <p id="messageText">This is a message!</p>
+            <div class="message-buttons">
+                <button id="okBtn">OK</button>
+                <button id="cancelBtn" style="display:none;">Ləğv et</button>
+                <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="..\theme.js"></script>
+<script src="..\menu.js"></script>
+<script src="script.js" defer></script>
+</html>

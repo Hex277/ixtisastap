@@ -17,7 +17,7 @@
   <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
   <link rel="canonical" href="https://ixtisastap.com/1ciqrup.html">
   <link rel="stylesheet" href="qruplar.css">
-  <link rel="icon" href="/logo.webp" type="image/webp">
+  <link rel="icon" href="../images/logo.webp" type="image/webp">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-029N0KCH3P"></script>
   <script>
@@ -29,6 +29,9 @@
   <style>
     h1 {
         margin-top: 30px;
+    }
+    .main-h1 {
+      margin-top: 100px;
     }
     h2 {
         margin-top: -500px;
@@ -94,32 +97,57 @@
   
 </head>
 <body>
-  <button id="menu-toggle">
-    <img id="menu" src="menu-bar.webp" alt="menu" width="20" class="menu" loading="lazy">
-  </button>
+  <div class="top-bar">
+      <button id="menu-toggle">
+        <img id="menu" src="../images/menu-bar.webp" alt="menu" width="20" class="menu" loading="lazy">
+      </button>
+      <div class="logo">
+          <a href="index.html">
+              <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
+          </a>
+      </div>
+      <button id="toggle-dark-mode">
+        <img id="icon" src="../images/moon.webp" alt="rejim" width="23" class="white-icon" loading="lazy">
+      </button>
+      
+      <select id="language-selector">
+        <option value="az" selected>AZ</option>
+        <option value="en">EN</option>
+        <option value="tr">TR</option>
+      </select>
+  </div>
   <nav id="menu-bar" class="hidden">
-    <a href=index.html id=name-text><img class="logopng" src="ixtisastap.png" alt="SiteName" style="width: 200px;"></a>
-    <ul>
+    <a href="index.html" id="name-text">
+      <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
+    </a>
+    
+    <div class="menu-header" id="abituriyent-header" onclick="toggleMenu('abituriyent-menu', this)">
+      Abituriyent <span class="arrow">&gt;</span>
+    </div>
+    
+    <ul id="abituriyent-menu" class="anim-menu">
       <li><a href="./1ciqrup.html" data-i18n="group1">Group 1</a></li>
       <li><a href="./2ciqrup.html" data-i18n="group2">Group 2</a></li>
       <li><a href="./3ciqrup.html" data-i18n="group3">Group 3</a></li>
       <li><a href="./4ciqrup.html" data-i18n="group4">Group 4</a></li>
       <li><a href="./specializations.html" data-i18n="aboutspec">About Specializations</a></li>
-      <li><a href=./balhesab.html data-i18n=scorecalc>Score Calculator</a></li>
+      <li><a href="./balhesab.html" data-i18n="scorecalc">Score Calculator</a></li>
       <li><a href="./about.html" data-i18n="about">About Us & Co</a></li>
-      <li><a href="./guide.html" data-i18n="guide">Guide</a></li>
     </ul>
+
+    <div class="menu-header" id="telebe-header" onclick="toggleMenu('telebe-menu', this)">
+      Tələbə <span class="arrow">&gt;</span>
+    </div>
+    
+    <div class="menu-bar anim-menu" id="telebe-menu">
+      <a href="../telebe/fennler-menu.html">Fənnlər</a>
+      <a href="../telebe/profile.html">Profil</a>
+      <a href="../telebe/aboutus.html">Haqqımızda və əlaqə</a>
+      <a href="../telebe/premium.html">Premium abunəlik</a>
+    </div>
   </nav>
   <div class="main-content">
-    <button id="toggle-dark-mode">
-      <img id="icon" src="moon.webp" alt="rejim" width="23" class="white-icon" loading="lazy">
-    </button>
-    <select id="language-selector">
-      <option value="az" selected>AZ</option>
-      <option value="en">EN</option>
-      <option value="tr">TR</option>
-    </select>
-    <h1 data-i18n="ballarinhesablanmasih1">Balların Hesablanması</h1>
+    <h1 class="main-h1" data-i18n="ballarinhesablanmasih1">Balların Hesablanması</h1>
 
     <div class="qrup-menusu-container">
       <div id="qrup-menusu">
@@ -175,6 +203,8 @@
 
   <!-- Scriptlər -->
   <script src="translations.js" defer></script>
+  <script src="..\theme.js"></script>
+  <script src="..\menu.js"></script>
   <script src="script.js" defer></script>
 </body>
 
