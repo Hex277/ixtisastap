@@ -347,43 +347,74 @@ function changeLanguage(e) {
         translations[e][i] && t.setAttribute("placeholder", translations[e][i])
     }
 }
-document.getElementById("language-selector").addEventListener("change", function() {
+document.getElementById("language-selector")?.addEventListener("change", function() {
     let e = this.value;
-    localStorage.setItem("selectedLanguage", e), location.reload()
-}), window.addEventListener("DOMContentLoaded", () => {
-    let e = localStorage.getItem("selectedLanguage") || "az";
-    document.getElementById("language-selector").value = e, changeLanguage(e), renderData(filteredData || originalData)
+    localStorage.setItem("selectedLanguage", e);
+    location.reload();
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+    let e = localStorage.getItem("selectedLanguage") || "az";
+    const langSelector = document.getElementById("language-selector");
+    
+    // Dil seçici varsa dəyəri mənimsət
+    if (langSelector) {
+        langSelector.value = e;
+    }
+    
+    // Funksiyaların mövcudluğunu yoxla
+    if (typeof changeLanguage === "function") changeLanguage(e);
+    
+    // filteredData və ya originalData mövcuddursa render et
+    const dataToRender = (typeof filteredData !== 'undefined' ? filteredData : (typeof originalData !== 'undefined' ? originalData : null));
+    if (typeof renderData === "function" && dataToRender) {
+        renderData(dataToRender);
+    }
+});
+
 const tableContainer = document.getElementById("table-container"),
     cardContainer = document.getElementById("card-container"),
     isMobile = () => window.innerWidth <= 768;
 
 function setupTableView() {
+    // Əgər tableContainer yoxdursa və ya rowHeight təyin edilməyibsə funksiyanı dayandır
+    if (!tableContainer || typeof rowHeight === 'undefined') return;
+
     let e = document.createElement("table"),
         a = document.createElement("thead");
     e.appendChild(a);
     let t = document.createElement("tbody");
-    e.appendChild(t), tableContainer.appendChild(e);
+    e.appendChild(t);
+    tableContainer.appendChild(e);
+
+    // rowHeight-in varlığı yuxarıda yoxlanıldı
     let i = Math.ceil(tableContainer.clientHeight / rowHeight) + 5;
 
     function l(e) {
         let a = document.createElement("tr");
-        return a.style.height = rowHeight + "px", a
+        a.style.height = rowHeight + "px";
+        return a;
     }
 
     function n(e) {
         t.innerHTML = "";
         let a = document.createDocumentFragment();
-        for (let n = e; n < e + i && n < totalRows; n++) a.appendChild(l(n));
-        t.appendChild(a)
+        // totalRows-un da varlığını yoxlayaq (default 0)
+        let total = typeof totalRows !== 'undefined' ? totalRows : 0;
+        
+        for (let n = e; n < e + i && n < total; n++) {
+            a.appendChild(l(n));
+        }
+        t.appendChild(a);
     }
-    n(0), tableContainer.addEventListener("scroll", function e() {
+
+    n(0);
+    tableContainer.addEventListener("scroll", function e() {
         let a = tableContainer.scrollTop,
             t = Math.floor(a / rowHeight);
-        n(t)
-    })
+        n(t);
+    });
 }
-
 function setupCardView() {
     cardContainer.innerHTML = "";
     for (let e = 0; e < totalRows; e++) {
@@ -1082,7 +1113,14 @@ function handlePaymentChoice(choice) {
   document.getElementById("paymentModal").style.display = "none";
   document.getElementById("ixtisaslar").style.display = "none";
 }
+const closeBtn = document.getElementById("closeixtisaslarFrame");
 
-document.getElementById("closeixtisaslarFrame").addEventListener("click", function() {
-  document.getElementById("ixtisaslar").style.display = "none";
-});
+if (closeBtn) {
+  closeBtn.addEventListener("click", function() {
+    const targetFrame = document.getElementById("ixtisaslar");
+
+    if (targetFrame) {
+      targetFrame.style.display = "none";
+    }
+  });
+}
