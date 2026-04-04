@@ -239,7 +239,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
     document.addEventListener("DOMContentLoaded", async () => {
         const urlParams = new URLSearchParams(window.location.search);
         const subjectId = urlParams.get('subject');
-
+        const currentSubjectId = urlParams.get('subject') || 'default'; 
         if (!subjectId) {
             console.error("No subject provided!");
             return;
@@ -248,60 +248,82 @@ if (window.location.pathname.endsWith("quiz.html")) {
         // ==========================================
         // 1. AUTH VƏ GÜNDƏLİK LİMİT YOXLANIŞI
         // ==========================================
-        
+
         // Sürətli olması üçün istifadəçi ID-sini birbaşa token-dən çəkirik
         const sbSessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
         if (!sbSessionStr) {
             window.location.href = "login.html"; 
             return;
         }
-        
+
         const userId = JSON.parse(sbSessionStr).user.id;
 
-        // Bayaq yazdığımız sistemdən Premium olub-olmadığını yoxlayırıq
+        // Premium yoxlanışı
         const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
         const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
 
-        // Əgər istifadəçi PULSUZ hesabdadırsa limitləri yoxla
+        // Limit vəziyyətini yoxlayırıq (Lakin hələ artırmırıq!)
         if (!isPremium) {
-            const bugun = new Date().toDateString(); // Məsələn: "Tue Mar 24 2026" (Hər gün avtomatik dəyişəcək)
-            const limitKey = `quizLimit_${userId}_${bugun}`;
-            let islenenQuizSayi = parseInt(localStorage.getItem(limitKey) || "0");
+            const today = new Date().toISOString().split('T')[0];
+            
+            let { data: stats } = await supabase
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', userId)
+                .single();
 
-            // Əgər artıq 3 dəfə giribsə (3x10 = 30 sual)
-            if (islenenQuizSayi >= 3) {
+            // Əgər həmin gün limit dolubsa, içəri buraxma
+            if (stats && stats.last_quiz_date === today && stats.daily_limit_count >= 3) {
                 const limitHTML = `
                     <div style="text-align: center;">
                         <img src="../images/freeplanreminder.webp" alt="Limit" style="width: 200px; margin-bottom: 15px;">
                         <h3 style="margin-bottom: 10px; color: #1e90ff;">Gündəlik limit doldu!</h3>
                         <p style="font-size: 15px; opacity: 0.9;">
-                            Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz. Limitsiz suallar üçün Premium əldə edin.
+                            Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
                         </p>
                     </div>
                 `;
                 
-                // YENİLİK: "alert" əvəzinə "confirm" istifadə edirik və düymə adlarını göndəririk ("İndi al" və "Sonra")
                 const userChoice = await showMessage(limitHTML, "confirm", "İndi al", "Sonra"); 
-                
-                if (userChoice) {
-                    // Əgər istifadəçi "İndi al" düyməsinə basdısa
-                    window.location.href = "premium.html"; 
-                } else {
-                    // Əgər istifadəçi "Sonra" düyməsinə basdısa (Geri qaytar)
-                    window.location.href = "fennler-menu.html"; 
-                }
-                
-                return; // Aşağıdakı fetch kodlarının (quiz-in) işləməsini dayandır!
+                window.location.href = userChoice ? "premium.html" : "fennler-menu.html";
+                return; 
             }
-
-            // Əgər limiti keçməyibsə, sayğacı 1 vahid artır
-            localStorage.setItem(limitKey, islenenQuizSayi + 1);
         }
-
         // ==========================================
         // 2. QUIZ MƏNTİQİ (Sizin köhnə kodunuz)
         // ==========================================
-        
+        // LocalStorage-dan cari fənnin səhvlərini gətirən köməkçi funksiya
+        function getWrongQuestions(subjectId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            return wrongData[subjectId] || [];
+        }
+
+        // Səhv cavab verəndə ID-ni əlavə edən funksiya
+        function addWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            
+            // Əgər bu fənn üçün hələ array yoxdursa, yarat
+            if (!wrongData[subjectId]) {
+                wrongData[subjectId] = [];
+            }
+            
+            // Əgər bu ID artıq siyahıda yoxdursa, əlavə et
+            if (!wrongData[subjectId].includes(questionId)) {
+                wrongData[subjectId].push(questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
+
+        // Düzgün cavab verəndə ID-ni siyahıdan silən funksiya
+        function removeWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            
+            if (wrongData[subjectId]) {
+                // ID-ni tap və array-dən çıxar
+                wrongData[subjectId] = wrongData[subjectId].filter(id => id !== questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
         // Başlıq üçün fetch
         fetch("subjects.json")
             .then(res => res.json())
@@ -354,7 +376,16 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         if(timerEl) timerEl.textContent = formatTime(secondsElapsed);
                     }, 1000);
                 }
-
+                // handleOptionClick daxilindəki hissə:
+                if (selectedKey === correctAnswer) {
+                    btn.classList.add("correct");
+                    // Səhvlər siyahısından məhz bu fənn üzrə silirik
+                    removeWrongQuestion(currentSubjectId, q.id);
+                } else {
+                    btn.classList.add("wrong");
+                    // ... doğrunu yaşıl etmə kodu ...
+                    addWrongQuestion(currentSubjectId, q.id);
+                }
                 function renderQuestion(index) {
                     const q = questions[index];
                     questionEl.textContent = q.question;
@@ -369,22 +400,29 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     
                     const optionBtns = document.querySelectorAll(".option-btn");
 
+                    // Əgər bu sual artıq cavablandırılıbsa (Geri qayıdıbsa)
                     if (userAnswers[index]) {
-                        const savedAnswer = userAnswers[index];
+                        const savedAnswer = userAnswers[index]; // İstifadəçinin seçdiyi
+                        const correctAnswer = q.correct_answer; // Əsl doğru olan
+                        
                         optionsContainer.classList.add("disabled");
                         
                         optionBtns.forEach(btn => {
                             const key = btn.dataset.key;
+                            
+                            // 1. İstifadəçinin seçdiyi variantı rəngləyirik
                             if (key === savedAnswer) {
-                                if (key === q.correct_answer) {
-                                    btn.classList.add("correct");
-                                } else {
-                                    btn.classList.add("wrong");
-                                }
+                                btn.classList.add(key === correctAnswer ? "correct" : "wrong");
+                            }
+                            
+                            // 2. Doğru variantı HƏMİŞƏ yaşıl göstəririk (səhv etsə belə görsün)
+                            if (key === correctAnswer) {
+                                btn.classList.add("correct");
                             }
                         });
                         nextBtn.disabled = false;
                     } else {
+                        // Sual hələ cavablandırılmayıbsa
                         optionsContainer.classList.remove("disabled");
                         nextBtn.disabled = true;
 
@@ -393,18 +431,22 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         });
                     }
 
+                    // Düymələrin vəziyyəti
                     if (prevBtn) prevBtn.disabled = (index === 0);
-                    
                     if (nextBtn) {
-                        if (index === questions.length - 1) {
-                            nextBtn.textContent = "Nəticə";
-                        } else {
-                            nextBtn.textContent = "Növbəti";
-                        }
+                        nextBtn.textContent = (index === questions.length - 1) ? "Nəticə" : "Növbəti";
                     }
                 }
+                let limitSubtracted = false; // Faylın yuxarı hissəsinə əlavə et
 
-                function handleOptionClick(btn, questionData, index) {
+                async function handleOptionClick(btn, questionData, index) {
+                    // LİMİT ÇIXILMASI: İlk suala cavab verdiyi an (yalnız pulsuz istifadəçidə)
+                    if (!limitSubtracted && !isPremium) {
+                        limitSubtracted = true;
+                        // Supabase-də daily_limit_count-u 1 vahid artırırıq
+                        await supabase.rpc('increment_daily_limit', { u_id: userId });
+                    }
+
                     const selected = btn.dataset.key;
                     userAnswers[index] = selected;
 
@@ -413,8 +455,57 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         score++;
                     } else {
                         btn.classList.add("wrong");
+                        
+                        // 0.5 saniyə sonra düzgün cavabın yaşıl yanması
+                        setTimeout(() => {
+                            const correctBtn = optionsContainer.querySelector(`[data-key="${questionData.correct_answer}"]`);
+                            if (correctBtn) {
+                                correctBtn.classList.add("correct");
+                            }
+                        }, 500);
                     }
+                    
+                    function checkAnswer(selectedOptionButton, selectedAnswerKey) {
+                        // selectedAnswerKey məsələn "A", "B", "C" və s. olacaq
+                        const correctAnswerKey = currentQuestion.correct_answer; 
+                        const questionId = currentQuestion.id;
 
+                        // Bütün variant düymələrini seçirik (CSS class-ınıza uyğun dəyişin)
+                        const allOptions = document.querySelectorAll(".option-btn"); 
+
+                        // İstifadəçi bir dəfə cavab verdikdən sonra digər düymələri deaktiv edirik ki, 2-ci dəfə basa bilməsin
+                        allOptions.forEach(btn => btn.disabled = true);
+
+                        if (selectedAnswerKey === correctAnswerKey) {
+                            // DOĞRU CAVAB
+                            selectedOptionButton.style.backgroundColor = "#4CAF50"; // Yaşıl rəng
+                            selectedOptionButton.style.color = "white";
+                            
+                            // Sualı düzgün tapdığı üçün "Səhvlər" siyahısından silirik (əgər orda var idisə)
+                            removeWrongQuestion(currentSubjectId, questionId);
+                            
+                            // Xalı artırmaq kodunuzu bura yaza bilərsiniz
+                            // score++;
+
+                        } else {
+                            // SƏHV CAVAB
+                            selectedOptionButton.style.backgroundColor = "#F44336"; // Qırmızı rəng
+                            selectedOptionButton.style.color = "white";
+
+                            // Doğru cavabı tapıb yaşıl edirik ki, istifadəçi görsün
+                            // (Bunun üçün düymələrinizə data-key="A", data-key="B" kimi atributlar verməyiniz məsləhətdir)
+                            allOptions.forEach(btn => {
+                                if (btn.getAttribute("data-key") === correctAnswerKey) {
+                                    btn.style.backgroundColor = "#4CAF50";
+                                    btn.style.color = "white";
+                                }
+                            });
+
+                            // Səhv etdiyi üçün ID-ni LocalStorage-a əlavə edirik
+                            addWrongQuestion(currentSubjectId, questionId);
+                        }
+
+                    }
                     const container = document.getElementById("options-container");
                     container.classList.add("disabled");
                     nextBtn.disabled = false;
@@ -429,12 +520,52 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     } else if (newIndex >= questions.length) {
                         showResult();
                     }
-                }       
+                }
+                // SUPABASE STATİSTİKA YENİLƏMƏ FUNKSİYASI
+                async function updatePlayerStats(uId, currentScore, currentSeconds) {
+                    try {
+                        const today = new Date().toISOString().split('T')[0];
+                        
+                        // 1. Mövcud datanı çəkirik
+                        let { data: stats, error: fetchError } = await supabase
+                            .from('user_stats')
+                            .select('*')
+                            .eq('user_id', uId)
+                            .single();
 
+                        if (!stats) {
+                            // Data yoxdursa, yeni sətir yaradırıq (INSERT)
+                            await supabase.from('user_stats').insert([{
+                                user_id: uId,
+                                daily_limit_count: 1,
+                                last_quiz_date: today,
+                                total_score: currentScore,
+                                quizzes_completed: 1,
+                                total_time_spent: currentSeconds
+                            }]);
+                        } else {
+                            // Data varsa, üzərinə gəlirik (UPDATE)
+                            const isNewDay = stats.last_quiz_date !== today;
+                            
+                            await supabase.from('user_stats').update({
+                                daily_limit_count: isNewDay ? 1 : stats.daily_limit_count + 1,
+                                last_quiz_date: today,
+                                total_score: stats.total_score + currentScore,
+                                quizzes_completed: stats.quizzes_completed + 1,
+                                total_time_spent: stats.total_time_spent + currentSeconds,
+                                updated_at: new Date().toISOString()
+                            }).eq('user_id', uId);
+                        }
+                    } catch (err) {
+                        console.error("Supabase update xətası:", err);
+                    }
+                }
                 function showResult() {
                     clearInterval(timerInterval);
                     const finalTime = formatTime(secondsElapsed);
-
+                    if (userId) {
+                        updatePlayerStats(userId, score, secondsElapsed);
+                    }
                     const topPart = document.querySelector(".top-part");
                     const sualWord = document.querySelector(".sual-word");
                     const quizButtons = document.querySelector(".quiz-buttons-bg");

@@ -613,6 +613,7 @@ button {
     z-index: 999;
     padding: 10px 20px;
 }
+
 .menu-btn-bg {
     display: none;
 }
@@ -1057,7 +1058,8 @@ body.dark-theme #report img {
 }
 
 .fenn-id h1 {
-    width: 80%;
+    width: 70%;
+    font-size: 24px;
 }
 #question-counter {
     padding: 20px;
@@ -1110,6 +1112,8 @@ body.dark-theme #report img {
     display: flex;
     justify-content: left;
     text-align: left;
+    font-size: 15px;
+    padding: 12px 20px;
 }
 .quiz-buttons-bg {
     display: flex;
