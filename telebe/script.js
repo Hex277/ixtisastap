@@ -236,6 +236,9 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
 }
 // ---------------------- QUIZ PAGE ----------------------
 if (window.location.pathname.endsWith("quiz.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
     document.addEventListener("DOMContentLoaded", async () => {
         const urlParams = new URLSearchParams(window.location.search);
         const subjectId = urlParams.get('subject');
@@ -266,7 +269,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
         if (!isPremium) {
             const today = new Date().toISOString().split('T')[0];
             
-            let { data: stats } = await supabase
+            let { data: stats } = await supabaseClient
                 .from('user_stats')
                 .select('daily_limit_count, last_quiz_date')
                 .eq('user_id', userId)
@@ -444,7 +447,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     if (!limitSubtracted && !isPremium) {
                         limitSubtracted = true;
                         // Supabase-də daily_limit_count-u 1 vahid artırırıq
-                        await supabase.rpc('increment_daily_limit', { u_id: userId });
+                        await supabaseClient.rpc('increment_daily_limit', { u_id: userId });
                     }
 
                     const selected = btn.dataset.key;
@@ -525,9 +528,9 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 async function updatePlayerStats(uId, currentScore, currentSeconds) {
                     try {
                         const today = new Date().toISOString().split('T')[0];
-                        
+                        user_stats
                         // 1. Mövcud datanı çəkirik
-                        let { data: stats, error: fetchError } = await supabase
+                        let { data: stats, error: fetchError } = await supabaseClient
                             .from('user_stats')
                             .select('*')
                             .eq('user_id', uId)
@@ -535,7 +538,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
                         if (!stats) {
                             // Data yoxdursa, yeni sətir yaradırıq (INSERT)
-                            await supabase.from('user_stats').insert([{
+                            await supabaseClient.from('user_stats').insert([{
                                 user_id: uId,
                                 daily_limit_count: 1,
                                 last_quiz_date: today,
@@ -547,7 +550,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                             // Data varsa, üzərinə gəlirik (UPDATE)
                             const isNewDay = stats.last_quiz_date !== today;
                             
-                            await supabase.from('user_stats').update({
+                            await supabaseClient.from('user_stats').update({
                                 daily_limit_count: isNewDay ? 1 : stats.daily_limit_count + 1,
                                 last_quiz_date: today,
                                 total_score: stats.total_score + currentScore,
