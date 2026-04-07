@@ -555,7 +555,15 @@ button {
     background-color: #ff4d4d;
     color: white;
 }
-
+.created-time {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.created-time p {
+    margin: 0;
+    padding: 0;
+}
 /* ==============================
    LEFT MENU STYLES
 ============================== */
@@ -1194,10 +1202,12 @@ body.dark-theme #report img {
     background-color: var(--wrong);
     border-color: #e74c3c;
 }
-.options.disabled {
+#options-container.disabled {
     pointer-events: none;
 }
-
+#options-container.disabled .option-btn:not(.correct):not(.wrong) {
+    opacity: 0.6; 
+}
 button:disabled {
     background-color: var(--surface2) !important;
     color: var(--text-color);
