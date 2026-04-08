@@ -176,3 +176,113 @@ function closeActionModal() {
         modalContent.innerHTML = ""; 
     }
 }
+// ---------------------- LOGIN PAGE ---------------------
+if (window.location.pathname.endsWith("login.html")) {
+    // 1. Şifrə bərpa modalını açan funksiya (Email istəyir)
+    window.openResetPasswordModal = function() {
+        const modalHTML = `
+            <h2>Şifrəni bərpa et</h2>
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
+                Hesabınızın e-poçt ünvanını daxil edin. Sizə təsdiq kodu göndəriləcək.
+            </p>
+            <div class="input-group">
+                <label>E-poçt</label>
+                <input type="email" id="resetEmailInput" placeholder="example@mail.com">
+            </div>
+            <div class="action-buttons">
+                <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                <button class="btn-continue" id="sendOtpBtn" onclick="sendResetOtp()">Kod Göndər</button>
+            </div>
+        `;
+        openActionModal(modalHTML);
+    };
+
+    // 2. Supabase vasitəsilə OTP göndərən funksiya
+    window.sendResetOtp = async function() {
+        const email = document.getElementById("resetEmailInput").value.trim();
+        const btn = document.getElementById("sendOtpBtn");
+
+        if (!email) {
+            await showMessage("Zəhmət olmasa e-poçtunuzu daxil edin!");
+            return;
+        }
+
+        btn.textContent = "Göndərilir...";
+        btn.disabled = true;
+
+        // Supabase-ə şifrə bərpa sorğusu göndəririk
+        const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+
+        if (error) {
+            await showMessage("Xəta: " + error.message);
+            btn.textContent = "Kod Göndər";
+            btn.disabled = false;
+        } else {
+            // Uğurludursa, modalın içini dəyişib OTP və YENİ ŞİFRƏ sahəsini göstəririk
+            showOtpEntryModal(email);
+        }
+    };
+
+    // 3. Kod və Yeni Şifrə daxil etmə mərhələsi
+    function showOtpEntryModal(email) {
+        const modalContent = document.getElementById("actionModalContent");
+        modalContent.innerHTML = `
+            <h2>Təsdiqləmə</h2>
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
+                <b>${email}</b> ünvanına göndərilən 8 rəqəmli kodu və yeni şifrənizi daxil edin.
+            </p>
+            <div class="input-group">
+                <label>Təsdiq Kodu (OTP)</label>
+                <input type="text" id="otpCodeInput" placeholder="12345678" maxlength="8">
+            </div>
+            <div class="input-group">
+                <label>Yeni Şifrə</label>
+                <input type="password" id="finalNewPassword" placeholder="Ən azı 6 simvol">
+            </div>
+            <div class="action-buttons">
+                <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                <button class="btn-continue" id="confirmResetBtn" onclick="verifyOtpAndChangePassword('${email}')">Şifrəni Yenilə</button>
+            </div>
+        `;
+    }
+
+    // 4. Kodu yoxlayıb şifrəni dəyişən son funksiya
+    window.verifyOtpAndChangePassword = async function(email) {
+        const token = document.getElementById("otpCodeInput").value.trim();
+        const newPassword = document.getElementById("finalNewPassword").value.trim();
+        const btn = document.getElementById("confirmResetBtn");
+
+        if (token.length < 6 || newPassword.length < 6) {
+            await showMessage("Kod 6 rəqəmli, şifrə isə ən azı 6 simvol olmalıdır!");
+            return;
+        }
+
+        btn.textContent = "Yenilənir...";
+        btn.disabled = true;
+
+        // Əvvəlcə OTP ilə sessiyanı təsdiqləyirik
+        const { error: verifyError } = await supabaseClient.auth.verifyOtp({
+            email,
+            token,
+            type: 'recovery'
+        });
+
+        if (verifyError) {
+            await showMessage("Kod yanlışdır və ya vaxtı bitib!");
+            btn.textContent = "Şifrəni Yenilə";
+            btn.disabled = false;
+        } else {
+            // Sessiya açıldı, indi şifrəni yeniləyirik
+            const { error: updateError } = await supabaseClient.auth.updateUser({
+                password: newPassword
+            });
+
+            if (updateError) {
+                await showMessage("Şifrə yenilənərkən xəta: " + updateError.message);
+            } else {
+                closeActionModal();
+                await showMessage("Şifrəniz uğurla yeniləndi! İndi daxil ola bilərsiniz.");
+            }
+        }
+    };
+}

@@ -275,7 +275,15 @@ button {
     cursor: pointer; 
     transition: 0.3s ease;
 }
-
+.forgotpwd {
+    display: flex;
+    justify-content: right;
+    padding-right: 10px;
+}
+.forgotpwd a {
+    text-decoration: none;
+    color: var(--main-color);
+}
 .btn-cancel { 
     background: transparent; 
     border: 1px solid var(--text-color); 
@@ -438,7 +446,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10px;
 }
 .abunelik-bg, .premium-abunelik-bg {
     width: 100%;
@@ -978,9 +985,8 @@ body.dark-theme #report img {
 /* Card Meta */
 .card-meta {
     font-size: 13px;
-    color: #555;
+    color: var(--text-color);
 }
-
 /* Arrow */
 .card-arrow {
     position: absolute;
@@ -1005,7 +1011,7 @@ body.dark-theme #report img {
 }
 .exit-bg {
     padding-top: 20px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 #left-arrow {
     text-decoration: none;

@@ -234,6 +234,7 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
         window.location.href = `quiz.html?subject=${subjectId}`;
     };
 }
+
 // ---------------------- QUIZ PAGE ----------------------
 if (window.location.pathname.endsWith("quiz.html")) {
     const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
@@ -762,81 +763,122 @@ if (window.location.pathname.includes("profile.html")) {
         // ==========================================
         // DƏYİŞDİRMƏ MODALI (E-poçt və Şifrə üçün)
         // ==========================================
+        // 1. Modalı açan funksiya
         window.openChangeFrame = function(type) {
-            const title = type === 'email' ? 'E-poçtu yenilə' : 'Şifrəni yenilə';
-            const newValLabel = type === 'email' ? 'Yeni e-poçt' : 'Yeni şifrə';
-            const inputType = type === 'password' ? 'password' : 'email';
+            if (type === 'password') {
+                // Şifrə üçün əvvəlcə e-poçtu təsdiqləməyə yönləndiririk
+                openPasswordResetStep1();
+            } else {
+                // E-poçt dəyişmə köhnə qaydada qalır (link ilə)
+                const modalHTML = `
+                    <h2>E-poçtu yenilə</h2>
+                    <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">Yeni e-poçt ünvanınızı daxil edin. Təsdiq linki göndəriləcək.</p>
+                    <div class="input-group">
+                        <label>Yeni e-poçt</label>
+                        <input type="email" id="newActionValue" placeholder="yeni@mail.com">
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                        <button class="btn-continue" id="modalSubmitBtn" onclick="submitChange('email')">Təsdiqlə</button>
+                    </div>
+                `;
+                openActionModal(modalHTML);
+            }
+        };
 
-            // OTP yerinə sadəcə yeni dəyəri istədiyimiz modal açılır
+        // 2. Şifrə dəyişmənin 1-ci mərhələsi: OTP göndərmək
+        async function openPasswordResetStep1() {
+            const { data: { user } } = await supabaseClient.auth.getUser();
+            const email = user.email;
+
             const modalHTML = `
-                <h2>${title}</h2>
+                <h2>Şifrəni yenilə</h2>
                 <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
-                    ${type === 'email' 
-                        ? 'Yeni e-poçt ünvanınızı daxil edin. Təsdiq linki göndəriləcək.' 
-                        : 'Yeni şifrənizi daxil edin.'}
+                    Şifrəni dəyişmək üçün <b>${email}</b> ünvanına təsdiq kodu göndərilməlidir.
                 </p>
+                <div class="action-buttons">
+                    <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                    <button class="btn-continue" id="sendOtpBtn" onclick="sendProfileOtp('${email}')">Kod Göndər</button>
+                </div>
+            `;
+            openActionModal(modalHTML);
+        }
+
+        // 3. OTP göndər və 2-ci mərhələyə keç
+        window.sendProfileOtp = async function(email) {
+            const btn = document.getElementById("sendOtpBtn");
+            btn.textContent = "Göndərilir...";
+            btn.disabled = true;
+
+            const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+
+            if (error) {
+                await showMessage("Xəta: " + error.message);
+                btn.disabled = false;
+                btn.textContent = "Kod Göndər";
+            } else {
+                showProfileOtpEntry(email);
+            }
+        };
+
+        // 4. OTP və Yeni Şifrə daxil etmə modalı
+        function showProfileOtpEntry(email) {
+            const modalContent = document.getElementById("actionModalContent");
+            modalContent.innerHTML = `
+                <h2>Təsdiqləmə</h2>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">E-poçtunuza gələn kodu və yeni şifrəni daxil edin.</p>
                 <div class="input-group">
-                    <label>${newValLabel}</label>
-                    <input type="${inputType}" id="newActionValue" placeholder="Yenisini daxil edin">
+                    <label>OTP Kod</label>
+                    <input type="text" id="otpCodeInput" placeholder="12345678" maxlength="8">
+                </div>
+                <div class="input-group">
+                    <label>Yeni Şifrə</label>
+                    <input type="password" id="newProfilePassword" placeholder="Ən azı 8 simvol">
                 </div>
                 <div class="action-buttons">
                     <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
-                    <button class="btn-continue" id="modalSubmitBtn" onclick="submitChange('${type}')">Təsdiqlə</button>
+                    <button class="btn-continue" id="finalSubmitBtn" onclick="verifyAndFinish('${email}')">Yenilə</button>
                 </div>
             `;
-            
-            openActionModal(modalHTML); 
-        };
+        }
 
-        // Modalın içindəki Təsdiqlə düyməsinə basıldıqda işləyir
-        window.submitChange = async function(type) {
-            const newValueInput = document.getElementById("newActionValue");
-            const newValue = newValueInput ? newValueInput.value.trim() : "";
-            const submitBtn = document.getElementById("modalSubmitBtn");
-            
-            if (!newValue) {
-                await showMessage("Zəhmət olmasa xananı doldurun!");
+        // 5. Kodu yoxla və bitir
+        window.verifyAndFinish = async function(email) {
+            const token = document.getElementById("otpCodeInput").value.trim();
+            const password = document.getElementById("newProfilePassword").value.trim();
+            const btn = document.getElementById("finalSubmitBtn");
+
+            if (token.length < 8 || password.length < 6) {
+                await showMessage("Kod və şifrə tam doldurulmalıdır!");
                 return;
             }
 
-            if (type === 'password' && newValue.length < 6) {
-                await showMessage("Şifrə ən azı 6 simvol olmalıdır!");
-                return;
-            }
+            btn.textContent = "Gözləyin...";
+            btn.disabled = true;
 
-            // Düyməni donuq vəziyyətə gətiririk ki, 2 dəfə basılmasın
-            if (submitBtn) {
-                submitBtn.textContent = "Gözləyin...";
-                submitBtn.disabled = true;
-            }
-            // Supabase-ə göndəriləcək məlumat
-            let updateParams = {};
-            let supabaseResponse; 
+            // Kodu yoxlayırıq
+            const { error: verifyError } = await supabaseClient.auth.verifyOtp({
+                email,
+                token,
+                type: 'recovery'
+            });
 
-            if (type === 'email') {
-                updateParams = { email: newValue };
-                const updateOptions = { 
-                    emailRedirectTo: 'https://ixtisastap.com/telebe/change_email.html' 
-                };
-                supabaseResponse = await supabaseClient.auth.updateUser(updateParams, updateOptions);
-            } else if (type === 'password') {
-                updateParams = { password: newValue };
-                supabaseResponse = await supabaseClient.auth.updateUser(updateParams);
-            }
-
-            const { data, error } = supabaseResponse;
-            closeActionModal(); // Modalı bağlayırıq
-            if (error) {
-                await showMessage("Xəta baş verdi: " + error.message);
+            if (verifyError) {
+                await showMessage("Kod yanlışdır!");
+                btn.disabled = false;
+                btn.textContent = "Yenilə";
             } else {
-                if (type === 'email') {
-                    await showMessage(`Təsdiq linki <b>${newValue}</b> ünvanına göndərildi. Zəhmət olmasa e-poçtunuzu yoxlayın.`, "showMessage", "Bağla");
+                // Şifrəni yeniləyirik
+                const { error: updateError } = await supabaseClient.auth.updateUser({ password });
+                
+                closeActionModal();
+                if (updateError) {
+                    await showMessage("Xəta: " + updateError.message);
                 } else {
-                    await showMessage("Şifrəniz uğurla yeniləndi!", "showMessage", "Tamam");
+                    await showMessage("Şifrəniz uğurla yeniləndi!");
                 }
             }
         };
-
         // ==========================================
         // DƏYİŞİKLİKLƏRİ SAXLA (Yalnız Ad üçün)
         // ==========================================
