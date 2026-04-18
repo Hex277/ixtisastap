@@ -77,7 +77,7 @@ if (actionBtn) {
             // ====================================
             // ------ GİRİŞ (LOGIN) MƏNTİQİ ------
             // ====================================
-            actionBtn.textContent = "Daxil olunur...";
+            actionBtn.textContent = "Daxil olunur";
 
             const { data, error } = await supabaseClient.auth.signInWithPassword({
                 email: email,

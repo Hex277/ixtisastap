@@ -350,6 +350,116 @@ button {
     box-shadow: 0 0 0 3px rgba(30,144,255,0.15); 
 }
 /* ==============================
+   STATISTICS STYLES
+============================== */
+
+/* 1. DASHBOARD (SOLDA) */
+.stats-dashboard {
+    grid-column: 1; /* 1-ci sütunda dur */
+    background-color: var(--surface);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-card {
+    background-color: var(--surface);
+    border-bottom: 2px solid var(--border);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#last-label {
+    border-bottom: none ;
+}
+.stat-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/* 2. QRAFİK (SAĞDA) */
+.stats-chart-container {
+    grid-column: 2; /* 2-ci sütunda dur */
+    background-color: var(--surface);
+    color: var(--text-color);
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 12px;
+}
+.chart-wrapper {
+    height: fit-content;
+}
+/* 3. LEADERBOARD (AŞAĞIDA) */
+.leaderboard-container {
+    /* 1-ci sütundan başla və 2 sütunluq yer tut (yəni tam en) */
+    grid-column: 1 / span 2; 
+    background-color: var(--surface);
+    color: var(--text-color);
+    padding: 20px;
+    padding-top: 10px;
+    border-radius: 12px;
+    min-height: 300px;
+}
+
+/* Cədvəl Dizaynı */
+.leaderboard-table {
+    width: 100%;
+    background-color: var(--surface);
+    border-collapse: collapse;
+}
+
+.leaderboard-table th:nth-child(1),
+.leaderboard-table td:nth-child(1),
+.leaderboard-table th:nth-child(3),
+.leaderboard-table td:nth-child(3),
+.leaderboard-table th:nth-child(4),
+.leaderboard-table td:nth-child(4) {
+    width: 1%; /* Mümkün olan ən kiçik genişliyi tələb edir */
+    white-space: nowrap; /* Mətnin aşağı sətrə keçməsini qadağan edir */
+    text-align: center; /* Rəqəmlər mərkəzdə daha yaxşı görünür */
+    padding: 12px 20px; /* Kenarlardan məsafə */
+}
+
+/* İstifadəçi sütunu (2-ci sütun) */
+.leaderboard-table th:nth-child(2),
+.leaderboard-table td:nth-child(2) {
+    width: auto; /* Qalan bütün boşluğu bu sütun dolduracaq */
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* Əgər istifadəçi adı çox uzundursa, qırılıb nöqtə qoyulsun (opsional) */
+.leaderboard-table td:nth-child(2) {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.leaderboard-table th, .leaderboard-table td {
+    border: 1px solid var(--border);
+    padding: 12px;
+    color: var(--text-color);
+}
+.leaderboard-header, .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#leaderboard-select {
+    width: auto;
+    min-width: 80px;
+    padding-left: 10px;
+    height: 32px;
+    font-size: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: var(--surface);
+    border: 1px solid var(--surface2);
+    color: var(--text-color);
+}
+/* ==============================
    PROFILE STYLES
 ============================== */
 .profile-container, .giris-container {
@@ -1392,7 +1502,9 @@ button:disabled {
     z-index: 3; 
 }
 /* LOGIN SIGNUP STYLES */
-
+.btn-login {
+    height: auto;
+}
 @media (max-width: 768px) {
     .subjects-grid {
         grid-template-columns: 1fr;
@@ -1469,5 +1581,18 @@ button:disabled {
     }
     .haveac p {
         font-size: 14px;
+    }
+    .stats-dashboard {
+        max-width: 100%; /* Mobildə limiti ləğv edirik ki, tam ekran olsun */
+        flex-direction: row; /* Kartları yan-yana etmək üçün (istəyə bağlı) */
+        flex-wrap: wrap;     /* Sığmayan kart alt sətirə keçsin */
+    }
+
+    .stat-card {
+        flex: 1 1 100%; /* Hər bir kart mobildə tam sətir tutsun (istəsən 48% edə bilərsən) */
+    }
+
+    .leaderboard-table {
+        font-size: 14px; /* Mobildə cədvəl sığsın deyə yazıları kiçildiririk */
     }
 }

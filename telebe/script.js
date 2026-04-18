@@ -234,7 +234,149 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
         window.location.href = `quiz.html?subject=${subjectId}`;
     };
 }
+// ---------------------- STATISTICS PAGE ----------------------
+if (window.location.pathname.endsWith("statistics.html")) {
+    
+    let myChart = null;
 
+    // Kliyenti hər dəfə təhlükəsiz şəkildə götürmək üçün köməkçi funksiya
+    const getSupabase = () => window.globalSupabaseClient || window.supabaseClient;
+
+    async function loadUserDashboard(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .eq('user_id', userId)
+            .maybeSingle();
+
+        if (error || !data) return;
+
+        document.getElementById('totalQuizzes').innerText = data.quizzes_completed || 0;
+        document.getElementById('eloValue').innerText = data.elo_rating || 1000;
+        document.getElementById('userStreak').innerText = `${data.current_streak || 0} Gün`;
+
+        const total = data.total_answered_questions || 0;
+        const correct = data.total_correct_answers || 0;
+        const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+        document.getElementById('accuracyRate').innerText = `${percent}%`;
+
+        const minutes = Math.floor((data.total_time_spent || 0) / 60);
+        const seconds = (data.total_time_spent || 0) % 60;
+        document.getElementById('avgTime').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+
+    async function loadActivityChart(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const sevenDaysAgo = new Date();
+        sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+
+        const { data, error } = await client
+            .from('quiz_history')
+            .select('quiz_date, quiz_count')
+            .eq('user_id', userId)
+            .gte('quiz_date', sevenDaysAgo.toISOString().split('T')[0])
+            .order('quiz_date', { ascending: true });
+
+        if (error || !data) return;
+
+        const labels = data.map(item => item.quiz_date);
+        const counts = data.map(item => item.quiz_count);
+        renderChart(labels, counts); 
+    }
+
+    async function loadLeaderboard(currentUserId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .order('elo_rating', { ascending: false })
+            .limit(10);
+
+        if (error || !data) return;
+
+        const tbody = document.getElementById('leaderboardBody');
+        if (!tbody) return;
+        tbody.innerHTML = ''; 
+
+        data.forEach((row, index) => {
+            const accuracy = row.total_answered_questions > 0 
+                ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100) 
+                : 0;
+
+            const isMe = row.user_id === currentUserId;
+
+            tbody.innerHTML += `
+                <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(30, 144, 255, 0.1);' : ''}">
+                    <td>${index + 1}</td>
+                    <td>${isMe ? 'Sən (Siz)' : 'İstifadəçi #' + row.user_id.slice(0,5)}</td> 
+                    <td>${row.elo_rating || 1000}</td>
+                    <td>${accuracy}%</td>
+                </tr>
+            `;
+        });
+    }
+
+    function renderChart(labels, counts) {
+        const canvas = document.getElementById('weeklyActivityChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        if (myChart) myChart.destroy();
+
+        myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Quiz Sayı',
+                    data: counts,
+                    borderColor: '#36A2EB',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { color: '#fff' } },
+                    x: { ticks: { color: '#fff' } }
+                }
+            }
+        });
+    }
+
+    // ƏSAS İŞƏSALMA
+    document.addEventListener("DOMContentLoaded", async () => {
+        // Bir az gözləyirik ki, qlobal kliyent tam yaransın
+        setTimeout(async () => {
+            const client = getSupabase();
+            if (!client) {
+                console.error("Supabase tapılmadı!");
+                return;
+            }
+
+            const { data: { user } } = await client.auth.getUser();
+            if (!user) {
+                window.location.href = "login.html";
+                return;
+            }   
+
+            const currentUserId = user.id;
+            loadUserDashboard(currentUserId);
+            loadActivityChart(currentUserId);
+            loadLeaderboard(currentUserId);
+        }, 100); // 100ms gözləmə "undefined" xətalarını həll edir
+    });
+}
 // ---------------------- QUIZ PAGE ----------------------
 if (window.location.pathname.endsWith("quiz.html")) {
     const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
@@ -460,10 +602,12 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
                     if (selected === correctAnswer) {
                         btn.classList.add("correct");
+                        if (nextBtn) nextBtn.disabled = false;
                         score++;
                         removeWrongQuestion(currentSubjectId, questionId);
                     } else {
                         btn.classList.add("wrong");
+                        if (nextBtn) nextBtn.disabled = false;
                         addWrongQuestion(currentSubjectId, questionId);
                         
                         setTimeout(() => {
@@ -472,7 +616,6 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         }, 500);
                     }
 
-                    if (nextBtn) nextBtn.disabled = false;
                     
                     function checkAnswer(selectedOptionButton, selectedAnswerKey) {
                         // selectedAnswerKey məsələn "A", "B", "C" və s. olacaq
@@ -530,62 +673,120 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         showResult();
                     }
                 }
-                // SUPABASE STATİSTİKA YENİLƏMƏ FUNKSİYASI
-                async function updatePlayerStats(uId, currentScore, currentSeconds) {
+                async function updatePlayerStats(uId, currentScore, currentSeconds, totalQuestions, correctAnswers) {
                     try {
-                        const today = new Date().toISOString().split('T')[0];
-                        
-                        // Havada qalan "user_stats" sözü buradan silindi!
+                        const client = window.globalSupabaseClient || window.supabaseClient;
 
-                        // 1. Mövcud datanı çəkirik
-                        let { data: stats, error: fetchError } = await supabaseClient
+                        // --- 1. İSTİFADƏÇİ ADINI AUTH-DAN ALIRIQ ---
+                        const { data: { user } } = await client.auth.getUser();
+                        // Qeydiyyat metodundan asılı olaraq ad müxtəlif yerlərdə ola bilər, hamısını yoxlayırıq
+                        const fullName = user?.user_metadata?.full_name || 
+                                        user?.user_metadata?.display_name || 
+                                        user?.user_metadata?.name || 
+                                        "Adsız İstifadəçi";
+
+                        // --- 2. SAAT QURŞAĞI ÜÇÜN DƏQİQ TARİX HESABLAMA ---
+                        const now = new Date();
+                        const offset = now.getTimezoneOffset();
+                        const adjustedDate = new Date(now.getTime() - (offset * 60 * 1000));
+                        const todayStr = adjustedDate.toISOString().split('T')[0];
+
+                        const yesterdayDate = new Date(adjustedDate);
+                        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+                        const yesterdayStr = yesterdayDate.toISOString().split('T')[0];
+
+                        // --- 3. USER_STATS (Ümumi Statistika və Leaderboard) ---
+                        let { data: stats, error: fetchErr } = await client
                             .from('user_stats')
                             .select('*')
                             .eq('user_id', uId)
                             .maybeSingle();
 
-                        if (fetchError) {
-                            console.error("Məlumat çəkilərkən xəta:", fetchError);
-                        }
+                        if (fetchErr) throw fetchErr;
 
                         if (!stats) {
-                            // Data yoxdursa, yeni sətir yaradırıq (INSERT)
-                            const { error: insertError } = await supabaseClient.from('user_stats').insert([{
+                            // İlk dəfə test işləyən istifadəçi (INSERT)
+                            const { error: insErr } = await client.from('user_stats').insert([{
                                 user_id: uId,
-                                daily_limit_count: 1,
-                                last_quiz_date: today,
-                                total_score: currentScore,
+                                display_name: fullName, // AD BURADA ƏLAVƏ OLUNUR
                                 quizzes_completed: 1,
-                                total_time_spent: currentSeconds
+                                total_time_spent: currentSeconds,
+                                total_answered_questions: totalQuestions,
+                                total_correct_answers: correctAnswers,
+                                total_score: currentScore, 
+                                elo_rating: 1000 + (correctAnswers * 5),
+                                current_streak: 1,
+                                last_quiz_date: todayStr,
+                                daily_limit_count: 1
                             }]);
-                            
-                            if(insertError) console.error("Insert xətası:", insertError);
-                            
+                            if (insErr) throw insErr;
                         } else {
-                            // Data varsa, üzərinə gəlirik (UPDATE)
-                            const isNewDay = stats.last_quiz_date !== today;
+                            // Mövcud istifadəçi (UPDATE)
+                            let newStreak = Number(stats.current_streak) || 0;
+                            const lastDate = stats.last_quiz_date;
                             
-                            const { error: updateError } = await supabaseClient.from('user_stats').update({
-                                daily_limit_count: isNewDay ? 1 : stats.daily_limit_count + 1,
-                                last_quiz_date: today,
-                                total_score: stats.total_score + currentScore,
-                                quizzes_completed: stats.quizzes_completed + 1,
-                                total_time_spent: stats.total_time_spent + currentSeconds,
+                            if (lastDate === todayStr) {
+                                newStreak = Number(stats.current_streak) || 1;
+                            } else if (lastDate === yesterdayStr) {
+                                newStreak = (Number(stats.current_streak) || 0) + 1;
+                            } else {
+                                newStreak = 1;
+                            }
+
+                            const newElo = (Number(stats.elo_rating) || 1000) + (correctAnswers >= 5 ? 10 : -5);
+
+                            const { error: updErr } = await client.from('user_stats').update({
+                                display_name: fullName, // AD HƏR TESTDƏN SONRA YENİLƏNİR (Əgər dəyişibsə)
+                                quizzes_completed: (Number(stats.quizzes_completed) || 0) + 1,
+                                total_time_spent: (Number(stats.total_time_spent) || 0) + currentSeconds,
+                                total_answered_questions: (Number(stats.total_answered_questions) || 0) + totalQuestions,
+                                total_correct_answers: (Number(stats.total_correct_answers) || 0) + correctAnswers,
+                                total_score: (Number(stats.total_score) || 0) + currentScore, 
+                                elo_rating: newElo < 100 ? 100 : newElo,
+                                current_streak: newStreak,
+                                last_quiz_date: todayStr,
+                                daily_limit_count: (lastDate === todayStr) ? (Number(stats.daily_limit_count || 0) + 1) : 1,
                                 updated_at: new Date().toISOString()
                             }).eq('user_id', uId);
                             
-                            if(updateError) console.error("Update xətası:", updateError);
+                            if (updErr) throw updErr;
                         }
+
+                        // --- 4. QUIZ_HISTORY (Aktivlik Qrafiki üçün) ---
+                        let { data: history } = await client
+                            .from('quiz_history')
+                            .select('*')
+                            .eq('user_id', uId)
+                            .eq('quiz_date', todayStr)
+                            .maybeSingle();
+
+                        if (!history) {
+                            await client.from('quiz_history').insert([{
+                                user_id: uId, 
+                                quiz_date: todayStr, 
+                                quiz_count: 1
+                            }]);
+                        } else {
+                            await client.from('quiz_history')
+                                .update({ quiz_count: (Number(history.quiz_count) || 0) + 1 })
+                                .eq('id', history.id);
+                        }
+
+                        console.log(`Statistikalar yeniləndi! İstifadəçi: ${fullName}, Streak: ${todayStr}`);
+
                     } catch (err) {
-                        console.error("Supabase ümumi xəta:", err);
+                        console.error("Supabase yeniləmə xətası:", err.message);
                     }
                 }
                 function showResult() {
                     clearInterval(timerInterval);
                     const finalTime = formatTime(secondsElapsed);
+                    
+                    // Nəticələri bazaya göndəririk
                     if (userId) {
-                        updatePlayerStats(userId, score, secondsElapsed);
+                        updatePlayerStats(userId, score, secondsElapsed, questions.length, score);
                     }
+                    
                     const topPart = document.querySelector(".top-part");
                     const sualWord = document.querySelector(".sual-word");
                     const quizButtons = document.querySelector(".quiz-buttons-bg");

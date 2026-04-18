@@ -325,8 +325,6 @@ button:hover {
     transition: transform 0.3s ease;
     z-index: 999;
 }
-
-
 #menu-bar ul {
     list-style: none;
     margin: 10% 0 0;
@@ -686,7 +684,7 @@ body.dark-mode .selected-ixtisas {
         position: relative;
         display: block;
         padding-right: 10px;
-        height: 415px;
+        height: 425px;
         overflow-y: auto;
     }
     #card-container,
