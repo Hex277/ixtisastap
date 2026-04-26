@@ -272,23 +272,51 @@ if (window.location.pathname.endsWith("statistics.html")) {
         const client = getSupabase();
         if (!client) return;
 
-        const sevenDaysAgo = new Date();
-        sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+        // 1. Bazar ertəsindən Bazara qədər olan etiketlər
+        const fixedLabels = ['B.e', 'Ç.a', 'Ç', 'C.a', 'C', 'Ş', 'B'];
+        
+        // Bütün günlər üçün başlanğıc dəyəri 0 qoyuruq (0 xətti görünsün deyə)
+        let countsData = [0, 0, 0, 0, 0, 0, 0];
 
+        // 2. Bu həftənin Bazar ertəsinin tarixini tapırıq
+        const now = new Date();
+        // getDay(): 0=Bazar, 1=B.e... Bazar gününü 7 kimi qəbul edirik ki, geriyə hesablaya bilək
+        const currentDayOfWeek = now.getDay() === 0 ? 7 : now.getDay(); 
+        
+        const monday = new Date(now);
+        monday.setDate(now.getDate() - currentDayOfWeek + 1); // Bazar ertəsinə qayıdırıq
+        
+        const startOfWeekStr = `${monday.getFullYear()}-${String(monday.getMonth() + 1).padStart(2, '0')}-${String(monday.getDate()).padStart(2, '0')}`;
+
+        // 3. Bazar ertəsindən sonrakı (bu həftəki) dataları çəkirik
         const { data, error } = await client
             .from('quiz_history')
             .select('quiz_date, quiz_count')
             .eq('user_id', userId)
-            .gte('quiz_date', sevenDaysAgo.toISOString().split('T')[0])
-            .order('quiz_date', { ascending: true });
+            .gte('quiz_date', startOfWeekStr);
 
-        if (error || !data) return;
+        if (error) {
+            console.error("Chart data error:", error);
+            return;
+        }
 
-        const labels = data.map(item => item.quiz_date);
-        const counts = data.map(item => item.quiz_count);
-        renderChart(labels, counts); 
+        // 4. Əgər data varsa, onu sabit günlərə yerləşdiririk
+        if (data && data.length > 0) {
+            data.forEach(item => {
+                const parts = item.quiz_date.split('-');
+                const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+                
+                // Həftənin hansı günüdür? (0=Bazar, 1=B.e)
+                let dayIndex = dateObj.getDay();
+                // JS-də Bazar(0) olduğu üçün onu 6 edirik, qalanları 1 çıxırıq (B.e(1) -> 0 olur)
+                dayIndex = (dayIndex === 0) ? 6 : dayIndex - 1; 
+
+                // Həmin günün sayını massivə yazırıq
+                countsData[dayIndex] = item.quiz_count;
+            });
+        }
+        renderChart(fixedLabels, countsData); 
     }
-
     async function loadLeaderboard(currentUserId) {
         const client = getSupabase();
         if (!client) return;
@@ -311,11 +339,13 @@ if (window.location.pathname.endsWith("statistics.html")) {
                 : 0;
 
             const isMe = row.user_id === currentUserId;
-
+            let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0,5);
+            // YENİLİK: Əgər bazada ad varsa onu, yoxdursa ID-ni göstər
+            const displayName = isMe ? `${nameToShow} (Siz)` : nameToShow;
             tbody.innerHTML += `
                 <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(30, 144, 255, 0.1);' : ''}">
                     <td>${index + 1}</td>
-                    <td>${isMe ? 'Sən (Siz)' : 'İstifadəçi #' + row.user_id.slice(0,5)}</td> 
+                    <td>${displayName}</td> 
                     <td>${row.elo_rating || 1000}</td>
                     <td>${accuracy}%</td>
                 </tr>
@@ -327,10 +357,21 @@ if (window.location.pathname.endsWith("statistics.html")) {
         const canvas = document.getElementById('weeklyActivityChart');
         if (!canvas) return;
         const ctx = canvas.getContext('2d');
-        if (myChart) myChart.destroy();
+        
+        if (typeof myChart !== 'undefined' && myChart) {
+            myChart.destroy();
+        }
+
+        // DÜZƏLİŞ: Dark Mode-u düzgün təyin edirik
+        const isDarkMode = document.body.classList.contains('dark-theme') || document.body.classList.contains('dark-mode');
+        
+        // Tünd moddasa ağ yazılar, işıqlı moddasa tünd boz yazılar
+        const labelColor = isDarkMode ? '#ffffff' : '#333333';
+        // Arxadakı xətlərin rəngini də modlara uyğunlaşdırırıq
+        const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
 
         myChart = new Chart(ctx, {
-            type: 'line',
+            type: 'line', 
             data: {
                 labels: labels,
                 datasets: [{
@@ -339,16 +380,32 @@ if (window.location.pathname.endsWith("statistics.html")) {
                     borderColor: '#36A2EB',
                     backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     fill: true,
-                    tension: 0.4
+                    tension: 0.4, 
+                    pointRadius: 4,
+                    pointBackgroundColor: '#36A2EB'
                 }]
             },
             options: {
                 responsive: true,
-                maintainAspectRatio: false,
-                plugins: { legend: { display: false } },
+                maintainAspectRatio: false, // Div-ə görə formalaşması üçün
+                plugins: { 
+                    legend: { display: false } 
+                },
                 scales: {
-                    y: { beginAtZero: true, ticks: { color: '#fff' } },
-                    x: { ticks: { color: '#fff' } }
+                    y: { 
+                        beginAtZero: true, 
+                        ticks: { 
+                            color: labelColor, 
+                            stepSize: 1 
+                        },
+                        grid: { color: gridColor } // Şəbəkə rəngini dinamik etdik
+                    },
+                    x: { 
+                        ticks: { 
+                            color: labelColor 
+                        },
+                        grid: { display: false }
+                    }
                 }
             }
         });
@@ -677,25 +734,31 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     try {
                         const client = window.globalSupabaseClient || window.supabaseClient;
 
-                        // --- 1. İSTİFADƏÇİ ADINI AUTH-DAN ALIRIQ ---
+                        // --- 1. İSTİFADƏÇİ ADINI ALIRIQ ---
                         const { data: { user } } = await client.auth.getUser();
-                        // Qeydiyyat metodundan asılı olaraq ad müxtəlif yerlərdə ola bilər, hamısını yoxlayırıq
                         const fullName = user?.user_metadata?.full_name || 
                                         user?.user_metadata?.display_name || 
                                         user?.user_metadata?.name || 
                                         "Adsız İstifadəçi";
 
-                        // --- 2. SAAT QURŞAĞI ÜÇÜN DƏQİQ TARİX HESABLAMA ---
+                        // --- 2. TARİXİ DƏQİQ LOKAL VAXTLA HESABLAYIRIQ ---
                         const now = new Date();
-                        const offset = now.getTimezoneOffset();
-                        const adjustedDate = new Date(now.getTime() - (offset * 60 * 1000));
-                        const todayStr = adjustedDate.toISOString().split('T')[0];
+                        // Məsələn: 2026, 3 (Aprel), 25 => "2026-04-25"
+                        const year = now.getFullYear();
+                        const month = String(now.getMonth() + 1).padStart(2, '0');
+                        const day = String(now.getDate()).padStart(2, '0');
+                        const todayStr = `${year}-${month}-${day}`;
 
-                        const yesterdayDate = new Date(adjustedDate);
-                        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-                        const yesterdayStr = yesterdayDate.toISOString().split('T')[0];
+                        const yesterday = new Date(now);
+                        yesterday.setDate(now.getDate() - 1);
+                        const yYear = yesterday.getFullYear();
+                        const yMonth = String(yesterday.getMonth() + 1).padStart(2, '0');
+                        const yDay = String(yesterday.getDate()).padStart(2, '0');
+                        const yesterdayStr = `${yYear}-${yMonth}-${yDay}`;
 
-                        // --- 3. USER_STATS (Ümumi Statistika və Leaderboard) ---
+                        console.log(`Bu gün: ${todayStr}, Dünən: ${yesterdayStr}`); // Test üçün
+
+                        // --- 3. USER_STATS (Ümumi Statistika və Streak) ---
                         let { data: stats, error: fetchErr } = await client
                             .from('user_stats')
                             .select('*')
@@ -705,10 +768,10 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         if (fetchErr) throw fetchErr;
 
                         if (!stats) {
-                            // İlk dəfə test işləyən istifadəçi (INSERT)
-                            const { error: insErr } = await client.from('user_stats').insert([{
+                            // İlk dəfə
+                            await client.from('user_stats').insert([{
                                 user_id: uId,
-                                display_name: fullName, // AD BURADA ƏLAVƏ OLUNUR
+                                display_name: fullName,
                                 quizzes_completed: 1,
                                 total_time_spent: currentSeconds,
                                 total_answered_questions: totalQuestions,
@@ -719,24 +782,23 @@ if (window.location.pathname.endsWith("quiz.html")) {
                                 last_quiz_date: todayStr,
                                 daily_limit_count: 1
                             }]);
-                            if (insErr) throw insErr;
                         } else {
                             // Mövcud istifadəçi (UPDATE)
                             let newStreak = Number(stats.current_streak) || 0;
-                            const lastDate = stats.last_quiz_date;
+                            const lastDate = stats.last_quiz_date; // Məsələn "2026-04-24"
                             
                             if (lastDate === todayStr) {
                                 newStreak = Number(stats.current_streak) || 1;
                             } else if (lastDate === yesterdayStr) {
                                 newStreak = (Number(stats.current_streak) || 0) + 1;
                             } else {
-                                newStreak = 1;
+                                newStreak = 1; // Gün buraxıb
                             }
 
                             const newElo = (Number(stats.elo_rating) || 1000) + (correctAnswers >= 5 ? 10 : -5);
 
-                            const { error: updErr } = await client.from('user_stats').update({
-                                display_name: fullName, // AD HƏR TESTDƏN SONRA YENİLƏNİR (Əgər dəyişibsə)
+                            await client.from('user_stats').update({
+                                display_name: fullName,
                                 quizzes_completed: (Number(stats.quizzes_completed) || 0) + 1,
                                 total_time_spent: (Number(stats.total_time_spent) || 0) + currentSeconds,
                                 total_answered_questions: (Number(stats.total_answered_questions) || 0) + totalQuestions,
@@ -748,8 +810,6 @@ if (window.location.pathname.endsWith("quiz.html")) {
                                 daily_limit_count: (lastDate === todayStr) ? (Number(stats.daily_limit_count || 0) + 1) : 1,
                                 updated_at: new Date().toISOString()
                             }).eq('user_id', uId);
-                            
-                            if (updErr) throw updErr;
                         }
 
                         // --- 4. QUIZ_HISTORY (Aktivlik Qrafiki üçün) ---
@@ -769,10 +829,9 @@ if (window.location.pathname.endsWith("quiz.html")) {
                         } else {
                             await client.from('quiz_history')
                                 .update({ quiz_count: (Number(history.quiz_count) || 0) + 1 })
-                                .eq('id', history.id);
+                                .eq('user_id', uId)
+                                .eq('quiz_date', todayStr);
                         }
-
-                        console.log(`Statistikalar yeniləndi! İstifadəçi: ${fullName}, Streak: ${todayStr}`);
 
                     } catch (err) {
                         console.error("Supabase yeniləmə xətası:", err.message);

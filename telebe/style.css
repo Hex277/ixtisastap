@@ -379,17 +379,32 @@ button {
     justify-content: space-between;
     width: 100%;
 }
-/* 2. QRAFİK (SAĞDA) */
 .stats-chart-container {
-    grid-column: 2; /* 2-ci sütunda dur */
+    grid-column: 2; 
     background-color: var(--surface);
     color: var(--text-color);
     padding: 20px;
     padding-top: 10px;
     border-radius: 12px;
+    box-sizing: border-box;
+    
+    /* YENİLİK: Konteyneri flex edirik ki, daxilindəki elementlər ölçünü düzgün bölsün */
+    display: flex;
+    flex-direction: column;
+    min-height: 200px; /* İstəyinə uyğun olaraq qutuya minimum hündürlük ver */
 }
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
 .chart-wrapper {
-    height: fit-content;
+    position: relative; /* Chart.js parent-in position: relative olmasını tələb edir */
+    width: 100%;
+    flex-grow: 1; /* Boş qalan bütün hündürlüyü chart tutacaq */
 }
 /* 3. LEADERBOARD (AŞAĞIDA) */
 .leaderboard-container {
@@ -419,7 +434,7 @@ button {
     width: 1%; /* Mümkün olan ən kiçik genişliyi tələb edir */
     white-space: nowrap; /* Mətnin aşağı sətrə keçməsini qadağan edir */
     text-align: center; /* Rəqəmlər mərkəzdə daha yaxşı görünür */
-    padding: 12px 20px; /* Kenarlardan məsafə */
+    padding: 12px 8px; /* Kenarlardan məsafə */
 }
 
 /* İstifadəçi sütunu (2-ci sütun) */
