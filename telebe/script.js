@@ -740,7 +740,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
             .then(data => {
                 const allQuestions = data.questions;
                 // BURADA SUAL SAYINI 10 EDİRİK!
-                const questions = shuffleArray(allQuestions).slice(0, 2); 
+                const questions = shuffleArray(allQuestions).slice(0, 10); 
                 let isQuizFinished = false;
                 let currentIndex = 0;
                 let score = 0;
