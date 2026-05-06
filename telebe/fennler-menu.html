@@ -29,11 +29,20 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <style>
+        .theme-mode {
+            right: 125px;
+        }
+        .profile-bg {
+            position: relative;
+            right: 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="top-bar">
         <div class="logo">
-            <a href="">
+            <a href="isindex.html">
                 <img id="center-logo" src="../images/logo-crop.png" alt="Main Menu">
             </a>
         </div>
@@ -51,13 +60,20 @@
         <div class="theme-mode">
             <button id="theme-btn"><img src="../images/moon.webp" alt="dark mode" id="theme-img"></button>
         </div>
-        <a href="profile.html" class="profile-bg">
-            <img src="../images/profile.webp" alt="profile">
-        </a>
-        
+        <div class="profile-badge-bg">
+            <div id="daily-limit-badge" class="limit-badge" title="Günlük Quiz Enerjisi">
+                <!-- Enerji ikonu ID: energy-icon -->
+                <img src="../images/thunder.webp" alt="Energy" id="energy-icon">
+                <!-- Limit mətni və ya sonsuzluq şəkli üçün ID: limit-text -->
+                <span id="limit-text">...</span>
+            </div>
+            <a href="profile.html" class="profile-bg">
+                <img src="../images/profile.webp" alt="profile">
+            </a>
+        </div>
     </div>
     <nav id="menu-bar" class="hidden">
-        <a href="../index.html" id="name-text">
+        <a href="isindex.html" id="name-text">
             <img src="../images/ixtisastap.png" class="logopng" alt="SiteName" style="width: 200px;">
         </a>
         

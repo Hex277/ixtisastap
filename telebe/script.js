@@ -233,6 +233,57 @@ if (window.location.pathname.endsWith("fennler-menu.html")) {
     window.startQuiz = function(subjectId) {
         window.location.href = `quiz.html?subject=${subjectId}`;
     };
+    
+    // --- GÜNDƏLİK LİMİT VƏ PREMİUM VİZUAL İDARƏETMƏSİ ---
+    (async () => {
+        try {
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            // 1. İstifadəçi sessiyasını əldə edirik
+            const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (!sessionStr) return; // Funksiya daxilində olduğu üçün burada return xəta vermir
+            
+            const userData = JSON.parse(sessionStr).user;
+            const uId = userData.id;
+
+            // 2. Elementləri seçirik
+            const display = document.getElementById('limit-text');
+            const energyIcon = document.getElementById('energy-icon');
+
+            // 3. Premium yoxlanışı
+            const cachedBitis = localStorage.getItem('premiumBitis_' + uId);
+            const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+            if (isPremium) {
+                // Premium vizualları
+                if (energyIcon) energyIcon.src = "../images/premium-thunder.webp";
+                if (display) display.innerHTML = `<img src="../images/infinity.webp" alt="∞" style="width: 18px; vertical-align: middle;">`;
+                
+                return; // Premiumdursa, aşağıdakı kodları icra etmə və funksiyadan çıx
+            }
+
+            // 4. Standart istifadəçi üçün bazadan limit məlumatını alırıq
+            const today = new Date().toISOString().split('T')[0];
+            const { data: stats } = await client
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', uId)
+                .maybeSingle();
+
+            const usedToday = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+            const totalLimit = 3;
+            const remainingLimit = Math.max(0, totalLimit - usedToday);
+
+            // 5. Standart vizualları göstəririk
+            if (display) display.innerText = remainingLimit;
+            if (energyIcon) energyIcon.src = "../images/thunder.webp";
+
+        } catch (err) {
+            console.error("Limit bölməsində xəta yarandı:", err.message);
+        }
+    })(); // Funksiya burada bağlanır
 }
 // ---------------------- STATISTICS PAGE ----------------------
 if (window.location.pathname.endsWith("statistics.html")) {
@@ -380,16 +431,25 @@ if (window.location.pathname.endsWith("statistics.html")) {
                     borderColor: '#36A2EB',
                     backgroundColor: 'rgba(54, 162, 235, 0.2)',
                     fill: true,
-                    tension: 0.4, 
+                    tension: 0, 
                     pointRadius: 4,
-                    pointBackgroundColor: '#36A2EB'
+                    pointBackgroundColor: '#36A2EB',
+                    pointHoverRadius: 6 // Üzərinə gəldikdə dairənin bir az böyüməsi üçün (opsional)
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false, // Div-ə görə formalaşması üçün
+                
+                // YENİ ƏLAVƏ EDİLƏN HİSSƏ:
+                interaction: {
+                    mode: 'index',
+                    intersect: false, // Mütləq kəsişmə tələbini ləğv edir
+                },
+                
                 plugins: { 
                     legend: { display: false } 
+                    // İstəyə görə hover olduqda şaquli bir xətt çəkmək üçün tooltip ayarlarını da burdan genişləndirə bilərsiniz
                 },
                 scales: {
                     y: { 
@@ -410,29 +470,117 @@ if (window.location.pathname.endsWith("statistics.html")) {
             }
         });
     }
+    async function handleChartFilterChange(userId) {
+        const filterSelect = document.getElementById('chart-filter-select');
+        const premiumOverlay = document.getElementById('premiumOverlay');
+        const canvas = document.getElementById('weeklyActivityChart');
 
-    // ƏSAS İŞƏSALMA
-    document.addEventListener("DOMContentLoaded", async () => {
-        // Bir az gözləyirik ki, qlobal kliyent tam yaransın
-        setTimeout(async () => {
-            const client = getSupabase();
-            if (!client) {
-                console.error("Supabase tapılmadı!");
-                return;
+        if (!filterSelect) return;
+
+        // Sənin localStorage üzərindəki premium yoxlanışın
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        filterSelect.addEventListener('change', async (e) => {
+            const selectedValue = e.target.value;
+
+            if (selectedValue === 'all') {
+                if (!isPremium) {
+                    // Premium deyilsə: Bluru göstər
+                    canvas?.classList.add('blurred-chart');
+                    premiumOverlay?.classList.remove('hidden');
+                } else {
+                    // Premiumdursa: Bluru qaldır və məlumatları yüklə
+                    canvas?.classList.remove('blurred-chart');
+                    premiumOverlay?.classList.add('hidden');
+                    await loadAllTimeActivityChart(userId);
+                }
+            } else {
+                // Həftəlik seçim: Standart vəziyyət
+                canvas?.classList.remove('blurred-chart');
+                premiumOverlay?.classList.add('hidden');
+                await loadActivityChart(userId); 
+            }
+        });
+    }
+    async function loadAllTimeActivityChart(userId) {
+        const client = window.globalSupabaseClient || window.supabaseClient;
+        if (!client) return;
+
+        try {
+            // 1. Məlumatları çəkirik
+            const [{ data: authData }, { data: historyData, error }] = await Promise.all([
+                client.auth.getUser(),
+                client.from('quiz_history').select('quiz_date, quiz_count').eq('user_id', userId)
+            ]);
+
+            if (error) throw error;
+            const user = authData?.user;
+            if (!user) return;
+
+            const startDate = new Date(user.created_at);
+            const endDate = new Date();
+            const monthNames = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
+
+            const monthlyTotals = {};
+
+            // 2. Qrafik üçün ayları hazırlayırıq (Boş aylar 0 olaraq qalır)
+            let tempDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
+            while (tempDate <= endDate) {
+                const label = `${monthNames[tempDate.getMonth()]} ${tempDate.getFullYear()}`;
+                monthlyTotals[label] = 0;
+                tempDate.setMonth(tempDate.getMonth() + 1);
             }
 
-            const { data: { user } } = await client.auth.getUser();
-            if (!user) {
-                window.location.href = "login.html";
-                return;
-            }   
+            // 3. Tarixçəni hesablayırıq
+            if (historyData) {
+                historyData.forEach(item => {
+                    // UTC istifadə edərək vaxt zonası sürüşməsinin qarşısını alırıq
+                    const d = new Date(item.quiz_date);
+                    const monthIndex = d.getUTCMonth(); 
+                    const year = d.getUTCFullYear();
+                    const label = `${monthNames[monthIndex]} ${year}`;
+                    
+                    if (monthlyTotals[label] !== undefined) {
+                        monthlyTotals[label] += Number(item.quiz_count);
+                    }
+                });
+            }
 
-            const currentUserId = user.id;
-            loadUserDashboard(currentUserId);
-            loadActivityChart(currentUserId);
-            loadLeaderboard(currentUserId);
-        }, 100); // 100ms gözləmə "undefined" xətalarını həll edir
-    });
+            // DEBUG: Konsolda yoxlayaq görək cəmi neçə tapdı
+            console.log("Aylıq hesablamalar:", monthlyTotals);
+            const totalInChart = Object.values(monthlyTotals).reduce((a, b) => a + b, 0);
+            console.log("Chart-dakı cəmi quiz sayı:", totalInChart);
+
+            // 4. Chart-ı render edirik
+            renderChart(Object.keys(monthlyTotals), Object.values(monthlyTotals));
+
+        } catch (err) {
+            console.error("Aylıq statistika xətası:", err.message);
+        }
+    }
+    // ƏSAS İŞƏSALMA
+    setTimeout(async () => {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data: { user } } = await client.auth.getUser();
+        if (!user) {
+            window.location.href = "login.html";
+            return;
+        }   
+
+        const currentUserId = user.id;
+        
+        // Sənin mövcud yükləmələrin
+        loadUserDashboard(currentUserId);
+        loadActivityChart(currentUserId); // Default olaraq həftəlik yüklənir
+        loadLeaderboard(currentUserId);
+
+        // YENİ: Filtr dəyişikliyini dinləyən funksiyanı çağırırıq
+        handleChartFilterChange(currentUserId);
+
+    }, 100);
 }
 // ---------------------- QUIZ PAGE ----------------------
 if (window.location.pathname.endsWith("quiz.html")) {
@@ -447,7 +595,6 @@ if (window.location.pathname.endsWith("quiz.html")) {
             console.error("No subject provided!");
             return;
         }
-
         // ==========================================
         // 1. AUTH VƏ GÜNDƏLİK LİMİT YOXLANIŞI
         // ==========================================
@@ -475,9 +622,11 @@ if (window.location.pathname.endsWith("quiz.html")) {
         const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
         const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
 
-        // Limit vəziyyətini yoxlayırıq (Lakin hələ artırmırıq!)
+        // --- LİMİT YOXLAMA MƏNTİQİ ---
         if (!isPremium) {
-            const today = new Date().toISOString().split('T')[0];
+            // 1. Cari tarixi lokal vaxtla alırıq (YYYY-MM-DD formatında)
+            const now = new Date();
+            const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
             
             let { data: stats } = await supabaseClient
                 .from('user_stats')
@@ -485,8 +634,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 .eq('user_id', userId)
                 .maybeSingle();
 
-            // Əgər həmin gün limit dolubsa, içəri buraxma
-            if (stats && stats.last_quiz_date === today && stats.daily_limit_count >= 3) {
+            if (stats && stats.last_quiz_date === today && (Number(stats.daily_limit_count) || 0) >= 3) {
                 const limitHTML = `
                     <div style="text-align: center;">
                         <img src="../images/freeplanreminder.webp" alt="Limit" style="width: 200px; margin-bottom: 15px;">
@@ -497,11 +645,49 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     </div>
                 `;
                 
+                // showMessage funksiyasını gözləyirik (await)
                 const userChoice = await showMessage(limitHTML, "confirm", "İndi al", "Sonra"); 
-                window.location.href = userChoice ? "premium.html" : "fennler-menu.html";
-                return; 
+                
+                // Seçimə görə yönləndirmə
+                if (userChoice) {
+                    window.location.href = "premium.html";
+                } else {
+                    window.location.href = "fennler-menu.html";
+                }
+                return; // Funksiyadan çıxırıq ki, quiz başlamasın
             }
         }
+        (async () => {
+            // 1. Supabase Müştərisini təyin edirik (ReferenceError-un qarşısını almaq üçün)
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            try {
+                // 2. İstifadəçi sessiyasını yoxlayırıq
+                const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+                if (!sessionStr) return;
+                const uId = JSON.parse(sessionStr).user.id;
+
+                // 3. Bazadan stats məlumatını çəkirik (stats burada təyin olunur)
+                const today = new Date().toISOString().split('T')[0];
+                const { data: stats } = await client
+                    .from('user_stats')
+                    .select('daily_limit_count, last_quiz_date')
+                    .eq('user_id', uId)
+                    .maybeSingle();
+
+                // 4. Sənin istifadə etdiyin dəyişən məntiqi
+                let currentLimitInDb = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                // 5. Ekrana yazdırma
+                const display = document.getElementById('limit-text');
+                if (display) display.innerText = currentLimitInDb;
+
+            } catch (err) {
+                console.error("Limit göstərilərkən xəta:", err.message);
+            }
+        })();
         // ==========================================
         // 2. QUIZ MƏNTİQİ (Sizin köhnə kodunuz)
         // ==========================================
@@ -554,8 +740,8 @@ if (window.location.pathname.endsWith("quiz.html")) {
             .then(data => {
                 const allQuestions = data.questions;
                 // BURADA SUAL SAYINI 10 EDİRİK!
-                const questions = shuffleArray(allQuestions).slice(0, 10); 
-                
+                const questions = shuffleArray(allQuestions).slice(0, 2); 
+                let isQuizFinished = false;
                 let currentIndex = 0;
                 let score = 0;
                 let timerInterval;
@@ -643,11 +829,6 @@ if (window.location.pathname.endsWith("quiz.html")) {
                 let limitSubtracted = false; // Faylın yuxarı hissəsinə əlavə et
 
                 async function handleOptionClick(btn, questionData, index) {
-                    if (!limitSubtracted && !isPremium) {
-                        limitSubtracted = true;
-                        await supabaseClient.rpc('increment_daily_limit', { u_id: userId });
-                    }
-
                     const selected = btn.dataset.key;
                     userAnswers[index] = selected;
                     
@@ -722,7 +903,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
                 function navigate(direction) {
                     const newIndex = currentIndex + direction;
-                        
+                                        
                     if (newIndex >= 0 && newIndex < questions.length) {
                         currentIndex = newIndex;
                         renderQuestion(currentIndex);
@@ -734,31 +915,19 @@ if (window.location.pathname.endsWith("quiz.html")) {
                     try {
                         const client = window.globalSupabaseClient || window.supabaseClient;
 
-                        // --- 1. İSTİFADƏÇİ ADINI ALIRIQ ---
+                        // 1. İSTİFADƏÇİ MƏLUMATLARINI ALIRIQ
                         const { data: { user } } = await client.auth.getUser();
-                        const fullName = user?.user_metadata?.full_name || 
-                                        user?.user_metadata?.display_name || 
-                                        user?.user_metadata?.name || 
-                                        "Adsız İstifadəçi";
+                        const fullName = user?.user_metadata?.full_name || "Adsız İstifadəçi";
 
-                        // --- 2. TARİXİ DƏQİQ LOKAL VAXTLA HESABLAYIRIQ ---
+                        // 2. TARİXLƏRİN HESABLANMASI
                         const now = new Date();
-                        // Məsələn: 2026, 3 (Aprel), 25 => "2026-04-25"
-                        const year = now.getFullYear();
-                        const month = String(now.getMonth() + 1).padStart(2, '0');
-                        const day = String(now.getDate()).padStart(2, '0');
-                        const todayStr = `${year}-${month}-${day}`;
+                        const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
 
                         const yesterday = new Date(now);
                         yesterday.setDate(now.getDate() - 1);
-                        const yYear = yesterday.getFullYear();
-                        const yMonth = String(yesterday.getMonth() + 1).padStart(2, '0');
-                        const yDay = String(yesterday.getDate()).padStart(2, '0');
-                        const yesterdayStr = `${yYear}-${yMonth}-${yDay}`;
+                        const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, '0')}-${String(yesterday.getDate()).padStart(2, '0')}`;
 
-                        console.log(`Bu gün: ${todayStr}, Dünən: ${yesterdayStr}`); // Test üçün
-
-                        // --- 3. USER_STATS (Ümumi Statistika və Streak) ---
+                        // 3. MÖVCUD STATİSTİKANIN ÇƏKİLMƏSİ (Rating Deviation daxil olmaqla)
                         let { data: stats, error: fetchErr } = await client
                             .from('user_stats')
                             .select('*')
@@ -767,85 +936,143 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
                         if (fetchErr) throw fetchErr;
 
+                        let lastDateInDb = stats ? stats.last_quiz_date : null;
+                        let currentStreakInDb = stats ? (Number(stats.current_streak) || 0) : 0;
+                        let currentLimitInDb = stats ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                        let finalStreak = 0;
+                        let finalLimit = 1;
+
+                        // --- STREAK VƏ LİMİT MƏNTİQİ ---
                         if (!stats) {
-                            // İlk dəfə
-                            await client.from('user_stats').insert([{
-                                user_id: uId,
-                                display_name: fullName,
-                                quizzes_completed: 1,
-                                total_time_spent: currentSeconds,
-                                total_answered_questions: totalQuestions,
-                                total_correct_answers: correctAnswers,
-                                total_score: currentScore, 
-                                elo_rating: 1000 + (correctAnswers * 5),
-                                current_streak: 1,
-                                last_quiz_date: todayStr,
-                                daily_limit_count: 1
-                            }]);
+                            finalStreak = 1;
+                            finalLimit = 1;
+                        } else if (lastDateInDb === todayStr) {
+                            finalStreak = currentStreakInDb;
+                            finalLimit = currentLimitInDb + 1;
+                        } else if (lastDateInDb === yesterdayStr) {
+                            finalStreak = currentStreakInDb + 1;
+                            finalLimit = 1;
                         } else {
-                            // Mövcud istifadəçi (UPDATE)
-                            let newStreak = Number(stats.current_streak) || 0;
-                            const lastDate = stats.last_quiz_date; // Məsələn "2026-04-24"
-                            
-                            if (lastDate === todayStr) {
-                                newStreak = Number(stats.current_streak) || 1;
-                            } else if (lastDate === yesterdayStr) {
-                                newStreak = (Number(stats.current_streak) || 0) + 1;
-                            } else {
-                                newStreak = 1; // Gün buraxıb
-                            }
-
-                            const newElo = (Number(stats.elo_rating) || 1000) + (correctAnswers >= 5 ? 10 : -5);
-
-                            await client.from('user_stats').update({
-                                display_name: fullName,
-                                quizzes_completed: (Number(stats.quizzes_completed) || 0) + 1,
-                                total_time_spent: (Number(stats.total_time_spent) || 0) + currentSeconds,
-                                total_answered_questions: (Number(stats.total_answered_questions) || 0) + totalQuestions,
-                                total_correct_answers: (Number(stats.total_correct_answers) || 0) + correctAnswers,
-                                total_score: (Number(stats.total_score) || 0) + currentScore, 
-                                elo_rating: newElo < 100 ? 100 : newElo,
-                                current_streak: newStreak,
-                                last_quiz_date: todayStr,
-                                daily_limit_count: (lastDate === todayStr) ? (Number(stats.daily_limit_count || 0) + 1) : 1,
-                                updated_at: new Date().toISOString()
-                            }).eq('user_id', uId);
+                            finalStreak = 1;
+                            finalLimit = 1;
                         }
 
-                        // --- 4. QUIZ_HISTORY (Aktivlik Qrafiki üçün) ---
-                        let { data: history } = await client
+                        // --- YENİ ELO (GLICKO) HESABLAMA MƏNTİQİ ---
+                        
+                        function calculateNewRating(currentElo, currentRD, percentage) {
+                            // 1. Sabitlər
+                            const q = Math.log(10) / 400;
+                            const quizDifficulty = 1000; // Quiz-in baza çətinliyi
+                            
+                            // 2. Quiz nəticəsini 0.0 - 1.0 arasına gətiririk (Actual Score)
+                            const s = percentage / 100;
+
+                            // 3. Ehtimal olunan nəticəni hesablayırıq (Expected Score)
+                            // Düstur: E = 1 / (1 + 10^((difficulty - elo) / 400))
+                            const e = 1 / (1 + Math.pow(10, (quizDifficulty - currentElo) / 400));
+
+                            // 4. RD-nin təsiri ilə d^2 dəyərini tapırıq
+                            const dSquared = 1 / (Math.pow(q, 2) * (e * (1 - e)));
+
+                            // 5. Yeni Elo (Rating)
+                            // K-faktoru yerinə dinamik bir çarpan istifadə olunur
+                            const multiplier = q / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared));
+                            const newElo = currentElo + multiplier * (s - e);
+
+                            let newRD = Math.sqrt(1 / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared)));
+                            
+                            // RD limitləri: Nə qədər usta olsa da, şübhə 30-dan aşağı düşmür
+                            newRD = Math.max(30, Math.min(350, newRD));
+
+                            return {
+                                rating: Math.round(newElo),
+                                rd: Math.round(newRD),
+                                diff: Math.round(newElo - currentElo)
+                            };
+                        }
+
+                        const percentage = (correctAnswers / totalQuestions) * 100;
+                        const currentElo = stats ? (Number(stats.elo_rating) || 1000) : 1000;
+                        const currentRD = stats ? (Number(stats.rating_deviation) || 350) : 350;
+
+                        // Hesablamanı icra edirik
+                        const eloResult = calculateNewRating(currentElo, currentRD, percentage);
+
+                        // 4. USER_STATS YENİLƏMƏSİ (Upsert)
+                        const updatePayload = {
+                            display_name: fullName,
+                            quizzes_completed: (stats ? (Number(stats.quizzes_completed) || 0) : 0) + 1,
+                            total_time_spent: (stats ? (Number(stats.total_time_spent) || 0) : 0) + currentSeconds,
+                            total_answered_questions: (stats ? (Number(stats.total_answered_questions) || 0) : 0) + totalQuestions,
+                            total_correct_answers: (stats ? (Number(stats.total_correct_answers) || 0) : 0) + correctAnswers,
+                            total_score: (stats ? (Number(stats.total_score) || 0) : 0) + currentScore,
+                            
+                            // YENİ MƏLUMATLAR
+                            elo_rating: eloResult.rating,
+                            rating_deviation: eloResult.rd, 
+                            
+                            current_streak: finalStreak,
+                            last_quiz_date: todayStr,
+                            daily_limit_count: finalLimit,
+                            updated_at: new Date().toISOString()
+                        };
+
+                        const { error: updErr } = await client
+                            .from('user_stats')
+                            .upsert({ user_id: uId, ...updatePayload });
+
+                        if (updErr) throw updErr;
+
+                        // 5. QUIZ_HISTORY (Olduğu kimi qalır)
+                        const { data: historyData } = await client
                             .from('quiz_history')
-                            .select('*')
+                            .select('quiz_count')
                             .eq('user_id', uId)
                             .eq('quiz_date', todayStr)
                             .maybeSingle();
+                        
+                        const newHistoryCount = (historyData ? (Number(historyData.quiz_count) || 0) : 0) + 1;
 
-                        if (!history) {
-                            await client.from('quiz_history').insert([{
-                                user_id: uId, 
-                                quiz_date: todayStr, 
-                                quiz_count: 1
-                            }]);
-                        } else {
-                            await client.from('quiz_history')
-                                .update({ quiz_count: (Number(history.quiz_count) || 0) + 1 })
-                                .eq('user_id', uId)
-                                .eq('quiz_date', todayStr);
-                        }
+                        await client.from('quiz_history').upsert({
+                            user_id: uId,
+                            quiz_date: todayStr,
+                            quiz_count: newHistoryCount
+                        }, { onConflict: 'user_id, quiz_date' });
+
+                        // NƏTİCƏNİ QAYTARIRIQ (UI üçün eloDifference və newElo)
+                        return {
+                            diff: eloResult.diff,
+                            newElo: eloResult.rating
+                        };
 
                     } catch (err) {
-                        console.error("Supabase yeniləmə xətası:", err.message);
+                        console.error("Gözlənilməz xəta:", err.message);
+                        return null;
                     }
                 }
-                function showResult() {
+                async function showResult() {
                     clearInterval(timerInterval);
                     const finalTime = formatTime(secondsElapsed);
-                    
-                    // Nəticələri bazaya göndəririk
+                    let eloDiff = 0;
+                    let eloData = { diff: 0, newElo: 1000 }; // Default dəyərlər
+                    if (isQuizFinished) {
+                        return; 
+                    }
+                    isQuizFinished = true;
                     if (userId) {
-                        updatePlayerStats(userId, score, secondsElapsed, questions.length, score);
+                        const result = await updatePlayerStats(userId, score, secondsElapsed, questions.length, score);
+                        if (result) eloData = result; 
                     }
                     
+                    let eloStatusClass = "elo-neutral";
+                    let eloSign = eloData.diff > 0 ? "+" : "";
+
+                    if (eloData.diff > 0) {
+                        eloStatusClass = "elo-up";
+                    } else if (eloData.diff < 0) {
+                        eloStatusClass = "elo-down";
+                    }       
                     const topPart = document.querySelector(".top-part");
                     const sualWord = document.querySelector(".sual-word");
                     const quizButtons = document.querySelector(".quiz-buttons-bg");
@@ -867,7 +1094,7 @@ if (window.location.pathname.endsWith("quiz.html")) {
 
                     const percentage = Math.round((score / questions.length) * 100);
                     const wrongAnswers = questions.length - score;
-
+                    const eloHTML = `${eloData.newElo} <span class="${eloStatusClass}" style="font-size: 0.9em; margin-left: 5px;">${eloSign}${eloData.diff}</span>`;
                     optionsContainer.innerHTML = `
                         <div class="result-container">
                             <div class="circle-progress-container">
@@ -897,6 +1124,10 @@ if (window.location.pathname.endsWith("quiz.html")) {
                                 <div class="stat-row last-row">
                                     <span class="stat-label"><span class="dot-green">●</span> Keçmə faizi</span>
                                     <span class="stat-count green-text">${percentage}%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-yellow">●</span> Reytinq (Elo)</span>
+                                    <span class="stat-count" style="color: inherit; font-weight: bold;">${eloHTML}</span>
                                 </div>
                             </div>
 
