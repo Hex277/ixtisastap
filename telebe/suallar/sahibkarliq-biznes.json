@@ -1,0 +1,2392 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Hökumətin, firmaların, ayrı​ayrı şəxslərin ölkədə istehsal edilən və başqa ölkədə satılması nəzərdə tutulan əmtəə və xidmət:",
+            "options": {
+                "A": "ixrac",
+                "B": "kvota",
+                "C": "valyuta",
+                "D": "idxal",
+                "E": "renta"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 2,
+            "question": "Bazar iqtisadiyyatının subyektilərinə aid deyildir:",
+            "options": {
+                "A": "Borc kapitalının sahibləri",
+                "B": "Öz əməyini satan işçilər",
+                "C": "Qiymətli kağızların dövriyyəsi",
+                "D": "Sonuncu istehlakçılar",
+                "E": "Sahibkarlar"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 3,
+            "question": "Bunlardan hansı sahibkarlıq sahəsində dövlət siyasətinin təmin olunması vasitəsi deyildir?",
+            "options": {
+                "A": "idarəetmənin uyğun təşkilati strukturunun yaradılması",
+                "B": "kadr təminatı",
+                "C": "vergi yükünün yüksəldilməsi",
+                "D": "dövlət tənzimlənməsinin informasiya təminatının yaradılması",
+                "E": "inzibati və iqtisadi metodların tətbiqi sərhədlərinin müəyyən edilməsi"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 4,
+            "question": "İri firmaların xüsusiyyətlərinə aid deyil:",
+            "options": {
+                "A": "onlarda idarəetmə xərcləri yüksəkdir",
+                "B": "onlar elmi​texniki araşdırmalara xeyli vəsait xərcləyə bilərlər",
+                "C": "onlar həmişə mənfəət əldə edirlər",
+                "D": "davamlıdırlar",
+                "E": "kütləvi istehsal onlar üçün əlçatandır"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 5,
+            "question": "Hansı amil daxili mühit amillərinə aid deyil?",
+            "options": {
+                "A": "müəssisə məqsədləri",
+                "B": "müəssisə texnoloqiyası",
+                "C": "heyət",
+                "D": "vergi qoyma səviyyəsi",
+                "E": "müəssisə strukturu"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 6,
+            "question": "Qeyd edilənlərdən hansı qiymətli kağızdır?",
+            "options": {
+                "A": "pul",
+                "B": "xarici valyuta",
+                "C": "istiqraz",
+                "D": "emitent",
+                "E": "kapital"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 7,
+            "question": "İşgüzar söhbət nədir?",
+            "options": {
+                "A": "işgüzar etiketdir",
+                "B": "işgüzar münasibətdir",
+                "C": "söhbətin xüsusi formasıdır",
+                "D": "razılıq formasıdır",
+                "E": "müqavilə formasıdır"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 8,
+            "question": "İstehsal amili deyil.",
+            "options": {
+                "A": "Dövriyyə fondlar",
+                "B": "İnformasiya texnologiyası",
+                "C": "Əsas fondlar",
+                "D": "İşçi quvvəsi",
+                "E": "İnformasiya"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 9,
+            "question": "İstehsal vasitələri satışının maliyyələşdirilməsi üçün tətbiq edilən icarə ilə kreditin əlaqələndirilməsi necə adlanır?",
+            "options": {
+                "A": "biznes",
+                "B": "menecment",
+                "C": "lizinq",
+                "D": "marketinq",
+                "E": "faktorinq"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 10,
+            "question": "Firmaların hansı növləri açıq və qapalı firmalara bölünür?",
+            "options": {
+                "A": "dövlət müəssisələri",
+                "B": "şəxsi müəssisələr",
+                "C": "ortaqlıqlar",
+                "D": "kooperativlər",
+                "E": "səhmdar cəmiyyətləri"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 11,
+            "question": "Azərbaycanda “Dövlət mülkiyyətinin özəlləşdirilməsi haqında” Qanun nə zaman qəbul edilmişdir?",
+            "options": {
+                "A": "1991",
+                "B": "1996",
+                "C": "1993",
+                "D": "1990",
+                "E": "1997"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 12,
+            "question": "Aşağıdakı terminlərdən hansı insanların məhsulu almaq imkanları və istəklərini əks etdirir:",
+            "options": {
+                "A": "istək",
+                "B": "zərurət",
+                "C": "faydalılıq",
+                "D": "tələb",
+                "E": "tələbat"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 13,
+            "question": "Sahibkarlıq fəaliyyətinin əsasları hansılardır?",
+            "options": {
+                "A": "İqtisadi azadlıq, mülkiyyətin toxunulmazlığı, sahibkarlıq təşəbbüsü.",
+                "B": "Vergilərin aşağı olması bazar tələbatı, işsizlərin çoxluğu.",
+                "C": "Tələb və təklif.",
+                "D": "Varlanmaq həvəsi, rəqabət, çalışqanlıq.",
+                "E": "Resursların bolluğu, maliyyə təminatı, dövlət təminatı."
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 14,
+            "question": "Bunlardan hansı istehsal amilidir.",
+            "options": {
+                "A": "İstehsal fondları",
+                "B": "Audit",
+                "C": "İnformasiya texnologiyası",
+                "D": "Əmtəə istehsalı",
+                "E": "Lizinq"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 15,
+            "question": "Aşağıdakılardan hansı uğurlu sahibkarın xarakterik əlamətlərindən biridir?",
+            "options": {
+                "A": "İşin faydalılığını qiymətləndirməyi bacarmaq",
+                "B": "əmtəə və xidmət istehsalına hazır olmaq",
+                "C": "Bütün cavablar doğrudur",
+                "D": "ixtiraçı və fəal olmaq",
+                "E": "son nəticəyə yönəlmək"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 16,
+            "question": "Françayzinq əsasən həyata keçirilən kiçik və böyük biznesin inteqrasiya formasıdır?",
+            "options": {
+                "A": "əmtəə nişanı",
+                "B": "patent",
+                "C": "nou-hau",
+                "D": "lisenziya",
+                "E": "franşızanın alınması"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 17,
+            "question": "Sahibkarlığa dövlət yardımı hansı nazirlik tərəfindən birbaşa həyata keçirilir ?",
+            "options": {
+                "A": "K/t nazirliyi",
+                "B": "İqtisadi inkişaf nazirliyi",
+                "C": "Nəqliyyat nazirliyi",
+                "D": "Maliyyə nazirliyi",
+                "E": "Ədliyyə nazirliyi"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 18,
+            "question": "Biznesin başlıca tərkib hissəsi nədir?",
+            "options": {
+                "A": "Işçilərin qiymətləndirilməsi",
+                "B": "Peşəkar vərdişlərin səciyyəsi",
+                "C": "Kadrların idarəedilməsi",
+                "D": "Işçilərin stimullaşdırılması",
+                "E": "Əmək resurslarının formalaşması"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 19,
+            "question": "Aşağıdakılardan hansı uğurlu sahibkarın xarakterik əlamətlərindən biri deyil?",
+            "options": {
+                "A": "İşin faydalılığını qiymətləndirməyi bacarmaq",
+                "B": "əmtəə və xidmət istehsalına hazır olmaq",
+                "C": "son nəticəyə yönəlmək",
+                "D": "ixtiraçı və fəal olmaq",
+                "E": "Fəaliyyətin istiqamətini düzgün müəyyənləşdirmək"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 20,
+            "question": "Azərbaycan Respublikasıında sahibkarlıq faəliyyətinin inkişafının üçüncü mərhələsi hansı illəri əhatə edir?",
+            "options": {
+                "A": "2002-ci ildən sonrakı illəri",
+                "B": "1995-ci ildən sonrakı illləri",
+                "C": "2005-ci ildən sonrakı illəri",
+                "D": "2008-ci ildən sonrakı illəri",
+                "E": "2010-cu ildən sonrakı illəri"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 21,
+            "question": "Xarici və daxili imkanların təhlili hansı metod ilə həhata keçirilir?",
+            "options": {
+                "A": "SWOT",
+                "B": "SPOT",
+                "C": "Analiz",
+                "D": "Pest",
+                "E": "Statistik"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 22,
+            "question": "İnformasiyanın mənbədən tələbatçıya verilmə yolu üsulu və prosesi nəyə deyilir?",
+            "options": {
+                "A": "İnformasiya kommunikasiyası",
+                "B": "İnformasiyanın yaradılması",
+                "C": "İnformasiyanın ötürülməsi",
+                "D": "İnformasiya yenilənməsi",
+                "E": "İnformasiya transformasiyası"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 23,
+            "question": "Aşağıdakılardan hansı kiçik sahibkarlığın tərəfindən müdafiəsi istiqaməti deyildir?",
+            "options": {
+                "A": "xarici ticarətin inkişafı",
+                "B": "kiçik sahibkarlıq infrastrukturunun yaradilması",
+                "C": "kiçik müəssisələr üçün kadr hazırlığı",
+                "D": "kiçik sahibkarlıq subyektlərinin qeydiyyatının sadələşdirilməsi",
+                "E": "kiçik sahibkarlıq xarici iqtisadi əlaqələrinin inkişafına yardım"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 24,
+            "question": "Françayzinqin mahiyyəti nədir ?",
+            "options": {
+                "A": "şəbəkə hissələrinin satışıdır",
+                "B": "daha az iştirakçının cəlb olunmasıdır",
+                "C": "öz biznesini aparmaq",
+                "D": "daha çox iştirakçının cəlb olunmasıdır",
+                "E": "ictimaiyyətlə əlaqə qurmaq"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 25,
+            "question": "Sahibkarlıq sahəsində dövlət siyasətinin sistemliliyi və vəhdətliyinin təmin edilməsi yollarına aid deyildir:",
+            "options": {
+                "A": "dövlət tənzimləməsinin informasiya təminatı",
+                "B": "planlaşdırmanın həyata keçirilməsi",
+                "C": "dövlət tənzimləməsi əks-əlaqə sisteminin yaradılması",
+                "D": "tənzimləmənin inzibati və iqtisadi metodlarının tətbiqi sahələrinin sərhədlərinin təyin edilməsi",
+                "E": "kadr təminatı"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 26,
+            "question": "Məqsədyönlü informasiyaya aid deyil:",
+            "options": {
+                "A": "dezinformasiya",
+                "B": "faydalılıq",
+                "C": "qəbulun öz vaxtlılığı",
+                "D": "Dəqiq",
+                "E": "Vahidlik"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 27,
+            "question": "Təşkilatın yaradılmasının məqsəd və mənası necə adlanır?",
+            "options": {
+                "A": "struktur",
+                "B": "qərar",
+                "C": "marketinq",
+                "D": "taktika",
+                "E": "missiya"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 28,
+            "question": "Qeyd edilənlərin hansı kiçik biznesinin zəif tərəfidir?",
+            "options": {
+                "A": "idarəetmə təcrübəsinin olmaması",
+                "B": "iş yerlərinin açılması",
+                "C": "böyük biznesin kiçik biznesdən asılılığı",
+                "D": "ixtira və innovasiya fəaliyyətinin təşəbbüskarlığı",
+                "E": "fəaliyyətin maliyyə nəticələri"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 29,
+            "question": "Firnmanın məqsdlərinə nail olunması üçün zəruri olan hərəkətlərin ümumiləşdirilmiş modeli adlanır?",
+            "options": {
+                "A": "strategiya",
+                "B": "konsepsiya",
+                "C": "taktika",
+                "D": "motivasiya",
+                "E": "missiya"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 30,
+            "question": "Bunlardan hansı kiçik sahibkarlığın inkişafı məqsədləri deyildir?",
+            "options": {
+                "A": "sahibkarları məşğul olanlar üçün bərabər imkanlar yaradılması",
+                "B": "məşğulluq probleminin həllinə köməklik",
+                "C": "sahibkarları xammaldan məhrum etmək",
+                "D": "iqtisadiyyatda rəqabətin inkişaf etdirilməsi",
+                "E": "innovasiyaların müdafiə edilməsi"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 31,
+            "question": "Xarici əmtəələrin ölkəyə daxil olması necə adlanır?",
+            "options": {
+                "A": "iqtisadi əlaqə",
+                "B": "ixrac",
+                "C": "ticarət əməliyyati",
+                "D": "idxal",
+                "E": "ticarət mübadiləsi"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 32,
+            "question": "İqtisadi ədəbiyyatda istehsalın 4 amili göstərilir. Aşağıdakılardan hansı bu amıllərdən biri deyil?",
+            "options": {
+                "A": "sahibkarlıq təşəbbüsü",
+                "B": "əmək",
+                "C": "Kapital",
+                "D": "Torpaq",
+                "E": "Sahibkarlıq qabiliyyəti"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 33,
+            "question": "Sahibkarlıq fəaliyyətinin aparıcı motivi nədən ibarətdir?",
+            "options": {
+                "A": "Vergi dərəcəsinin aşağı salınmasından.",
+                "B": "Qiymətlərin aşağı salınmasından.",
+                "C": "Əmək haqqının artırılmasından.",
+                "D": "Sahibkarlıq fəaliyyətinin azadlığından.",
+                "E": "Mənfəətdən."
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 34,
+            "question": "Vençur kapitalı xüsusi investisiya növü olaraq ..... strategiyasını aparır",
+            "options": {
+                "A": "3-6 illik mərhələdə",
+                "B": "1-2 illik mərhələdə",
+                "C": "5-7 illik mərhələdə",
+                "D": "2-5 illik mərhələdə",
+                "E": "3-5 illik mərhələdə"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 35,
+            "question": "Aşağıdakılardan hansı uğurlu sahibkarın xarakterik əlamətlərindən biri deyil?",
+            "options": {
+                "A": "əmtəə və xidmət istehsalına hazır olmaq",
+                "B": "ixtiraçı və fəal olmaq",
+                "C": "son nəticəyə yönəlmək",
+                "D": "Fəaliyyətin istiqamətini düzgün müəyyənləşdirmək",
+                "E": "İşin faydalılığını qiymətləndirməyi bacarmaq"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 36,
+            "question": "Aşağıda qeyd edilənlərin hansını “sahibkar” anlayışına aid etmək olar?",
+            "options": {
+                "A": "Mənfəətin əldə edilməsi məqsədi ilə xidmətlər göstərən şəxs",
+                "B": "Mənfəətin əldə edilməsi məqsədi ilə istənilən fəaliyyət növü ilə məşğul olan şəxs",
+                "C": "Mənfəət haqqında fikirləşən şəxs",
+                "D": "ödənişli xidmətlər göstərən istənilən şəxs",
+                "E": "Gələcək inkişaf haqqında düşünən, təşəbbüskar, riskə gedən şəxs, novator"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 37,
+            "question": "Bazar elementi nədir?",
+            "options": {
+                "A": "subyekt və qiymət",
+                "B": "subyekt və rəqabət",
+                "C": "rəqabət və dövlət",
+                "D": "qiymət və təklif",
+                "E": "tələb və firmalar"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 38,
+            "question": "Biznesin növləri sahibkarın ..... müəyyən edir",
+            "options": {
+                "A": "Marağını",
+                "B": "Gəlirini",
+                "C": "fəaliyyətin əsas sferasını",
+                "D": "Məqsədinə çatmasını",
+                "E": "Maraqlarının reallaşması cəhdini"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 39,
+            "question": "Motivasiyanın mahiyyəti nədir?",
+            "options": {
+                "A": "hərəkət motivlərinin seçilməsi",
+                "B": "əməyin qiymətləndirilməsi",
+                "C": "Ehtiyacların müəyyən edilməsi",
+                "D": "Konkret mərhələdə işçilər üçün məqbul olan,insan davranışı motivlərinə uyğun gələn stimulların seçilməsidir",
+                "E": "davranış motivlərinin seçilməsi"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 40,
+            "question": "Ticarət mənfəəti əldə edilməsinə yönəlmiş ticarət fəaliyyəti belə adlanır:",
+            "options": {
+                "A": "sahibkarlıq",
+                "B": "marketinq",
+                "C": "kommersiya",
+                "D": "biznes",
+                "E": "menecment"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 41,
+            "question": "Sahibkarlıq fəaliyyətini biznesin digər növlərindən fərqləndirən cəhət.",
+            "options": {
+                "A": "Xüsusi təşkilati-struktur cəhətlər",
+                "B": "Bütün bəndlər",
+                "C": "Xüsusi motivasiya",
+                "D": "Yenilikçilik",
+                "E": "Yeni istehsal texnologiyası"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 42,
+            "question": "İş və xidmət yerinə yetirilir, müəyyən mənəvi dəyərlər yaradılır. Bu, biznesin hansı növünə aiddir?",
+            "options": {
+                "A": "Kommersiya",
+                "B": "İstehsal",
+                "C": "Korporasiya",
+                "D": "Maliyyə",
+                "E": "Konsultativ"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 43,
+            "question": "Kiçik biznesin keyfiyyət meyarlarına aid deyil:",
+            "options": {
+                "A": "müəssisədə satışın həcmi, dövriyyə, aktivlərin dəyəri",
+                "B": "yüksək təşkilati-funksional çeviklik və mobillik",
+                "C": "yalnız məhdud bazar seqmentlərinə malik olmaq qabiliyyəti;",
+                "D": "qeyri-müntəzəm menecment, «sağlam fikir idarəetmənin» üstünlüyü",
+                "E": "istehsal olunan məhsulun (xidmətin) nisbətən az miqdarda olması"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 44,
+            "question": "Biznes etikasının ilk ümümi prinsipi nədir?",
+            "options": {
+                "A": "fərdliliyi",
+                "B": "sosiallığı",
+                "C": "xüsusiliyi",
+                "D": "Qanuniliyi",
+                "E": "fərqliliyi"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 45,
+            "question": "Aşağıdakı amillərdən hansı sahibkarlıq fəaliyyətinin obyekti ola bilməz?",
+            "options": {
+                "A": "Torpaq.",
+                "B": "Ümumi milli dəyərlər.",
+                "C": "Qeyri-istehsal sferasının obyektləri.",
+                "D": "Xammal ehtiyatları.",
+                "E": "Qiymətli kağızlar."
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 46,
+            "question": "Ən zərif və mürəkkəb biznes növü hansıdır?",
+            "options": {
+                "A": "Korporativ",
+                "B": "Maliyyə",
+                "C": "Konsultativ",
+                "D": "İstehsal",
+                "E": "Kommersiya"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 47,
+            "question": "Sаhibkаrlıqdа istifаdə оlуnаn infоrmаsiyаnın növləri hаnsılаrdır?",
+            "options": {
+                "A": "İşgüzar,relevant,cari",
+                "B": "аnаlitik, işgüzаr, sоsiаl",
+                "C": "cаri, işlənmiş, mövcud",
+                "D": "analitik, işlənmiş, sosial",
+                "E": "rеlеvаnt, siqnаl, dəqiq"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 48,
+            "question": "Kim ......, o da qazanır:",
+            "options": {
+                "A": "Daha tez və keyfiyyətli informasiyanı alıb,onu tez təhlil edə bilirsə",
+                "B": "Informasiya mədəniyyətinə malikdirsə",
+                "C": "Müasir şəraitdə cəmiyyətimizin düzgün inkişaf proqnozunu verə bilirsə",
+                "D": "qoyulan məsələləri tam və vaxtında həll edə bilirsə",
+                "E": "Zəruri informasiyaya malikdirsə"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 49,
+            "question": "Sahibkarlıq fəaliyyəti subyektlərinin dörd əsas funksiyasına daxil deyil:",
+            "options": {
+                "A": "Sahibkar vergi şərtlərini müəyyən edir",
+                "B": "Sahibkar iqtisadi resursları birləşdirir",
+                "C": "Sahibkar öz vəsaiti və fəaliyyəti ilə risk edir",
+                "D": "Sahibkar yenilikçidir",
+                "E": "Sahibkar iqtisadi fəaliyyətin əsas mərhələləri üzrə qərarlar qəbul edir"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 50,
+            "question": "Əsas istehsal fonlari öz dəyərini hansı yolla hazır məhsulun üzərinə keçirir?",
+            "options": {
+                "A": "Pul vəsaitlərinin köçürülməsi ilə",
+                "B": "Həvəsləndirmə fondu ilə",
+                "C": "Köməkçi fond ilə",
+                "D": "Maliyyə ayirmaları ilə",
+                "E": "Amortizasiya ayırmaları ilə"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 51,
+            "question": "Sahibkarlıq fəaliyyəti qeyri-mümkündür:",
+            "options": {
+                "A": "İnformasiya texnikası olmadan",
+                "B": "İnformasiya subyekti olmadan",
+                "C": "İnformasiya ölçüsü olmadan",
+                "D": "İnformasiya təminatı olmadan",
+                "E": "İnformasiya obyekti olmadan"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 52,
+            "question": "Aşağıdakı amillərin hansı tələbi daha çox stimullaşdırılır?",
+            "options": {
+                "A": "insanların tələbatı",
+                "B": "dövlətin sosial yardımı",
+                "C": "qiymətin aşağı olması",
+                "D": "əmtəələrin bolluğu",
+                "E": "əmtəələrin çatışmazlığı"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 53,
+            "question": "Sahibkarlıq fəaliyyəti ilə kimlər məşğul ola bilər?",
+            "options": {
+                "A": "Fiziki və hüquqi şəxslər",
+                "B": "yalnız hüquqi şəxslər",
+                "C": "muzdla işləyənlər",
+                "D": "yalnız fiziki şəxslər",
+                "E": "işcilər"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 54,
+            "question": "Biznesin məqsədinə aid deyil;",
+            "options": {
+                "A": "cəmiyyətə lazımi əmtəə və xidmətlərin təqdim edilməsi",
+                "B": "mənfəətin alınması",
+                "C": "bazarda sahədə qabaqcıl mövqeyə nail olunması",
+                "D": "xərcin hesablanması",
+                "E": "biznesin inkişafı ücün zəruri vəsaitlərin toplanması"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 55,
+            "question": "Sahibkarlıq risklərinin azaldılmasına yönəldilmiş fəaliyyət növü necə adlanır?",
+            "options": {
+                "A": "Audit",
+                "B": "Faktorinq",
+                "C": "Səhmdarlıq",
+                "D": "Sərbəst fəaliyyət",
+                "E": "Lizinq"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 56,
+            "question": "Ölkə iqtisadiyyatının bazasını nə təşkil edir?",
+            "options": {
+                "A": "Xırda sahibkarlığın inkişafı",
+                "B": "İqtisadi resursların səfərbər edilməsi",
+                "C": "Hamısı",
+                "D": "Kiçik biznes",
+                "E": "Fərdi təsərrüfatın inkişafı"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 57,
+            "question": "Maliyyə biznesinin nəyə ehtiyacı vardır?",
+            "options": {
+                "A": "Qiymətlər və qiymətə təsir edən amillər haqqında məlumatın toplanmasına",
+                "B": "Elmi-nəzəri biliklərə",
+                "C": "Ticarətin qaydaya salınmasına",
+                "D": "Innovasiya və elmi-texniki fəaliyyətə",
+                "E": "Dəqiq informasiya və müasir hesablama texnikasına"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 58,
+            "question": "Öz biznesine başlamazdan öncə hansı analitik işlərin görülməsi vacibdir:",
+            "options": {
+                "A": "fəaliyyətin əsas istiqamətlərini seçmək",
+                "B": "işgüzar ticarət zonasını müəyyənləşdirmək",
+                "C": "hər biri",
+                "D": "maliyyə imkanlarını qimətləndirmək",
+                "E": "peşəkar icraçı kollektiv formalaşdırmaq"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 59,
+            "question": "”Kommersiya” sözünün mənası nədir?",
+            "options": {
+                "A": "latın sözü olub “dəllal” deməkdir",
+                "B": "Latın sözü olub “ticarət” deməkdir",
+                "C": "rus sözü olub “tacir” deməkdir",
+                "D": "azərbaycan sözü olub “baqqal” deməkdir.",
+                "E": "türk sözü olub “tacir” deməkdir"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 60,
+            "question": "Aşağıdakı tədbirlərdən hansı sahibkarlığa dövlət tərəfindən yardımı təmin edir?.",
+            "options": {
+                "A": "Qiymətlərin tənzimlənməsi.",
+                "B": "İqtisadi artımın sabitləşdirilməsi.",
+                "C": "Əmlak vergisinin yüksəldilməsi.",
+                "D": "Vergi dərəcəsinin aşağı olması.",
+                "E": "Ətraf mühitin müdafiəsi."
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 61,
+            "question": "Sahibkarlığın xarici mühitinin mühüm elementləridir:",
+            "options": {
+                "A": "Işçilərinsayı",
+                "B": "Mənfəətin həcmi",
+                "C": "Əmtəələrin qablaşdırılması",
+                "D": "Hüquqi təminat",
+                "E": "İdarəetmə prinsipləri"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 62,
+            "question": "İnfrastrukturun sonrakı inkişafı hansı sənaye üçün elektron biznesin də inkişaf meyilidir:",
+            "options": {
+                "A": "Kənd sənayesi ücün",
+                "B": "Kütləvi informasiya vasitələri sənayesi ücün",
+                "C": "İnformasiya texnologiyaları sənayesi üçün",
+                "D": "Kommunikasiya texnologiyaları ücün",
+                "E": "İdarəetmə texnologiyaları sənayesi üçün"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 63,
+            "question": "Əlverişli sahibkarlıq mühitinin hansı şərtləri var?",
+            "options": {
+                "A": "İnkişaf etmiş bazar infrastrukturu.",
+                "B": "Xammal bolluğu, ucuz işçi qüvvəsi, təbii resursların bolluğu.",
+                "C": "Vergilərin azlığı, iqtisadi azadlıq, gəlirdən sərbəst istifadə.",
+                "D": "Bazar tələbinin artması, işsizliyin artması, təşəbbüskarlığın artması.",
+                "E": "Dövlət təminatları, güclü rəqabət, möhkəm inzibati nəzarət."
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 64,
+            "question": "Əmtəə nədir:",
+            "options": {
+                "A": "satıcı ilə alıcı arasında alqı​satqı sövdələşməsinin predmeti olan əşya",
+                "B": "digər iqtisadi nemətə və ya müəyyən məbləğ pula mübadilə oluna bilən iqtisadi nemət",
+                "C": "hansısa tələbatı ödəyə bilən nə varsa hər şey",
+                "D": "inkişaf etmiş əmtəə istehsalı şəraitində yaradılmış əmək məhsulu",
+                "E": "hansısa tələbatı ödəyən və satış üçün nəzərdə tutulan əmək məhsulu"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 65,
+            "question": "Bazar iqtisadiyyatının əsas parametrləri hansılardır?",
+            "options": {
+                "A": "administrasiyalaşma, məhdud seçim, qiymətlərin nizamlanması",
+                "B": "dövlət mülkiyyəti, seçim azadlığı, azad sahibkarlıq",
+                "C": "rəqabət, azad qiymətlər, şəxsi mülkiyyət",
+                "D": "azad sahibkarlıq, rəqabət, şəxsi mülkiyyət, seçim azadlığı",
+                "E": "rəqabət, azad qiymətlər, şəxsi mülkiyyət, mal"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 66,
+            "question": "Bazarın iqtisadi subyektləri ?",
+            "options": {
+                "A": "kapital",
+                "B": "firmalar",
+                "C": "dövlət",
+                "D": "mallar",
+                "E": "qiymət"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 67,
+            "question": "Qeyd edilən xarakterik cəhətlərin hansı biznesmenə xas deyil?",
+            "options": {
+                "A": "müştəriyə diqqət",
+                "B": "əsaslanmış riskli fəaliyyət",
+                "C": "özünə inam",
+                "D": "məsuliyyət",
+                "E": "yalan"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 68,
+            "question": "Hansı vasitəçi deyil?",
+            "options": {
+                "A": "Diler",
+                "B": "biznesmen",
+                "C": "dustribyutor",
+                "D": "broker",
+                "E": "agent"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 69,
+            "question": "Broker və agent ticarət vasitəçilərindən nə ilə fərqlənir?",
+            "options": {
+                "A": "Bazarı ətrafı öyrənməsinə görə",
+                "B": "Sərbəstliyinə görə",
+                "C": "Təmizlik və sadəliyinə görə",
+                "D": "Daha diqqətli olmasına görə",
+                "E": "Tədavül sahəsində fəaliyyətinə görə"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 70,
+            "question": "İstehsal amillərinə nələr daxildir?",
+            "options": {
+                "A": "Sahibkarlıq təşəbbüsü, kapital, xammal, avadanlıqlar",
+                "B": "Təbii resurslar, insanlar, hazır nemətlər.",
+                "C": "Torpaq, əmək, kapital, sahibkarlıq qabiliyyəti.",
+                "D": "Əmək, istehsal vasitələri, pul vasitələri.",
+                "E": "Əsas və dövriyyə vəsaitləri."
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 71,
+            "question": "Biznes tsiklinə aid edilmir?",
+            "options": {
+                "A": "işgüzar tsikl",
+                "B": "biznes siklinin həyati tsikli",
+                "C": "müəssisənin həyati tsikli",
+                "D": "malın həyati tsikli",
+                "E": "İstehsalın həyati tsikli"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 72,
+            "question": "Sahibkarlıq fəaliyyətində əmlaklar hansı hallarda qiymətləndirilə bilər?",
+            "options": {
+                "A": "dövlət və kommersiya sirlərini tələb etməkdə",
+                "B": "əmlakın sığortalanmasında",
+                "C": "qiymətləndrimə zamanı sifarişçidən zəruri sənədləri tələb etməkdə",
+                "D": "müqavilə əsasında qiymətləndriməyə mütəxəssisləri cəlb etməkdə",
+                "E": "qiymətləndrimə zamanı mütəxəssisləri cəlb etməkdə"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 73,
+            "question": "Aşağıda qeyd edilənlərin hansını sahibkar anlayışına aid etmək olar? Mənfəət haqqında fikirləşən şəxs",
+            "options": {
+                "A": "Yeni müəssisənin yaradılması, yeni ideyanın işlənib hazırlanması, yeni məhsul və xidmət növünün yaradılması ilə bağlı təşəbbüs",
+                "B": "göstərən və riski öz üzərinə götürən şəxs",
+                "C": "Mənfəətin əldə edilməsi məqsədi ilə xidmətlər göstərən şəxs",
+                "D": "ödənişli xidmətlər göstərən istənilən şəxs",
+                "E": "Mənfəətin əldə edilməsi məqsədi ilə istənilən fəaliyyət növü ilə məşğul olan şəxs"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 74,
+            "question": "Bazar iqtisadiyyatı şəraitində sahibkarlıq fəaliyyətinin əsasını təşkil edən nədir?",
+            "options": {
+                "A": "Resursların bolluğu.",
+                "B": "İqtisadiyyatın dövlət tənzimlənməsi.",
+                "C": "Xüsusi mülkiyyət.",
+                "D": "İqtisadi azadlıq.",
+                "E": "Bazar rəqabəti."
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 75,
+            "question": "Müəssisənin makromühitinə nə aiddir?",
+            "options": {
+                "A": "tədarükçü, istehlakçı, xarici partnyorlar",
+                "B": "xarici partnyorlar, mədəni, iqtisadi, daxili sahibkarlıq mühiti",
+                "C": "mədəni, istеhlаkçı, fərdi, istеhsаl",
+                "D": "iqtisadi, təbii, elmi-texniki, siyasi, mədəni mühit",
+                "E": "rəqiblər,vasitəçilər,dövlət orqanları"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 76,
+            "question": "Hansı bənd sahibkarlıq ideyasının mənbəyinə aiddir",
+            "options": {
+                "A": "Bazarın növləri",
+                "B": "Əmtəə bazarının strukturu",
+                "C": "Bazar rəqabəti",
+                "D": "Bazarın infrastrukturu",
+                "E": "Bazarın funksiyası"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 77,
+            "question": "Milli iqtisadiyyatın quruluşuna hansı bölmələr daxil edilir?",
+            "options": {
+                "A": "İstehsal və qeyri-iatehsal",
+                "B": "Yığım və istehlak",
+                "C": "Ev təsərrüfatı, sahibkarlıq, dövlət, xarici bölmə",
+                "D": "Əmtəə istehsalı və pul buraxılışı",
+                "E": "İstehsal və satış"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 78,
+            "question": "Kiçik biznesi xarakterizə edən amillər hansılardır?",
+            "options": {
+                "A": "müəssisənin strukturu",
+                "B": "müəssisənin yerləşməsi",
+                "C": "İstehsalın həcmi",
+                "D": "işçilərin sayı",
+                "E": "maliyyə nəticələri"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 79,
+            "question": "Elektron biznes:",
+            "options": {
+                "A": "İnformasiyaların idarə edilməsidir",
+                "B": "Informasiya texnologiyalarının 10 əsas istiqamətindən biridir",
+                "C": "Informasiya texnologiyalarının 5 əsas istiqamətindən biridir",
+                "D": "Informasiya texnologiyaları sahəsində biliklərin yayılması sahəsidir",
+                "E": "Keyfiyyətcə yeni iş texnologiyasıdır"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 80,
+            "question": "Sahibkarlıq fəaliyyətinin ən mühüm cəhətlərinə aiddir:",
+            "options": {
+                "A": "Təsərrüffat subyektlərinin müstəqil və sərbəst olması, iqtisadi maraq, təsərrüfat riski və məsuliyyət",
+                "B": "Təsərrüffat subyektlərinin müstəqil və sərbəst olması, sosial, maraq,təsərrüfat riski və məsuliyyət",
+                "C": "Təsərrüffat subyektlərinin imkanlı olması, iqtisadi maraq, təsərrüfat riski və məsuliyyət",
+                "D": "Sahibkarlıq qabiliyyəti, iqtisadi maraq, təsərrüfat riski və məsuliyyət",
+                "E": "Sahibkarlıq qabiliyyəti ,sosial maraq ,təsərrüfat riski və məsuliyyət"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 81,
+            "question": "Biznes ideyalarınız vacib suallarından deyil:",
+            "options": {
+                "A": "Necə istehsal edəcək?",
+                "B": "Kimə satacaqsınız?",
+                "C": "Hansı məhsul və xidmət satılacaq?",
+                "D": "Necə satacaqsınız?",
+                "E": "Müştərilərin ehtiyacları nədir?"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 82,
+            "question": "Gəlir və ya şəxsi mənfəət gətirən fəaliyyətin istənilən növü belə adlanır:",
+            "options": {
+                "A": "marketinq",
+                "B": "idarəetmə",
+                "C": "kommersiya",
+                "D": "biznes",
+                "E": "sahibkarlıq"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 83,
+            "question": "Fəaliyyət sahəsi üzrə biznes növünə aid deyil?",
+            "options": {
+                "A": "konsaltinq",
+                "B": "maliyyə",
+                "C": "kiçik",
+                "D": "Istehsalat",
+                "E": "kommersiya"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 84,
+            "question": "Bunlardan hansi biznesin subyektləri kimi çıxış edir?",
+            "options": {
+                "A": "Maliyyəçilər",
+                "B": "Vergi orqanları",
+                "C": "Rəqiblər",
+                "D": "Dövlət strukturları",
+                "E": "Hüquqşunaslar"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 85,
+            "question": "Məhsulun həyat tsikli 4 mərhələdən keçir?",
+            "options": {
+                "A": "mənimsəmə, ucalma, ekspansiya, süqut",
+                "B": "Bazara daxil olma, inkişaf, yetkinlik, süqut",
+                "C": "mənimsəmə, tətbiq, ucalma, süqut",
+                "D": "tətbiq, ucalma, inkişafın ekspansiyası",
+                "E": "ucalma, inkişaf, ekspansiya, süqut"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 86,
+            "question": "Müdafiə strategiyası bu məqsədi güdmür:",
+            "options": {
+                "A": "Texnoloji dəyişikliklər aparmaq",
+                "B": "Istehsalın texniki silahlanma səviyyəsinin yüksəldilməsini",
+                "C": "Texniki iqtisadi göstəricilərin yaxşılaşdırılması",
+                "D": "İqtisadi göstəricilərin yaxşılaşdırılması",
+                "E": "Istehsalın texniki silahlanma səviyyəsinin azaldılmasını"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 87,
+            "question": "Biznesə aid deyil?",
+            "options": {
+                "A": "Vəzifələr",
+                "B": "İşçilərin ixtisası",
+                "C": "Əmək ehtiyatları",
+                "D": "Məqsəd",
+                "E": "Texnologiya"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 88,
+            "question": "Müəssisə fəaliyyətinin tənzimlənməsinin təsərrüfat daxili mexanizminə aid deyil:",
+            "options": {
+                "A": "firmanın strategiyası",
+                "B": "menecment",
+                "C": "iqtisadi həvəsləndirmə",
+                "D": "dotasiyalar",
+                "E": "marketinq"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 89,
+            "question": "Fəaliyyət miqyasından asılı olaraq biznesi ayırd edirlər?",
+            "options": {
+                "A": "kiçik, kommersiya, orta",
+                "B": "kiçik, qlobal, böyük",
+                "C": "kiçik, orta, böyük",
+                "D": "orta, ağ, bölgə",
+                "E": "istehsal, kommersiya, maliyyə"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 90,
+            "question": "Aşağıdakılardan hansı strategiyanın son mərhələsidir?",
+            "options": {
+                "A": "Strategiyada xarici mühitdən asılılıq səviyyəsi",
+                "B": "Strategiyanın xarakterinin təhlili",
+                "C": "Strategiyanın mahiyyətinin təhlili",
+                "D": "Strategiyanın qiymətləndirilməsi",
+                "E": "Strategiyada müəssisə rəhbərlərinin maraqları"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 91,
+            "question": "Aşağıdakılardan hansı biznes infrastrukturuna aid edilən müstəqil bazarlardan biri deyil?",
+            "options": {
+                "A": "Satıcı və alıcı",
+                "B": "Lisenziya",
+                "C": "Reklam bazarı",
+                "D": "Sığorta bazarı",
+                "E": "Istehsal vasitələri bazarı"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 92,
+            "question": "Aşağıdakılardan hansı biznesə birbaşa təsir göstərən xarici mühit amili deyil?",
+            "options": {
+                "A": "Rəqiblər",
+                "B": "Texnologiya",
+                "C": "Əmək ehtiyatları",
+                "D": "İstehlakçılar",
+                "E": "Qanunlar"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 93,
+            "question": "Uğurlu sahibkarın xarakterik əlamətlərinə aid deyil;",
+            "options": {
+                "A": "Investorları və əlavə maliyyələşdirmə mənbələrini tapmağı bacarmaq",
+                "B": "fəaliyyətin istiqamətini dəyişmək",
+                "C": "Bazarın təlabatına tez reaksiya vermək",
+                "D": "Müəyyən riskə getməyə hazır olmaq",
+                "E": "Işin faydalığını və perespektivliyini qiymətləndirməyi bacarmaq"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 94,
+            "question": "Aşağıdakılardan hansı biznesə dolayı təsir göstərən xarici mühit amilidir?",
+            "options": {
+                "A": "Rəqiblər",
+                "B": "Elmi-texniki tərəqqi",
+                "C": "Texnologiya",
+                "D": "İstehlakçılar",
+                "E": "Qanunlar"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 95,
+            "question": "Müəssisənin mikromühitinə nə aiddir?",
+            "options": {
+                "A": "banklar, vasitəçilər",
+                "B": "rəqiblər, dövlət orqanları, istehlakçı cəmiyyətləri",
+                "C": "alıcılar,rəqiblər",
+                "D": "xarici partnyorlar, vasitəçilər",
+                "E": "xarici partnyorlar, dövlət orqanları, banklar"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 96,
+            "question": "Biznesin xarici mühitinə aid edilmir?",
+            "options": {
+                "A": "iqtisadi mühüt",
+                "B": "rəqiblər",
+                "C": "təbii mühit",
+                "D": "siyasi amillər",
+                "E": "istehsal"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 97,
+            "question": "Hansı amil xarici mikromühit amillərinə aid edilmir?",
+            "options": {
+                "A": "dövlət tənzimlənməsi idarələri",
+                "B": "qanunlar",
+                "C": "rəqiblər",
+                "D": "iqtisadi mühüt",
+                "E": "dünya bazarında konyuktura"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 98,
+            "question": "İqtisadi təhlükəsizliyinin təmin edilməsi nədən çox asılıdır?",
+            "options": {
+                "A": "Beynəlxalq təcrübədən",
+                "B": "Qanunvericilik bazasının təkmil olmasından",
+                "C": "Xüsusi heyətin peşəkarlığından",
+                "D": "Strateji tərəfdaşın düzgün seçilməsindən",
+                "E": "Ölkə başçısının risk etmək qabiliyyətindən"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 99,
+            "question": "“Kommersiya sirri” haqqında qanun nə vaxt qəbul edilmişdir?",
+            "options": {
+                "A": "2000",
+                "B": "1998",
+                "C": "1995",
+                "D": "2001",
+                "E": "1997"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 100,
+            "question": "Məhdud məsuliyyətli şirkətin çatışmazlığı nədən ibarətdir?",
+            "options": {
+                "A": "Vergi planlaşdırmasında mobillik",
+                "B": "Güclənmiş dövlət tənzimlənməsi",
+                "C": "Birdən çox insanın təcrübə və bacarığının birləşməsi",
+                "D": "Mülkiyyət hüququnun dəyişməsinin əlverişliliyi",
+                "E": "Səhmdarların məhdud məsuliyyəti"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 101,
+            "question": "Istehsal fəaliyyətinin miqyasına (həcminə) müvafiq olaraq sahibkarlığın formaları:",
+            "options": {
+                "A": "kollektiv",
+                "B": "xüsusi (fərdi)",
+                "C": "birgə",
+                "D": "kiçik, orta, iri",
+                "E": "ictimai (dövlət)"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 102,
+            "question": "Sahibkarların kifayət qədər peşəkarlıq hazırlığı olmaması nəyə səbəb olur?",
+            "options": {
+                "A": "Müvafiq biznes sahəsindəki tendensiyalara",
+                "B": "Sahənin demoqrafik xarakteristikasını dəyişdirməyə",
+                "C": "Sahənin iqtisadi xarakteristikasını dəyişdirməyə",
+                "D": "Biznes strategiyasını dəyişdirməyə",
+                "E": "kiçik firmanın intensiv müflisləşməsi və iflasa uğramasına"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 103,
+            "question": "Qiymətli kağızlar bazarı necə adlanır?",
+            "options": {
+                "A": "emissiya sistemi",
+                "B": "fond birjası",
+                "C": "hərrac",
+                "D": "yarmarka",
+                "E": "əmtəə birjası"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 104,
+            "question": "Sahibkarlıq fəaliyyəti ilə kimlər məşğul ola bilər?",
+            "options": {
+                "A": "bütün cavablar doğrudur",
+                "B": "yalnız fiziki şəxslər",
+                "C": "düzgün cavab yoxdur",
+                "D": "yalnız hüquqi şəxslər",
+                "E": "fiziki və hüquqi şəxslər"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 105,
+            "question": "Bazar konyukturası nə deməkdir ?",
+            "options": {
+                "A": "ticarət",
+                "B": "mal realizasiyasının sosial şəraiti",
+                "C": "təşkilati",
+                "D": "iqtisadi",
+                "E": "tələb-təklifin nisbətidir"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 106,
+            "question": "Kiçik biznesin inkişaf dinamikası hansı amillərdən asılıdır?",
+            "options": {
+                "A": "Iqtisadi artım tempindən",
+                "B": "Milli məhsulun strukturundan",
+                "C": "Sahibkarın fəaliyyətinin qiymətləndirilməsindən",
+                "D": "Milli məhsulun keyfiyyətindən",
+                "E": "Sahibkarın hazırlıq səviyyəsindən"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 107,
+            "question": "Aşağıdakılardan biri kiçik biznesin iri biznesdən fərqinə aid deyil:",
+            "options": {
+                "A": "Kiçik biznes biznesin miqyasına novlərindən biridir",
+                "B": "Kiçik biznesdə texniki təhlükəsizliyi məsələsi həll edilmir",
+                "C": "Kiçik biznesin subyektlərinin lazımi maliyyə vəsaiti və xüsusi sosial infrastrukturu olmur",
+                "D": "Kiçik biznesdə əməyin mühafizəsi həll edilmir",
+                "E": "İstehsal-texniki silahlanma səviyyəsi aşağı olur"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 108,
+            "question": "Öz müəssisəmiz üçün , bazarın boşluğunu tapmaq üçün ..... axtarıb tapmaq lazımdır",
+            "options": {
+                "A": "vəzifəli şəxsləri",
+                "B": "yüksək ixtisaslı işçiləri",
+                "C": "şəxsibacarıqların, meyllərin, ixtisasların praktik tətbiqini",
+                "D": "əmtəə və xidmət bazarında müştəriləri",
+                "E": "imkanlı şəxsləri"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 109,
+            "question": "Ticarət istehsalla istehlak arasında hansı rolu oynayır?",
+            "options": {
+                "A": "maddi-əşya",
+                "B": "istehlakçı",
+                "C": "vasitəçi",
+                "D": "istehsalçı",
+                "E": "satıcı"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 110,
+            "question": "Hüquqi cəhətdən müstəqil şirkətlərin holdinq şirkəti tərəfindən maliyyə nəzarəti əsasında birləşməsi necə adlanır?",
+            "options": {
+                "A": "kooperativ",
+                "B": "səhmdar cəmiyyəti",
+                "C": "ortaqlıq",
+                "D": "konqlomerat",
+                "E": "konsern"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 111,
+            "question": "Hansı ifadə səhvdir?",
+            "options": {
+                "A": "Relevant informasiya- konkret məsələ, şəxs, məqsəd, vaxta yığılan məlumat",
+                "B": "Cari informasiya-biznesin daxili və xrici mühiti haqqında məlumat",
+                "C": "Signal informasiya işgüzar və relevant üçün əsas ola bilər",
+                "D": "Cari informasiya- signal və məişət informasiyalarına bölünür",
+                "E": "İşgüzar informasiya- yekun, icmal, operativ informasiyalara bölünür"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 112,
+            "question": "Aşağıdakı hansı vergi növü dolayı vergiyə aid deyil?",
+            "options": {
+                "A": "aksizlər",
+                "B": "satışdan vergi",
+                "C": "gömrük rüsumları",
+                "D": "mənfəət vergisi",
+                "E": "əlavə dəyər vergisi"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 113,
+            "question": "Biznes növünə aid deyil?",
+            "options": {
+                "A": "istehsal",
+                "B": "maliyyə",
+                "C": "investisiya",
+                "D": "kommersiya",
+                "E": "informasiya"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 114,
+            "question": "Biznesin qiymətləndirilməsinə ağıdakılardan hansılar aiddir",
+            "options": {
+                "A": "Əmlakın obyektiv və düzgün qiymətləndirilməsi",
+                "B": "Alqı-satqı əməliyyatları",
+                "C": "gələcəkdə müəssisənin gəlir almasına imkan verən mülkiyyət huququnun texnologiyası",
+                "D": "Vergi ödəmələrinin hesablanması",
+                "E": "Sığortalanma hesablanması"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 115,
+            "question": "Kollektiv mülkiyyətin hansı forması xüsusi mülkiyyətin cəhətlərə malikdir?",
+            "options": {
+                "A": "kooperativ mülkiyyət",
+                "B": "səhmdar cəmiyyətinin mülkiyyəti",
+                "C": "bu mülkiyyət formalarının heç biri ümumi cəhətə malik deyil",
+                "D": "məhdud məsuliyyətli yoldaşlıq mülkiyyəti",
+                "E": "tam yoldaşlıq mülkiyyəti"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 116,
+            "question": "Aşağıdakılardan hansı biznes fəaliyyəti subyektləri üçün təhlükənin mənbələrindən biri deyil?",
+            "options": {
+                "A": "Kriminal zorakılıq",
+                "B": "Sənaye cəsusluğu",
+                "C": "Imkansız tərəfdaşların fəaliyyəti",
+                "D": "Mümkün risklərin təhlili",
+                "E": "Xüsusi heyətin aşağı peşəkarlığı"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 117,
+            "question": "İnfоrmаsiyаyа hаnsı məlуmаtlаr аid еdilir?",
+            "options": {
+                "A": "mаtеriyа, prоsеs, yеnilik, innоvаsiyа, insаn",
+                "B": "fаkt, prоsеs, siqnаl, təhlil, dərkеtmə",
+                "C": "hаdisə, qаnun, еmаl",
+                "D": "əşyа, şəхs, fаkt, hаdisə, prоsеs",
+                "E": "şəхs, insаn, bilik, еlm, tехnikа"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 118,
+            "question": "Aşağıdakılardan biri informasiya texnologiyalarının 5 əsas istiqamətindən biri deyil?",
+            "options": {
+                "A": "Texnologiyalar ilə eksperimentlər",
+                "B": "Konvergensiya",
+                "C": "Qarşılıqlı fəaliyyətin mümkünlüyü",
+                "D": "Qloballaşma",
+                "E": "Aralıq halqaların ləğv edilməsi"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 119,
+            "question": "Dахili infоrmаsiyа аşаьğdаkılаrdаn hаnsılаrı əhаtə еdir?",
+            "options": {
+                "A": "Gəlir,mənfəət,zərər,istehsal xərcləri,məhsulun miqdarı,texnologiya",
+                "B": "tехnоlоgiyа, fоndvеrimi, ərаzi, rəqib, idаrəеtmə sistеmi, istеhlаkçılаr",
+                "C": "zərər, pаtеnt, lisеnziyа, kеyfiyyət, kаdrlаr, hаzır məhsul",
+                "D": "mənfəət, tədаrükçü, rəqib, kеyfiyyət, istеhlаkçı, müəssisə",
+                "E": "istеhsаl хərcləri, sех, хаmmаl, müştəri, bаlаns, istеhsаl hеyyəti"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 120,
+            "question": "Hansı məlumatlar daxili informasiyaya aid deyil?",
+            "options": {
+                "A": "firmanın texnologiya, avadanlığı haqqında",
+                "B": "istehsal edilən məhsulun miqdarı və keyfiyyəti haqqında",
+                "C": "dövriyyə, sifarişlərin statistikası",
+                "D": "ölkənin iqtisadi vəziyyəti haqqında",
+                "E": "gəlir və xərclər haqqında"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 121,
+            "question": "Daxili biznes-informasiya məlumatlarınа malikdir?",
+            "options": {
+                "A": "ölkə,bölgənin iqtisadi vəziyyəti haqqında",
+                "B": "istehlakçılar,təchizatçılar haqqında",
+                "C": "müvafiq sahədə nou-hau,patent, lisenziyalar haqqında",
+                "D": "rəqiblər haqqında",
+                "E": "İstehsalın xərcləri haqqında"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 122,
+            "question": "Etibarlı informasiya nəyə deyilir?",
+            "options": {
+                "A": "Sahibinin şəxsləri ilə və yalnız onun istəyi ilə yayılmış biznes informasiyası",
+                "B": "Dövlətdən alınan informasiya",
+                "C": "İnternetdən alınan informasiya",
+                "D": "İctimaiyyətdən alınan məlumat",
+                "E": "Kitablardan alınan məlumat"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 123,
+            "question": "Effektivlik nədir?",
+            "options": {
+                "A": "Xərc və gəlirin nisbəti",
+                "B": "Müəssisənin firma üslubu",
+                "C": "Maya dəyərinin nəticəsi",
+                "D": "Işgüzar reputasiya və maya dəyərinin nisbəti",
+                "E": "Işgüzar reputasiya"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 124,
+            "question": "Miqyasına görə aşağıdakılardan hansı sahibkarlığa aid deyil?",
+            "options": {
+                "A": "böyük",
+                "B": "ən böyük",
+                "C": "kiçik",
+                "D": "ən kiçk",
+                "E": "orta"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 125,
+            "question": "Sahibkarlıq fəaliyyəti nədir",
+            "options": {
+                "A": "nəticəsi cəmiyyətin inkişafına səbəb olan fəaliyyətdir",
+                "B": "pul qazanmaq üçün həyata keçirilən fəaliyyətdir",
+                "C": "iqtisadi fəaliyyətdir",
+                "D": "nəticəsi iqtisadi fayda, şəxsi məmuniyyət yaxud sosial fayda olan, riskə əsaslanan təşəbbüskarlıq fəaliyyətidir",
+                "E": "nəticəsi böyük məbləğdə kapitala çevrilən qərardır"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 126,
+            "question": "Aşağıdakılardan biri biznesin təşkili mərhələsi deyil:",
+            "options": {
+                "A": "Fəaliyyət strategiyasının işlənilməsi",
+                "B": "biznes planın işlənib hazırlanması",
+                "C": "Layihənin reallaşdırılması",
+                "D": "Yeni ideyanın axtarışı",
+                "E": "Maliyyə planının tərtib edilməsi"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 127,
+            "question": "Biznes konsepsiyasını işləyib hazırlayarkən müəssisələrin fəaliyyətinin əsas xəttini nədən başlamaq lazımdır?",
+            "options": {
+                "A": "İstehlakçıların arzularından",
+                "B": "Istehsalçıların istəklərindən",
+                "C": "Gələcək planlardan",
+                "D": "Marketinq tədqiqatından",
+                "E": "Elmi araşdırmadan"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 128,
+            "question": "Aşağıdakılrardan hansı istehsal amillərinə aid deyildir?",
+            "options": {
+                "A": "Sahibkarlıq təşəbüskarlığı.",
+                "B": "Torpaq.",
+                "C": "Əmək.",
+                "D": "Kapital.",
+                "E": "Əmək haqqı."
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 129,
+            "question": "Biznesin konsepsiyası müəyyən amillərlə şərtlənir. Aşağıdakılardan hansı bu amillərdən biri deyil?",
+            "options": {
+                "A": "Istehlakçıların məcmusu ilə",
+                "B": "Məhsulun kəmiyyət və keyfiyyət ilə",
+                "C": "Firmanın rəqabət üstünlükləri ilə",
+                "D": "Tələbatın ödənilməsi ilə",
+                "E": "Buraxılmış məhsul ilə"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 130,
+            "question": "Biznesin qiymətləndirilməsi hüquqi şəxs kimi nəyi ifadə edir?",
+            "options": {
+                "A": "Texnologiyalara tələbat",
+                "B": "Müəssisənin dəyərinin müəyyənləşdirilməsi",
+                "C": "Hüquqi şəxslərdən əmlak vergisinin tutulmasını",
+                "D": "Material və qeyri maddi aktivlərin satışını",
+                "E": "Fiziki şəxslərdən əmlak vergisinin tutulmasını"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 131,
+            "question": "Insan fəaliyyətinə müsbət təsir vasitəsi necə adlanır?",
+            "options": {
+                "A": "Motivasiya",
+                "B": "optimallaşma",
+                "C": "konsepsiya",
+                "D": "missiya",
+                "E": "strateqiya"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 132,
+            "question": "Teylor nəyi əsas stimul kimi görürdü?",
+            "options": {
+                "A": "Xidmətdə irəliləyişi",
+                "B": "İşdə müvəffəqiyyəti",
+                "C": "Sosial statusu",
+                "D": "Məsuliyyət dərəcəsini",
+                "E": "Əmək haqqını"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 133,
+            "question": "Bu mülkiyyət formaları xüsusi mülkiyyətin bir qolu kimi təzahür edirlər:",
+            "options": {
+                "A": "fərdi və xüsusi",
+                "B": "xüsusi və kooperativ",
+                "C": "xüsusi və şəxsi",
+                "D": "şəxsi və fərdi",
+                "E": "xüsusi və birgə"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 134,
+            "question": "Biznesdə risk nə ilə əlaqədardır?",
+            "options": {
+                "A": "müştəriyə diqqət",
+                "B": "əsaslanmış riskli fəaliyyət",
+                "C": "məsuliyyət",
+                "D": "İqtisadiyyatın vəziyyəti",
+                "E": "özünə inam"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 135,
+            "question": "Biznesdə informasiya dedikdə hansı obyektlərə yönəlmiş məlumat nəzərdə tutulmur?",
+            "options": {
+                "A": "Prosesə",
+                "B": "Məqsədlərə",
+                "C": "Zamana",
+                "D": "Situasiyalara",
+                "E": "Adamlara"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 136,
+            "question": "Nə üçün qapalı səhmdar cəmiyyətləri müvəqqəti xarakter daşıyır?",
+            "options": {
+                "A": "Cəmiyyətin səhmləri yalnız onun təsisçiləri arasında bölüşdürülür",
+                "B": "Səhmlər əvvəlcədən məhduddur",
+                "C": "Bu cəmiyyətdə istehsalın texniki silahlanma səviyyəsi aşağı olur",
+                "D": "Bu cəmiyyətin çoxlu pozitiv cəhətləri var",
+                "E": "Bu cəmiyyətin çoxlu neqativ cəhətləri var"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 137,
+            "question": "Aşağıdakılardan hansı səhmdar cəmiyyətin ali idarəetmə orqanıdır?",
+            "options": {
+                "A": "Səhmdarların ümumi yığıncağı",
+                "B": "Cəmiyyətin vəzifəli şəxsləri",
+                "C": "Mühasibatlığı",
+                "D": "Müşahidə şurası",
+                "E": "Maliyyə-təftiş komissiyası"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 138,
+            "question": "Səhmdar cəmiyyətin yaradılmasında dövlət müəssisəsi iştirak etdikdə hansı qurumun rəyi olmalıdır?",
+            "options": {
+                "A": "Milli Bank",
+                "B": "Vergi Nazirliyi",
+                "C": "Maliyyə nazirliyi",
+                "D": "İqtisadi İnkişaf Nazirliyi",
+                "E": "Milli Məclis"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 139,
+            "question": "Qiymətli kağızlar və xarici valyuta qiymıtlərinin müəyyən edilməsi necə adlanır?",
+            "options": {
+                "A": "kreditor",
+                "B": "kulisa",
+                "C": "məzənnə",
+                "D": "əmsal",
+                "E": "korrupsiya"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 140,
+            "question": "Səhmdar cəmiyyəti neçə şəxs tərəfindən yaradıla bilər?",
+            "options": {
+                "A": "Azı beş fiziki şəxs",
+                "B": "Azı iki fiziki və ya hüquqi şəxs",
+                "C": "Azı dörd fiziki şəxs",
+                "D": "Azı bir şərik və payçı",
+                "E": "Azı iki fiziki və ya hüquqi şəxs"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 141,
+            "question": "Sahibkarlıq fəaliyyəti nəyə əsaslanır?",
+            "options": {
+                "A": "Müxtəlif mülkiyyət formalarına",
+                "B": "Hüquqi formalara",
+                "C": "Ümumdövlət proqramlarına",
+                "D": "Təşkilati-hüquqi formalara",
+                "E": "Qarşılıqlı fəaliyyətə"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 142,
+            "question": "Dövlət strukturlarının biznesin subyekti kimi işgüzar marağı nədir?",
+            "options": {
+                "A": "Iqtisadi artım tempinə, məhsulun keyfiyyətinə təsir göstərmək",
+                "B": "Gəlir əldə etmək",
+                "C": "Tələbatın ödənilməsi",
+                "D": "Ümumdövlət proqramlarının həyata keçirilməi",
+                "E": "Qarşılıqlı fəaliyyət əsasında gəlir götürmək"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 143,
+            "question": "Dövlət xərcləri və vergi ilə bağlı tənzimləmə sistemi:",
+            "options": {
+                "A": "fiskal siyasət",
+                "B": "maliyyə siyasəti",
+                "C": "dövlət siyasəti",
+                "D": "pul​kredit siyasəti",
+                "E": "iqtisadi tənzimləmə siyasəti"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 144,
+            "question": "Kiçik sahibkarlıq subyektlərinə dövlət tərəfindən xüsusi münasibət göstərilir. Bu aşağıdakılardan hansıdır?",
+            "options": {
+                "A": "Risklərin ekspert qiymətləndirilməsini həyata keçirir",
+                "B": "Tərəflərin güclü cəhətlərini müəyyənləşdirmə",
+                "C": "Ümumi fonddan vəsait ayırma",
+                "D": "Tərəflərin zəif cəhətlərini müəyyənləşdirmə",
+                "E": "Dövlət neft fondundan vəsait ayırma"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 145,
+            "question": "İnfrastrukturların yaradılması kiçik sahibkarlıq subyektlərinə aşağıdakı xidmətləri göstərməlidir. Ağağıdakılardan biri buna aid deyil:",
+            "options": {
+                "A": "texnoloji-texniki",
+                "B": "Maliyyə",
+                "C": "Marketinq",
+                "D": "menecment",
+                "E": "İnformasiya"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 146,
+            "question": "Sahibkarlıq kapitalı dedikdə nə nəzərdə tutulur",
+            "options": {
+                "A": "Əsas kapital",
+                "B": "Dövriyyə kapitalı",
+                "C": "Bütün bəndlər",
+                "D": "Dövriyyə vəsaitləri",
+                "E": "İntelektual mülkiyyət"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 147,
+            "question": "Aşağıdakılardan hansı müasir dövrün ən vacib və aktual problemlərindən biridir?",
+            "options": {
+                "A": "Biznes infrastrukturunun formalaşması və inkişafı",
+                "B": "Biznes infrastrukturunun geniş tədbiq olunması",
+                "C": "Xidmətlər bazarının daha dərin öyrənilməsi",
+                "D": "Bazar infrastrukturunun təsnifləşdirilməsi",
+                "E": "Əmtəə bazarının daha dərin öyrənilməsi"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 148,
+            "question": "Fond birjası iştirakçılarına aid deyil?",
+            "options": {
+                "A": "makler",
+                "B": "aqent",
+                "C": "diler",
+                "D": "broker",
+                "E": "menecer"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 149,
+            "question": "Kiçik firmaların xüsusiyyətlərinə aid deyil:",
+            "options": {
+                "A": "bazarda dəyişən şəraitə tez uyğunlaşırlar",
+                "B": "öz sahələrində liderdirlər",
+                "C": "onlarda idarəetmə xərcləri aşağıdır",
+                "D": "kiçik firmalar heç bir xüsusiyyətə malik deyil",
+                "E": "çoxsaylıdırlar"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 150,
+            "question": "Qeyd edilənlərdən hansı biznes infrastrukturuna aid edilmir?",
+            "options": {
+                "A": "ictimai təşkilatlar",
+                "B": "konsaltinq şirkətləri",
+                "C": "maliyyə bazarı",
+                "D": "innovasiya bazarı",
+                "E": "sığorta şirkətləri"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 151,
+            "question": "Bir ölkənin pul vahidini digər ölkənin pul vahidində əks etdirən qiymət necə adlanır?",
+            "options": {
+                "A": "valyuta kursu",
+                "B": "valyuta klirinqi",
+                "C": "devalvasiya",
+                "D": "qiymət yaradılması",
+                "E": "marja"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 152,
+            "question": "Aşağıdakılardan hansı sahibkarlığın tənzimlənməsi prinsiplərinə aid deyil?",
+            "options": {
+                "A": "sahibkarlığın idarə edilməsində sistemlilik",
+                "B": "proteksionizm (himayəçilik)",
+                "C": "sahibkarlığın idarə edilməsində vəhdətlilik",
+                "D": "məqsəd və vəzifələrin real məhdudiyyətlərə uyğunluğu",
+                "E": "idarərtmədə inzibatçılığa üstünlük verilməsi"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 153,
+            "question": "Təbii –coğrafi mühit deyəndə nə başa düşülür:",
+            "options": {
+                "A": "Ekoloji vəziyyət",
+                "B": "Sosial mədəni mühit",
+                "C": "Biznesin uğurlu aparılacağı konkret ölkə",
+                "D": "Biznesin fəaliyyəti üçün yararlı olan işgüzar fəaliyyət",
+                "E": "Biznesin həyata keçirildiyi təbii şərait və ekoloji vəziyyət"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 154,
+            "question": "Sahibkarlıq mühitinin iqtisadi şərtlərinə daxil deyil:",
+            "options": {
+                "A": "İqtisadi əlaqələrin bazar tiplərinin çoxluğu",
+                "B": "Dövlət inhisarı;",
+                "C": "Iqtisadi sərbəstliyin dərəcəsi;",
+                "D": "Sahibkarlığın kütləvi surətdə yayaılması",
+                "E": "Sahibkarlıq kapitalının əlçatan olması"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 155,
+            "question": "Aşağıdakılardan hansı ehtiyat bazarlarına aid deyil?",
+            "options": {
+                "A": "Torpaq",
+                "B": "İnformasiya",
+                "C": "İnnovasiya",
+                "D": "Əmək",
+                "E": "Kapital"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 156,
+            "question": "Aşağıdakılardan hansı dəyişən daxili makroiqtisadi amillərdən biri deyil ?",
+            "options": {
+                "A": "Kapital qoyuluşu",
+                "B": "İşsizlik",
+                "C": "Vergitutmanın səviyyəsi",
+                "D": "Valyuta məzənnələri",
+                "E": "İnflyasiya"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 157,
+            "question": "Aşağıdakılardan hansı dəyişən daxili makroiqtisadi amillərdən biridir?",
+            "options": {
+                "A": "İnflyasiya",
+                "B": "Mal və kapitalın idxalı",
+                "C": "Valyuta məzənnələri",
+                "D": "Xarici ticarət",
+                "E": "Dünya bazarındakı konyuktura"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 158,
+            "question": "Daxili informasiya aşağıdakı məlumatı əhatə edir:",
+            "options": {
+                "A": "Istehsal xərcləri haqqında",
+                "B": "Texnologiya haqqında",
+                "C": "Mənfəət və zərər haqqında",
+                "D": "Məhsulun keyfiyyəti haqqında",
+                "E": "Lisenziya haqqında"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 159,
+            "question": "Ilk dəfə iqtisadi nəzəriyyəyə sahibkarlıq anlayışını kim gətirmişdir?",
+            "options": {
+                "A": "C.Keyns",
+                "B": "J.B.Sey",
+                "C": "D.Rikardo",
+                "D": "R.Kantilyon",
+                "E": "A.Smit"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 160,
+            "question": "Müəssisənin maliyyə itkilərinin baş verməsi ehtimalı:",
+            "options": {
+                "A": "sahibkar mənfəəti",
+                "B": "rentabellik",
+                "C": "qeyri​rentabellik",
+                "D": "sahibkar zərəri",
+                "E": "sahibkarlıq riski"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 161,
+            "question": "İdarəеtmə sistеmi əsasən hansı prinsiplərə əsalanır?",
+            "options": {
+                "A": "sistеmlik və komplеkslik prinsipinə",
+                "B": "rəhbərlik prinsipinə",
+                "C": "normativ prinsipə",
+                "D": "proqnoz prinsipinə",
+                "E": "plan prinsipinə"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 162,
+            "question": "Kiçik sahibkarlığın dövlət müdafiəsi istiqaməti deyildir:",
+            "options": {
+                "A": "kiçik sahibkarlığın inkişafı və müdafiəsi infrastrukturunun formalaşdırılması",
+                "B": "kiçik sahibkarlıq subyektlərinin xarici iqtisadi əlaqələrinin müdafiə olunması",
+                "C": "kiçik müəssisələr üçün kadr hazırlığı",
+                "D": "kredit şərtlərinin sərtləşdirilməsi",
+                "E": "kiçik müəssisələr üçün kadrların yenidən hazırlığı və təkmilləşdirilməsinin həyata keçirilməsi"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 163,
+            "question": "İqtisadi sistem aşağıdakı məsələləri həll edir:",
+            "options": {
+                "A": "işsizliyin və inflyasiyanın səbəsi nədən ibarətdir",
+                "B": "nə vaxt, niyə, harada və kim",
+                "C": "nə, necə, kimin üçün",
+                "D": "nə, harada, kimin üçün",
+                "E": "niyə, harada, nə vaxt"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 164,
+            "question": "Hansı amillər bazar təklifini daha yaxşı stimullaşdırır?",
+            "options": {
+                "A": "əmtəələrin çatışmazlığı",
+                "B": "əmtəələrin bolluğu",
+                "C": "yüksək qiymətlər",
+                "D": "istehsal imkanları",
+                "E": "aşağı qiymətlər"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 165,
+            "question": "Qiymət nəyə deyilir?",
+            "options": {
+                "A": "əmtəənin maya dəyərinin pulla ifadəsinə",
+                "B": "satıcının öz əmtəəsi üçün tələb etdiyi pulun məbləğinə",
+                "C": "əmtəə dəyərinin pulla ifadəsinə",
+                "D": "alıcının əmtəə üçün təklif etdiyi pulun məbləğinə",
+                "E": "bütün xərclərin cəminə"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 166,
+            "question": "Firma haqqında ənənəvi nəzəriyyə:",
+            "options": {
+                "A": "mеnеcеr nəzəriyyəsi",
+                "B": "firmanın fəaliyyətinin idarə еdilməsi",
+                "C": "mənfəətin maksimumlaşdırılması",
+                "D": "son faydalılıq nəzəriyyəsi",
+                "E": "son hədd xərcləri nəzəriyyəsi"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 167,
+            "question": "Sahibkarlıq ideyasının mənbəyinə daxil edilmir",
+            "options": {
+                "A": "İstehsal olunan məhsulun yeni istifadə sahəsinin üzrə çıxarılması",
+                "B": "Satıcıların ödənilən təlabatları",
+                "C": "Elm və texnikanın yeni nailiyyətləri",
+                "D": "İctimai istehsalda “struktur” boşluqlar",
+                "E": "Alıcıların dərk olunmamış təlabatları"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 168,
+            "question": "Istehsal amilləri üzrə gəlirlər:",
+            "options": {
+                "A": "əmək, kapital, renta",
+                "B": "kapital, əmək, sahibkar gəliri",
+                "C": "kapital, mənfəət, renta",
+                "D": "əmək haqqı, renta, mənfəət (faiz), sahibkar gəliri",
+                "E": "sahibkar gəliri, faiz"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 169,
+            "question": "Aşağıdakılardan hansı kreditin mənbəyinə aid deyil?",
+            "options": {
+                "A": "amortizasiya yığımları",
+                "B": "müəssisələrin hesablaşma hesabındakı vəsait",
+                "C": "əhalinin gəlirləri və yığımları",
+                "D": "büdcə sisteminin vəsaitləri",
+                "E": "hamısı aiddir"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 170,
+            "question": "İnnovasiya nədir?",
+            "options": {
+                "A": "Yeni məhsulların ixtirasıdır.",
+                "B": "Elmi​texniki iqtisadi​təşkilati,istehsal və digər həllərin ilk praktik tətbiqidir.",
+                "C": "Fundamental tətqiqatların uğurlu nəticəsidir",
+                "D": "Elmi​texnoloji yenilik",
+                "E": "Idarəetmə yeniliyi"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 171,
+            "question": "Verginin əsas funksiyası hansıdır?",
+            "options": {
+                "A": "birbaşa",
+                "B": "iqtisadi və dolayı",
+                "C": "iqtisadi",
+                "D": "dolayı",
+                "E": "fiskal"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 172,
+            "question": "Onların reallaşdırılması, adətən, ağrısız ötüşmür. Lakin o da həqiqətdir ki, bu tədbirlər sistemi artım strategiyası kimi firmanın inkişafına yönəlmişdir. Söhbət hansı strategiyadan gedir?",
+            "options": {
+                "A": "Hücum strategiyası",
+                "B": "Aşağı istehsal xərcləri strategiyası",
+                "C": "Biznes növünün dəyişilməsi strategiyası",
+                "D": "Bazarın inkişaf strategiyası",
+                "E": "Müdafiə strategiyası"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 173,
+            "question": "Müəssisə nə vaxt ənənəvi strategiyanı seçməlidir?",
+            "options": {
+                "A": "Firmanın fəaliyyət sferasını genişləndirərsə",
+                "B": "Xidmətin növünü dəyişərsə",
+                "C": "Firmanın fəaliyyətinin dəyişdirilməsi",
+                "D": "Əmtəənin çeşidini dəyişərsə",
+                "E": "Bazara təklif etdiyi məhsulların keyfiyyətini yaxşılaşdırmağa çalışırsa"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 174,
+            "question": "Kommersiya biznesinin fəaliyyət sahəsini göstərin",
+            "options": {
+                "A": "Kommersiya bankları, ticarət təşkilatları",
+                "B": "Əmtəə birjaları, ticarət təşkilarları",
+                "C": "Mal birjaları, kommersiya fondları",
+                "D": "Maliyyə və əmtəə birjaları",
+                "E": "Maliyyə birjaları və ticarət təşkilatları"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 175,
+            "question": "Fəaliyyətin konkret növləri ancaq xüsusi ... əsasında həyata keçirə bilər",
+            "options": {
+                "A": "tapşırıq",
+                "B": "razılıq (lisenziya)",
+                "C": "sifariş",
+                "D": "icazə və təyinat",
+                "E": "hesablar"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 176,
+            "question": "Sahibkarlıq fəaliyyəti üçün xüsusi əhəmiyyət kəsb edir:",
+            "options": {
+                "A": "İqtisadi risklər",
+                "B": "Siyasi sabitlik",
+                "C": "Rəqiblər",
+                "D": "Xaricdə investisiya əldə etmək",
+                "E": "Həmkarlar ittifaqları"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 177,
+            "question": "Bunlardan hansı strategiyanın seçilməsində vacib amil deyil?",
+            "options": {
+                "A": "İşçilərin ixtisas səviyyəsi",
+                "B": "Kapitalın dövr etməsi",
+                "C": "Vaxt amili",
+                "D": "Sahənin güclü tərəfləri",
+                "E": "Firmanın maliyyə resursları"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 178,
+            "question": "Əgər əmtəənin qiyməti tələb və təklif əyrilərinin kəsişmə nöqtəsindən yüksəkdirsə, onda:",
+            "options": {
+                "A": "həç nə baş verməz",
+                "B": "əmtəə defisiti meydana çıxar",
+                "C": "tələbin həcmi artar",
+                "D": "təklifin həcmi azalar",
+                "E": "əmtəə artıqlığı əmələ gələr"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 179,
+            "question": "Strateji planlaşdırmanın əsas funksiyalarına aid deyil:",
+            "options": {
+                "A": "müəssisənin əsas problemlərini özündə əks etdirir;",
+                "B": "müxtəlif dövrlərdə müəssisənin fəaliyyətinə ahənglik və daxili birlik gətirir.",
+                "C": "Marketinq tədqiqatlarının aparılması",
+                "D": "planlaşdırmanın digər növləri ilə müqayisədə daha uzunmüddətlidir;",
+                "E": "daha detal planlaşdırma və cari qərarların qəbulu üçün çərçivə yaradır;"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 180,
+            "question": "Orta firmaların davranışının xüsusiyyəti nədən ibarətdir?",
+            "options": {
+                "A": "onlar yalnız xidmətlər sahəsində işləyirlər",
+                "B": "onlar bazarın iri firmalar tərəfindən tutulmamış seqmentlərini (\"taxçalar\"ını) tuturlar",
+                "C": "onlar həmişə gəlirlə işləyirlər",
+                "D": "onlar çox nadir hallarda müflisləşirlər",
+                "E": "orta firmaların heç bir xüsusiyyəti yoxdur"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 181,
+            "question": "Səhmdar şirkətlərinin əsas fərqi nədən ibarətdir?",
+            "options": {
+                "A": "səhmdar şirkətlər həmişə effektiv işləyir",
+                "B": "səhmdar şirkətlər yalnız xalis bazar iqtisadiyyatı şəraitində fəaliyyət göstərirlər",
+                "C": "onlar böyük müəssisələrdir",
+                "D": "onlar dövlət mülkiyyət formalı firmalardır",
+                "E": "onlar öz kapitalını səhmlər buraxılması yolu ilə formalaşdırırlar"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 182,
+            "question": "Bir sahibə aid olan, bir​birindən asılı olmayan iqtisadi siyasət yürüdən, hüquqi cəhətdən müstəqil şirkətlər qrupu necə adlanır?",
+            "options": {
+                "A": "kooperativ",
+                "B": "səhmdar cəmiyyəti",
+                "C": "konsern",
+                "D": "konqlomerat",
+                "E": "ortaqlıq"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 183,
+            "question": "Sahibkarlıq fəaliyyətinin əsas şərti nədir?",
+            "options": {
+                "A": "Bazar rəqabəti.",
+                "B": "Resursların bolluğu.",
+                "C": "Dövlət mülkiyyətinin xüsusi çəkisinin yüksək olması.",
+                "D": "İqtisadi azadlıq.",
+                "E": "İqtisadiyyatın dövlət tənzimlənməsi."
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 184,
+            "question": "Aşağıdakılrardan hansı istehsal amillərinə aiddir?",
+            "options": {
+                "A": "Mənfəət",
+                "B": "Əmək",
+                "C": "Gəlir vergisi",
+                "D": "Faiz",
+                "E": "Əmək haqqı"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 185,
+            "question": "Digər bərabər şərtlər çərçivəsində iş qüvvəsinin miqrasiyası nəticəsində kim daha çox yararlanır?",
+            "options": {
+                "A": "Emiqrasiya ölkəsinin sahibkarları",
+                "B": "Qəbul edən tərəfin sahibkarları",
+                "C": "Emiqrasiya etdikləri ölkədə qalan fəhlələr və qəbul edən tərəfin sahibkarları",
+                "D": "Emiqrasiya etdikləri ölkədı qalan fəhlələr və qəbul edən tərəfin fəhlələri",
+                "E": "Emiqrasiya ölkəsinin sahibkarları və qəbul edən tərəfin fəhlələri"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 186,
+            "question": "Bazar iqtisadiyyatının dövlət tənzimlənməsi prinsiplərinə aid deyildir:",
+            "options": {
+                "A": "ümumi böhran şəraitində dövlətin iqtisadiyyata müdaxiləsi",
+                "B": "idxal və ixracın məhdudlaşdırılması",
+                "C": "dövlət sahibkarlığının xüsusi sahibkarlığa köməyi",
+                "D": "iqtisadiyyatın bazar təşkili",
+                "E": "dövlət maliyyə, kredit və vergi siyasətinin iqtisadi artıma və sosial sabitliyə səbəb olması"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 187,
+            "question": "Dövlətin kiçik və orta sahibkarlığın inkişafı ilə bağlı məqsədlərinə daxil deyildir:",
+            "options": {
+                "A": "rəqabətin inkişaf etdirilməsi",
+                "B": "vətəndaşlar üçün şansların bərabərləşdirilməsi",
+                "C": "vergi dərəcələrinin yüksəldilməsi",
+                "D": "innovasiyaların müdafiəsi",
+                "E": "məşğulluq probleminin həllinə köməklik"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 188,
+            "question": "Sosial siyasətin başlıca istiqamətinə aid deyil?",
+            "options": {
+                "A": "Xüsusi sahibkarlığın inkişafı",
+                "B": "Aztəminatlı əhali qruplarına dövlət təminatı",
+                "C": "Əhalinin səmərəli məşğulluğunun təmin olunması, gəlirlərin indeksləşdirilməsi",
+                "D": "Əmək haqqının istehlak səbətinə uyğunlaşdırılması",
+                "E": "Milli valyutanın alıcılıq qabiliyyətinin yüksəldilməsi"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 189,
+            "question": "Hansı risk sahibkarlıq fəaliyyətinə aid olan riskə aid deyil?",
+            "options": {
+                "A": "Qiymətli kağızların oğurlanması",
+                "B": "İşin layihədə nəzərdə tutulmuş vaxtından gec yerinə yetirilməsi",
+                "C": "Bazarda faiz dərəcəsinin tərəddüdü",
+                "D": "Bilavasitə layihədə nəzərdə tutulmayan xərclərlə bağlı",
+                "E": "İnsanların həyatına və sağlamlaşdırılmasına dəyən ziyan"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 190,
+            "question": "“Kiçik sahibkarlığa dövlət yardımı haqqında” Azərbaycan qanunu nçənci ildə qəbul edilmişdir ?",
+            "options": {
+                "A": "1999-cu ildə",
+                "B": "2000-ci ildə",
+                "C": "1998-ci ildə",
+                "D": "2001-ci ildə",
+                "E": "1997ci ildə"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 191,
+            "question": "Azərbaycan Respublikasında sahibkarlıq fəaliyyəti haqqında” qanun neçənci ildə qəbul edilmişdir ?",
+            "options": {
+                "A": "1994-cü ildə",
+                "B": "1992-ci ildə",
+                "C": "1995-ci ildə",
+                "D": "1991-ci ildə",
+                "E": "1993-cü ildə"
+            },
+            "correct_answer": "A"
+        },
+        {
+            "id": 192,
+            "question": "Keynsçi modelin reallaşdırılması istiqamətlərindən biridir:",
+            "options": {
+                "A": "Dövlət xərclərinin dondurulması",
+                "B": "Dövlət sahibkarlığının genişləndirilməsi",
+                "C": "Bazar konstruksiyasının nəzərə alınmaması",
+                "D": "Gəlirlərin dondurulması",
+                "E": "Faiz dərəcəsinin sabit saxlanması"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 193,
+            "question": "Sahibkarlığın sosial-mədəni mühitinin elementidir:",
+            "options": {
+                "A": "Infrastrukturun vəziyyəti",
+                "B": "Bank faizlərinin dərəcəsi",
+                "C": "Əhalinin təhsil səviyyəsi",
+                "D": "Qanunverici aktlar",
+                "E": "Coğrafi şərait"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 194,
+            "question": "Aşağıdakılardan hansı biznesin məqsədlərindən biridir?",
+            "options": {
+                "A": "bazarda qabaqcıl mövqeyə nail olmaq",
+                "B": "Doğru cavab yoxdur",
+                "C": "effektiv vergitutmanı tədbiq etmək",
+                "D": "mühafizə mexanizminin etibarlılığını artırmaq",
+                "E": "ixtiraçı və fəal olmaq"
+            },
+            "correct_answer": "C"
+        },
+        {
+            "id": 195,
+            "question": "Sahibkarlıqda iqtisadi mühit dedikdə nə başa düşülür?",
+            "options": {
+                "A": "Rəqiblərin xərcləyə biləcəkləri pul vəsaitləri",
+                "B": "İnvestorların xərcləyə biləcəkləri pul vəsaitləri",
+                "C": "Bütun variantlar",
+                "D": "Alıcıların xərcləyə biləcəkləri pul vəsaitinin kəmiyyəti",
+                "E": "Satıcıların maliyyə vəsaitlərinin kəmiyyəti"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 196,
+            "question": "Kim tərəfindən ilk dəfə yeniliklər anlayışı təklif edilmişdir?",
+            "options": {
+                "A": "T.Kemp",
+                "B": "K. Cons",
+                "C": "A.Robertson",
+                "D": "Y.Şumpeter",
+                "E": "A.Smit"
+            },
+            "correct_answer": "D"
+        },
+        {
+            "id": 197,
+            "question": "Qeyd edilənlərdən hansı təkrаr istehsal prosesinin forması deyil?",
+            "options": {
+                "A": "istehsal",
+                "B": "mal",
+                "C": "mübadilə",
+                "D": "bölgü",
+                "E": "istehlak"
+            },
+            "correct_answer": "B"
+        },
+        {
+            "id": 198,
+            "question": "İstehsalçı-sahibkarın fəaliyyətinin əsas (son) nəticəsi:",
+            "options": {
+                "A": "Balans mənfəəti",
+                "B": "Ümumi mənfəət",
+                "C": "Mənfəət əməliyyatı",
+                "D": "Dövriyyə mənfəəti",
+                "E": "Təmiz (qalıq) mənfəət"
+            },
+            "correct_answer": "E"
+        },
+        {
+            "id": 199,
+            "question": "Biznes nədir? Nəticəsi iqtisadi fayda, şəxsi məmuniyyət yaxud sosial fayda olan, riskə əsaslanan təşəbbüskarlıq fəaliyyətidir",
+            "options": {
+                "A": "İqtisadi fəaliyyətdir",
+                "B": "Nəticəsi böyük məbləğdə kapitala çevrilən qərardır",
+                "C": "İstehlakçıların tələbatının ödənilməsi və mənfəət alınması məqsədilə təşəbbüskar insanlar arasındakı işgüzar münasibətlərin",
+                "D": "məcmusudur",
+                "E": "Nəticəsi cəmiyyətin inkişafına səbəb olan fəaliyyətdir"
+            },
+            "correct_answer": "D"
+        }
+    ]
+}
