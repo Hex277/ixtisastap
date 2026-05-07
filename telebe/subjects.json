@@ -16,5 +16,11 @@
     "title": "Əqli mülkiyyətin əsasları",
     "icon": "⚖️",
     "count": 10
+  },
+  {
+    "id": "sahibkarliq-biznes",
+    "title": "Sahibkarlığın əsasları və biznesə giriş",
+    "icon": "💼",
+    "count": 10
   }
 ]
