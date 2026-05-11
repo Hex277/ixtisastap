@@ -26,7 +26,14 @@
         "title": "Əqli mülkiyyətin əsasları",
         "icon": "⚖️",
         "count": 10
+      },
+      {
+        "id": "landsaft-meliorasiyasi",
+        "title": "Landşaft meliorasiyası - Məhəmməd üçün yaradıldı!",
+        "icon": "💧",
+        "count": 10
       }
+      
     ]
   },
   "universities": {
