@@ -82,7 +82,7 @@
                 "D": "İddia sənədi yalnız iddiaçının özü və ya Agentlikdə qeydiyyata alınmış patent müvəkkili vasitəsilə elektron qaydada Agentliyə təqdim olunmalıdır",
                 "E": "İddia sənədi iddiaçının özü, onun səlahiyyətli nümayəndəsi və ya Agentlikdə qeydiyyata alınmış patent müvəkkili vasitəsilə elektron qaydada və ya birbaşa Agentliyə təqdim olunmalıdır"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 8,
@@ -370,7 +370,7 @@
                 "D": "ixtira",
                 "E": "əlaqəli hüquqlar"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 32,
@@ -479,7 +479,7 @@
                 "D": "Əmtəə nişanı müəyyən xüsusiyyətlərə malik əmtəələr üçün qeydiyata alına bilər",
                 "E": "Əmtəə nişanı 20 il qorunur və bu müddət sonsuz sayda uzadıla bilər"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 41,
@@ -515,7 +515,7 @@
                 "D": "Yaşıl çay",
                 "E": "Meyvita"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 44,
@@ -539,7 +539,7 @@
                 "D": "Madrid sazişi",
                 "E": "Nitsa sazişi"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 46,
@@ -648,7 +648,7 @@
                 "D": "Bildiriş",
                 "E": "Şəhadətnamə"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 55,
@@ -660,7 +660,7 @@
                 "D": "İncəsənət nümunələri",
                 "E": "Üsul və qurğular"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 56,
@@ -708,7 +708,7 @@
                 "D": "sənayedə istehsal edilən yeni dizaynlı məhsullar üçün istifadə edilir",
                 "E": "əczaçılıq məhsulları və qurğular üçün istifadə olunur"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 60,
@@ -744,7 +744,7 @@
                 "D": "25 il",
                 "E": "50 il"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 63,
@@ -768,7 +768,7 @@
                 "D": "zahiri görünüşü",
                 "E": "əmtəənin geniş tanınması"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 65,
@@ -828,7 +828,7 @@
                 "D": "Müqavilədə başqa hal qeyd olunmayıbsa müəllifə",
                 "E": "Heç birinə"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 70,
@@ -842,7 +842,7 @@
                 "H": "ququ (ad hüququ)",
                 "E": "əsərin müəllifi kimi tanınmaq hüququ (müəlliflik hüququ)"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 71,
@@ -867,7 +867,7 @@
                 "K": "mpüter şəbəkəsinə qoşulmuş istifadəçi kompüterin) yaddaşında saxlamaq",
                 "E": "qanuni sahibkarın kompüter proqramının itirilmiş, məhv edilmiş və ya istifadəyə yararsız formaya düşmüş nüsxəsinin dəyişdirilməsi və arxivləşdirilməsi üçün nəzərdə tutulmuş ehtiyat nüsxəni hazırlamaq"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 73,

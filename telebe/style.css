@@ -740,6 +740,24 @@ button {
 #bitme-tarixi {
     margin-right: 10px;
 }
+.registration-terms {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.registration-terms input[type="checkbox"] {
+    margin-top: 3px;
+    cursor: pointer;
+    width: 20px;
+}
+.registration-terms a {
+    text-decoration: none;
+    color: var(--main-color);
+
+}
 .giris-buttons {
     width: 100%;
     display: flex;
@@ -1218,7 +1236,22 @@ body.dark-theme #report img {
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     background-color: #1e8fff0c;
 }
+/* Animasiya üçün əlavə */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+.animate-card {
+    opacity: 0; /* Başlanğıcda gizli */
+    animation: fadeInUp 0.5s ease forwards;
+}
 /* Card Icon */
 .card-icon {
     width: 44px; height: 44px;
@@ -1382,7 +1415,7 @@ body.dark-theme #report img {
     justify-content: left;
     text-align: left;
     font-size: 15px;
-    padding: 12px 20px;
+    padding: 15px 20px;
 }
 .quiz-buttons-bg {
     display: flex;
@@ -1392,11 +1425,13 @@ body.dark-theme #report img {
     justify-content: right;
     background-color: var(--surface);
 }
+.quiz-buttons-bg button {
+    padding: 10px 20px;
+}
 #report {
     background-color: var(--surface);
     width: 30px;
     position: relative;
-    left: 10px;
 }
 #report:hover {
     transform: translateY(-1px);
@@ -1708,6 +1743,9 @@ button:disabled {
         width: 100%;
         text-align: center;
     }
+    .registration-terms input[type="checkbox"] {
+        width: 30px;
+    }
     .action-modal {
         width: 95%;
         box-sizing: border-box;
@@ -1753,7 +1791,9 @@ button:disabled {
     .stat-card {
         flex: 1 1 100%; /* Hər bir kart mobildə tam sətir tutsun (istəsən 48% edə bilərsən) */
     }
-
+    .sual-bg {
+        width: 100%;
+    }
     .leaderboard-table {
         font-size: 14px; /* Mobildə cədvəl sığsın deyə yazıları kiçildiririk */
     }

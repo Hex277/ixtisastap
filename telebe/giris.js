@@ -1,1 +1,339 @@
-const a0_0x5dc95b=a0_0x56d3;(function(_0x8a1b16,_0x3aec8e){const _0x30c0ca=a0_0x56d3,_0x276cb3=_0x8a1b16();while(!![]){try{const _0x141c97=parseInt(_0x30c0ca(0xdc))/0x1*(parseInt(_0x30c0ca(0x112))/0x2)+parseInt(_0x30c0ca(0x100))/0x3+-parseInt(_0x30c0ca(0x11b))/0x4+-parseInt(_0x30c0ca(0xf2))/0x5*(-parseInt(_0x30c0ca(0x12f))/0x6)+-parseInt(_0x30c0ca(0x119))/0x7*(parseInt(_0x30c0ca(0xf4))/0x8)+parseInt(_0x30c0ca(0x124))/0x9*(parseInt(_0x30c0ca(0x108))/0xa)+-parseInt(_0x30c0ca(0xde))/0xb;if(_0x141c97===_0x3aec8e)break;else _0x276cb3['push'](_0x276cb3['shift']());}catch(_0xadecda){_0x276cb3['push'](_0x276cb3['shift']());}}}(a0_0x1a59,0xeed0a));const a0_0x5a9a00=(function(){let _0x646b7a=!![];return function(_0x42b6ce,_0x4740ef){const _0x45bba5=_0x646b7a?function(){const _0x150c77=a0_0x56d3;if(_0x4740ef){const _0x59e4e2=_0x4740ef[_0x150c77(0xf7)](_0x42b6ce,arguments);return _0x4740ef=null,_0x59e4e2;}}:function(){};return _0x646b7a=![],_0x45bba5;};}()),a0_0x192ceb=a0_0x5a9a00(this,function(){const _0x54db78=a0_0x56d3;return a0_0x192ceb[_0x54db78(0xe8)]()[_0x54db78(0x12d)](_0x54db78(0x139))['toString']()[_0x54db78(0xea)](a0_0x192ceb)[_0x54db78(0x12d)](_0x54db78(0x139));});a0_0x192ceb();function a0_0x56d3(_0x1d3c45,_0x35da65){_0x1d3c45=_0x1d3c45-0xdb;const _0x23fd8e=a0_0x1a59();let _0x192ceb=_0x23fd8e[_0x1d3c45];return _0x192ceb;}const supabaseUrl=a0_0x5dc95b(0xe7),supabaseKey=a0_0x5dc95b(0x114);!window[a0_0x5dc95b(0xfd)]&&(window[a0_0x5dc95b(0xfd)]=window[a0_0x5dc95b(0x122)][a0_0x5dc95b(0x121)](supabaseUrl,supabaseKey));const supabaseClient=window['globalSupabaseClient'],emailInput=document['getElementById'](a0_0x5dc95b(0x113)),passwordInput=document[a0_0x5dc95b(0x12b)](a0_0x5dc95b(0x106)),actionBtn=document[a0_0x5dc95b(0x117)](a0_0x5dc95b(0xe5)),currentPath=window[a0_0x5dc95b(0xf3)][a0_0x5dc95b(0x130)],isRegisterPage=currentPath[a0_0x5dc95b(0x125)]('register.html');function a0_0x1a59(){const _0x2706a5=['location','8wByMrn','Zəhmət\x20olmasa\x20e-poçtunuzu\x20daxil\x20edin!','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Şifrəni\x20bərpa\x20et</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Hesabınızın\x20e-poçt\x20ünvanını\x20daxil\x20edin.\x20Sizə\x20təsdiq\x20kodu\x20göndəriləcək.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>E-poçt</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22email\x22\x20id=\x22resetEmailInput\x22\x20placeholder=\x22example@mail.com\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22sendOtpBtn\x22\x20onclick=\x22sendResetOtp()\x22>Kod\x20Göndər</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','apply','Xəta\x20baş\x20verdi:\x20','addEventListener','Yaradılır...','endsWith','display','globalSupabaseClient','Email\x20not\x20confirmed','Kod\x20Göndər','5862846RVieoj','message','showMessage','style','trim','Şifrəniz\x20uğurla\x20yeniləndi!\x20İndi\x20daxil\x20ola\x20bilərsiniz.','password','https://ixtisastap.com/telebe/tesdiq.html','340KvimiP','Profilə\x20keç','confirmBtn','Kod\x206\x20rəqəmli,\x20şifrə\x20isə\x20ən\x20azı\x206\x20simvol\x20olmalıdır!','cancelBtn','\x27)\x22>Şifrəni\x20Yenilə</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','</b>\x20ünvanına\x20göndərilən\x208\x20rəqəmli\x20kodu\x20və\x20yeni\x20şifrənizi\x20daxil\x20edin.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Təsdiq\x20Kodu\x20(OTP)</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22otpCodeInput\x22\x20placeholder=\x2212345678\x22\x20maxlength=\x228\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Yeni\x20Şifrə</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22password\x22\x20id=\x22finalNewPassword\x22\x20placeholder=\x22Ən\x20azı\x206\x20simvol\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22confirmResetBtn\x22\x20onclick=\x22verifyOtpAndChangePassword(\x27','body','recovery','messageText','119962IDGgkZ','email','sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN','getSession','Yenilənir...','querySelector','disabled','8846621iFctEk','login.html','1720216xlanur','resetPasswordForEmail','okBtn','otpCodeInput','profile.html','hidden','createClient','supabase','Şifrəni\x20Yenilə','479574NmcKVK','includes','Zəhmət\x20olmasa,\x20e-poçt\x20və\x20şifrəni\x20daxil\x20edin!','Qeydiyyat\x20uğurla\x20tamamlandı!\x20<b>','flex','updateUser','onclick','getElementById','name','search','actionModalContent','180Xseohk','pathname','inline-block','confirmResetBtn','Xəta:\x20','click','value','auth','overflow','none','(((.+)+)+)+$','textContent','20RWgfvn','openResetPasswordModal','39306223FsQKpz','innerHTML','finalNewPassword','Şifrə\x20ən\x20azı\x206\x20simvol\x20olmalıdır!','verifyOtpAndChangePassword','Şifrə\x20yenilənərkən\x20xəta:\x20','messageOverlay','.btn-login','href','https://xoebhhdirsvjorjlrfzi.supabase.co','toString','confirm','constructor','Daxil\x20ol','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Təsdiqləmə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<b>','sendOtpBtn','actionOverlay','signInWithPassword','length','resetEmailInput','213285oscNju'];a0_0x1a59=function(){return _0x2706a5;};return a0_0x1a59();}supabaseClient[a0_0x5dc95b(0x136)][a0_0x5dc95b(0x115)]()['then'](({data:{session:_0x4a5103}})=>{const _0x14e873=a0_0x5dc95b;_0x4a5103&&(window[_0x14e873(0xf3)]['href']=_0x14e873(0x11f));});actionBtn&&actionBtn[a0_0x5dc95b(0xf9)](a0_0x5dc95b(0x134),async()=>{const _0x1cd8ba=a0_0x5dc95b,_0x287999=emailInput?.[_0x1cd8ba(0x135)]['trim'](),_0x460c34=passwordInput?.[_0x1cd8ba(0x135)];if(!_0x287999||!_0x460c34){showMessage(_0x1cd8ba(0x126));return;}const _0x17fd34=actionBtn[_0x1cd8ba(0xdb)];actionBtn[_0x1cd8ba(0x118)]=!![];if(isRegisterPage){const _0x3e3f6d=document[_0x1cd8ba(0x12b)](_0x1cd8ba(0x12c)),_0x3d13b3=_0x3e3f6d?_0x3e3f6d[_0x1cd8ba(0x135)][_0x1cd8ba(0x104)]():'';if(!_0x3d13b3){showMessage('Zəhmət\x20olmasa,\x20adınızı\x20daxil\x20edin!'),actionBtn[_0x1cd8ba(0x118)]=![];return;}if(_0x460c34[_0x1cd8ba(0xf0)]<0x6){showMessage(_0x1cd8ba(0xe1)),actionBtn['disabled']=![];return;}actionBtn[_0x1cd8ba(0xdb)]=_0x1cd8ba(0xfa);const {data:_0x44b6a9,error:_0x553f87}=await supabaseClient[_0x1cd8ba(0x136)]['signUp']({'email':_0x287999,'password':_0x460c34,'options':{'data':{'full_name':_0x3d13b3,'is_premium':![]},'emailRedirectTo':_0x1cd8ba(0x107)}});_0x553f87?(showMessage(_0x1cd8ba(0xf8)+_0x553f87[_0x1cd8ba(0x101)]),actionBtn[_0x1cd8ba(0xdb)]=_0x17fd34,actionBtn[_0x1cd8ba(0x118)]=![]):(await showMessage(_0x1cd8ba(0x127)+_0x287999+'</b>\x20ünvanına\x20göndərilən\x20təsdiq\x20linkinə\x20klikləyərək\x20hesabınızı\x20aktivləşdirin.',_0x1cd8ba(0x102),_0x1cd8ba(0xeb)),window[_0x1cd8ba(0xf3)][_0x1cd8ba(0xe6)]=_0x1cd8ba(0x11a));}else{actionBtn[_0x1cd8ba(0xdb)]='Daxil\x20olunur';const {data:_0x4a314c,error:_0x3fdbfd}=await supabaseClient['auth'][_0x1cd8ba(0xef)]({'email':_0x287999,'password':_0x460c34});_0x3fdbfd?(_0x3fdbfd['message'][_0x1cd8ba(0x125)](_0x1cd8ba(0xfe))?showMessage('Hesabınıza\x20daxil\x20olmaq\x20üçün\x20əvvəlcə\x20e-poçtunuza\x20göndərilən\x20təsdiq\x20linkinə\x20klikləyin.'):showMessage('E-poçt\x20və\x20ya\x20şifrə\x20yanlışdır!'),actionBtn[_0x1cd8ba(0xdb)]=_0x17fd34,actionBtn[_0x1cd8ba(0x118)]=![]):(await showMessage('Uğurla\x20daxil\x20oldunuz!',_0x1cd8ba(0x102),_0x1cd8ba(0x109)),window[_0x1cd8ba(0xf3)][_0x1cd8ba(0xe6)]=_0x1cd8ba(0x11f));}});function showMessage(_0x2b67b4,_0x9513c6='showMessage',_0x2d783d='OK'){return new Promise(_0x29ee36=>{const _0x3c367f=a0_0x56d3,_0x28b257=document[_0x3c367f(0x12b)](_0x3c367f(0xe4)),_0x19644d=document[_0x3c367f(0x12b)](_0x3c367f(0x111)),_0x2f9468=document['getElementById'](_0x3c367f(0x11d)),_0x24b571=document[_0x3c367f(0x12b)](_0x3c367f(0x10a)),_0x4c700b=document[_0x3c367f(0x12b)](_0x3c367f(0x10c));if(!_0x28b257)return _0x29ee36(![]);_0x19644d['innerHTML']=_0x2b67b4,_0x28b257[_0x3c367f(0x103)][_0x3c367f(0xfc)]=_0x3c367f(0x128),_0x9513c6===_0x3c367f(0xe9)?(_0x2f9468[_0x3c367f(0x103)][_0x3c367f(0xfc)]=_0x3c367f(0x138),_0x24b571['style'][_0x3c367f(0xfc)]='inline-block',_0x4c700b[_0x3c367f(0x103)][_0x3c367f(0xfc)]=_0x3c367f(0x131),_0x24b571[_0x3c367f(0x12a)]=()=>{const _0x5022a6=_0x3c367f;_0x28b257[_0x5022a6(0x103)][_0x5022a6(0xfc)]='none',_0x29ee36(!![]);},_0x4c700b[_0x3c367f(0x12a)]=()=>{const _0x5d444e=_0x3c367f;_0x28b257[_0x5d444e(0x103)][_0x5d444e(0xfc)]='none',_0x29ee36(![]);}):(_0x2f9468['style']['display']='inline-block',_0x2f9468[_0x3c367f(0xdb)]=_0x2d783d,_0x24b571['style']['display']=_0x3c367f(0x138),_0x4c700b['style'][_0x3c367f(0xfc)]='none',_0x2f9468['onclick']=()=>{const _0x4ba327=_0x3c367f;_0x28b257[_0x4ba327(0x103)]['display']=_0x4ba327(0x138),_0x29ee36(!![]);});});}function openActionModal(_0x3b2903){const _0x497efc=a0_0x5dc95b,_0x1138b5=document[_0x497efc(0x12b)]('actionOverlay'),_0x31d664=document[_0x497efc(0x12b)](_0x497efc(0x12e));_0x1138b5&&_0x31d664&&(_0x31d664[_0x497efc(0xdf)]=_0x3b2903,_0x1138b5[_0x497efc(0x103)]['display']=_0x497efc(0x128),document[_0x497efc(0x10f)][_0x497efc(0x103)]['overflow']=_0x497efc(0x120));}function closeActionModal(){const _0xaf4641=a0_0x5dc95b,_0x16a0ab=document[_0xaf4641(0x12b)](_0xaf4641(0xee)),_0x11fb6c=document['getElementById']('actionModalContent');_0x16a0ab&&(_0x16a0ab[_0xaf4641(0x103)]['display']=_0xaf4641(0x138),document[_0xaf4641(0x10f)][_0xaf4641(0x103)][_0xaf4641(0x137)]=''),_0x11fb6c&&(_0x11fb6c[_0xaf4641(0xdf)]='');}if(window[a0_0x5dc95b(0xf3)]['pathname'][a0_0x5dc95b(0xfb)](a0_0x5dc95b(0x11a))){window[a0_0x5dc95b(0xdd)]=function(){const _0x71cfac=a0_0x5dc95b,_0x10bd9d=_0x71cfac(0xf6);openActionModal(_0x10bd9d);},window['sendResetOtp']=async function(){const _0x43a4b5=a0_0x5dc95b,_0x2a9735=document[_0x43a4b5(0x12b)](_0x43a4b5(0xf1))[_0x43a4b5(0x135)][_0x43a4b5(0x104)](),_0x27c8a9=document[_0x43a4b5(0x12b)](_0x43a4b5(0xed));if(!_0x2a9735){await showMessage(_0x43a4b5(0xf5));return;}_0x27c8a9[_0x43a4b5(0xdb)]='Göndərilir...',_0x27c8a9[_0x43a4b5(0x118)]=!![];const {error:_0x11b1d8}=await supabaseClient['auth'][_0x43a4b5(0x11c)](_0x2a9735);_0x11b1d8?(await showMessage(_0x43a4b5(0x133)+_0x11b1d8['message']),_0x27c8a9[_0x43a4b5(0xdb)]=_0x43a4b5(0xff),_0x27c8a9[_0x43a4b5(0x118)]=![]):showOtpEntryModal(_0x2a9735);};function showOtpEntryModal(_0x4b44f7){const _0x3bd510=a0_0x5dc95b,_0x4fa8fe=document[_0x3bd510(0x12b)](_0x3bd510(0x12e));_0x4fa8fe['innerHTML']=_0x3bd510(0xec)+_0x4b44f7+_0x3bd510(0x10e)+_0x4b44f7+_0x3bd510(0x10d);}window[a0_0x5dc95b(0xe2)]=async function(_0x5f02af){const _0xbc6dc2=a0_0x5dc95b,_0x2ab0bc=document['getElementById'](_0xbc6dc2(0x11e))[_0xbc6dc2(0x135)][_0xbc6dc2(0x104)](),_0x170902=document[_0xbc6dc2(0x12b)](_0xbc6dc2(0xe0))[_0xbc6dc2(0x135)][_0xbc6dc2(0x104)](),_0x3a030d=document[_0xbc6dc2(0x12b)](_0xbc6dc2(0x132));if(_0x2ab0bc['length']<0x6||_0x170902[_0xbc6dc2(0xf0)]<0x6){await showMessage(_0xbc6dc2(0x10b));return;}_0x3a030d[_0xbc6dc2(0xdb)]=_0xbc6dc2(0x116),_0x3a030d['disabled']=!![];const {error:_0x4a6dc7}=await supabaseClient['auth']['verifyOtp']({'email':_0x5f02af,'token':_0x2ab0bc,'type':_0xbc6dc2(0x110)});if(_0x4a6dc7)await showMessage('Kod\x20yanlışdır\x20və\x20ya\x20vaxtı\x20bitib!'),_0x3a030d[_0xbc6dc2(0xdb)]=_0xbc6dc2(0x123),_0x3a030d[_0xbc6dc2(0x118)]=![];else{const {error:_0x534833}=await supabaseClient[_0xbc6dc2(0x136)][_0xbc6dc2(0x129)]({'password':_0x170902});_0x534833?await showMessage(_0xbc6dc2(0xe3)+_0x534833[_0xbc6dc2(0x101)]):(closeActionModal(),await showMessage(_0xbc6dc2(0x105)));}};}
+// Supabase məlumatları (Tək İnstance)
+const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+
+if (!window.globalSupabaseClient) {
+    window.globalSupabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+}
+const supabaseClient = window.globalSupabaseClient;
+
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const actionBtn = document.querySelector('.btn-login'); 
+
+// Sizin təklif etdiyiniz üsul: Səhifəni URL-dən tapırıq
+const currentPath = window.location.pathname;
+const isRegisterPage = currentPath.includes("register.html");
+
+supabaseClient.auth.getSession().then(({ data: { session } }) => {
+    // Əgər aktiv sessiya varsa, heç nə soruşmadan birbaşa profilə atırıq
+    if (session) {
+        window.location.href = "profile.html";
+    }
+});
+// Düyməyə klikləyəndə işləyəcək əsas funksiya
+if (actionBtn) {
+    actionBtn.addEventListener('click', async () => {
+        const email = emailInput?.value.trim();
+        const password = passwordInput?.value;
+        
+        if (!email || !password) {
+            showMessage("Zəhmət olmasa, e-poçt və şifrəni daxil edin!");
+            return;
+        }
+        const originalText = actionBtn.textContent;
+        actionBtn.disabled = true;
+
+        if (isRegisterPage) {
+            // ==========================================
+            // ------ QEYDİYYAT (REGISTER) MƏNTİQİ ------
+            // ==========================================
+            const nameInput = document.getElementById('name');
+            const name = nameInput ? nameInput.value.trim() : "";
+            const termsAgree = document.getElementById('terms_agree');
+            if (!termsAgree || !termsAgree.checked) {
+                showMessage("Davam etmək üçün İstifadə Şərtləri və Məxfilik Siyasətini qəbul etməlisiniz!");
+                actionBtn.disabled = false; 
+                return;
+            }
+            if (!name) {
+                showMessage("Zəhmət olmasa, adınızı daxil edin!");
+                actionBtn.disabled = false; return;
+            }
+            if (password.length < 6) {
+                showMessage("Şifrə ən azı 6 simvol olmalıdır!");
+                actionBtn.disabled = false; return;
+            }
+
+            actionBtn.textContent = "Yaradılır...";
+
+            const { data, error } = await supabaseClient.auth.signUp({
+                email: email,
+                password: password,
+                options: {
+                    data: { 
+                        full_name: name,
+                        is_premium: false // YENİ: Başlanğıcda premium deyil (false)
+                    },
+                    emailRedirectTo: 'https://ixtisastap.com/telebe/tesdiq.html'
+                }
+            });
+            
+            if (error) {
+                // Əgər email artıq varsa və ya digər Supabase xətası baş verərsə
+                showMessage("Xəta baş verdi: " + error.message);
+                actionBtn.textContent = originalText;
+                actionBtn.disabled = false;
+            } else if (data.user && data.user.identities && data.user.identities.length === 0) {
+                // YENİ HİSSƏ: Supabase təhlükəsizlik üçün error verməyə bilər, 
+                // amma identities boşdursa, bu email artıq bazada var deməkdir.
+                showMessage("Bu e-poçt ünvanı ilə artıq hesab yaradılıb. Zəhmət olmasa daxil olun və ya şifrəni bərpa edin.");
+                actionBtn.textContent = originalText;
+                actionBtn.disabled = false;
+            } else {
+                // Hər şey qaydasındadırsa
+                await showMessage(`Qeydiyyat uğurla tamamlandı! <b>${email}</b> ünvanına göndərilən təsdiq linkinə klikləyərək hesabınızı aktivləşdirin.`, "success", "Daxil ol");
+                window.location.href = "login.html"; 
+            }
+        } else {
+            // ====================================
+            // ------ GİRİŞ (LOGIN) MƏNTİQİ ------
+            // ====================================
+            actionBtn.textContent = "Daxil olunur";
+
+            const { data, error } = await supabaseClient.auth.signInWithPassword({
+                email: email,
+                password: password
+            });
+
+            if (error) {
+                if (error.message.includes('Email not confirmed')) {
+                    showMessage("Hesabınıza daxil olmaq üçün əvvəlcə e-poçtunuza göndərilən təsdiq linkinə klikləyin.");
+                } else {
+                    showMessage("E-poçt və ya şifrə yanlışdır!");
+                }
+                
+                actionBtn.textContent = originalText;
+                actionBtn.disabled = false;
+            } else {
+                await showMessage("Uğurla daxil oldunuz!", "showMessage", "Profilə keç");
+                window.location.href = "profile.html"; 
+            }
+        }
+    });
+}
+// -----------------------------------------------------------------------------------------------------------
+// 3-cü parametr kimi customBtnText əlavə etdik
+function showMessage(message, type = "showMessage", customBtnText = "OK") {
+    return new Promise((resolve) => {
+        const overlay = document.getElementById("messageOverlay");
+        const messageText = document.getElementById("messageText");
+        const okBtn = document.getElementById("okBtn");
+        const confirmBtn = document.getElementById("confirmBtn");
+        const cancelBtn = document.getElementById("cancelBtn");
+
+        if (!overlay) return resolve(false);
+
+        // Mesajı qutuya yazırıq və ekranı açırıq
+        messageText.innerHTML = message;
+        overlay.style.display = "flex"; 
+
+        // Əgər növ "confirm" (Sual) idisə:
+        if (type === "confirm") {
+            okBtn.style.display = "none";
+            confirmBtn.style.display = "inline-block";
+            cancelBtn.style.display = "inline-block";
+
+            confirmBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true); 
+            };
+
+            cancelBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(false); 
+            };
+        } 
+        // Əgər növ "showMessage" (Sadəcə bildiriş) idisə:
+        else {
+            okBtn.style.display = "inline-block";
+            
+            // YENİLİK: Düymənin yazısını burada dəyişirik
+            okBtn.textContent = customBtnText; 
+            
+            confirmBtn.style.display = "none";
+            cancelBtn.style.display = "none";
+
+            // Düyməyə basıldıqda bağla və növbəti koda keçməyə icazə ver (resolve)
+            okBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+        }
+    });
+}
+function openActionModal(contentHTML) {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+    
+    if (overlay && modalContent) {
+        modalContent.innerHTML = contentHTML;
+        overlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
+function closeActionModal() {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+    
+    if (overlay) {
+        // Modalı gizlədirik
+        overlay.style.display = "none";
+        // Səhifənin sürüşməsini (scroll) geri qaytarırıq
+        document.body.style.overflow = ""; 
+    }
+    
+    if (modalContent) {
+        // Növbəti dəfə açılanda köhnə elementlər görünməsin deyə içini təmizləyirik
+        modalContent.innerHTML = ""; 
+    }
+}
+// ---------------------- REGISTER PAGE ---------------------
+if (window.location.pathname.endsWith("register.html")) {
+    const inputs = document.querySelectorAll('.giris-form input[type="text"], .giris-form input[type="email"], .giris-form input[type="password"]');
+    const registerBtn = document.querySelector('.btn-login');
+
+    inputs.forEach((input, index) => {
+        input.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                e.preventDefault(); // Formun səhvən göndərilməsini dayandırır
+
+                // Əgər növbəti input varsa, ona fokuslan
+                if (index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                } 
+                // Əgər sonuncu inputdursa (Şifrə), düyməni kliklə
+                else {
+                    registerBtn.click();
+                }
+            }
+        });
+    });
+}
+// ---------------------- LOGIN PAGE ---------------------
+if (window.location.pathname.endsWith("login.html")) {
+    // 1. Şifrə bərpa modalını açan funksiya (Email istəyir)
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const loginBtn = document.querySelector('.btn-login');
+    emailInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault(); // Səhifənin yenilənməsinin qarşısını alırıq
+            passwordInput.focus(); // Şifrə xanasına keçid edirik
+        }
+    });
+
+    // Şifrə xanasında Enter basıldıqda
+    passwordInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            loginBtn.click(); // "Daxil ol" düyməsini klikləyirik
+        }
+    });
+    window.openResetPasswordModal = function() {
+        const modalHTML = `
+            <h2>Şifrəni bərpa et</h2>
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
+                Hesabınızın e-poçt ünvanını daxil edin. Sizə təsdiq kodu göndəriləcək.
+            </p>
+            <div class="input-group">
+                <label>E-poçt</label>
+                <input type="email" id="resetEmailInput" placeholder="example@mail.com">
+            </div>
+            <div class="action-buttons">
+                <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                <button class="btn-continue" id="sendOtpBtn" onclick="sendResetOtp()">Kod Göndər</button>
+            </div>
+        `;
+        openActionModal(modalHTML);
+    };
+
+    // 2. Supabase vasitəsilə OTP göndərən funksiya
+    window.sendResetOtp = async function() {
+        const email = document.getElementById("resetEmailInput").value.trim();
+        const btn = document.getElementById("sendOtpBtn");
+
+        if (!email) {
+            await showMessage("Zəhmət olmasa e-poçtunuzu daxil edin!");
+            return;
+        }
+
+        btn.textContent = "Göndərilir...";
+        btn.disabled = true;
+
+        // Supabase-ə şifrə bərpa sorğusu göndəririk
+        const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+
+        if (error) {
+            await showMessage("Xəta: " + error.message);
+            btn.textContent = "Kod Göndər";
+            btn.disabled = false;
+        } else {
+            // Uğurludursa, modalın içini dəyişib OTP və YENİ ŞİFRƏ sahəsini göstəririk
+            showOtpEntryModal(email);
+        }
+    };
+
+    // 3. Kod və Yeni Şifrə daxil etmə mərhələsi
+    function showOtpEntryModal(email) {
+        const modalContent = document.getElementById("actionModalContent");
+        modalContent.innerHTML = `
+            <h2>Təsdiqləmə</h2>
+            <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
+                <b>${email}</b> ünvanına göndərilən 8 rəqəmli kodu və yeni şifrənizi daxil edin.
+            </p>
+            <div class="input-group">
+                <label>Təsdiq Kodu (OTP)</label>
+                <input type="text" id="otpCodeInput" placeholder="12345678" maxlength="8">
+            </div>
+            <div class="input-group">
+                <label>Yeni Şifrə</label>
+                <input type="password" id="finalNewPassword" placeholder="Ən azı 6 simvol">
+            </div>
+            <div class="action-buttons">
+                <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                <button class="btn-continue" id="confirmResetBtn" onclick="verifyOtpAndChangePassword('${email}')">Şifrəni Yenilə</button>
+            </div>
+        `;
+    }
+
+    // 4. Kodu yoxlayıb şifrəni dəyişən son funksiya
+    window.verifyOtpAndChangePassword = async function(email) {
+        const token = document.getElementById("otpCodeInput").value.trim();
+        const newPassword = document.getElementById("finalNewPassword").value.trim();
+        const btn = document.getElementById("confirmResetBtn");
+
+        if (token.length < 6 || newPassword.length < 6) {
+            await showMessage("Kod 6 rəqəmli, şifrə isə ən azı 6 simvol olmalıdır!");
+            return;
+        }
+
+        btn.textContent = "Yenilənir...";
+        btn.disabled = true;
+
+        // Əvvəlcə OTP ilə sessiyanı təsdiqləyirik
+        const { error: verifyError } = await supabaseClient.auth.verifyOtp({
+            email,
+            token,
+            type: 'recovery'
+        });
+
+        if (verifyError) {
+            await showMessage("Kod yanlışdır və ya vaxtı bitib!");
+            btn.textContent = "Şifrəni Yenilə";
+            btn.disabled = false;
+        } else {
+            // Sessiya açıldı, indi şifrəni yeniləyirik
+            const { error: updateError } = await supabaseClient.auth.updateUser({
+                password: newPassword
+            });
+
+            if (updateError) {
+                await showMessage("Şifrə yenilənərkən xəta: " + updateError.message);
+            } else {
+                closeActionModal();
+                await showMessage("Şifrəniz uğurla yeniləndi! İndi daxil ola bilərsiniz.");
+            }
+        }
+    };
+}

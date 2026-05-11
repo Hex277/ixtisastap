@@ -22,7 +22,7 @@
                 "D": "Sonuncu istehlakçılar",
                 "E": "Sahibkarlar"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 3,
@@ -34,7 +34,7 @@
                 "D": "dövlət tənzimlənməsinin informasiya təminatının yaradılması",
                 "E": "inzibati və iqtisadi metodların tətbiqi sərhədlərinin müəyyən edilməsi"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 4,
@@ -46,7 +46,7 @@
                 "D": "davamlıdırlar",
                 "E": "kütləvi istehsal onlar üçün əlçatandır"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 5,
@@ -70,7 +70,7 @@
                 "D": "emitent",
                 "E": "kapital"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 7,
@@ -118,7 +118,7 @@
                 "D": "kooperativlər",
                 "E": "səhmdar cəmiyyətləri"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 11,
@@ -190,7 +190,7 @@
                 "D": "lisenziya",
                 "E": "franşızanın alınması"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 17,
@@ -1162,7 +1162,7 @@
                 "D": "iqtisadi mühüt",
                 "E": "dünya bazarında konyuktura"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 98,
@@ -1174,7 +1174,7 @@
                 "D": "Strateji tərəfdaşın düzgün seçilməsindən",
                 "E": "Ölkə başçısının risk etmək qabiliyyətindən"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 99,
@@ -1222,7 +1222,7 @@
                 "D": "Biznes strategiyasını dəyişdirməyə",
                 "E": "kiçik firmanın intensiv müflisləşməsi və iflasa uğramasına"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 103,
@@ -1450,7 +1450,7 @@
                 "D": "rəqiblər haqqında",
                 "E": "İstehsalın xərcləri haqqında"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 122,
@@ -1486,7 +1486,7 @@
                 "D": "ən kiçk",
                 "E": "orta"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 125,
@@ -1726,7 +1726,7 @@
                 "D": "Tərəflərin zəif cəhətlərini müəyyənləşdirmə",
                 "E": "Dövlət neft fondundan vəsait ayırma"
             },
-            "correct_answer": "E"
+            "correct_answer": "D"
         },
         {
             "id": 145,
@@ -1777,7 +1777,7 @@
             "correct_answer": "E"
         },
         {
-            "id": 149,
+            "id": 159,
             "question": "Kiçik firmaların xüsusiyyətlərinə aid deyil:",
             "options": {
                 "A": "bazarda dəyişən şəraitə tez uyğunlaşırlar",
@@ -1825,7 +1825,7 @@
             "correct_answer": "D"
         },
         {
-            "id": 153,
+            "id": 159,
             "question": "Təbii –coğrafi mühit deyəndə nə başa düşülür:",
             "options": {
                 "A": "Ekoloji vəziyyət",

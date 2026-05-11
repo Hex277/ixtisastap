@@ -22,7 +22,7 @@
                 "D": "publisistik üslub",
                 "E": "Kitab üslubu"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 3,
@@ -106,7 +106,7 @@
                 "D": "Hərbçilərin salamlaşması",
                 "E": "Yol hərəkəti nişanları"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 10,
@@ -118,7 +118,7 @@
                 "D": "Sığallama",
                 "E": "Öskürək"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 11,
@@ -130,7 +130,7 @@
                 "D": "Dialoq iştirakçıları arasında ümumi bir fikir və ya fikir ayrılıqları ola bilər",
                 "E": "Rəy bildirilir, cavab reaksiyası tələb edilir"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 12,
@@ -706,7 +706,7 @@
                 "D": "3, 5, 1",
                 "E": "1, 4, 5"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 61,
@@ -718,7 +718,7 @@
                 "D": "2,3,4",
                 "E": "1,3,5"
             },
-            "correct_answer": "B"
+            "correct_answer": "A"
         },
         {
             "id": 62,
@@ -742,7 +742,7 @@
                 "D": "2,3,4",
                 "E": "3,4,5"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 64,
@@ -754,7 +754,7 @@
                 "D": "Savadlı yazmaq",
                 "E": "Cavabı ləngitməmək"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 65,
@@ -851,7 +851,7 @@
                 "D": "3,5",
                 "E": "3,4,5"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 74,
@@ -887,7 +887,7 @@
                 "D": "2,3,4",
                 "E": "3,4,5"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 77,
@@ -911,7 +911,7 @@
                 "D": "Standart quruluşa malikdir",
                 "E": "Elmi əsaslanma olmalıdır"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 79,
@@ -959,7 +959,7 @@
                 "D": "Modelləşdirmə üsulu",
                 "E": "Təcrübə üsulu"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 83,
@@ -1140,7 +1140,7 @@
                 "D": "məqalə",
                 "E": "dissertasiya"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 98,
@@ -1152,7 +1152,7 @@
                 "D": "izahat",
                 "E": "xasiyyətnamə"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 99,
@@ -1164,7 +1164,7 @@
                 "D": "referat, məruzə, iltizam vərəqi, dissertasiya",
                 "E": "referat, məruzə, diplom işi, izahat"
             },
-            "correct_answer": "C"
+            "correct_answer": "A"
         },
         {
             "id": 100,
@@ -1248,7 +1248,7 @@
                 "D": "1,3,5",
                 "E": "2,3,4,5"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 107,
@@ -1320,7 +1320,7 @@
                 "D": "Akademik nitq",
                 "E": "İctimai-siyasi nitq"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 113,
@@ -1356,7 +1356,7 @@
                 "D": "Televiziya verilişləri zamanı bəzən təsvir, bəzən də sözün rolu ön plana çəkilir",
                 "E": "Bu nitq həm yazılı, həm də şifahi nitqin xüsusiyyətlərini özündə birləşdirir"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 116,
@@ -1452,7 +1452,7 @@
                 "D": "Bədii sual",
                 "E": "Sabit söz birləşmələri"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 125,
@@ -1740,7 +1740,7 @@
                 "D": "Laboratoriya, qrammatika, leksika, sintaksis, samitlər, elektrik, radio",
                 "E": "Telefon, fleksiya, fonetika, morfologiya, etimologiya, semasiologiya"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 149,
@@ -1800,7 +1800,7 @@
                 "D": "Əfqanıstan",
                 "E": "Türkmənistan"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 154,
@@ -1884,7 +1884,7 @@
                 "D": "İssi, hətda, küfdə, qaralmaq",
                 "E": "Oynuyullar, öyrəmmək, dannadı, onnar"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 161,
@@ -1944,7 +1944,7 @@
                 "D": "Nitqin dəqiqliyini",
                 "E": "Nitqin ifadəli və cəlbedici olmasını"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 166,
@@ -2040,7 +2040,7 @@
                 "D": "Orfoqrafik",
                 "E": "Həm fonetik, həm də leksik"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 174,
@@ -2532,7 +2532,7 @@
                 "D": "3,5",
                 "E": "1,3,5"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 215,
@@ -2544,7 +2544,7 @@
                 "D": "Cümlədə fikri aydınlaşdırmaq, ümumi fikirdən sonra onun izahını vermək məqsədi daşıyır",
                 "E": "Əsasən həmcins üzvlərdə ümumiləşdirici sözdən, “məsələn” sözündən vasitəsiz nitqdə müəllif nitqindən sonra, dialoqda, aydınlaşdırma əlaqəli tabeli mürəkkəb cümlələrdə ümumilik bildirən tərkibdə qoyulur"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 216,
@@ -2628,7 +2628,7 @@
                 "D": "söz birləşmələri",
                 "E": "tələffüz"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 223,
@@ -2664,7 +2664,7 @@
                 "D": "Məhkəmə nitqində",
                 "E": "İctimai - siyasi nitqdə"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 226,
@@ -2700,7 +2700,7 @@
                 "D": "Gözlərimizin önündə baş verənlərə göz yummaq, olanlara susmaq ən böyük ədalətsizlikdir",
                 "E": "Sizə ən ağır cəzanın verilməsini tələb edəcəm"
             },
-            "correct_answer": "B"
+            "correct_answer": "D"
         },
         {
             "id": 229,
@@ -2856,7 +2856,7 @@
                 "D": "Rəsmi sənədlər mühüm hüquqi məzmuna malik olur, tarixi əhəmiyyət daşıyır",
                 "E": "Rəsmi sənədləri xüsusi mütəxəssislər hazırlayır, müxtəlif səviyyələrdə müzakirə olunur və qəbul edilir"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 243,
@@ -2892,7 +2892,7 @@
                 "D": "yüksəkdən danışmaq",
                 "E": "sadə danışmaq"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 246,
@@ -2904,7 +2904,7 @@
                 "D": "zənginlik, düzgünlük, fasilə, vurğu",
                 "E": "fasilə,vurğu, melodiya, zənginlik"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 247,
@@ -2916,7 +2916,7 @@
                 "D": "pərvanə, cəfa, şəb, nagah",
                 "E": "bəy, feodal, pristav, qubernator"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 248,
@@ -2940,7 +2940,7 @@
                 "D": "söz",
                 "E": "söz birləşməsi"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 250,
@@ -2964,7 +2964,7 @@
                 "D": "institut",
                 "E": "yetkin"
             },
-            "correct_answer": "A"
+            "correct_answer": "B"
         },
         {
             "id": 252,
@@ -3036,7 +3036,7 @@
                 "D": "sözün dialektdəki tələffüz qaydası",
                 "E": "sözün sətirdən- sətirə keçirilmə qaydası"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 258,
@@ -3060,7 +3060,7 @@
                 "D": "Nigar şəhərə yeni gəlsə də, özünə yeni dostlar tapmışdı",
                 "E": "Həmin günlərdə biz həyəcanla cəbhədən gələn xəbərləri gözləyirdik"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 260,
@@ -3372,7 +3372,7 @@
                 "D": "Akademik natiqliyi",
                 "E": "Siyasi natiqlik"
             },
-            "correct_answer": "B"
+            "correct_answer": "C"
         },
         {
             "id": 289,

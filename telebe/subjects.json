@@ -1,26 +1,247 @@
-[
-  {
-    "id": "adiak",
-    "title": "Azərbaycan dilində işgüzar və akademik kommunikasiya",
-    "icon": "🇦🇿",
-    "count": 10
+{
+  "subject_pool": {
+    "global_subjects": [
+      {
+        "id": "azerbaycan-tarixi",
+        "title": "Azərbaycan tarixi",
+        "icon": "📜",
+        "count": 10
+      },
+      {
+        "id": "adiak",
+        "title": "Azərbaycan dilində işgüzar və akademik kommunikasiya",
+        "icon": "🇦🇿",
+        "count": 10
+      },
+      {
+        "id": "sahibkarliq-biznes",
+        "title": "Sahibkarlığın əsasları və biznesə giriş",
+        "icon": "💼",
+        "count": 10
+      }
+    ],
+    "special_subjects": [
+      {
+        "id": "eqli-mulkiyyet",
+        "title": "Əqli mülkiyyətin əsasları",
+        "icon": "⚖️",
+        "count": 10
+      }
+    ]
   },
-  {
-    "id": "azerbaycan-tarixi",
-    "title": "Azərbaycan tarixi",
-    "icon": "📜",
-    "count": 10
+  "universities": {
+    "adnsu": {
+      "name": "ADNSU",
+      "faculties": {
+        "geoloji_kesfiyyat": {
+          "name": "Geoloji-kəşfiyyat fakültəsi",
+          "assigned_subjects": []
+        },
+        "qaz_neft_meden": {
+          "name": "Qaz-neft-mədən fakültəsi",
+          "assigned_subjects": []
+        },
+        "kimya_texnologiya": {
+          "name": "Kimya Texnologiya fakültəsi",
+          "assigned_subjects": []
+        },
+        "neft_mexanika": {
+          "name": "Neft Mexanika fakültəsi",
+          "assigned_subjects": []
+        },
+        "it_idareetme": {
+          "name": "İT və İdarəetmə fakültəsi",
+          "assigned_subjects": []
+        },
+        "energetika": {
+          "name": "Energetika fakültəsi",
+          "assigned_subjects": []
+        },
+        "iqtisadiyyat_menecment": {
+          "name": "İqtisadiyyat və Menecment fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "azmiu": {
+      "name": "AzMİU",
+      "faculties": {
+        "insaat": {
+          "name": "İnşaat fakültəsi",
+          "assigned_subjects": []
+        },
+        "tikinti_iqtisad": {
+          "name": "Tikinti-iqtisad fakültəsi",
+          "assigned_subjects": []
+        },
+        "neqliyyat": {
+          "name": "Nəqliyyat fakültəsi",
+          "assigned_subjects": []
+        },
+        "mexanika_it": {
+          "name": "Mexanika və informasiya texnologiyaları fakültəsi",
+          "assigned_subjects": []
+        },
+        "memarliq": {
+          "name": "Memarlıq fakültəsi",
+          "assigned_subjects": []
+        },
+        "dizayn": {
+          "name": "Dizayn fakültəsi",
+          "assigned_subjects": []
+        },
+        "stmks": {
+          "name": "Su təsərrüfatı və mühəndis kommunikasiya sistemləri fakültəsi",
+          "assigned_subjects": ["landsaft-meliorasiyasi"]
+        }
+      }
+    },
+    "bdu": {
+      "name": "BDU",
+      "faculties": {
+        "mexanika_riyaziyyat": {
+          "name": "Mexanika-riyaziyyat fakültəsi",
+          "assigned_subjects": []
+        },
+        "tetbiqi_riyaziyyat_kibernetika": {
+          "name": "Tətbiqi riyaziyyat və kibernetika fakültəsi",
+          "assigned_subjects": []
+        },
+        "fizika": {
+          "name": "Fizika fakültəsi",
+          "assigned_subjects": []
+        },
+        "kimya": {
+          "name": "Kimya fakültəsi",
+          "assigned_subjects": []
+        },
+        "biologiya": {
+          "name": "Biologiya fakültəsi",
+          "assigned_subjects": []
+        },
+        "ekologiya_torpaqsunasliq": {
+          "name": "Ekologiya və torpaqşünaslıq fakültəsi",
+          "assigned_subjects": []
+        },
+        "cografiya": {
+          "name": "Coğrafiya fakültəsi",
+          "assigned_subjects": []
+        },
+        "geologiya": {
+          "name": "Geologiya fakültəsi",
+          "assigned_subjects": []
+        },
+        "filologiya": {
+          "name": "Filologiya fakültəsi",
+          "assigned_subjects": []
+        },
+        "tarix": {
+          "name": "Tarix fakültəsi",
+          "assigned_subjects": []
+        },
+        "beynelxalq_iqtisadiyyat": {
+          "name": "Beynəlxalq münasibətlər və iqtisadiyyat fakültəsi",
+          "assigned_subjects": []
+        },
+        "huquq": {
+          "name": "Hüquq fakültəsi",
+          "assigned_subjects": []
+        },
+        "jurnalistika": {
+          "name": "Jurnalistika fakültəsi",
+          "assigned_subjects": []
+        },
+        "informasiya_sened_menecmenti": {
+          "name": "İnformasiya və sənəd menecmenti fakültəsi",
+          "assigned_subjects": []
+        },
+        "serqsunasliq": {
+          "name": "Şərqşünasliq fakültəsi",
+          "assigned_subjects": []
+        },
+        "sosial_psixologiya": {
+          "name": "Sosial elmlər və psixologiya fakültəsi",
+          "assigned_subjects": []
+        }
+      }
+    },
+    "ndu": {
+    "name": "NDU",
+    "faculties": {
+      "tarix_filologiya": {
+        "name": "Tarix – Filologiya fakültəsi",
+        "assigned_subjects": []
+      },
+      "iqtisadiyyat_idareetme": {
+        "name": "İqtisadiyyat və idarəetmə fakültəsi",
+        "assigned_subjects": []
+      },
+      "xarici_diller": {
+        "name": "Xarici dillər fakültəsi",
+        "assigned_subjects": []
+      },
+      "fizika_riyaziyyat": {
+        "name": "Fizika – riyaziyyat fakültəsi",
+        "assigned_subjects": []
+      },
+      "memarliq_muhendislik": {
+        "name": "Memarlıq və mühəndislik fakültəsi",
+        "assigned_subjects": []
+      },
+      "tebiet_kend_teserrufati": {
+        "name": "Təbiətşünaslıq və kənd təsərrüfatı fakültəsi",
+        "assigned_subjects": []
+      },
+      "tibb": {
+        "name": "Tibb fakültəsi",
+        "assigned_subjects": []
+      },
+      "pedaqoji": {
+        "name": "Pedaqoji fakültəsi",
+        "assigned_subjects": []
+      },
+      "incesenet": {
+        "name": "İncəsənət fakültəsi",
+        "assigned_subjects": []
+      },
+      "beynelxalq_munasibetler_huquq": {
+        "name": "Beynəlxalq münasibətlər və hüquq fakültəsi",
+        "assigned_subjects": []
+      }
+    }
   },
-  {
-    "id": "eqli-mulkiyyet",
-    "title": "Əqli mülkiyyətin əsasları",
-    "icon": "⚖️",
-    "count": 10
-  },
-  {
-    "id": "sahibkarliq-biznes",
-    "title": "Sahibkarlığın əsasları və biznesə giriş - Ömər Kərimov üçün yaradılıb!",
-    "icon": "💼",
-    "count": 10
+  "adau": {
+    "name": "ADAU",
+    "faculties": {
+      "aqronomluq": {
+        "name": "Aqronomluq fakültəsi",
+        "assigned_subjects": []
+      },
+      "torpaqsunasliq_aqrokimya": {
+        "name": "Torpaqşünaslıq və aqrokimya fakültəsi",
+        "assigned_subjects": []
+      },
+      "baytarlig_tebabeti": {
+        "name": "Baytarlıq təbabəti fakültəsi",
+        "assigned_subjects": []
+      },
+      "zoomuhendislik": {
+        "name": "Zoomühəndislik fakültəsi",
+        "assigned_subjects": []
+      },
+      "muhendislik": {
+        "name": "Mühəndislik fakültəsi",
+        "assigned_subjects": []
+      },
+      "aqrotexnologiya": {
+        "name": "Aqrotexnologiya fakültəsi",
+        "assigned_subjects": []
+      },
+      "aqrariqtisadiyyat": {
+        "name": "Aqrariqtisadiyyat fakültəsi",
+        "assigned_subjects": []
+      }
+    }
   }
-]
+  }
+}

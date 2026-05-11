@@ -1,1 +1,54 @@
-const a0_0x4bafbb=a0_0x46d1;function a0_0x46d1(_0x5ef4e3,_0x751c0a){_0x5ef4e3=_0x5ef4e3-0x156;const _0x69e4bf=a0_0x3420();let _0x17ca12=_0x69e4bf[_0x5ef4e3];return _0x17ca12;}function a0_0x3420(){const _0x5ae476=['2150VmxEAP','#toggle-dark-mode\x20#icon','remove','classList','5707665QJsxss','setItem','icon','1698545dNeuSL','contains','theme-btn','44990yxknkf','dark','body','18jBbrgC','1009gRDgyu','enabled','addEventListener','theme-img','function','querySelector','(((.+)+)+)+$','6111QnuSHy','toString','toggle','dark-mode','10537632XcpteR','1136303pHmTTz','../images/moon.webp','toggle-dark-mode','disabled','5153468DxXcNt','light','theme','src','constructor','add','../images/issun.webp','getItem','darkMode','click','dark-theme','getElementById'];a0_0x3420=function(){return _0x5ae476;};return a0_0x3420();}(function(_0x5b3049,_0x297b1d){const _0x107575=a0_0x46d1,_0xa74b98=_0x5b3049();while(!![]){try{const _0x18d822=parseInt(_0x107575(0x179))/0x1*(-parseInt(_0x107575(0x16b))/0x2)+-parseInt(_0x107575(0x16f))/0x3+-parseInt(_0x107575(0x15f))/0x4+parseInt(_0x107575(0x172))/0x5*(parseInt(_0x107575(0x178))/0x6)+-parseInt(_0x107575(0x15b))/0x7+parseInt(_0x107575(0x15a))/0x8+parseInt(_0x107575(0x156))/0x9*(parseInt(_0x107575(0x175))/0xa);if(_0x18d822===_0x297b1d)break;else _0xa74b98['push'](_0xa74b98['shift']());}catch(_0x3781b6){_0xa74b98['push'](_0xa74b98['shift']());}}}(a0_0x3420,0xe8b8a));const a0_0x1f5767=(function(){let _0x19aaec=!![];return function(_0x1545fe,_0x41b8d0){const _0x261c56=_0x19aaec?function(){if(_0x41b8d0){const _0x43ea6f=_0x41b8d0['apply'](_0x1545fe,arguments);return _0x41b8d0=null,_0x43ea6f;}}:function(){};return _0x19aaec=![],_0x261c56;};}()),a0_0x17ca12=a0_0x1f5767(this,function(){const _0x44fd1a=a0_0x46d1;return a0_0x17ca12[_0x44fd1a(0x157)]()['search']('(((.+)+)+)+$')['toString']()[_0x44fd1a(0x163)](a0_0x17ca12)['search'](_0x44fd1a(0x17f));});a0_0x17ca12(),document[a0_0x4bafbb(0x17b)]('DOMContentLoaded',()=>{const _0x49f083=a0_0x4bafbb;let _0x2bcc44=localStorage[_0x49f083(0x166)]('theme');!_0x2bcc44&&(_0x2bcc44=localStorage['getItem'](_0x49f083(0x167))===_0x49f083(0x17a)?_0x49f083(0x176):'light');_0x2bcc44===_0x49f083(0x176)?document[_0x49f083(0x177)][_0x49f083(0x16e)][_0x49f083(0x164)](_0x49f083(0x169),'dark-mode'):document['body']['classList'][_0x49f083(0x16d)]('dark-theme','dark-mode');const _0x1c637f=document[_0x49f083(0x16a)](_0x49f083(0x174))||document[_0x49f083(0x16a)](_0x49f083(0x15d)),_0x5bcd31=document[_0x49f083(0x16a)](_0x49f083(0x17c))||document[_0x49f083(0x17e)](_0x49f083(0x16c))||document['getElementById'](_0x49f083(0x171));_0x1c637f&&_0x5bcd31&&(_0x5bcd31[_0x49f083(0x162)]=_0x2bcc44==='dark'?_0x49f083(0x165):_0x49f083(0x15c),_0x1c637f[_0x49f083(0x17b)](_0x49f083(0x168),()=>{const _0x57085e=_0x49f083;document[_0x57085e(0x177)][_0x57085e(0x16e)][_0x57085e(0x158)](_0x57085e(0x169)),document[_0x57085e(0x177)][_0x57085e(0x16e)][_0x57085e(0x158)](_0x57085e(0x159));let _0x3b50ad=_0x57085e(0x160);document[_0x57085e(0x177)][_0x57085e(0x16e)][_0x57085e(0x173)](_0x57085e(0x169))||document[_0x57085e(0x177)][_0x57085e(0x16e)]['contains'](_0x57085e(0x159))?(_0x3b50ad=_0x57085e(0x176),_0x5bcd31['src']='../images/issun.webp'):(_0x3b50ad=_0x57085e(0x160),_0x5bcd31[_0x57085e(0x162)]=_0x57085e(0x15c)),localStorage[_0x57085e(0x170)](_0x57085e(0x161),_0x3b50ad),localStorage[_0x57085e(0x170)]('darkMode',_0x3b50ad===_0x57085e(0x176)?_0x57085e(0x17a):_0x57085e(0x15e));})),typeof loadData===_0x49f083(0x17d)&&loadData();});
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Yaddaşı yoxlayırıq (həm tələbənin "theme", həm də abituriyentin "darkMode" açarını)
+    let currentTheme = localStorage.getItem("theme");
+    
+    // Əgər "theme" yoxdursa, köhnə "darkMode" yaddaşını yoxla
+    if (!currentTheme) {
+        currentTheme = (localStorage.getItem("darkMode") === "enabled") ? "dark" : "light";
+    }
+
+    // 2. Səhifə yüklənəndə hər iki CSS sinfini (həm tələbə, həm abituriyent üçün) tətbiq edirik
+    if (currentTheme === "dark") {
+        document.body.classList.add("dark-theme", "dark-mode");
+    } else {
+        document.body.classList.remove("dark-theme", "dark-mode");
+    }
+
+    // 3. Düyməni və ikonu hər iki layihənin ID-sinə uyğun axtarırıq
+    const toggleBtn = document.getElementById("theme-btn") || document.getElementById("toggle-dark-mode");
+    const toggleIcon = document.getElementById("theme-img") || document.querySelector("#toggle-dark-mode #icon") || document.getElementById("icon");
+
+    // Əgər səhifədə düymə varsa, funksiyanı işə salırıq
+    if (toggleBtn && toggleIcon) {
+        
+        // Səhifə açılanda ikonu düzgün göstər (tələbənin issun.webp şəkli ilə)
+        toggleIcon.src = (currentTheme === "dark") ? "../images/issun.webp" : "../images/moon.webp";
+
+        // Düyməyə kliklədikdə
+        toggleBtn.addEventListener("click", () => {
+            // Hər iki CSS sinfini dəyişirik
+            document.body.classList.toggle("dark-theme");
+            document.body.classList.toggle("dark-mode");
+            
+            let theme = "light";
+            
+            // Əgər dark mode aktivdirsə
+            if (document.body.classList.contains("dark-theme") || document.body.classList.contains("dark-mode")) {
+                theme = "dark";
+                toggleIcon.src = "../images/issun.webp";
+            } else {
+                theme = "light";
+                toggleIcon.src = "../images/moon.webp";
+            }
+            
+            // Yaddaşı hər iki layihə üçün eyni anda yeniləyirik ki, səhifələr arası keçiddə itməsin
+            localStorage.setItem("theme", theme);
+            localStorage.setItem("darkMode", theme === "dark" ? "enabled" : "disabled");
+        });
+    }
+
+    // Digər məlumatları yükləyən funksiya (əgər mövcuddursa)
+    if (typeof loadData === 'function') {
+        loadData();
+    }
+});

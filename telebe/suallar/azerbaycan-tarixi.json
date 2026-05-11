@@ -22,7 +22,7 @@
                 "D": "22",
                 "E": "30"
             },
-            "correct_answer": "D"
+            "correct_answer": "A"
         },
         {
             "id": 3,
@@ -94,7 +94,7 @@
                 "D": "Dəbil əmirliyinin yaranması,Salarilər dövlətinin yaranması,“Bərdə faciəsi”",
                 "E": "Salarilər dövlətinin yaranması, Bərdə faciəsi”, Dəbil əmirliyinin yaranması"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 9,
@@ -358,7 +358,7 @@
                 "D": "Cənik",
                 "E": "Şəmşəddil"
             },
-            "correct_answer": "D"
+            "correct_answer": "A"
         },
         {
             "id": 32,
@@ -394,7 +394,7 @@
                 "D": "3,5",
                 "E": "4,5"
             },
-            "correct_answer": "D"
+            "correct_answer": "A"
         },
         {
             "id": 36,
@@ -418,7 +418,7 @@
                 "D": "Alanlar",
                 "E": "Hunlar"
             },
-            "correct_answer": "D"
+            "correct_answer": "A"
         },
         {
             "id": 38,
@@ -574,7 +574,7 @@
                 "D": "1,2,5,3,4",
                 "E": "3,4,5,2,1"
             },
-            "correct_answer": "D"
+            "correct_answer": "A"
         },
         {
             "id": 51,
@@ -1042,7 +1042,7 @@
                 "D": "Kadusi",
                 "E": "Udin"
             },
-            "correct_answer": "D"
+            "correct_answer": "A"
         },
         {
             "id": 91,
@@ -1054,7 +1054,7 @@
                 "D": "M.Əliyev",
                 "E": "X.Xasməmmədov"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 92,
@@ -1174,7 +1174,7 @@
                 "D": "Cizyə vergisini ləğv etdi",
                 "E": "İslam qanunlarını xristianlara zorla qəbul etdirdi"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 102,
@@ -1354,7 +1354,7 @@
                 "D": "İbtidai insana aid alt çənə sümüyü",
                 "E": "Tikili qalıqları"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 117,
@@ -1402,7 +1402,7 @@
                 "D": "2,3,4",
                 "E": "1,4,5"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 121,
@@ -2146,7 +2146,7 @@
                 "D": "3,2,6",
                 "E": "4,5,6"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 183,
@@ -2182,7 +2182,7 @@
                 "D": "Vəqf",
                 "E": "Mülk"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 186,
@@ -2206,7 +2206,7 @@
                 "D": "Bəril",
                 "E": "Mütəsərrif"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 188,
@@ -2362,7 +2362,7 @@
                 "D": "33",
                 "E": "21"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 201,
@@ -2770,7 +2770,7 @@
                 "D": "XV- XVI əsrlərə",
                 "E": "XV əsrə"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 235,
@@ -2866,7 +2866,7 @@
                 "D": "1,2.4",
                 "E": "3,4,5"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 243,
@@ -2950,7 +2950,7 @@
                 "D": "3,4,1,2",
                 "E": "2,1,3,4"
             },
-            "correct_answer": "C"
+            "correct_answer": "B"
         },
         {
             "id": 250,
@@ -2998,7 +2998,7 @@
                 "D": "Şirvanşahlara.",
                 "E": "Sacirlərə"
             },
-            "correct_answer": "E"
+            "correct_answer": "B"
         },
         {
             "id": 254,
@@ -3142,7 +3142,7 @@
                 "D": "Çar-Balakən dairəsi və İrəvan quberniyasına",
                 "E": "Gürcüstan –İmeratiya quberniyasına və Xəzər vilayətinə"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 266,
@@ -3166,7 +3166,7 @@
                 "D": "2,3",
                 "E": "2,4"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 268,
@@ -3202,7 +3202,7 @@
                 "D": "Çaxmaqdaşından hazırlanmış əmək alətləri",
                 "E": "Siklopik tikililər"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 271,
@@ -4378,7 +4378,7 @@
                 "D": "4,5",
                 "E": "1,3"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 369,
@@ -4414,7 +4414,7 @@
                 "D": "“Qarabağ şikəstəsi”",
                 "E": "“Dərbəndli Fətəlinin İran mahnısı”"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 372,
@@ -4426,7 +4426,7 @@
                 "D": "1911-ci il - “Müsavat” partiyası",
                 "E": "1908-ci il – “Hümmət” təşkilatı"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 373,
@@ -4714,7 +4714,7 @@
                 "D": "ortabablar",
                 "E": "qolçomaqlar"
             },
-            "correct_answer": "E"
+            "correct_answer": "A"
         },
         {
             "id": 399,
@@ -4742,7 +4742,7 @@
         },
         {
             "id": 401,
-            "question": "1920-ci ilin iyun ayında Sovet reciminə qarşı Qarabağda baş verən üsyana rəhbərlik edirdi:",
+            "question": "1920-ci ilin iyun ayında Sovet rejiminə qarşı Qarabağda baş verən üsyana rəhbərlik edirdi:",
             "options": {
                 "A": "Cahangir bəy Kazımbəyov",
                 "B": "Cavad bəy Şıxlınski",
