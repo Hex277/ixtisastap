@@ -21,18 +21,17 @@ jobs:
         run: mkdir -p dist/telebe
 
       - name: Root-dakı JS-ləri qarışdır
-        # Ana qovluqdakı hər bir .js faylı üçün işləyir
         run: |
           for file in *.js; do
             if [ -f "$file" ]; then
-              npx javascript-obfuscator "$file" --output "dist/$file" --compact true --remove-comments true
+              npx javascript-obfuscator "$file" --output "dist/$file" --compact true --self-defending true
             fi
           done
 
       - name: Telebe qovluğundakı JS-ləri qarışdır
         run: |
           if [ -d "telebe" ]; then
-            npx javascript-obfuscator ./telebe --output ./dist/telebe --compact true --remove-comments true
+            npx javascript-obfuscator ./telebe --output ./dist/telebe --compact true --self-defending true
           fi
 
       - name: Dəyişiklikləri GitHub-a geri yüklə
