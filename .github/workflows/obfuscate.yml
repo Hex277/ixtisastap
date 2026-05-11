@@ -17,18 +17,28 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Obfuscator alətini yüklə
-        run: npm install -g javascript-obfuscator
+      - name: Çıxış qovluqlarını yarat
+        run: mkdir -p dist/telebe
 
-      - name: Kodları qarışdır (Obfuscate)
+      - name: Root-dakı JS-ləri qarışdır
+        # Ana qovluqdakı hər bir .js faylı üçün işləyir
         run: |
-          mkdir -p dist
-          javascript-obfuscator ./js --output ./dist --compact true --self-defending true --control-flow-flattening true --dead-code-injection true
+          for file in *.js; do
+            if [ -f "$file" ]; then
+              npx javascript-obfuscator "$file" --output "dist/$file" --compact true --remove-comments true
+            fi
+          done
 
-      - name: Dəyişiklikləri GitHub-a geri yüklə (Optional)
+      - name: Telebe qovluğundakı JS-ləri qarışdır
+        run: |
+          if [ -d "telebe" ]; then
+            npx javascript-obfuscator ./telebe --output ./dist/telebe --compact true --remove-comments true
+          fi
+
+      - name: Dəyişiklikləri GitHub-a geri yüklə
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add dist/
-          git commit -m "Build: Kodlar qarışdırıldı və sıxıldı" || echo "Dəyişiklik yoxdur"
+          git commit -m "Build: Bütün JS-lər (root + telebe) qarışdırıldı" || echo "Dəyişiklik yoxdur"
           git push

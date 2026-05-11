@@ -15,8 +15,6 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Asılılıqları yüklə
-        run: npm install
-
       - name: ESLint ilə yoxla
-        run: npx eslint .
+        # npx istifadə edirik ki, package.json tələb olunmasın
+        run: npx eslint . --ext .js
