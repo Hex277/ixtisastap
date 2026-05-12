@@ -1,1 +1,1761 @@
-const a1_0x240ed1=a1_0x22c1;(function(_0x40f744,_0x379a58){const _0x8e1618=a1_0x22c1,_0xed2436=_0x40f744();while(!![]){try{const _0x469763=parseInt(_0x8e1618(0x247))/0x1*(-parseInt(_0x8e1618(0x271))/0x2)+-parseInt(_0x8e1618(0x2b0))/0x3+parseInt(_0x8e1618(0x1fe))/0x4*(parseInt(_0x8e1618(0x1c0))/0x5)+parseInt(_0x8e1618(0x27c))/0x6+-parseInt(_0x8e1618(0x1ff))/0x7*(-parseInt(_0x8e1618(0x2c2))/0x8)+-parseInt(_0x8e1618(0x326))/0x9*(-parseInt(_0x8e1618(0x293))/0xa)+-parseInt(_0x8e1618(0x1c5))/0xb;if(_0x469763===_0x379a58)break;else _0xed2436['push'](_0xed2436['shift']());}catch(_0x44f0c){_0xed2436['push'](_0xed2436['shift']());}}}(a1_0x5a9e,0xa7262));const a1_0x232bd1=a1_0x2b12;(function(_0x3f47e4,_0x503e40){const _0x211c58=a1_0x22c1,_0x549441=(function(){let _0x1e2bd4=!![];return function(_0x196d1c,_0x3f7a20){const _0x2c51ad=_0x1e2bd4?function(){const _0x414b56=a1_0x22c1;if(_0x3f7a20){const _0x17cb8a=_0x3f7a20[_0x414b56(0x1e4)](_0x196d1c,arguments);return _0x3f7a20=null,_0x17cb8a;}}:function(){};return _0x1e2bd4=![],_0x2c51ad;};}()),_0x505ff0=_0x549441(this,function(){const _0x1ac280=a1_0x22c1;return _0x505ff0[_0x1ac280(0x2c4)]()[_0x1ac280(0x2e7)](_0x1ac280(0x279))[_0x1ac280(0x2c4)]()[_0x1ac280(0x24b)](_0x505ff0)['search']('(((.+)+)+)+$');});_0x505ff0();const _0x4658bc=a1_0x2b12,_0x57afee=_0x3f47e4();while(!![]){try{const _0x48323c=-parseInt(_0x4658bc(0xd9))/0x1*(parseInt(_0x4658bc(0x183))/0x2)+-parseInt(_0x4658bc(0x181))/0x3+parseInt(_0x4658bc(0x13b))/0x4+parseInt(_0x4658bc(0x25a))/0x5+-parseInt(_0x4658bc(0x135))/0x6*(-parseInt(_0x4658bc(0xfc))/0x7)+parseInt(_0x4658bc(0xda))/0x8*(-parseInt(_0x4658bc(0x115))/0x9)+-parseInt(_0x4658bc(0x174))/0xa*(-parseInt(_0x4658bc(0x132))/0xb);if(_0x48323c===_0x503e40)break;else _0x57afee[_0x211c58(0x21d)](_0x57afee[_0x211c58(0x232)]());}catch(_0x837741){_0x57afee[_0x211c58(0x21d)](_0x57afee['shift']());}}}(a1_0x16a2,0xe23d5),document[a1_0x232bd1(0x193)](a1_0x232bd1(0x150),function(){const _0x58cd3c=a1_0x22c1,_0x320914=a1_0x232bd1,_0x1dc5ae=document[_0x320914(0x141)]('telebe-menu');_0x1dc5ae&&_0x1dc5ae[_0x320914(0x235)]&&(_0x1dc5ae[_0x320914(0x134)][_0x320914(0x1cf)](_0x320914(0x197)),_0x1dc5ae[_0x58cd3c(0x290)][_0x320914(0x102)]('.arrow')[_0x320914(0x1ec)]='v');function _0x3886c5(_0xf6d312){const _0x3157c2=_0x58cd3c,_0x278d99=_0x320914,_0x3560a9=document[_0x278d99(0x141)](_0x278d99(0x22f)),_0x842e7a=document[_0x278d99(0x102)](_0x278d99(0xfd));if(_0xf6d312){document[_0x278d99(0x129)][_0x278d99(0x134)][_0x278d99(0x1cf)](_0x278d99(0x179));if(_0x3560a9)_0x3560a9[_0x278d99(0xdf)][_0x278d99(0x1e4)]=_0x3157c2(0x218);if(_0x842e7a)_0x842e7a[_0x278d99(0x1c2)]=_0x278d99(0x172);}else{document[_0x278d99(0x129)][_0x278d99(0x134)][_0x278d99(0x243)](_0x278d99(0x179));if(_0x3560a9)_0x3560a9[_0x278d99(0xdf)][_0x278d99(0x1e4)]='';if(_0x842e7a)_0x842e7a[_0x3157c2(0x2f5)]=_0x278d99(0x1e6);}}if(window[_0x320914(0x125)]){const _0x4865ab=_0x320914(0x1d8),_0x63e557=_0x320914(0x117);!window[_0x320914(0x136)]&&(window[_0x58cd3c(0x1c6)]=window[_0x320914(0x125)][_0x320914(0x164)](_0x4865ab,_0x63e557));const _0x3c6cde=window[_0x320914(0x136)];let _0x3d7c67=null;try{const _0x11a932=localStorage[_0x320914(0xf9)](_0x58cd3c(0x25e));_0x11a932&&(_0x3d7c67=JSON[_0x320914(0x23f)](_0x11a932)[_0x320914(0x119)]['id']);}catch(_0x59f093){}const _0x377d32=new Date()[_0x58cd3c(0x1d8)]();if(_0x3d7c67){const _0x5e42a9=localStorage[_0x320914(0xf9)](_0x320914(0x209)+_0x3d7c67);_0x5e42a9&&_0x377d32<parseInt(_0x5e42a9)?_0x3886c5(!![]):_0x3886c5(![]);}_0x3c6cde[_0x320914(0x17e)][_0x58cd3c(0x22d)]()[_0x58cd3c(0x26a)](async({data:{session:_0x18b71c}})=>{const _0x615bc=_0x58cd3c,_0xc7aa57=_0x320914;if(_0x18b71c){const _0x1100af=_0x18b71c[_0xc7aa57(0x119)]['id'],{data:_0x775b82}=await _0x3c6cde[_0xc7aa57(0x17a)](_0xc7aa57(0x147))[_0xc7aa57(0x247)](_0x615bc(0x1d6))['eq'](_0x615bc(0x2ff),_0x1100af)[_0xc7aa57(0x212)]();if(_0x775b82){const _0x2730e4=new Date(_0x775b82[_0xc7aa57(0x133)])[_0x615bc(0x1d8)](),_0x330984=new Date()[_0xc7aa57(0x1fe)]();_0x330984<_0x2730e4?(localStorage[_0xc7aa57(0x10b)](_0xc7aa57(0x209)+_0x1100af,_0x2730e4),_0x3886c5(!![])):(localStorage[_0x615bc(0x2a5)](_0xc7aa57(0x209)+_0x1100af),_0x3886c5(![]));}else localStorage[_0x615bc(0x2a5)](_0x615bc(0x2f3)+_0x1100af),_0x3886c5(![]);}});}else console[_0x320914(0x15a)](_0x320914(0x17d));}));function showMessage(_0x55f855,_0x16e7e0=a1_0x232bd1(0xde),_0x309862=a1_0x232bd1(0x120),_0x5334e1=a1_0x232bd1(0x189)){return new Promise(_0x5315be=>{const _0x484075=a1_0x22c1,_0x57f767=a1_0x2b12,_0x145b7e=document[_0x57f767(0x141)](_0x57f767(0x165)),_0x29de55=document[_0x57f767(0x141)](_0x484075(0x2e8)),_0x42c012=document[_0x57f767(0x141)](_0x57f767(0x128)),_0x5c8b63=document[_0x57f767(0x141)](_0x57f767(0x1d4)),_0x50f9c9=document['getElementById'](_0x57f767(0x23a));if(!_0x145b7e)return _0x5315be(![]);_0x29de55[_0x57f767(0x16a)]=_0x55f855,_0x145b7e[_0x57f767(0xdf)][_0x57f767(0x1e4)]=_0x484075(0x29e),_0x16e7e0==='confirm'?(_0x42c012[_0x57f767(0xdf)][_0x57f767(0x1e4)]=_0x57f767(0x242),_0x5c8b63[_0x57f767(0xdf)][_0x57f767(0x1e4)]=_0x57f767(0x248),_0x50f9c9[_0x57f767(0xdf)][_0x484075(0x238)]=_0x57f767(0x248),_0x5c8b63[_0x484075(0x2d4)]=_0x309862,_0x50f9c9[_0x57f767(0x1ec)]=_0x5334e1,_0x5c8b63[_0x484075(0x317)]=()=>{const _0x115414=_0x484075,_0x56ed0b=_0x57f767;_0x145b7e[_0x56ed0b(0xdf)][_0x56ed0b(0x1e4)]=_0x115414(0x218),_0x5315be(!![]);},_0x50f9c9[_0x484075(0x317)]=()=>{const _0x413052=_0x484075;_0x145b7e['style'][_0x413052(0x238)]=_0x413052(0x218),_0x5315be(![]);}):(_0x42c012[_0x57f767(0xdf)][_0x57f767(0x1e4)]=_0x57f767(0x248),_0x5c8b63[_0x57f767(0xdf)][_0x57f767(0x1e4)]=_0x57f767(0x242),_0x50f9c9[_0x57f767(0xdf)][_0x57f767(0x1e4)]=_0x57f767(0x242),_0x42c012[_0x57f767(0x1ec)]=_0x309862!==_0x57f767(0x120)?_0x309862:'OK',_0x42c012[_0x57f767(0x1be)]=()=>{const _0x3d35ad=_0x57f767;_0x145b7e[_0x3d35ad(0xdf)][_0x3d35ad(0x1e4)]='none',_0x5315be(!![]);});});}function openActionModal(_0x34fd12){const _0x5905d7=a1_0x22c1,_0x6c80aa=a1_0x232bd1,_0x2e6813=document[_0x5905d7(0x2ef)](_0x6c80aa(0x21c)),_0x1bbe00=document[_0x6c80aa(0x141)](_0x6c80aa(0x230));_0x2e6813&&_0x1bbe00&&(_0x1bbe00[_0x6c80aa(0x16a)]=_0x34fd12,_0x2e6813[_0x6c80aa(0xdf)][_0x6c80aa(0x1e4)]=_0x6c80aa(0x1ed),document[_0x6c80aa(0x129)][_0x6c80aa(0xdf)]['overflow']=_0x6c80aa(0x16e));}function closeActionModal(){const _0x509f2f=a1_0x22c1,_0x4f7b78=a1_0x232bd1,_0x5f4789=document[_0x4f7b78(0x141)](_0x4f7b78(0x21c)),_0xa4ff27=document[_0x4f7b78(0x141)](_0x4f7b78(0x230));_0x5f4789&&(_0x5f4789[_0x4f7b78(0xdf)][_0x4f7b78(0x1e4)]=_0x4f7b78(0x242),document[_0x509f2f(0x207)][_0x4f7b78(0xdf)][_0x4f7b78(0x13d)]=''),_0xa4ff27&&(_0xa4ff27[_0x4f7b78(0x16a)]='');}if(window[a1_0x232bd1(0x130)][a1_0x240ed1(0x2b2)][a1_0x232bd1(0x18d)](a1_0x232bd1(0x122))){const container=document[a1_0x232bd1(0x141)](a1_0x232bd1(0x24f)),searchInput=document[a1_0x232bd1(0x141)](a1_0x232bd1(0x175)),searchButton=document[a1_0x232bd1(0x141)](a1_0x232bd1(0x111));let allSubjects=[],searchTimeout=null;fetch(a1_0x240ed1(0x288))['then'](_0x1ceb36=>_0x1ceb36[a1_0x232bd1(0x162)]())[a1_0x232bd1(0x11f)](_0x4be314=>{const _0x56f7d0=a1_0x232bd1,_0x6cda28=_0x4be314[_0x56f7d0(0x19c)][_0x56f7d0(0xe7)]||[],_0x1962fe=_0x4be314[_0x56f7d0(0x19c)][_0x56f7d0(0x220)]||[];allSubjects=[..._0x6cda28,..._0x1962fe][_0x56f7d0(0x1b8)]((_0x55b7cc,_0x23292f)=>_0x55b7cc[_0x56f7d0(0x18a)][_0x56f7d0(0xe0)](_0x23292f[_0x56f7d0(0x18a)],'az')),renderSubjects(allSubjects);})[a1_0x232bd1(0x1dc)](_0xc2e617=>console[a1_0x232bd1(0x214)](a1_0x232bd1(0x23b),_0xc2e617));function isMatch(_0x38d259,_0x1d16d1){const _0x32f0c2=a1_0x240ed1,_0x35e6b1=a1_0x232bd1;_0x38d259=_0x38d259[_0x32f0c2(0x1d5)](),_0x1d16d1=_0x1d16d1[_0x35e6b1(0x244)]();if(_0x38d259[_0x35e6b1(0x1b3)](_0x1d16d1))return!![];if(_0x1d16d1[_0x35e6b1(0xee)]<0x3)return![];const _0x160251=Math[_0x35e6b1(0x1fa)](0x3,Math[_0x35e6b1(0x148)](_0x1d16d1[_0x35e6b1(0xee)]/0x3));let _0x25afe1=0x0,_0x40bc04=0x0;for(let _0x250f40=0x0;_0x250f40<_0x1d16d1[_0x32f0c2(0x28f)];_0x250f40++){_0x40bc04<_0x38d259[_0x32f0c2(0x28f)]&&_0x1d16d1[_0x250f40]===_0x38d259[_0x40bc04]?_0x40bc04++:_0x25afe1++;}return _0x25afe1<=_0x160251;}function renderSubjects(_0x49dfd0){const _0x497493=a1_0x240ed1,_0x517937=a1_0x232bd1;if(!_0x49dfd0||_0x49dfd0[_0x517937(0xee)]===0x0){container[_0x517937(0x16a)]=_0x517937(0x1f0);return;}container[_0x517937(0x16a)]=_0x49dfd0[_0x517937(0x1b4)]((_0x4b6962,_0x1aaef5)=>_0x517937(0xf6)+_0x4b6962['id']+_0x517937(0x1b1)+_0x1aaef5*0.05+_0x497493(0x1c9)+_0x4b6962[_0x517937(0x1f7)]+_0x517937(0x1a8)+_0x4b6962[_0x517937(0x18a)]+_0x517937(0x157)+_0x4b6962[_0x497493(0x1f9)]+_0x517937(0x205))[_0x517937(0x1bc)]('');}searchInput['addEventListener'](a1_0x232bd1(0x21d),_0x7e8ffc=>{const _0x195cec=a1_0x240ed1,_0x51bf14=a1_0x232bd1,_0x5987d4=_0x7e8ffc[_0x51bf14(0x110)][_0x51bf14(0xea)][_0x195cec(0x1d5)]()[_0x51bf14(0x1b2)]();clearTimeout(searchTimeout),searchTimeout=setTimeout(()=>{const _0x43b26e=_0x51bf14;if(_0x5987d4===''){renderSubjects(allSubjects);return;}const _0x1df96a=allSubjects[_0x43b26e(0xe8)](_0x575ca1=>isMatch(_0x575ca1[_0x43b26e(0x18a)],_0x5987d4));renderSubjects(_0x1df96a);},0x12c);}),searchButton[a1_0x232bd1(0x193)](a1_0x232bd1(0x127),()=>{const _0x30cf0b=a1_0x232bd1,_0x5af8e0=searchInput[_0x30cf0b(0xea)][_0x30cf0b(0x244)](),_0x28d840=allSubjects[_0x30cf0b(0xe8)](_0x3bf9ab=>_0x3bf9ab[_0x30cf0b(0x18a)][_0x30cf0b(0x244)]()[_0x30cf0b(0x1b3)](_0x5af8e0));renderSubjects(_0x28d840);}),window[a1_0x240ed1(0x21c)]=function(_0x1baacd){const _0x3ee633=a1_0x232bd1;window[_0x3ee633(0x130)]['href']='quiz.html?subject='+_0x1baacd;},((async()=>{const _0x3500ce=a1_0x240ed1,_0x5f21c4=a1_0x232bd1;try{const _0x352f77='https://xoebhhdirsvjorjlrfzi.supabase.co',_0x1c0b33=_0x3500ce(0x23b),_0x5360f2=window[_0x5f21c4(0x125)][_0x5f21c4(0x164)](_0x352f77,_0x1c0b33),_0x40c942=localStorage[_0x5f21c4(0xf9)](_0x5f21c4(0x1e3));if(!_0x40c942)return;const _0x58f389=JSON[_0x5f21c4(0x23f)](_0x40c942)[_0x5f21c4(0x119)],_0x2fdae3=_0x58f389['id'],_0x2012c1=document[_0x3500ce(0x2ef)](_0x5f21c4(0x106)),_0x45f565=document[_0x5f21c4(0x141)](_0x5f21c4(0xf4)),_0x3bf5c9=localStorage['getItem'](_0x5f21c4(0x209)+_0x2fdae3),_0x27cd2e=_0x3bf5c9&&new Date()[_0x3500ce(0x1d8)]()<parseInt(_0x3bf5c9);if(_0x27cd2e){if(_0x45f565)_0x45f565[_0x5f21c4(0x1c2)]=_0x5f21c4(0x1f8);if(_0x2012c1)_0x2012c1[_0x5f21c4(0x16a)]=_0x5f21c4(0x1de);return;}const _0x31763c=new Date()[_0x5f21c4(0xe6)]()[_0x5f21c4(0x204)]('T')[0x0],{data:_0x222b1e}=await _0x5360f2[_0x5f21c4(0x17a)](_0x5f21c4(0x24d))[_0x5f21c4(0x247)](_0x5f21c4(0x1fd))['eq'](_0x5f21c4(0x1f9),_0x2fdae3)[_0x5f21c4(0x212)](),_0x55164a=_0x222b1e&&_0x222b1e[_0x5f21c4(0x1bd)]===_0x31763c?Number(_0x222b1e[_0x5f21c4(0x145)])||0x0:0x0,_0x4caef9=0x3,_0x31a570=Math[_0x5f21c4(0x1a6)](0x0,_0x4caef9-_0x55164a);if(_0x2012c1)_0x2012c1['innerText']=_0x31a570;if(_0x45f565)_0x45f565[_0x3500ce(0x2f5)]=_0x3500ce(0x1ea);}catch(_0x19dbcf){console[_0x5f21c4(0x214)](_0x5f21c4(0x16c),_0x19dbcf[_0x5f21c4(0x16b)]);}})());}function a1_0x22c1(_0x1c2fed,_0x52a6b8){_0x1c2fed=_0x1c2fed-0x1b7;const _0x2ed9df=a1_0x5a9e();let _0x4dc9f9=_0x2ed9df[_0x1c2fed];return _0x4dc9f9;}if(window[a1_0x232bd1(0x130)][a1_0x232bd1(0x15b)][a1_0x232bd1(0x18d)](a1_0x232bd1(0x155))){let myChart=null;const getSupabase=()=>window[a1_0x232bd1(0x136)]||window[a1_0x240ed1(0x2a1)];async function loadUserDashboard(_0x50a3f3){const _0x5dcfa9=a1_0x240ed1,_0xd908dc=a1_0x232bd1,_0x21071f=getSupabase();if(!_0x21071f)return;const {data:_0x433880,error:_0x1e05e1}=await _0x21071f[_0xd908dc(0x17a)](_0x5dcfa9(0x2bd))[_0xd908dc(0x247)]('*')['eq'](_0xd908dc(0x1f9),_0x50a3f3)[_0xd908dc(0x212)]();if(_0x1e05e1||!_0x433880)return;document[_0xd908dc(0x141)](_0xd908dc(0xd7))[_0xd908dc(0x11c)]=_0x433880[_0xd908dc(0x154)]||0x0,document[_0xd908dc(0x141)](_0xd908dc(0x1c1))[_0xd908dc(0x11c)]=_0x433880[_0x5dcfa9(0x2fe)]||0x3e8,document[_0xd908dc(0x141)](_0x5dcfa9(0x321))[_0xd908dc(0x11c)]=(_0x433880[_0xd908dc(0x14e)]||0x0)+_0x5dcfa9(0x2c5);const _0x571699=_0x433880['total_answered_questions']||0x0,_0x37da98=_0x433880[_0xd908dc(0x225)]||0x0,_0x40c6cc=_0x571699>0x0?Math['round'](_0x37da98/_0x571699*0x64):0x0;document[_0xd908dc(0x141)](_0x5dcfa9(0x213))[_0xd908dc(0x11c)]=_0x40c6cc+'%';const _0x5b2338=Math[_0x5dcfa9(0x26e)]((_0x433880[_0xd908dc(0x1d7)]||0x0)/0x3c),_0x66ab85=(_0x433880[_0x5dcfa9(0x257)]||0x0)%0x3c;document[_0xd908dc(0x141)](_0xd908dc(0x1bb))[_0xd908dc(0x11c)]=_0x5b2338+':'+(_0x66ab85<0xa?'0':'')+_0x66ab85;}async function loadActivityChart(_0x573530){const _0x45d415=a1_0x240ed1,_0xa9832d=a1_0x232bd1,_0x5c291e=getSupabase();if(!_0x5c291e)return;const _0x16bc32=[_0xa9832d(0x21a),_0xa9832d(0x22c),'Ç',_0xa9832d(0x216),'C','Ş','B'];let _0x49e3fc=[0x0,0x0,0x0,0x0,0x0,0x0,0x0];const _0x1d0838=new Date(),_0x51170f=_0x1d0838[_0xa9832d(0x1af)]()===0x0?0x7:_0x1d0838[_0x45d415(0x2b7)](),_0x432d78=new Date(_0x1d0838);_0x432d78[_0xa9832d(0xfb)](_0x1d0838[_0xa9832d(0xdc)]()-_0x51170f+0x1);const _0x9104a9=_0x432d78[_0xa9832d(0xef)]()+'-'+String(_0x432d78[_0x45d415(0x2e1)]()+0x1)[_0xa9832d(0x160)](0x2,'0')+'-'+String(_0x432d78[_0xa9832d(0xdc)]())[_0x45d415(0x2bb)](0x2,'0'),{data:_0x109364,error:_0x11aa19}=await _0x5c291e[_0xa9832d(0x17a)](_0x45d415(0x23f))[_0x45d415(0x2cd)](_0x45d415(0x22e))['eq'](_0xa9832d(0x1f9),_0x573530)[_0xa9832d(0x1e2)](_0xa9832d(0x1d6),_0x9104a9);if(_0x11aa19){console[_0xa9832d(0x214)](_0xa9832d(0x169),_0x11aa19);return;}_0x109364&&_0x109364[_0x45d415(0x28f)]>0x0&&_0x109364[_0xa9832d(0x227)](_0x4e1a4c=>{const _0x150e12=_0x45d415,_0x11b895=_0xa9832d,_0x466daa=_0x4e1a4c[_0x11b895(0x1d6)][_0x11b895(0x204)]('-'),_0x1305ea=new Date(parseInt(_0x466daa[0x0]),parseInt(_0x466daa[0x1])-0x1,parseInt(_0x466daa[0x2]));let _0x4df129=_0x1305ea[_0x11b895(0x1af)]();_0x4df129=_0x4df129===0x0?0x6:_0x4df129-0x1,_0x49e3fc[_0x4df129]=_0x4e1a4c[_0x150e12(0x320)];}),renderChart(_0x16bc32,_0x49e3fc);}async function loadLeaderboard(_0xc6ea95){const _0x4b1135=a1_0x240ed1,_0xb0b902=a1_0x232bd1,_0x1bc1de=getSupabase();if(!_0x1bc1de)return;const {data:_0x36f6d8,error:_0x828fd0}=await _0x1bc1de[_0xb0b902(0x17a)](_0xb0b902(0x24d))[_0x4b1135(0x2cd)]('*')[_0xb0b902(0x1ad)](_0xb0b902(0x229),{'ascending':![]})[_0xb0b902(0x1ff)](0xa);if(_0x828fd0||!_0x36f6d8)return;const _0x52855f=document[_0xb0b902(0x141)](_0xb0b902(0xdd));if(!_0x52855f)return;_0x52855f[_0x4b1135(0x2b9)]='',_0x36f6d8[_0x4b1135(0x30a)]((_0x393abc,_0x12fb07)=>{const _0x4c12d4=_0x4b1135,_0x17bfe3=_0xb0b902,_0x392528=_0x393abc[_0x17bfe3(0x222)]>0x0?Math[_0x17bfe3(0x18c)](_0x393abc[_0x4c12d4(0x291)]/_0x393abc[_0x4c12d4(0x2ee)]*0x64):0x0,_0x495c39=_0x393abc[_0x17bfe3(0x1f9)]===_0xc6ea95;let _0x554168=_0x393abc[_0x4c12d4(0x1ba)]||_0x17bfe3(0x11a)+_0x393abc[_0x17bfe3(0x1f9)][_0x17bfe3(0x250)](0x0,0x5);const _0x5c25aa=_0x495c39?_0x554168+'\x20(Siz)':_0x554168;_0x52855f['innerHTML']+=_0x17bfe3(0x233)+(_0x495c39?_0x17bfe3(0xf2):'')+_0x4c12d4(0x310)+(_0x495c39?_0x17bfe3(0x218):'')+_0x17bfe3(0x217)+(_0x12fb07+0x1)+_0x17bfe3(0x186)+_0x5c25aa+'</td>\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>'+(_0x393abc[_0x17bfe3(0x229)]||0x3e8)+_0x17bfe3(0x186)+_0x392528+_0x17bfe3(0xe2);});}function renderChart(_0x2899a4,_0x1eb405){const _0x22a15c=a1_0x240ed1,_0x343063=a1_0x232bd1,_0x2a6866=document[_0x22a15c(0x2ef)](_0x22a15c(0x267));if(!_0x2a6866)return;const _0x3bb57b=_0x2a6866[_0x343063(0x232)]('2d');typeof myChart!==_0x343063(0x108)&&myChart&&myChart[_0x343063(0x12c)]();const _0x2182d4=document[_0x343063(0x129)]['classList'][_0x343063(0x177)](_0x343063(0x1e5))||document[_0x343063(0x129)][_0x343063(0x134)][_0x343063(0x177)](_0x22a15c(0x1d0)),_0x13be94=_0x2182d4?_0x343063(0x251):_0x22a15c(0x243),_0x3a83c0=_0x2182d4?_0x343063(0x1f4):_0x343063(0x12e);myChart=new Chart(_0x3bb57b,{'type':_0x343063(0x14c),'data':{'labels':_0x2899a4,'datasets':[{'label':_0x343063(0x1b9),'data':_0x1eb405,'borderColor':_0x343063(0x24c),'backgroundColor':_0x22a15c(0x300),'fill':!![],'tension':0x0,'pointRadius':0x4,'pointBackgroundColor':_0x343063(0x24c),'pointHoverRadius':0x6}]},'options':{'responsive':!![],'maintainAspectRatio':![],'interaction':{'mode':_0x343063(0x12f),'intersect':![]},'plugins':{'legend':{'display':![]}},'scales':{'y':{'beginAtZero':!![],'ticks':{'color':_0x13be94,'stepSize':0x1},'grid':{'color':_0x3a83c0}},'x':{'ticks':{'color':_0x13be94},'grid':{'display':![]}}}}});}async function handleChartFilterChange(_0x344a3e){const _0x7d1486=a1_0x240ed1,_0x137be2=a1_0x232bd1,_0x2c5be9=document[_0x137be2(0x141)](_0x137be2(0x10f)),_0x93b7db=document[_0x137be2(0x141)](_0x137be2(0x1a4)),_0x2e27e3=document[_0x137be2(0x141)](_0x7d1486(0x267));if(!_0x2c5be9)return;const _0x5460bc=localStorage[_0x137be2(0xf9)](_0x137be2(0x209)+_0x344a3e),_0x59f5e2=_0x5460bc&&new Date()[_0x137be2(0x1fe)]()<parseInt(_0x5460bc);_0x2c5be9[_0x137be2(0x193)](_0x137be2(0x245),async _0x570ba5=>{const _0x258603=_0x7d1486,_0x449e05=_0x137be2,_0x2a03f7=_0x570ba5[_0x449e05(0x110)][_0x449e05(0xea)];_0x2a03f7===_0x449e05(0x1c3)?!_0x59f5e2?(_0x2e27e3?.[_0x258603(0x319)][_0x449e05(0x1cf)](_0x449e05(0x187)),_0x93b7db?.[_0x258603(0x319)][_0x449e05(0x243)](_0x449e05(0x16e))):(_0x2e27e3?.[_0x449e05(0x134)][_0x449e05(0x243)](_0x449e05(0x187)),_0x93b7db?.[_0x258603(0x319)][_0x258603(0x2cb)](_0x449e05(0x16e)),await loadAllTimeActivityChart(_0x344a3e)):(_0x2e27e3?.[_0x449e05(0x134)][_0x258603(0x26c)](_0x449e05(0x187)),_0x93b7db?.[_0x449e05(0x134)][_0x449e05(0x1cf)](_0x449e05(0x16e)),await loadActivityChart(_0x344a3e));});}async function loadAllTimeActivityChart(_0x464ef5){const _0x2b9e8b=a1_0x240ed1,_0x37234f=a1_0x232bd1,_0x51417d=window[_0x37234f(0x136)]||window[_0x37234f(0xf8)];if(!_0x51417d)return;try{const [{data:_0x53932f},{data:_0x2759a1,error:_0x230f3c}]=await Promise[_0x37234f(0x1c3)]([_0x51417d[_0x37234f(0x17e)][_0x37234f(0x171)](),_0x51417d[_0x37234f(0x17a)](_0x37234f(0xff))['select'](_0x37234f(0x1bf))['eq'](_0x37234f(0x1f9),_0x464ef5)]);if(_0x230f3c)throw _0x230f3c;const _0xacfe09=_0x53932f?.[_0x2b9e8b(0x26d)];if(!_0xacfe09)return;const _0x298bfc=new Date(_0xacfe09[_0x37234f(0x257)]),_0x4fe6f5=new Date(),_0x513e3f=[_0x2b9e8b(0x2de),_0x37234f(0x22b),_0x37234f(0x210),_0x37234f(0x1d1),_0x2b9e8b(0x23e),_0x37234f(0x19e),_0x37234f(0x1b5),_0x37234f(0x137),_0x2b9e8b(0x2f2),_0x37234f(0x1f5),_0x37234f(0x202),_0x37234f(0xeb)],_0x593993={};let _0x2c3a12=new Date(_0x298bfc[_0x37234f(0xef)](),_0x298bfc[_0x2b9e8b(0x2e1)](),0x1);while(_0x2c3a12<=_0x4fe6f5){const _0x404d01=_0x513e3f[_0x2c3a12[_0x37234f(0x161)]()]+'\x20'+_0x2c3a12[_0x37234f(0xef)]();_0x593993[_0x404d01]=0x0,_0x2c3a12['setMonth'](_0x2c3a12[_0x37234f(0x161)]()+0x1);}_0x2759a1&&_0x2759a1[_0x2b9e8b(0x30a)](_0x229040=>{const _0x2d8fef=_0x37234f,_0x18cc18=new Date(_0x229040['quiz_date']),_0x34f059=_0x18cc18[_0x2d8fef(0x138)](),_0xc23cd=_0x18cc18[_0x2d8fef(0x100)](),_0x53bf9e=_0x513e3f[_0x34f059]+'\x20'+_0xc23cd;_0x593993[_0x53bf9e]!==undefined&&(_0x593993[_0x53bf9e]+=Number(_0x229040['quiz_count']));}),console[_0x2b9e8b(0x1ce)](_0x37234f(0x1f1),_0x593993);const _0x3eaa09=Object[_0x37234f(0x255)](_0x593993)[_0x37234f(0x246)]((_0x10c14b,_0x5bda30)=>_0x10c14b+_0x5bda30,0x0);console[_0x37234f(0x144)](_0x2b9e8b(0x1de),_0x3eaa09),renderChart(Object[_0x37234f(0x1d0)](_0x593993),Object[_0x37234f(0x255)](_0x593993));}catch(_0x5220ba){console[_0x37234f(0x214)](_0x37234f(0x182),_0x5220ba[_0x2b9e8b(0x2dc)]);}}setTimeout(async()=>{const _0x34a8ee=a1_0x240ed1,_0x10e921=a1_0x232bd1,_0x1886b3=getSupabase();if(!_0x1886b3)return;const {data:{user:_0x2c4a91}}=await _0x1886b3[_0x10e921(0x17e)][_0x10e921(0x171)]();if(!_0x2c4a91){window[_0x10e921(0x130)][_0x10e921(0xe4)]=_0x34a8ee(0x2fc);return;}const _0x328122=_0x2c4a91['id'];loadUserDashboard(_0x328122),loadActivityChart(_0x328122),loadLeaderboard(_0x328122),handleChartFilterChange(_0x328122);},0x64);}if(window[a1_0x232bd1(0x130)][a1_0x232bd1(0x15b)][a1_0x232bd1(0x18d)](a1_0x232bd1(0x256))){const supabaseUrl=a1_0x232bd1(0x1d8),supabaseKey=a1_0x232bd1(0x117),supabaseClient=window[a1_0x240ed1(0x1d2)]['createClient'](supabaseUrl,supabaseKey);document[a1_0x232bd1(0x193)](a1_0x232bd1(0x150),async()=>{const _0x1b1d0d=a1_0x240ed1,_0x27dd49=a1_0x232bd1,_0x50d7f6=new URLSearchParams(window[_0x27dd49(0x130)][_0x27dd49(0x215)]),_0xc0538e=_0x50d7f6[_0x27dd49(0x1e0)](_0x27dd49(0x252)),_0x5bded4=_0x50d7f6[_0x27dd49(0x1e0)](_0x27dd49(0x252))||_0x27dd49(0x1a7);if(!_0xc0538e){console['error'](_0x27dd49(0x140));return;}const _0x199027=localStorage[_0x27dd49(0xf9)](_0x1b1d0d(0x25e));if(!_0x199027){const _0x287cf8=_0x1b1d0d(0x2d5);showMessage(_0x287cf8,_0x1b1d0d(0x1f2),_0x27dd49(0x211))[_0x1b1d0d(0x26a)](()=>{const _0x36d987=_0x1b1d0d,_0x4279d0=_0x27dd49;window[_0x36d987(0x287)][_0x4279d0(0xe4)]=_0x4279d0(0x1eb);});return;}const _0x13d6e9=JSON[_0x27dd49(0x23f)](_0x199027)[_0x27dd49(0x119)]['id'],_0x2d1d2e=Math[_0x27dd49(0xf0)]()[_0x27dd49(0x1c0)](0x24)[_0x27dd49(0x1ba)](0x2,0xf);localStorage[_0x27dd49(0x10b)](_0x27dd49(0x249),_0x2d1d2e);async function _0x1e6305(){const _0x13f0d3=_0x1b1d0d,_0x281760=_0x27dd49,_0x8628d4=localStorage[_0x281760(0xf9)](_0x281760(0x1e3));if(!_0x8628d4)return;const _0x1cdada=JSON[_0x281760(0x23f)](_0x8628d4)[_0x281760(0x119)]['id'],_0x59fde7=localStorage[_0x13f0d3(0x303)](_0x281760(0x249)),{data:_0x24890c,error:_0xbabbd7}=await supabaseClient[_0x281760(0x17a)](_0x281760(0x24d))[_0x281760(0x240)]({'last_session_id':_0x59fde7})[_0x281760(0x198)]({'user_id':_0x1cdada});_0xbabbd7&&console[_0x281760(0x214)](_0x281760(0x105),_0xbabbd7[_0x281760(0x16b)]);}_0x1e6305();const _0xdf5061=localStorage[_0x27dd49(0xf9)](_0x1b1d0d(0x2f3)+_0x13d6e9),_0x6dbe2f=_0xdf5061&&new Date()[_0x27dd49(0x1fe)]()<parseInt(_0xdf5061);if(!_0x6dbe2f){const _0x5a4b7a=new Date(),_0x1b87b7=_0x5a4b7a[_0x1b1d0d(0x27a)]()+'-'+String(_0x5a4b7a[_0x27dd49(0x161)]()+0x1)[_0x1b1d0d(0x2bb)](0x2,'0')+'-'+String(_0x5a4b7a[_0x27dd49(0xdc)]())[_0x27dd49(0x160)](0x2,'0');let {data:_0x3650c8}=await supabaseClient[_0x1b1d0d(0x1e5)](_0x27dd49(0x24d))[_0x27dd49(0x247)](_0x27dd49(0x1fd))['eq'](_0x27dd49(0x1f9),_0x13d6e9)[_0x27dd49(0x212)]();if(_0x3650c8&&_0x3650c8[_0x27dd49(0x1bd)]===_0x1b87b7&&(Number(_0x3650c8[_0x1b1d0d(0x1ee)])||0x0)>=0x3){const _0x49b510='\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22../images/freeplanreminder.webp\x22\x20alt=\x22Limit\x22\x20style=\x22width:\x20200px;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22margin-bottom:\x2010px;\x20color:\x20#1e90ff;\x22>Gündəlik\x20limit\x20doldu!</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2015px;\x20opacity:\x200.9;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Pulsuz\x20hesabla\x20gündə\x20yalnız\x20<b>3\x20fənn</b>\x20(30\x20sual)\x20işləyə\x20bilərsiniz.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Pulsuz\x20hesabla\x20gündə\x20yalnız\x20<b>3\x20fənn</b>\x20(30\x20sual)\x20işləyə\x20bilərsiniz.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x291ccb=await showMessage(_0x49b510,_0x27dd49(0x19a),_0x27dd49(0x168),_0x27dd49(0x1f6));_0x291ccb?window[_0x27dd49(0x130)][_0x1b1d0d(0x262)]=_0x27dd49(0x23c):window[_0x27dd49(0x130)][_0x27dd49(0xe4)]=_0x27dd49(0x122);return;}}if(_0x6dbe2f){const _0x2aa864=window[_0x27dd49(0x219)]<=0x300,_0x29cc83=document[_0x27dd49(0x141)](_0x27dd49(0xe1));if(_0x2aa864){window[_0x1b1d0d(0x269)]={'chatbotId':_0x27dd49(0x1ee)};const _0x4ac659=document[_0x27dd49(0x188)](_0x27dd49(0x21f));_0x4ac659[_0x27dd49(0x139)]=!![],_0x4ac659[_0x27dd49(0x1ea)]['id']=_0x27dd49(0x1ee),_0x4ac659['id']=_0x27dd49(0x1f2),_0x4ac659[_0x1b1d0d(0x1f4)]=_0x27dd49(0xe5),_0x4ac659[_0x1b1d0d(0x2f5)]=_0x1b1d0d(0x23c),document[_0x27dd49(0x129)][_0x27dd49(0x107)](_0x4ac659);if(_0x29cc83)_0x29cc83[_0x27dd49(0xdf)][_0x27dd49(0x1e4)]=_0x27dd49(0x1ed);}else{window[_0x27dd49(0x1ab)]={'chatbotId':_0x27dd49(0x18b),'display':_0x27dd49(0x1d9)};let _0xa19e4a=document[_0x27dd49(0x141)](_0x27dd49(0x1cd));!_0xa19e4a?(_0xa19e4a=document[_0x1b1d0d(0x2f1)](_0x27dd49(0x121)),_0xa19e4a['id']=_0x27dd49(0x1cd),_0xa19e4a[_0x27dd49(0xdf)]['width']=_0x27dd49(0x224),_0xa19e4a[_0x27dd49(0xdf)][_0x27dd49(0x20e)]=_0x27dd49(0x18f),_0xa19e4a['style'][_0x27dd49(0x199)]=_0x27dd49(0x1ce),_0xa19e4a[_0x27dd49(0xdf)][_0x27dd49(0x176)]='0',_0xa19e4a[_0x27dd49(0xdf)][_0x27dd49(0x206)]=_0x27dd49(0x200),_0xa19e4a['style'][_0x27dd49(0x12a)]=_0x27dd49(0x17f),_0xa19e4a[_0x27dd49(0xdf)][_0x1b1d0d(0x2c6)]='#fff',_0xa19e4a[_0x27dd49(0xdf)][_0x1b1d0d(0x28c)]=_0x27dd49(0x1d3),document[_0x1b1d0d(0x207)][_0x27dd49(0x107)](_0xa19e4a),document[_0x1b1d0d(0x2a8)](_0x1b1d0d(0x30f))[_0x27dd49(0xdf)][_0x27dd49(0x221)]=_0x27dd49(0x1c6),document[_0x27dd49(0x102)](_0x27dd49(0x258))[_0x27dd49(0xdf)][_0x1b1d0d(0x20a)]=_0x27dd49(0x242),document[_0x1b1d0d(0x2a8)]('.main-content')[_0x27dd49(0xdf)][_0x27dd49(0x151)]='0',document[_0x27dd49(0x102)](_0x27dd49(0x15f))[_0x27dd49(0xdf)][_0x27dd49(0x153)]=_0x27dd49(0x166)):_0xa19e4a[_0x27dd49(0xdf)][_0x27dd49(0x1e4)]=_0x27dd49(0x1e8);const _0x233e27=document[_0x27dd49(0x188)](_0x27dd49(0x21f));_0x233e27[_0x27dd49(0x139)]=!![],_0x233e27[_0x1b1d0d(0x1be)]['id']=_0x27dd49(0x18b),_0x233e27[_0x27dd49(0x1ea)][_0x1b1d0d(0x238)]=_0x27dd49(0x1d9),_0x233e27['id']=_0x27dd49(0x1f2),_0x233e27[_0x27dd49(0x23d)]=_0x27dd49(0xe5),_0x233e27[_0x1b1d0d(0x2f5)]=_0x1b1d0d(0x23c),document[_0x27dd49(0x129)][_0x27dd49(0x107)](_0x233e27);if(_0x29cc83)_0x29cc83[_0x27dd49(0xdf)][_0x27dd49(0x1e4)]=_0x27dd49(0x242);}}else{const _0x5709a2=document[_0x1b1d0d(0x2ef)](_0x1b1d0d(0x281));if(_0x5709a2)_0x5709a2[_0x27dd49(0xdf)][_0x27dd49(0x1e4)]=_0x27dd49(0x242);const _0xb4b414=document[_0x27dd49(0x141)](_0x27dd49(0x1cd));if(_0xb4b414)_0xb4b414[_0x27dd49(0xdf)][_0x27dd49(0x1e4)]=_0x27dd49(0x242);console[_0x27dd49(0x144)](_0x1b1d0d(0x301));}((async()=>{const _0x5d5ccf=_0x1b1d0d,_0x540c46=_0x27dd49,_0xd530c4=_0x540c46(0x1d8),_0x2ce0dd=_0x540c46(0x117),_0x23deb1=window[_0x540c46(0x125)]['createClient'](_0xd530c4,_0x2ce0dd);try{const _0x49b219=localStorage[_0x540c46(0xf9)](_0x540c46(0x1e3));if(!_0x49b219)return;const _0x428ff7=JSON[_0x5d5ccf(0x309)](_0x49b219)['user']['id'],_0x25b30f=new Date()[_0x540c46(0xe6)]()[_0x540c46(0x204)]('T')[0x0],{data:_0x2a2092}=await _0x23deb1[_0x540c46(0x17a)](_0x5d5ccf(0x2bd))[_0x540c46(0x247)](_0x540c46(0x1fd))['eq'](_0x540c46(0x1f9),_0x428ff7)['maybeSingle']();let _0x43eb7b=_0x2a2092&&_0x2a2092[_0x540c46(0x1bd)]===_0x25b30f?Number(_0x2a2092[_0x540c46(0x145)])||0x0:0x0;const _0x3dda96=document[_0x540c46(0x141)]('limit-text');if(_0x3dda96)_0x3dda96[_0x540c46(0x11c)]=_0x43eb7b;}catch(_0x225a92){console[_0x540c46(0x214)](_0x5d5ccf(0x2ae),_0x225a92[_0x540c46(0x16b)]);}})());function _0x622e9c(_0x1a0c72){const _0x28aa40=_0x1b1d0d,_0x4d1b21=_0x27dd49;let _0x58fc40=JSON[_0x4d1b21(0x23f)](localStorage[_0x4d1b21(0xf9)](_0x28aa40(0x2ac)))||{};return _0x58fc40[_0x1a0c72]||[];}function _0x144a49(_0x37b9de,_0x1e5786){const _0xcc0330=_0x1b1d0d,_0x1a012d=_0x27dd49;let _0x2da262=JSON[_0x1a012d(0x23f)](localStorage[_0x1a012d(0xf9)](_0xcc0330(0x2ac)))||{};!_0x2da262[_0x37b9de]&&(_0x2da262[_0x37b9de]=[]),!_0x2da262[_0x37b9de][_0x1a012d(0x1b3)](_0x1e5786)&&(_0x2da262[_0x37b9de][_0x1a012d(0x231)](_0x1e5786),localStorage[_0x1a012d(0x10b)](_0x1a012d(0xec),JSON[_0x1a012d(0x142)](_0x2da262)));}function _0x2773ce(_0x52b254,_0x447e3e){const _0x47826e=_0x27dd49;let _0x186cbe=JSON[_0x47826e(0x23f)](localStorage[_0x47826e(0xf9)](_0x47826e(0xec)))||{};_0x186cbe[_0x52b254]&&(_0x186cbe[_0x52b254]=_0x186cbe[_0x52b254]['filter'](_0x5cfe88=>_0x5cfe88!==_0x447e3e),localStorage[_0x47826e(0x10b)](_0x47826e(0xec),JSON['stringify'](_0x186cbe)));}fetch(_0x27dd49(0x1c4))[_0x1b1d0d(0x26a)](_0x17730e=>_0x17730e[_0x27dd49(0x162)]())[_0x1b1d0d(0x26a)](_0x4646df=>{const _0x42ef93=_0x27dd49,_0x4985f5=[..._0x4646df[_0x42ef93(0x19c)][_0x42ef93(0xe7)]||[],..._0x4646df[_0x42ef93(0x19c)][_0x42ef93(0x220)]||[]],_0x22dda0=_0x4985f5[_0x42ef93(0x13a)](_0x5edc72=>_0x5edc72['id']===_0xc0538e);if(_0x22dda0){const _0x20a887=document[_0x42ef93(0x102)](_0x42ef93(0x1df));if(_0x20a887)_0x20a887[_0x42ef93(0x1ec)]=_0x22dda0[_0x42ef93(0x18a)];}else console[_0x42ef93(0x15a)](_0x42ef93(0x1e9)+_0xc0538e);})[_0x27dd49(0x1dc)](_0x4cc5b5=>console[_0x27dd49(0x214)](_0x27dd49(0x16f),_0x4cc5b5));async function _0x272fd5(){const _0x2ce46d=_0x1b1d0d,_0xf7f300=_0x27dd49;try{const {data:_0x14bb32,error:_0x82a465}=await supabaseClient[_0x2ce46d(0x1e5)](_0xc0538e)[_0xf7f300(0x247)]('*');if(_0x82a465)throw _0x82a465;if(!_0x14bb32||_0x14bb32[_0x2ce46d(0x28f)]===0x0){console[_0xf7f300(0x214)](_0xf7f300(0x213));return;}const _0x4bdbc9=shuffleArray(_0x14bb32)[_0x2ce46d(0x2c8)](0x0,0xa);let _0x4c96f5=![],_0x3769d0=0x0,_0x42a4dc=0x0,_0xc942c7,_0x20ba9d=0x0,_0x4ee96c={};const _0x46a69e=document[_0xf7f300(0x141)](_0x2ce46d(0x202)),_0x19620f=document[_0xf7f300(0x141)](_0xf7f300(0xdb)),_0x3be428=document[_0xf7f300(0x141)](_0xf7f300(0x1b7)),_0x5a02f4=document[_0xf7f300(0x141)](_0xf7f300(0x17b)),_0x287634=document[_0xf7f300(0x141)]('evvelki-btn'),_0x6e84f7=document[_0xf7f300(0x141)](_0xf7f300(0x118));if(_0x287634)_0x287634['onclick']=()=>_0x33c7b7(-0x1);if(_0x6e84f7)_0x6e84f7[_0x2ce46d(0x317)]=()=>_0x33c7b7(0x1);function _0x2a4796(_0xcd6366){const _0x139b8b=_0x2ce46d,_0x51c1d2=_0xf7f300,_0x11e960=Math[_0x51c1d2(0x148)](_0xcd6366/0x3c)[_0x139b8b(0x2c4)]()[_0x51c1d2(0x160)](0x2,'0'),_0x1d7d05=(_0xcd6366%0x3c)[_0x139b8b(0x2c4)]()[_0x51c1d2(0x160)](0x2,'0');return _0x11e960+':'+_0x1d7d05;}function _0x4e7de0(){const _0x18bd7d=_0xf7f300;if(_0xc942c7)clearInterval(_0xc942c7);_0x20ba9d=0x0;const _0x1c4418=document[_0x18bd7d(0x141)](_0x18bd7d(0x1dd));if(_0x1c4418)_0x1c4418[_0x18bd7d(0x1ec)]=_0x18bd7d(0x1ca);_0xc942c7=setInterval(()=>{const _0x4df999=_0x18bd7d;_0x20ba9d++;if(_0x1c4418)_0x1c4418[_0x4df999(0x1ec)]=_0x2a4796(_0x20ba9d);},0x3e8);}function _0x5274ab(){const _0x10fed4=setInterval(async()=>{const _0x199605=a1_0x22c1,_0x1747fa=a1_0x2b12,_0x2cd59d=localStorage[_0x1747fa(0xf9)](_0x199605(0x25e));if(!_0x2cd59d)return;const _0x5081e6=JSON[_0x1747fa(0x23f)](_0x2cd59d)[_0x1747fa(0x119)]['id'],{data:_0x4974c8,error:_0x5117cc}=await supabaseClient[_0x1747fa(0x17a)](_0x1747fa(0x24d))[_0x1747fa(0x247)](_0x1747fa(0x10a))[_0x1747fa(0x198)]({'user_id':_0x5081e6})[_0x199605(0x258)]();if(_0x4974c8&&_0x4974c8[_0x1747fa(0x10a)]!==localStorage['getItem'](_0x1747fa(0x249))){clearInterval(ccheckInterval);const _0xe06057=_0x1747fa(0x10e);await showMessage(_0xe06057,_0x1747fa(0x1f6)),window[_0x199605(0x287)][_0x199605(0x262)]=_0x1747fa(0x122);}},0x2710);}_0x5274ab();function _0x558f6e(_0x83f827){const _0x3f3b40=_0x2ce46d,_0x13e279=_0xf7f300,_0x1d47f5=_0x4bdbc9[_0x83f827];if(!_0x1d47f5)return;if(_0x46a69e)_0x46a69e[_0x13e279(0x1ec)]=_0x1d47f5[_0x13e279(0x123)];if(_0x3be428)_0x3be428[_0x13e279(0x1ec)]=_0x83f827+0x1+_0x13e279(0x239)+_0x4bdbc9[_0x13e279(0xee)];if(_0x5a02f4){const _0x243b19=_0x83f827/_0x4bdbc9[_0x13e279(0xee)]*0x64;_0x5a02f4[_0x13e279(0xdf)][_0x13e279(0x221)]=_0x243b19+'%';}if(_0x19620f){const _0x1903e2={'A':_0x1d47f5[_0x13e279(0x103)],'B':_0x1d47f5[_0x13e279(0x143)],'C':_0x1d47f5[_0x13e279(0x1a1)],'D':_0x1d47f5['options__D'],'E':_0x1d47f5[_0x13e279(0x116)]};_0x19620f[_0x13e279(0x16a)]=Object[_0x13e279(0x15d)](_0x1903e2)[_0x13e279(0xe8)](([_0x3d7354,_0x47628f])=>_0x47628f!==null&&_0x47628f!==undefined&&_0x47628f!=='')[_0x13e279(0x1b4)](([_0x550cb4,_0x44fa06])=>_0x13e279(0xf3)+_0x550cb4+'\x22>'+_0x550cb4+')\x20'+_0x44fa06+_0x13e279(0x15c))['join']('');}const _0x2f447a=document[_0x13e279(0x234)](_0x13e279(0x156));if(_0x4ee96c[_0x83f827]){const _0x38454a=_0x4ee96c[_0x83f827],_0x536113=_0x1d47f5[_0x13e279(0xe3)];_0x19620f[_0x13e279(0x134)][_0x13e279(0x1cf)](_0x3f3b40(0x2bf)),_0x2f447a[_0x3f3b40(0x30a)](_0x538c25=>{const _0x34d901=_0x13e279,_0x3a5543=_0x538c25[_0x34d901(0x1ea)][_0x34d901(0x194)];_0x3a5543===_0x38454a&&_0x538c25[_0x34d901(0x134)][_0x34d901(0x1cf)](_0x3a5543===_0x536113?_0x34d901(0x1fc):_0x34d901(0x19b)),_0x3a5543===_0x536113&&_0x538c25[_0x34d901(0x134)][_0x34d901(0x1cf)](_0x34d901(0x1fc));});if(_0x6e84f7)_0x6e84f7[_0x13e279(0x24a)]=![];}else{_0x19620f[_0x13e279(0x134)][_0x3f3b40(0x26c)](_0x13e279(0x24a));if(_0x6e84f7)_0x6e84f7[_0x13e279(0x24a)]=!![];_0x2f447a[_0x13e279(0x227)](_0x447f50=>{const _0x558d44=_0x13e279;_0x447f50[_0x558d44(0x1be)]=()=>_0x404d71(_0x447f50,_0x1d47f5,_0x83f827);});}if(_0x287634)_0x287634[_0x13e279(0x24a)]=_0x83f827===0x0;_0x6e84f7&&(_0x6e84f7[_0x13e279(0x1ec)]=_0x83f827===_0x4bdbc9[_0x13e279(0xee)]-0x1?_0x13e279(0x1c7):_0x13e279(0x191));}function _0x122561(){const _0x23fdb3=_0xf7f300;if(window[_0x23fdb3(0x12b)]&&typeof window[_0x23fdb3(0x12b)][_0x23fdb3(0x197)]===_0x23fdb3(0x1a9))window[_0x23fdb3(0x12b)][_0x23fdb3(0x197)]();else{const _0x293b33=document[_0x23fdb3(0x141)]('chatling-embed-trigger');if(_0x293b33){const _0x5d7175=_0x293b33[_0x23fdb3(0x102)](_0x23fdb3(0x101))||_0x293b33;_0x5d7175[_0x23fdb3(0x127)]();}}}async function _0x404d71(_0xc51145,_0x544977,_0x5e6bb7){const _0x7ceef5=_0x2ce46d,_0x180851=_0xf7f300,_0x350ef8=_0xc51145[_0x180851(0x1ea)][_0x180851(0x194)];_0x4ee96c[_0x5e6bb7]=_0x350ef8;const _0x4a9146=_0x544977['id'],_0x571b79=_0x544977[_0x180851(0xe3)];_0x19620f[_0x7ceef5(0x319)][_0x180851(0x1cf)](_0x180851(0x24a));if(_0x350ef8===_0x571b79){_0xc51145[_0x180851(0x134)][_0x7ceef5(0x2cb)](_0x7ceef5(0x273));if(_0x6e84f7)_0x6e84f7[_0x180851(0x24a)]=![];_0x42a4dc++,_0x2773ce(_0x5bded4,_0x4a9146);}else{_0xc51145[_0x180851(0x134)][_0x180851(0x1cf)](_0x180851(0x19b));if(_0x6e84f7)_0x6e84f7[_0x180851(0x24a)]=![];_0x144a49(_0x5bded4,_0x4a9146),setTimeout(()=>{const _0x158577=_0x180851,_0x429dd5=_0x19620f[_0x158577(0x102)](_0x158577(0x13e)+_0x571b79+'\x22]');if(_0x429dd5)_0x429dd5[_0x158577(0x134)][_0x158577(0x1cf)](_0x158577(0x1fc));},0x1f4);}function _0x565402(_0x202e33,_0x3a4141){const _0x6b0c8a=_0x7ceef5,_0x21fa3d=_0x180851,_0x5b68d0=currentQuestion[_0x21fa3d(0xe3)],_0x1c61e1=currentQuestion['id'],_0x192792=document[_0x21fa3d(0x234)](_0x21fa3d(0x156));_0x192792[_0x21fa3d(0x227)](_0x3e7767=>_0x3e7767[_0x6b0c8a(0x2bf)]=!![]),_0x3a4141===_0x5b68d0?(_0x202e33[_0x21fa3d(0xdf)][_0x21fa3d(0x19f)]=_0x6b0c8a(0x28e),_0x202e33[_0x21fa3d(0xdf)][_0x21fa3d(0x1da)]=_0x21fa3d(0x23e),_0x2773ce(_0x5bded4,_0x1c61e1)):(_0x202e33[_0x6b0c8a(0x1c4)][_0x21fa3d(0x19f)]='#F44336',_0x202e33[_0x21fa3d(0xdf)][_0x21fa3d(0x1da)]=_0x21fa3d(0x23e),_0x192792[_0x21fa3d(0x227)](_0x48d257=>{const _0x4b1e9f=_0x21fa3d;_0x48d257[_0x4b1e9f(0x22a)](_0x4b1e9f(0x146))===_0x5b68d0&&(_0x48d257[_0x4b1e9f(0xdf)][_0x4b1e9f(0x19f)]=_0x4b1e9f(0x1aa),_0x48d257[_0x4b1e9f(0xdf)][_0x4b1e9f(0x1da)]=_0x4b1e9f(0x23e));}),_0x144a49(_0x5bded4,_0x1c61e1));}const _0x5ee213=document[_0x180851(0x141)]('options-container');_0x5ee213[_0x180851(0x134)][_0x7ceef5(0x2cb)](_0x180851(0x24a)),_0x6e84f7[_0x180851(0x24a)]=![];}function _0x33c7b7(_0x199ab9){const _0x23df8c=_0xf7f300,_0x4a51ab=_0x3769d0+_0x199ab9;if(_0x4a51ab>=0x0&&_0x4a51ab<_0x4bdbc9[_0x23df8c(0xee)])_0x3769d0=_0x4a51ab,_0x558f6e(_0x3769d0);else _0x4a51ab>=_0x4bdbc9[_0x23df8c(0xee)]&&_0x3896b2();}async function _0x431c08(_0x16cdaa,_0xb6fa4a,_0x1c70c5,_0x377764,_0x3cd483){const _0x484ffb=_0x2ce46d,_0x582565=_0xf7f300;try{const _0x56acef=window[_0x582565(0x136)]||window[_0x582565(0xf8)],{data:{user:_0x5bfac0}}=await _0x56acef[_0x484ffb(0x302)][_0x582565(0x171)](),_0x3cf770=_0x5bfac0?.[_0x582565(0x1a5)]?.[_0x582565(0x158)]||_0x582565(0x1ac),_0x486d97=new Date(),_0x1c53fd=_0x486d97[_0x582565(0xef)]()+'-'+String(_0x486d97[_0x582565(0x161)]()+0x1)[_0x582565(0x160)](0x2,'0')+'-'+String(_0x486d97[_0x582565(0xdc)]())[_0x582565(0x160)](0x2,'0'),_0x4a90ac=new Date(_0x486d97);_0x4a90ac[_0x582565(0xfb)](_0x486d97[_0x582565(0xdc)]()-0x1);const _0x136562=_0x4a90ac[_0x582565(0xef)]()+'-'+String(_0x4a90ac[_0x582565(0x161)]()+0x1)[_0x582565(0x160)](0x2,'0')+'-'+String(_0x4a90ac[_0x582565(0xdc)]())[_0x582565(0x160)](0x2,'0');let {data:_0x276a7b,error:_0x138120}=await _0x56acef[_0x582565(0x17a)](_0x582565(0x24d))[_0x582565(0x247)]('*')['eq'](_0x582565(0x1f9),_0x16cdaa)[_0x582565(0x212)]();if(_0x138120)throw _0x138120;let _0x48803c=_0x276a7b?_0x276a7b[_0x582565(0x1bd)]:null,_0x598ea0=_0x276a7b?Number(_0x276a7b[_0x582565(0x14e)])||0x0:0x0,_0x5cdfc0=_0x276a7b?Number(_0x276a7b[_0x484ffb(0x1ee)])||0x0:0x0,_0x18d41f=0x0,_0x48fb83=0x1;if(!_0x276a7b)_0x18d41f=0x1,_0x48fb83=0x1;else{if(_0x48803c===_0x1c53fd)_0x18d41f=_0x598ea0,_0x48fb83=_0x5cdfc0+0x1;else _0x48803c===_0x136562?(_0x18d41f=_0x598ea0+0x1,_0x48fb83=0x1):(_0x18d41f=0x1,_0x48fb83=0x1);}function _0x59cd90(_0x3b2c1a,_0x2d5a09,_0xac7485){const _0x157da6=_0x484ffb,_0x5ec47b=_0x582565,_0x3de461=Math[_0x5ec47b(0x144)](0xa)/0x190,_0x138e97=0x3e8,_0x6a52ac=_0xac7485/0x64,_0x326ea1=0x1/(0x1+Math['pow'](0xa,(_0x138e97-_0x3b2c1a)/0x190)),_0x571c41=0x1/(Math[_0x5ec47b(0x1c8)](_0x3de461,0x2)*(_0x326ea1*(0x1-_0x326ea1))),_0x2bde4a=_0x3de461/(0x1/Math[_0x157da6(0x1dd)](_0x2d5a09,0x2)+0x1/_0x571c41),_0x12f99c=_0x3b2c1a+_0x2bde4a*(_0x6a52ac-_0x326ea1);let _0x47e8d5=Math['sqrt'](0x1/(0x1/Math[_0x5ec47b(0x1c8)](_0x2d5a09,0x2)+0x1/_0x571c41));return _0x47e8d5=Math[_0x5ec47b(0x1a6)](0x1e,Math[_0x5ec47b(0x1fa)](0x15e,_0x47e8d5)),{'rating':Math[_0x157da6(0x259)](_0x12f99c),'rd':Math[_0x157da6(0x259)](_0x47e8d5),'diff':Math[_0x5ec47b(0x18c)](_0x12f99c-_0x3b2c1a)};}const _0x3e33e3=_0x3cd483/_0x377764*0x64,_0x48a1e7=_0x276a7b?Number(_0x276a7b[_0x582565(0x229)])||0x3e8:0x3e8,_0x3f92df=_0x276a7b?Number(_0x276a7b[_0x582565(0x124)])||0x15e:0x15e,_0x455db8=_0x59cd90(_0x48a1e7,_0x3f92df,_0x3e33e3),_0x349388={'display_name':_0x3cf770,'quizzes_completed':(_0x276a7b?Number(_0x276a7b['quizzes_completed'])||0x0:0x0)+0x1,'total_time_spent':(_0x276a7b?Number(_0x276a7b[_0x582565(0x1d7)])||0x0:0x0)+_0x1c70c5,'total_answered_questions':(_0x276a7b?Number(_0x276a7b[_0x484ffb(0x2ee)])||0x0:0x0)+_0x377764,'total_correct_answers':(_0x276a7b?Number(_0x276a7b[_0x582565(0x225)])||0x0:0x0)+_0x3cd483,'total_score':(_0x276a7b?Number(_0x276a7b[_0x582565(0x163)])||0x0:0x0)+_0xb6fa4a,'elo_rating':_0x455db8[_0x582565(0x201)],'rating_deviation':_0x455db8['rd'],'current_streak':_0x18d41f,'last_quiz_date':_0x1c53fd,'daily_limit_count':_0x48fb83,'updated_at':new Date()[_0x582565(0xe6)]()},{error:_0x54e7fc}=await _0x56acef[_0x582565(0x17a)](_0x582565(0x24d))[_0x582565(0x1d2)]({'user_id':_0x16cdaa,..._0x349388});if(_0x54e7fc)throw _0x54e7fc;const {data:_0x44cd71}=await _0x56acef[_0x582565(0x17a)](_0x484ffb(0x23f))[_0x582565(0x247)](_0x582565(0x109))['eq'](_0x582565(0x1f9),_0x16cdaa)['eq'](_0x582565(0x1d6),_0x1c53fd)[_0x582565(0x212)](),_0x3a2407=(_0x44cd71?Number(_0x44cd71[_0x582565(0x109)])||0x0:0x0)+0x1;return await _0x56acef[_0x582565(0x17a)](_0x582565(0xff))[_0x582565(0x1d2)]({'user_id':_0x16cdaa,'quiz_date':_0x1c53fd,'quiz_count':_0x3a2407},{'onConflict':_0x582565(0x1cb)}),{'diff':_0x455db8[_0x582565(0xf5)],'newElo':_0x455db8[_0x582565(0x201)]};}catch(_0x5f1d3e){return console[_0x582565(0x214)](_0x484ffb(0x284),_0x5f1d3e['message']),null;}}async function _0x3896b2(){const _0x476002=_0x2ce46d,_0x24bfbd=_0xf7f300;clearInterval(_0xc942c7);const _0x4a6ecd=_0x2a4796(_0x20ba9d);let _0x66ab7f=0x0,_0x538c88={'diff':0x0,'newElo':0x3e8};if(_0x4c96f5)return;_0x4c96f5=!![];if(_0x13d6e9){const _0xac45e4=await _0x431c08(_0x13d6e9,_0x42a4dc,_0x20ba9d,_0x4bdbc9[_0x24bfbd(0xee)],_0x42a4dc);if(_0xac45e4)_0x538c88=_0xac45e4;}let _0xb8f56a='elo-neutral',_0x3d854f=_0x538c88['diff']>0x0?'+':'';if(_0x538c88[_0x24bfbd(0xf5)]>0x0)_0xb8f56a=_0x24bfbd(0x112);else _0x538c88[_0x24bfbd(0xf5)]<0x0&&(_0xb8f56a=_0x24bfbd(0x11e));const _0x4fb505=document[_0x476002(0x2a8)](_0x24bfbd(0x113)),_0x4fb977=document[_0x24bfbd(0x102)](_0x476002(0x21b)),_0x247ab1=document[_0x24bfbd(0x102)](_0x476002(0x298)),_0x4b626a=document[_0x24bfbd(0x102)](_0x476002(0x203)),_0x504e49=document[_0x24bfbd(0x102)](_0x476002(0x255));if(_0x4fb505)_0x4fb505[_0x24bfbd(0xdf)][_0x24bfbd(0x1e4)]=_0x476002(0x218);if(_0x4fb977)_0x4fb977[_0x24bfbd(0xdf)][_0x476002(0x238)]=_0x24bfbd(0x242);if(_0x247ab1)_0x247ab1[_0x24bfbd(0xdf)][_0x24bfbd(0x1e4)]=_0x24bfbd(0x242);if(_0x4b626a)_0x4b626a[_0x24bfbd(0xdf)][_0x24bfbd(0x1e4)]='none';if(_0x504e49)_0x504e49[_0x24bfbd(0xdf)][_0x24bfbd(0x1e4)]=_0x24bfbd(0x242);const _0x85409=document[_0x24bfbd(0x102)](_0x476002(0x280));let _0x1912b5='';_0x85409&&(_0x1912b5=_0x85409[_0x24bfbd(0x1ec)],_0x85409[_0x24bfbd(0xdf)][_0x24bfbd(0x1e4)]=_0x24bfbd(0x242));const _0x101dd4=Math[_0x24bfbd(0x18c)](_0x42a4dc/_0x4bdbc9[_0x24bfbd(0xee)]*0x64),_0x2a07f6=_0x4bdbc9[_0x476002(0x28f)]-_0x42a4dc,_0x219228=_0x538c88[_0x24bfbd(0x22d)]+_0x24bfbd(0x10c)+_0xb8f56a+_0x24bfbd(0x126)+_0x3d854f+_0x538c88['diff']+_0x24bfbd(0x228);_0x19620f[_0x24bfbd(0x16a)]=_0x24bfbd(0x180)+_0x101dd4*3.6+_0x24bfbd(0x114)+_0x101dd4+_0x24bfbd(0x173)+_0x42a4dc+'/'+_0x4bdbc9[_0x24bfbd(0xee)]+'</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22result-subject\x22>'+_0x1912b5+_0x24bfbd(0x13f)+_0x42a4dc+_0x24bfbd(0x152)+_0x2a07f6+_0x24bfbd(0xf7)+_0x4a6ecd+_0x476002(0x22a)+_0x101dd4+_0x24bfbd(0x21b)+_0x219228+_0x24bfbd(0x104),_0x19620f[_0x24bfbd(0x134)][_0x476002(0x26c)](_0x24bfbd(0x24a));}window[_0xf7f300(0x1f3)]=function(){const _0x29da58=_0x2ce46d,_0x5b95eb=_0xf7f300,_0x140bd3=document[_0x5b95eb(0x141)](_0x5b95eb(0x1e1))[_0x5b95eb(0x11c)],_0x2651f7=_0x29da58(0x2fb)+_0x140bd3+_0x5b95eb(0x1ef);openActionModal(_0x2651f7);},window[_0xf7f300(0x17c)]=function(){const _0x44e447=_0x2ce46d,_0x3dbc51=_0xf7f300,_0x9d036b=document[_0x3dbc51(0x141)](_0x44e447(0x286))[_0x3dbc51(0xea)][_0x3dbc51(0x1b2)]();if(!_0x9d036b){showMessage(_0x3dbc51(0x238));return;}closeActionModal(),showMessage(_0x3dbc51(0x253));},_0x558f6e(_0x3769d0),_0x4e7de0(),_0x558f6e(_0x3769d0),_0x4e7de0();}catch(_0x434d2c){console[_0x2ce46d(0x2db)]('Supabase\x20fetch\x20error:',_0x434d2c[_0xf7f300(0x16b)]);}}_0x272fd5();});function shuffleArray(_0x2aad3e){const _0x729211=a1_0x240ed1,_0x13ad9c=a1_0x232bd1;return _0x2aad3e[_0x13ad9c(0x1b4)](_0x5c1ad9=>[Math[_0x13ad9c(0xf0)](),_0x5c1ad9])[_0x729211(0x209)]((_0x2a8169,_0x59272e)=>_0x2a8169[0x0]-_0x59272e[0x0])[_0x13ad9c(0x1b4)](_0x279cb5=>_0x279cb5[0x1]);}}if(window[a1_0x232bd1(0x130)][a1_0x232bd1(0x15b)][a1_0x232bd1(0x1b3)](a1_0x232bd1(0x14d))){const supabaseUrl=a1_0x232bd1(0x1d8),supabaseKey=a1_0x240ed1(0x23b),supabaseClient=window[a1_0x232bd1(0x125)][a1_0x232bd1(0x164)](supabaseUrl,supabaseKey);document[a1_0x240ed1(0x2d8)]('DOMContentLoaded',async()=>{const _0x3bc5ca=a1_0x240ed1,_0x4710dd=a1_0x232bd1,{data:{user:_0x2c8539},error:_0x305a82}=await supabaseClient[_0x4710dd(0x17e)][_0x4710dd(0x171)]();if(_0x305a82||!_0x2c8539){window[_0x3bc5ca(0x287)][_0x4710dd(0xe4)]=_0x4710dd(0x1eb);return;}const _0x151f88=document[_0x3bc5ca(0x2ef)](_0x4710dd(0x236)),_0x14830c=document['getElementById'](_0x4710dd(0x20b)),_0x475a82=document[_0x3bc5ca(0x2ef)](_0x4710dd(0x1b6)),_0x3a9efa=document[_0x4710dd(0x141)](_0x3bc5ca(0x265));if(_0x151f88)_0x151f88[_0x4710dd(0xea)]=_0x2c8539[_0x4710dd(0x1a5)]?.[_0x4710dd(0x158)]||'';if(_0x14830c)_0x14830c['value']=_0x2c8539[_0x4710dd(0x20b)]||'';if(_0x475a82)_0x475a82['value']=_0x4710dd(0x226);if(_0x3a9efa&&_0x2c8539[_0x4710dd(0x257)]){const _0x45329a=new Date(_0x2c8539[_0x4710dd(0x257)]),_0x3f9198={'day':_0x4710dd(0xfa),'month':_0x4710dd(0x14a),'year':_0x4710dd(0xfa)};_0x3a9efa[_0x4710dd(0x1ec)]=_0x45329a[_0x4710dd(0xd8)](_0x4710dd(0x190),_0x3f9198);}const _0x487858=document[_0x4710dd(0x102)](_0x4710dd(0x21e)),_0x3cd85f=document[_0x4710dd(0x102)](_0x4710dd(0x1e7)),_0x286d24=document[_0x4710dd(0x102)](_0x4710dd(0x18e)),_0x72b5c0=document[_0x4710dd(0x141)](_0x4710dd(0x13c)),{data:_0x261eaa,error:_0x1982c1}=await supabaseClient[_0x4710dd(0x17a)](_0x3bc5ca(0x1bb))[_0x4710dd(0x247)]('*')['eq'](_0x3bc5ca(0x2ff),_0x2c8539['id'])[_0x4710dd(0x212)]();if(_0x261eaa){const _0xdc0176=new Date(),_0x1a05aa=new Date(_0x261eaa[_0x3bc5ca(0x1d6)]);if(_0xdc0176<_0x1a05aa){if(_0x487858)_0x487858[_0x4710dd(0xdf)][_0x3bc5ca(0x238)]=_0x3bc5ca(0x218);if(_0x3cd85f)_0x3cd85f[_0x4710dd(0xdf)][_0x3bc5ca(0x238)]=_0x4710dd(0x1ed);if(_0x286d24)_0x286d24[_0x4710dd(0x1ec)]=_0x261eaa[_0x4710dd(0x207)];const _0x32c4d1={'day':_0x4710dd(0xfa),'month':_0x3bc5ca(0x2f8),'year':_0x4710dd(0xfa)};if(_0x72b5c0)_0x72b5c0[_0x4710dd(0x1ec)]=_0x1a05aa[_0x4710dd(0xd8)](_0x4710dd(0x190),_0x32c4d1);}else _0x487858[_0x3bc5ca(0x1c4)][_0x4710dd(0x1e4)]=_0x4710dd(0x1ed);}window[_0x4710dd(0x11d)]=function(_0x345ff5){const _0xc457ac=_0x4710dd;if(_0x345ff5===_0xc457ac(0x1b6))_0x496d9f();else{const _0x1f7584=_0xc457ac(0x11b);openActionModal(_0x1f7584);}};async function _0x496d9f(){const _0x2e19c4=_0x3bc5ca,_0x537f23=_0x4710dd,{data:{user:_0x5b553e}}=await supabaseClient[_0x537f23(0x17e)][_0x537f23(0x171)](),_0xf7c104=_0x5b553e[_0x537f23(0x20b)],_0x1f0fb2=_0x2e19c4(0x2f0)+_0xf7c104+_0x537f23(0x170)+_0xf7c104+_0x2e19c4(0x2ba);openActionModal(_0x1f0fb2);}window[_0x4710dd(0x149)]=async function(_0x434b3d){const _0x4e8758=_0x3bc5ca,_0x194133=_0x4710dd,_0x357c02=document[_0x194133(0x141)](_0x194133(0x167));_0x357c02[_0x194133(0x1ec)]='Göndərilir...',_0x357c02[_0x194133(0x24a)]=!![];const {error:_0x22187b}=await supabaseClient[_0x194133(0x17e)][_0x194133(0x1d5)](_0x434b3d);_0x22187b?(await showMessage(_0x194133(0x1c5)+_0x22187b[_0x194133(0x16b)]),_0x357c02[_0x194133(0x24a)]=![],_0x357c02[_0x194133(0x1ec)]=_0x4e8758(0x1db)):_0x5c6470(_0x434b3d);};function _0x5c6470(_0x33f19d){const _0x24f716=_0x3bc5ca,_0x4df57a=_0x4710dd,_0x5cefd2=document[_0x4df57a(0x141)](_0x24f716(0x322));_0x5cefd2[_0x4df57a(0x16a)]=_0x4df57a(0x20a)+_0x33f19d+_0x24f716(0x205);}window[_0x4710dd(0x1ae)]=async function(_0x17735d){const _0x58a0f5=_0x3bc5ca,_0x92c037=_0x4710dd,_0x4e28ba=document[_0x92c037(0x141)](_0x92c037(0x22e))[_0x58a0f5(0x1f5)][_0x92c037(0x1b2)](),_0xab469=document[_0x92c037(0x141)](_0x92c037(0x237))[_0x92c037(0xea)][_0x92c037(0x1b2)](),_0x58a2a0=document[_0x92c037(0x141)](_0x92c037(0x15e));if(_0x4e28ba[_0x92c037(0xee)]<0x8||_0xab469[_0x92c037(0xee)]<0x6){await showMessage(_0x92c037(0x19d));return;}_0x58a2a0[_0x92c037(0x1ec)]=_0x92c037(0x241),_0x58a2a0[_0x92c037(0x24a)]=!![];const {error:_0x579b09}=await supabaseClient[_0x92c037(0x17e)][_0x92c037(0x131)]({'email':_0x17735d,'token':_0x4e28ba,'type':_0x58a0f5(0x307)});if(_0x579b09)await showMessage(_0x92c037(0x14b)),_0x58a2a0[_0x58a0f5(0x2bf)]=![],_0x58a2a0[_0x92c037(0x1ec)]=_0x58a0f5(0x327);else{const {error:_0x3387e2}=await supabaseClient[_0x92c037(0x17e)][_0x92c037(0x178)]({'password':_0xab469});closeActionModal(),_0x3387e2?await showMessage(_0x92c037(0x1c5)+_0x3387e2[_0x92c037(0x16b)]):await showMessage('Şifrəniz\x20uğurla\x20yeniləndi!');}};const _0x18af6b=document[_0x4710dd(0x102)](_0x4710dd(0x24b));_0x18af6b&&_0x18af6b[_0x3bc5ca(0x2d8)](_0x4710dd(0x127),async()=>{const _0x202459=_0x3bc5ca,_0x9366c2=_0x4710dd,_0x481f52=_0x151f88[_0x9366c2(0xea)][_0x202459(0x2e4)]();if(!_0x481f52){await showMessage('İstifadəçi\x20adı\x20boş\x20ola\x20bilməz!');return;}const _0x5a0bba=_0x18af6b[_0x202459(0x2d4)];_0x18af6b[_0x9366c2(0x1ec)]=_0x9366c2(0xed),_0x18af6b[_0x202459(0x2bf)]=!![];const {data:_0x7a47a4,error:_0x5beed3}=await supabaseClient[_0x9366c2(0x17e)][_0x202459(0x2ed)]({'data':{'full_name':_0x481f52}});_0x18af6b[_0x9366c2(0x1ec)]=_0x5a0bba,_0x18af6b['disabled']=![],_0x5beed3?await showMessage(_0x9366c2(0x1c5)+_0x5beed3[_0x9366c2(0x16b)]):await showMessage(_0x9366c2(0xfe),_0x9366c2(0x208),'Tamam');});const _0x59eeda=document[_0x4710dd(0x102)](_0x4710dd(0x1fb));_0x59eeda&&_0x59eeda[_0x3bc5ca(0x2d8)](_0x3bc5ca(0x31c),async()=>{const _0x39e554=_0x3bc5ca,_0x4b92bb=_0x4710dd,_0x2277f1=await showMessage(_0x4b92bb(0x12d),_0x39e554(0x2d3));_0x2277f1&&(await supabaseClient[_0x4b92bb(0x17e)][_0x4b92bb(0x1a2)](),window[_0x4b92bb(0x130)][_0x4b92bb(0xe4)]=_0x4b92bb(0x1eb));});const _0x471620=document[_0x4710dd(0x102)](_0x4710dd(0x195));_0x471620&&_0x471620[_0x4710dd(0x193)](_0x4710dd(0x127),async()=>{const _0x6992c7=_0x3bc5ca,_0x2bb5b0=_0x4710dd,_0x5145a9=await showMessage(_0x2bb5b0(0x24e),_0x2bb5b0(0x19a));if(_0x5145a9){_0x471620[_0x2bb5b0(0x1ec)]=_0x2bb5b0(0xf1),_0x471620[_0x6992c7(0x2bf)]=!![];const _0x2d263f=_0x2c8539[_0x2bb5b0(0x20b)],{data:_0x3ec257,error:_0x2a6cdb}=await supabaseClient['from'](_0x2bb5b0(0x1b0))[_0x6992c7(0x2cd)](_0x2bb5b0(0x20b))['eq'](_0x2bb5b0(0x20b),_0x2d263f);if(_0x2a6cdb){await showMessage(_0x2bb5b0(0x20c)+_0x2a6cdb[_0x2bb5b0(0x16b)]),_0x471620[_0x2bb5b0(0x1ec)]='Hesabı\x20sil',_0x471620[_0x2bb5b0(0x24a)]=![];return;}if(_0x3ec257&&_0x3ec257[_0x2bb5b0(0xee)]>0x0){await showMessage(_0x2bb5b0(0x1cc),_0x6992c7(0x2c7),_0x2bb5b0(0xe9)),_0x471620[_0x2bb5b0(0x1ec)]=_0x2bb5b0(0x10d),_0x471620[_0x2bb5b0(0x24a)]=![];return;}_0x471620[_0x2bb5b0(0x1ec)]='Göndərilir...';const {error:_0x4a5e82}=await supabaseClient[_0x2bb5b0(0x17a)](_0x2bb5b0(0x1b0))[_0x2bb5b0(0x20d)]([{'email':_0x2d263f}]);if(_0x4a5e82){await showMessage(_0x6992c7(0x210)+_0x4a5e82[_0x6992c7(0x2dc)]),_0x471620[_0x2bb5b0(0x1ec)]=_0x2bb5b0(0x10d),_0x471620[_0x2bb5b0(0x24a)]=![];return;}await showMessage(_0x2bb5b0(0x14f),_0x2bb5b0(0x208),'Tamam'),await supabaseClient[_0x2bb5b0(0x17e)][_0x2bb5b0(0x1a2)](),window[_0x2bb5b0(0x130)][_0x2bb5b0(0xe4)]='login.html';}});});}function a1_0x5a9e(){const _0x41b8a9=['wrong_questions','Gözləyin...','Limit\x20göstərilərkən\x20xəta:','\x22\x20style=\x22font-size:\x200.9em;\x20margin-left:\x205px;\x22>','715842ICDkpS','#36A2EB','pathname','Zəhmət\x20olmasa\x20problemin\x20nə\x20olduğunu\x20qeyd\x20edin!','hesab_silme_telebleri','premiumOverlay','Hesabdan\x20çıxmaq\x20istədiyinizə\x20əminsiniz?','getDay','options__B','innerHTML','\x27)\x22>Kod\x20Göndər</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','padStart','</p>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stats-card\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-blue\x22>●</span>\x20Düzgün\x20cavablar</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>','user_stats','subject','disabled','getUser','newElo','4366384JYPGIt','statistics.html','toString','\x20Gün','backgroundColor','showMessage','slice','DOMContentLoaded','.abunelik-bg','add','Chart\x20data\x20error:','select','cancelBtn','C.a','.main-background','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22subject-card\x20animate-card\x22\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20onclick=\x22startQuiz(\x27','Sorğu\x20yoxlanılarkən\x20xəta\x20baş\x20verdi:\x20','confirm','textContent','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22color:\x20#1e90ff;\x22>Giriş\x20lazımdır</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p>Sual\x20işləmək\x20üçün\x20zəhmət\x20olmasa\x20hesabınıza\x20daxil\x20olun.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','6024bsiTYN','novbeti-btn','addEventListener','white','sendOtpBtn','error','message','index','Yanvar','function','question','getMonth','Təsdiqlə','endsWith','trim','Nəticə','limit','search','messageText','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<tr\x20class=\x22','Noyabr','setDate','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','updateUser','total_answered_questions','getElementById','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Şifrəni\x20yenilə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Şifrəni\x20dəyişmək\x20üçün\x20<b>','createElement','Sentyabr','premiumBitis_','8606825jvKhxW','src','input','.top-part','long','70%','.premium-abunelik-bg','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Sualı\x20Şikayət\x20Et</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22report-label\x22>Problemli\x20sual:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22reported-question-box\x22>','login.html','join','elo_rating','user_id','rgba(54,\x20162,\x20235,\x200.2)','Qeyd:\x20Pulsuz\x20istifadəçilər\x20üçün\x20AI\x20aktiv\x20deyil.','auth','getItem','sendProfileOtp','order','#premium-text\x20p','recovery','quiz-timer','parse','forEach','openChangeFrame','fixed','Fənn\x20tapılmadı:\x20','async','.main-content','\x22\x20style=\x22','Hesabınızı\x20silmək\x20istədiyinizə\x20əminsiniz?\x20Bu\x20əməliyyat\x20geri\x20qaytarıla\x20bilməz!','top','background:\x20rgba(30,\x20144,\x20255,\x200.1);','42QgBmjZ','177415DyZIua','stringify','onclick','destroy','classList','toISOString','Xəta:\x20','click','30%','default','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>Təsdiqləmə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>E-poçtunuza\x20gələn\x20kodu\x20və\x20yeni\x20şifrəni\x20daxil\x20edin.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>OTP\x20Kod</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22text\x22\x20id=\x22otpCodeInput\x22\x20placeholder=\x2212345678\x22\x20maxlength=\x228\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Yeni\x20Şifrə</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22password\x22\x20id=\x22newProfilePassword\x22\x20placeholder=\x22Ən\x20azı\x208\x20simvol\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22finalSubmitBtn\x22\x20onclick=\x22verifyAndFinish(\x27','quiz_count','userStreak','actionModalContent','.btn-plan-active','Aktivdir','../images/premium-profile.webp','4740129Sueghi','Yenilə','Supabase\x20xətası:','\x27)\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20style=\x22animation-delay:\x20','inline-block','Profil\x20məlumatlarınız\x20uğurla\x20yadda\x20saxlanıldı!','</b>\x20paketini\x20almaq\x20funksiyası\x20hazırda\x20yenilənmə\x20mərhələsindədir.\x20<br><br>\x20Çox\x20yaxında\x20real\x20ödəniş\x20sistemi\x20ilə\x20istifadənizə\x20veriləcək.\x20Bizi\x20izləməyə\x20davam\x20edin!\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','total_score','display_name','abunelikler','line','Limit\x20bölməsində\x20xəta\x20yarandı:','dataset','../images/profile.webp','15zzVTcR','İyun','chatling','\x20sual\x20•\x20Hər\x20gün\x20yenilənir</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-arrow\x22>→</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','style','9165233nlEjJY','globalSupabaseClient','keys','signOut','s\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-icon\x22>','numeric','</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<td>','rating_deviation','Avqust','log','find','dark-mode','Aprel','supabase','Dekabr','createClient','toLowerCase','bitis_tarixi','1336091bnrHxN','getTime','resetPasswordForEmail','justifyContent','Kod\x20Göndər','Diqqət:\x20Bu\x20səhifədə\x20Supabase\x20yüklənməyib.','pow','Chart-dakı\x20cəmi\x20quiz\x20sayı:','dark-theme','Daxil\x20ol','chtl-inline-bot','diff','values','apply','from','energy-icon','last_quiz_date','#ffffff','2NbMtXO','../images/thunder.webp','0.5','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-meta\x22>','all','daily_limit_count','daily_limit_count,\x20last_quiz_date','opacity','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-title\x22>','alert','5417211qNstHZ','type','value','innerText','substring','confirmBtn','count','innerWidth','getUTCMonth','totalQuizzes','Ç.a','629332Dcjtki','14MocvZm','Aylıq\x20hesablamalar:','Şikayətiniz\x20uğurla\x20göndərildi.\x20Təşəkkür\x20edirik!','question-text','.sual-text-bg','okBtn','\x27)\x22>Yenilə</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-grey\x22>●</span>\x20Sərf\x20olunan\x20vaxt</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>','body','marginLeft','sort','maxWidth','otpCodeInput','submitReport','calc(100vh\x20-\x2030px)','quiz_date','rating','Sorğu\x20göndərilərkən\x20xəta\x20baş\x20verdi:\x20','wrong','user_metadata','accuracyRate','.btn-delete','</span>','quiz.html','active_session_id','none','options__C','elo-down','.sual-word','startQuiz','push','reduce','[data-key=\x22','get','user_id,\x20quiz_date','premium-aktiv','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22../images/matrix-looking.webp\x22\x20alt=\x22Alert\x22\x20style=\x22width:\x20200px;\x20margin-bottom:\x2015px;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22margin-bottom:\x2010px;\x20color:\x20#1e90ff;\x22>Hesabınıza\x20başqa\x20cihazdan\x20giriş\x20edilib.\x20Quiz\x20dayandırıldı!</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2015px;\x20opacity:\x200.9;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Hesabınızın\x20qorunması\x20üçün\x20şifrənizi\x20dərhal\x20yeniləməyiniz\x20tövsiyə\x20olunur.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Bu\x20halın\x20təkrarlanması\x20platforma\x20qaydalarının\x20manipulyasiyası\x20kimi\x20qiymətləndiriləcək.\x20Bu\x20zaman\x20hesabınız\x20avtomatik\x20olaraq\x20\x27Yüksək\x20Risk\x27\x20kateqoriyasına\x20keçəcək.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','JSON\x20Error:','random','includes','upsert','Sonra','progress-fill','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x20last-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-green\x22>●</span>\x20Keçmə\x20faizi</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x20green-text\x22>','search-input','current_streak','getSession','quiz_date,\x20quiz_count','width','color','chtl-script','shift','subject_pool','newProfilePassword','options__A','Mart','11eeHcHc','display','last_session_id','Adsız\x20İstifadəçi','sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN','https://chatling.ai/js/embed.js','1043688RyrleS','May','quiz_history','Quiz\x20Sayı','match','cursor','#333333','Hesab\x20silmə\x20tələbiniz\x20qeydə\x20alındı.\x201\x20həftə\x20içərisində\x20hesabınız\x20tamamilə\x20silinəcək.','leaderboardBody','rgba(255,\x20255,\x20255,\x200.1)','1yMaJjO','maybeSingle','Ləğv\x20et','verifyOtp','constructor','created_at','bitme-tarixi','Yoxlanılır...','entries','zIndex','3756376919','profile.html','plan_adi','<button\x20class=\x22option-btn\x22\x20data-key=\x22','.exit-bg\x20a','email','total_time_spent','single','round','button','\x20/\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20style=\x22text-align:\x20center;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22../images/cattyping.gif\x22\x20alt=\x22Hazırlanır\x22\x20style=\x22width:\x20200px;\x20margin-bottom:\x2015px;\x20opacity:\x200.8;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20style=\x22margin-bottom:\x2010px;\x20color:\x20#1e90ff;\x22>Tezliklə!</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2015px;\x20opacity:\x200.9;\x20line-height:\x201.5;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<b>','localeCompare','sb-xoebhhdirsvjorjlrfzi-auth-token','İstifadəçi\x20#','gte','verifyAndFinish','href','max','split','createdat','right','weeklyActivityChart','block','chtlConfig','then','search-button','remove','user','floor','Kod\x20və\x20şifrə\x20tam\x20doldurulmalıdır!','key','700026vKLsHt','elo-up','correct','%</td>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</tr>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','getDate','question-counter','rgba(0,\x200,\x200,\x200.1)','actionOverlay','(((.+)+)+)+$','getFullYear','chart-filter-select','97176usyrcf','az-AZ','text/javascript','script','.fenn-id\x20h1','fake-ai-btn','Hesabı\x20sil','premium.html','Gözlənilməz\x20xəta:','Tamam','reportReasonText','location','subjects.json','Aylıq\x20statistika\x20xətası:','********','7632oSECpx','boxShadow','fennler-menu.html','#4CAF50','length','previousElementSibling','total_correct_answers','getAttribute','10tgFcun','map','open','querySelectorAll','full_name','.quiz-buttons-bg','Növbəti','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22circle-progress-container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22circle-progress\x22\x20style=\x22--degrees:\x20','Suallar\x20tapılmadı!','options-container','current-user','flex','page_inline','../images/premium-thunder.webp','supabaseClient','warn','limit-text','No\x20subject\x20provided!','removeItem','title','overflow','querySelector','%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-yellow\x22>●</span>\x20Reytinq\x20(Elo)</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22\x20style=\x22color:\x20inherit;\x20font-weight:\x20bold;\x22>','blurred-chart','avgTime'];a1_0x5a9e=function(){return _0x41b8a9;};return a1_0x5a9e();}function a1_0x2b12(_0x5c6699,_0x55ee93){_0x5c6699=_0x5c6699-0xd7;const _0x1b5d5d=a1_0x16a2();let _0x3c7ee2=_0x1b5d5d[_0x5c6699];return _0x3c7ee2;}function a1_0x16a2(){const _0x49bdd7=a1_0x240ed1,_0x4a7381=['9896744625',_0x49bdd7(0x259),_0x49bdd7(0x2e3),_0x49bdd7(0x306),_0x49bdd7(0x20d),_0x49bdd7(0x27d),_0x49bdd7(0x299),'not-allowed',_0x49bdd7(0x2d8),_0x49bdd7(0x270),_0x49bdd7(0x214),_0x49bdd7(0x1b8),_0x49bdd7(0x295),_0x49bdd7(0x241),'position','confirm',_0x49bdd7(0x211),_0x49bdd7(0x233),_0x49bdd7(0x26f),_0x49bdd7(0x1c1),_0x49bdd7(0x2c6),_0x49bdd7(0x25c),_0x49bdd7(0x219),_0x49bdd7(0x1c8),_0x49bdd7(0x324),_0x49bdd7(0x2b5),_0x49bdd7(0x212),_0x49bdd7(0x263),_0x49bdd7(0x31e),_0x49bdd7(0x1f1),_0x49bdd7(0x2df),'#4CAF50',_0x49bdd7(0x269),_0x49bdd7(0x23a),_0x49bdd7(0x305),_0x49bdd7(0x261),_0x49bdd7(0x2b7),_0x49bdd7(0x2b4),_0x49bdd7(0x329),_0x49bdd7(0x2e4),_0x49bdd7(0x226),_0x49bdd7(0x294),'İyul','password',_0x49bdd7(0x276),_0x49bdd7(0x209),_0x49bdd7(0x240),_0x49bdd7(0x1f7),_0x49bdd7(0x2ab),_0x49bdd7(0x2fd),_0x49bdd7(0x1e7),'onclick','quiz_date,\x20quiz_count','toString','eloValue',_0x49bdd7(0x2f5),_0x49bdd7(0x1ed),_0x49bdd7(0x288),_0x49bdd7(0x31b),_0x49bdd7(0x2f9),_0x49bdd7(0x2e5),_0x49bdd7(0x1dd),_0x49bdd7(0x242),'00:00',_0x49bdd7(0x221),'Sizin\x20hesab\x20silmə\x20istəyiniz\x20artıq\x20qeydə\x20alınıb\x20və\x20hazırda\x20icra\x20olunur.',_0x49bdd7(0x1e1),_0x49bdd7(0x30c),_0x49bdd7(0x2cb),_0x49bdd7(0x1c7),_0x49bdd7(0x1d1),_0x49bdd7(0x227),'-2px\x200px\x2010px\x20rgba(0,0,0,0.1)',_0x49bdd7(0x1f8),_0x49bdd7(0x1d9),_0x49bdd7(0x20e),_0x49bdd7(0x257),'https://xoebhhdirsvjorjlrfzi.supabase.co',_0x49bdd7(0x29f),_0x49bdd7(0x230),'activatePlan','catch',_0x49bdd7(0x308),'<img\x20src=\x22../images/infinity.webp\x22\x20alt=\x22∞\x22\x20style=\x22width:\x2018px;\x20vertical-align:\x20middle;\x22>',_0x49bdd7(0x280),_0x49bdd7(0x220),_0x49bdd7(0x202),_0x49bdd7(0x260),_0x49bdd7(0x25e),_0x49bdd7(0x238),_0x49bdd7(0x1df),_0x49bdd7(0x1bf),_0x49bdd7(0x2fa),_0x49bdd7(0x268),_0x49bdd7(0x30d),_0x49bdd7(0x1be),_0x49bdd7(0x2fc),_0x49bdd7(0x2d4),_0x49bdd7(0x29e),_0x49bdd7(0x251),'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22report-label\x22>Problemin\x20təsviri:</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20id=\x22reportReasonText\x22\x20class=\x22report-textarea\x22\x20placeholder=\x22Sualda\x20hansı\x20səhvi\x20və\x20ya\x20problemi\x20gördüyünüzü\x20ətraflı\x20yazın...\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20onclick=\x22submitReport()\x22>Göndər</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','<p\x20style=\x22width:100%;\x20text-align:center;\x20color:#666;\x20grid-column:\x201\x20/\x20-1;\x22>Heç\x20bir\x20nəticə\x20tapılmadı.</p>',_0x49bdd7(0x200),_0x49bdd7(0x231),'openReportFrame',_0x49bdd7(0x246),'Oktyabr',_0x49bdd7(0x228),'icon',_0x49bdd7(0x2a0),_0x49bdd7(0x2ff),'min','.btn-logout',_0x49bdd7(0x273),_0x49bdd7(0x1ef),_0x49bdd7(0x1d8),_0x49bdd7(0x2e6),'61px',_0x49bdd7(0x20f),_0x49bdd7(0x2ea),_0x49bdd7(0x1f0),_0x49bdd7(0x264),_0x49bdd7(0x1c3),_0x49bdd7(0x312),_0x49bdd7(0x253),_0x49bdd7(0x2c7),_0x49bdd7(0x2f3),_0x49bdd7(0x31f),_0x49bdd7(0x256),_0x49bdd7(0x2d2),'insert','height','.plan-free\x20.btn-plan-current',_0x49bdd7(0x236),_0x49bdd7(0x1e0),_0x49bdd7(0x248),_0x49bdd7(0x29b),_0x49bdd7(0x2db),_0x49bdd7(0x2e7),_0x49bdd7(0x2cf),_0x49bdd7(0x2ec),_0x49bdd7(0x313),_0x49bdd7(0x1fa),'B.e',_0x49bdd7(0x2a9),_0x49bdd7(0x278),_0x49bdd7(0x2f6),_0x49bdd7(0x2ca),_0x49bdd7(0x27f),'special_subjects',_0x49bdd7(0x22f),_0x49bdd7(0x2ee),'constructor',_0x49bdd7(0x31d),_0x49bdd7(0x291),_0x49bdd7(0x28a),'forEach',_0x49bdd7(0x215),_0x49bdd7(0x2fe),_0x49bdd7(0x292),'Fevral',_0x49bdd7(0x1fd),_0x49bdd7(0x2c1),_0x49bdd7(0x20b),'premium-href',_0x49bdd7(0x322),'push','getContext',_0x49bdd7(0x2e9),_0x49bdd7(0x296),'previousElementSibling','username',_0x49bdd7(0x234),_0x49bdd7(0x2b3),_0x49bdd7(0x25b),_0x49bdd7(0x2ce),_0x49bdd7(0x224),_0x49bdd7(0x283),_0x49bdd7(0x1f4),_0x49bdd7(0x2d9),_0x49bdd7(0x309),'update',_0x49bdd7(0x2ad),'none','remove',_0x49bdd7(0x1d5),'change',_0x49bdd7(0x21e),_0x49bdd7(0x2cd),_0x49bdd7(0x32a),_0x49bdd7(0x217),_0x49bdd7(0x2bf),'.btn-save',_0x49bdd7(0x2b1),'user_stats',_0x49bdd7(0x311),'subjects-bg',_0x49bdd7(0x2c8),_0x49bdd7(0x1e8),_0x49bdd7(0x2be),_0x49bdd7(0x201),'Mövcud\x20planınız\x20var',_0x49bdd7(0x1e3),_0x49bdd7(0x216),_0x49bdd7(0x24c),_0x49bdd7(0x30f),_0x49bdd7(0x1e4),_0x49bdd7(0x2f4),_0x49bdd7(0x1fc),'toLocaleDateString',_0x49bdd7(0x1d7),_0x49bdd7(0x2d6),_0x49bdd7(0x29c),_0x49bdd7(0x275),_0x49bdd7(0x245),_0x49bdd7(0x1f2),_0x49bdd7(0x1c4),_0x49bdd7(0x25d),_0x49bdd7(0x281),_0x49bdd7(0x274),'correct_answer',_0x49bdd7(0x262),_0x49bdd7(0x27e),_0x49bdd7(0x31a),'global_subjects','filter',_0x49bdd7(0x285),_0x49bdd7(0x1f5),_0x49bdd7(0x1d3),'wrong_questions','Saxlanılır...',_0x49bdd7(0x28f),_0x49bdd7(0x27a),_0x49bdd7(0x225),_0x49bdd7(0x24e),_0x49bdd7(0x29d),_0x49bdd7(0x254),_0x49bdd7(0x1e6),_0x49bdd7(0x1e2),_0x49bdd7(0x2d1),_0x49bdd7(0x206),_0x49bdd7(0x2a1),_0x49bdd7(0x303),_0x49bdd7(0x1ca),_0x49bdd7(0x2eb),_0x49bdd7(0x315),'.profile-bg\x20img',_0x49bdd7(0x1b7),'quiz_history','getUTCFullYear',_0x49bdd7(0x25a),_0x49bdd7(0x2a8),_0x49bdd7(0x235),'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22result-actions\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22fennler-menu.html\x22\x20class=\x22link-blue\x22>Əsas\x20səhifə</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-blue\x22\x20onclick=\x22window.location.reload()\x22>Yenidən\x20sına</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x49bdd7(0x328),_0x49bdd7(0x2a3),'appendChild','undefined',_0x49bdd7(0x320),_0x49bdd7(0x239),'setItem','\x20<span\x20class=\x22',_0x49bdd7(0x282),_0x49bdd7(0x223),_0x49bdd7(0x27b),'target',_0x49bdd7(0x26b),_0x49bdd7(0x272),_0x49bdd7(0x2f7),'deg;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22progress-value\x22>',_0x49bdd7(0x28b),'options__E',_0x49bdd7(0x23b),_0x49bdd7(0x2d7),_0x49bdd7(0x26d),_0x49bdd7(0x25f),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2>E-poçtu\x20yenilə</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20style=\x22font-size:\x2014px;\x20opacity:\x200.8;\x20margin-bottom:\x2015px;\x22>Yeni\x20e-poçt\x20ünvanınızı\x20daxil\x20edin.\x20Təsdiq\x20linki\x20göndəriləcək.</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22input-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<label>Yeni\x20e-poçt</label>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<input\x20type=\x22email\x22\x20id=\x22newActionValue\x22\x20placeholder=\x22yeni@mail.com\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22modalSubmitBtn\x22\x20onclick=\x22submitChange(\x27email\x27)\x22>Təsdiqlə</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20',_0x49bdd7(0x1f6),_0x49bdd7(0x30b),_0x49bdd7(0x21a),_0x49bdd7(0x26a),_0x49bdd7(0x2e2),'div',_0x49bdd7(0x28d),_0x49bdd7(0x2e0),_0x49bdd7(0x1cc),_0x49bdd7(0x1d2),_0x49bdd7(0x2af),_0x49bdd7(0x31c),_0x49bdd7(0x204),_0x49bdd7(0x207),_0x49bdd7(0x250),_0x49bdd7(0x1c2),_0x49bdd7(0x318),_0x49bdd7(0x2b6),_0x49bdd7(0x277),_0x49bdd7(0x2dd),_0x49bdd7(0x287),_0x49bdd7(0x24a),_0x49bdd7(0x237),_0x49bdd7(0x1d6),_0x49bdd7(0x319),_0x49bdd7(0x314),_0x49bdd7(0x1c6),_0x49bdd7(0x1cd),_0x49bdd7(0x1fb),_0x49bdd7(0x30e),_0x49bdd7(0x1cf),_0x49bdd7(0x23d),_0x49bdd7(0x24d),_0x49bdd7(0x2a7),_0x49bdd7(0x21f),_0x49bdd7(0x2bc),_0x49bdd7(0x2a4),_0x49bdd7(0x2ef),_0x49bdd7(0x316),_0x49bdd7(0x2b8),'log','daily_limit_count','data-key',_0x49bdd7(0x1bb),'floor',_0x49bdd7(0x304),'long','Kod\x20yanlışdır!',_0x49bdd7(0x1bc),_0x49bdd7(0x252),_0x49bdd7(0x22c),_0x49bdd7(0x244),_0x49bdd7(0x2c9),_0x49bdd7(0x208),'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22stat-row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-label\x22><span\x20class=\x22dot-red\x22>●</span>\x20Səhv\x20cavablar</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22stat-count\x22>',_0x49bdd7(0x1da),'quizzes_completed',_0x49bdd7(0x2c3),'.option-btn',_0x49bdd7(0x1ec),_0x49bdd7(0x297),'Bağla',_0x49bdd7(0x2a2),_0x49bdd7(0x2b2),'</button>',_0x49bdd7(0x24f),'finalSubmitBtn',_0x49bdd7(0x2d0),_0x49bdd7(0x2bb),'getMonth','json',_0x49bdd7(0x1b9),_0x49bdd7(0x1d4),'messageOverlay','flex-start',_0x49bdd7(0x2da),'İndi\x20al',_0x49bdd7(0x2cc),'innerHTML',_0x49bdd7(0x2dc),_0x49bdd7(0x1bd),_0x49bdd7(0x1eb),'hidden','Subject\x20fetch\x20error:','</b>\x20ünvanına\x20təsdiq\x20kodu\x20göndərilməlidir.\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22action-buttons\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-cancel\x22\x20onclick=\x22closeActionModal()\x22>Ləğv\x20et</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22btn-continue\x22\x20id=\x22sendOtpBtn\x22\x20onclick=\x22sendProfileOtp(\x27',_0x49bdd7(0x2c0),_0x49bdd7(0x325),'%</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22result-title\x22>Yekun\x20nəticə:\x20','25473470FyYRUi',_0x49bdd7(0x22b),_0x49bdd7(0x266),'contains',_0x49bdd7(0x2ed),_0x49bdd7(0x222),'from',_0x49bdd7(0x229),_0x49bdd7(0x20c),_0x49bdd7(0x1dc),'auth','1000',_0x49bdd7(0x29a),_0x49bdd7(0x1f3),_0x49bdd7(0x289),_0x49bdd7(0x1e9),_0x49bdd7(0x323),_0x49bdd7(0x279),_0x49bdd7(0x1cb),_0x49bdd7(0x2aa),_0x49bdd7(0x2f1),_0x49bdd7(0x249),_0x49bdd7(0x2a6)];return a1_0x16a2=function(){return _0x4a7381;},a1_0x16a2();}if(window[a1_0x232bd1(0x130)][a1_0x232bd1(0x15b)]['includes']('premium.html')){const supabaseUrl=a1_0x232bd1(0x1d8),supabaseKey=a1_0x240ed1(0x23b),supabaseClient=window[a1_0x232bd1(0x125)][a1_0x232bd1(0x164)](supabaseUrl,supabaseKey);async function checkActivePlan(){const _0x320d13=a1_0x240ed1,_0x344899=a1_0x232bd1,_0x349ef9=(function(){let _0x25dc48=!![];return function(_0x303d47,_0x4cc6c6){const _0x6ce938=_0x25dc48?function(){const _0x288ad7=a1_0x2b12;if(_0x4cc6c6){const _0x436a50=_0x4cc6c6[_0x288ad7(0x259)](_0x303d47,arguments);return _0x4cc6c6=null,_0x436a50;}}:function(){};return _0x25dc48=![],_0x6ce938;};}()),_0x589623=_0x349ef9(this,function(){const _0x4338e7=a1_0x22c1,_0x5120c1=a1_0x2b12;return _0x589623[_0x5120c1(0x1c0)]()[_0x5120c1(0x215)](_0x4338e7(0x279))[_0x5120c1(0x1c0)]()[_0x5120c1(0x223)](_0x589623)[_0x5120c1(0x215)](_0x5120c1(0x185));});_0x589623();const {data:{user:_0x52a9c5}}=await supabaseClient[_0x344899(0x17e)][_0x344899(0x171)]();if(_0x52a9c5){const {data:_0x58878e}=await supabaseClient[_0x344899(0x17a)](_0x320d13(0x1bb))[_0x344899(0x247)]('*')['eq'](_0x344899(0x1f9),_0x52a9c5['id'])[_0x344899(0x212)]();if(_0x58878e){const _0x1f88e6=new Date(),_0x1379e8=new Date(_0x58878e['bitis_tarixi']);if(_0x1f88e6<_0x1379e8){const _0x11832a=document[_0x344899(0x102)](_0x344899(0x20f));_0x11832a&&(_0x11832a[_0x344899(0x1ec)]=_0x344899(0x254),_0x11832a[_0x344899(0xdf)][_0x344899(0x203)]=_0x344899(0x16d));const _0x594f5b=document[_0x344899(0x234)](_0x344899(0x184));_0x594f5b[_0x344899(0x227)](_0xb01eb9=>{const _0x24b2a3=_0x320d13,_0x1abe7e=_0x344899;_0xb01eb9[_0x24b2a3(0x292)](_0x1abe7e(0x1be))[_0x1abe7e(0x1b3)](_0x58878e[_0x1abe7e(0x207)])?(_0xb01eb9[_0x1abe7e(0x1ec)]=_0x1abe7e(0x1a3),_0xb01eb9[_0x1abe7e(0x24a)]=!![],_0xb01eb9[_0x1abe7e(0xdf)][_0x1abe7e(0x19f)]=_0x24b2a3(0x28e),_0xb01eb9[_0x1abe7e(0xdf)][_0x1abe7e(0x1c9)]=_0x1abe7e(0x1a7)):(_0xb01eb9[_0x1abe7e(0x1ec)]=_0x1abe7e(0x254),_0xb01eb9[_0x1abe7e(0x24a)]=!![],_0xb01eb9[_0x1abe7e(0xdf)][_0x24b2a3(0x1f0)]=_0x1abe7e(0x16d),_0xb01eb9[_0x24b2a3(0x1c4)][_0x1abe7e(0x1c9)]=_0x1abe7e(0x192));});}}}}checkActivePlan(),window[a1_0x232bd1(0x1db)]=async function(_0x7a1eac){const _0x19defa=a1_0x232bd1,_0x15bf6d=_0x19defa(0x1a0)+_0x7a1eac+_0x19defa(0x196);await showMessage(_0x15bf6d,'alert',_0x19defa(0x159));};}
+// ---------------------- GLOBAL SCRIPTS ----------------------
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. Mövcud Menyu Kodunuz
+    const telebeMenu = document.getElementById('telebe-menu');
+    if (telebeMenu && telebeMenu.previousElementSibling) {
+        telebeMenu.classList.add('open');
+        telebeMenu.previousElementSibling.querySelector('.arrow').textContent = 'v';
+    }
+
+    // ==========================================
+    // 2. QLOBAL PREMİUM YOXLANIŞI (Gecikməsiz & Ağıllı Yenilənmə)
+    // ==========================================
+    
+    // UI-ı dəyişən və ya geri qaytaran (Sıfırlayan) funksiya
+    function setPremiumUI(isActive) {
+        const premiumHref = document.getElementById('premium-href');
+        const profileImg = document.querySelector('.profile-bg img');
+
+        if (isActive) {
+            // Premium aktivdir
+            document.body.classList.add('premium-aktiv');
+            if (premiumHref) premiumHref.style.display = 'none';
+            if (profileImg) profileImg.src = '../images/premium-profile.webp';
+        } else {
+            // Premium DEYİL (və ya vaxtı bitib) - Hər şeyi standart vəziyyətə qaytarırıq
+            document.body.classList.remove('premium-aktiv');
+            if (premiumHref) premiumHref.style.display = ''; // CSS-dəki original display dəyərinə qayıdır
+            if (profileImg) profileImg.src = '../images/profile.webp';
+        }
+    }
+
+    if (window.supabase) {
+        const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+        const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+
+        // Supabase Tək İnstance Yoxlanışı
+        if (!window.globalSupabaseClient) {
+            window.globalSupabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+        }
+        const supabaseGlobal = window.globalSupabaseClient;
+
+        // --- ADDIM 1: SIFIR GECİKMƏ İLƏ LOCALSTORAGE YOXLANIŞI ---
+        let userId = null;
+        try {
+            // Supabase-in öz qlobal tokenindən (gecikmə olmadan) User ID-ni çəkirik
+            const sbSession = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (sbSession) {
+                userId = JSON.parse(sbSession).user.id;
+            }
+        } catch (e) {}
+
+        const indi = new Date().getTime();
+
+        if (userId) {
+            // Hər istifadəçinin ÖZÜNƏ məxsus premium yaddaşını yoxlayırıq
+            const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+            
+            if (cachedBitis && indi < parseInt(cachedBitis)) {
+                setPremiumUI(true); // Gözləmədən anında Premium rəngləri ver
+            } else {
+                setPremiumUI(false); // Keş yoxdursa və ya bitibsə standart UI göstər
+            }
+        }
+
+        // --- ADDIM 2: ARXA FONDA DƏQİQ BAZA YOXLANIŞI ---
+        supabaseGlobal.auth.getSession().then(async ({ data: { session } }) => {
+            if (session) {
+                const currentUserId = session.user.id;
+                const { data: abuneData } = await supabaseGlobal
+                    .from('abunelikler')
+                    .select('bitis_tarixi')
+                    .eq('user_id', currentUserId)
+                    .maybeSingle();
+
+                if (abuneData) {
+                    const bitis = new Date(abuneData.bitis_tarixi).getTime();
+                    const rightNow = new Date().getTime();
+
+                    if (rightNow < bitis) {
+                        // Baza təsdiqlədi: Hələ də premiumdur. Yaddaşı yeniləyirik.
+                        localStorage.setItem('premiumBitis_' + currentUserId, bitis);
+                        setPremiumUI(true);
+                    } else {
+                        // Baza dedi ki: Vaxtı BİTİB! Yaddaşı sil və UI-ı geri al.
+                        localStorage.removeItem('premiumBitis_' + currentUserId);
+                        setPremiumUI(false);
+                    }
+                } else {
+                    // Cədvəldə bu istifadəçiyə aid heç nə yoxdur (Pulsuzdur). Yaddaşı sil və UI-ı geri al.
+                    localStorage.removeItem('premiumBitis_' + currentUserId);
+                    setPremiumUI(false);
+                }
+            }
+        });
+    } else {
+        console.warn("Diqqət: Bu səhifədə Supabase yüklənməyib.");
+    }
+});
+function showMessage(message, type = "alert", customConfirm = "Təsdiqlə", customCancel = "Ləğv et") {
+    return new Promise((resolve) => {
+        const overlay = document.getElementById("messageOverlay");
+        const messageText = document.getElementById("messageText");
+        const okBtn = document.getElementById("okBtn");
+        const confirmBtn = document.getElementById("confirmBtn");
+        const cancelBtn = document.getElementById("cancelBtn");
+
+        if (!overlay) return resolve(false);
+
+        // Mesajı qutuya yazırıq və ekranı açırıq
+        messageText.innerHTML = message;
+        overlay.style.display = "flex"; 
+
+        // Əgər növ "confirm" (Sual) idisə:
+        if (type === "confirm") {
+            okBtn.style.display = "none";
+            confirmBtn.style.display = "inline-block";
+            cancelBtn.style.display = "inline-block";
+
+            // YENİLİK: Düymə yazıları kənardan gələn adlarla dəyişdirilir
+            confirmBtn.textContent = customConfirm;
+            cancelBtn.textContent = customCancel;
+
+            // "İndi al" və ya əsas təsdiq düyməsinə basıldıqda
+            confirmBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true); 
+            };
+
+            // "Sonra" və ya ləğv düyməsinə basıldıqda
+            cancelBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(false); 
+            };
+        } 
+        // Əgər növ "alert" (Sadəcə bildiriş) idisə:
+        else {
+            okBtn.style.display = "inline-block";
+            confirmBtn.style.display = "none";
+            cancelBtn.style.display = "none";
+
+            // Tək düyməli mesajlar üçün mətni dəyişə bilərik
+            okBtn.textContent = customConfirm !== "Təsdiqlə" ? customConfirm : "OK";
+
+            okBtn.onclick = () => {
+                overlay.style.display = "none";
+                resolve(true);
+            };
+        }
+    });
+}
+function openActionModal(contentHTML) {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+    
+    if (overlay && modalContent) {
+        modalContent.innerHTML = contentHTML;
+        overlay.style.display = "flex";
+        document.body.style.overflow = "hidden";
+    }
+}
+function closeActionModal() {
+    const overlay = document.getElementById("actionOverlay");
+    const modalContent = document.getElementById("actionModalContent");
+    
+    if (overlay) {
+        // Modalı gizlədirik
+        overlay.style.display = "none";
+        // Səhifənin sürüşməsini (scroll) geri qaytarırıq
+        document.body.style.overflow = ""; 
+    }
+    
+    if (modalContent) {
+        // Növbəti dəfə açılanda köhnə elementlər görünməsin deyə içini təmizləyirik
+        modalContent.innerHTML = ""; 
+    }
+}
+
+// ---------------------- FENNLER MENU ----------------------
+if (window.location.pathname.endsWith("fennler-menu.html")) {
+    const container = document.getElementById("subjects-bg");
+    const searchInput = document.getElementById("search-input");
+    const searchButton = document.getElementById("search-button");
+
+    let allSubjects = []; // Bütün fənnləri burada saxlayacağıq
+    let searchTimeout = null;
+    fetch("subjects.json")
+        .then(response => response.json())
+        .then(data => {
+            const global = data.subject_pool.global_subjects || [];
+            const special = data.subject_pool.special_subjects || [];
+            allSubjects = [...global, ...special].sort((a, b) => 
+                a.title.localeCompare(b.title, 'az')
+            );
+            renderSubjects(allSubjects); 
+        })
+        .catch(error => console.error("JSON Error:", error));
+    function isMatch(text, query) {
+        text = text.toLowerCase();
+        query = query.toLowerCase();
+
+        // Əgər yazı fənnin daxilində varsa, dərhal tap
+        if (text.includes(query)) return true;
+
+        // Əgər axtarış sözü çox qısadırsa (3 hərfdən az), səhvə icazə vermə
+        if (query.length < 3) return false;
+
+        // Dinamik səhv limiti: Hər 4 hərfə 1 səhv icazə verək (maksimum 3)
+        const allowedMistakes = Math.min(3, Math.floor(query.length / 3));
+        
+        let mistakes = 0;
+        let j = 0;
+        for (let i = 0; i < query.length; i++) {
+            if (j < text.length && query[i] === text[j]) {
+                j++;
+            } else {
+                mistakes++;
+            }
+        }
+
+        return mistakes <= allowedMistakes;
+    }
+    function renderSubjects(data) {
+        if (!data || data.length === 0) {
+            container.innerHTML = `<p style="width:100%; text-align:center; color:#666; grid-column: 1 / -1;">Heç bir nəticə tapılmadı.</p>`;
+            return;
+        }
+        
+        container.innerHTML = data.map((subject, index) => `
+            <div class="subject-card animate-card" 
+                 onclick="startQuiz('${subject.id}')"
+                 style="animation-delay: ${index * 0.05}s">
+                <div class="card-icon">${subject.icon}</div>
+                <div class="card-title">${subject.title}</div>
+                <div class="card-meta">${subject.count} sual • Hər gün yenilənir</div>
+                <div class="card-arrow">→</div>
+            </div>
+        `).join("");
+    }
+    searchInput.addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase().trim();
+
+        // Əgər köhnə taymer varsa, onu ləğv et
+        clearTimeout(searchTimeout);
+
+        // Yeni taymer başlat (istifadəçi 300ms susanda işləyəcək)
+        searchTimeout = setTimeout(() => {
+            if (searchTerm === "") {
+                renderSubjects(allSubjects);
+                return;
+            }
+
+            const filteredSubjects = allSubjects.filter(subject => 
+                isMatch(subject.title, searchTerm)
+            );
+
+            renderSubjects(filteredSubjects);
+        }, 300); // Gecikmə müddəti
+    });
+
+    // "Axtar" düyməsi üçün də (əlavə olaraq)
+    searchButton.addEventListener("click", () => {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredSubjects = allSubjects.filter(subject => 
+            subject.title.toLowerCase().includes(searchTerm)
+        );
+        renderSubjects(filteredSubjects);
+    });
+
+    window.startQuiz = function(subjectId) {
+        window.location.href = `quiz.html?subject=${subjectId}`;
+    };
+    
+    // --- GÜNDƏLİK LİMİT VƏ PREMİUM VİZUAL İDARƏETMƏSİ ---
+    (async () => {
+        try {
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            // 1. İstifadəçi sessiyasını əldə edirik
+            const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (!sessionStr) return; // Funksiya daxilində olduğu üçün burada return xəta vermir
+            
+            const userData = JSON.parse(sessionStr).user;
+            const uId = userData.id;
+
+            // 2. Elementləri seçirik
+            const display = document.getElementById('limit-text');
+            const energyIcon = document.getElementById('energy-icon');
+
+            // 3. Premium yoxlanışı
+            const cachedBitis = localStorage.getItem('premiumBitis_' + uId);
+            const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+            if (isPremium) {
+                // Premium vizualları
+                if (energyIcon) energyIcon.src = "../images/premium-thunder.webp";
+                if (display) display.innerHTML = `<img src="../images/infinity.webp" alt="∞" style="width: 18px; vertical-align: middle;">`;
+                
+                return; // Premiumdursa, aşağıdakı kodları icra etmə və funksiyadan çıx
+            }
+
+            // 4. Standart istifadəçi üçün bazadan limit məlumatını alırıq
+            const today = new Date().toISOString().split('T')[0];
+            const { data: stats } = await client
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', uId)
+                .maybeSingle();
+
+            const usedToday = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+            const totalLimit = 3;
+            const remainingLimit = Math.max(0, totalLimit - usedToday);
+
+            // 5. Standart vizualları göstəririk
+            if (display) display.innerText = remainingLimit;
+            if (energyIcon) energyIcon.src = "../images/thunder.webp";
+
+        } catch (err) {
+            console.error("Limit bölməsində xəta yarandı:", err.message);
+        }
+    })(); // Funksiya burada bağlanır
+}
+// ---------------------- STATISTICS PAGE ----------------------
+if (window.location.pathname.endsWith("statistics.html")) {
+    
+    let myChart = null;
+
+    // Kliyenti hər dəfə təhlükəsiz şəkildə götürmək üçün köməkçi funksiya
+    const getSupabase = () => window.globalSupabaseClient || window.supabaseClient;
+
+    async function loadUserDashboard(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .eq('user_id', userId)
+            .maybeSingle();
+
+        if (error || !data) return;
+
+        document.getElementById('totalQuizzes').innerText = data.quizzes_completed || 0;
+        document.getElementById('eloValue').innerText = data.elo_rating || 1000;
+        document.getElementById('userStreak').innerText = `${data.current_streak || 0} Gün`;
+
+        const total = data.total_answered_questions || 0;
+        const correct = data.total_correct_answers || 0;
+        const percent = total > 0 ? Math.round((correct / total) * 100) : 0;
+        document.getElementById('accuracyRate').innerText = `${percent}%`;
+
+        const minutes = Math.floor((data.total_time_spent || 0) / 60);
+        const seconds = (data.total_time_spent || 0) % 60;
+        document.getElementById('avgTime').innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    }
+
+    async function loadActivityChart(userId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        // 1. Bazar ertəsindən Bazara qədər olan etiketlər
+        const fixedLabels = ['B.e', 'Ç.a', 'Ç', 'C.a', 'C', 'Ş', 'B'];
+        
+        // Bütün günlər üçün başlanğıc dəyəri 0 qoyuruq (0 xətti görünsün deyə)
+        let countsData = [0, 0, 0, 0, 0, 0, 0];
+
+        // 2. Bu həftənin Bazar ertəsinin tarixini tapırıq
+        const now = new Date();
+        // getDay(): 0=Bazar, 1=B.e... Bazar gününü 7 kimi qəbul edirik ki, geriyə hesablaya bilək
+        const currentDayOfWeek = now.getDay() === 0 ? 7 : now.getDay(); 
+        
+        const monday = new Date(now);
+        monday.setDate(now.getDate() - currentDayOfWeek + 1); // Bazar ertəsinə qayıdırıq
+        
+        const startOfWeekStr = `${monday.getFullYear()}-${String(monday.getMonth() + 1).padStart(2, '0')}-${String(monday.getDate()).padStart(2, '0')}`;
+
+        // 3. Bazar ertəsindən sonrakı (bu həftəki) dataları çəkirik
+        const { data, error } = await client
+            .from('quiz_history')
+            .select('quiz_date, quiz_count')
+            .eq('user_id', userId)
+            .gte('quiz_date', startOfWeekStr);
+
+        if (error) {
+            console.error("Chart data error:", error);
+            return;
+        }
+
+        // 4. Əgər data varsa, onu sabit günlərə yerləşdiririk
+        if (data && data.length > 0) {
+            data.forEach(item => {
+                const parts = item.quiz_date.split('-');
+                const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+                
+                // Həftənin hansı günüdür? (0=Bazar, 1=B.e)
+                let dayIndex = dateObj.getDay();
+                // JS-də Bazar(0) olduğu üçün onu 6 edirik, qalanları 1 çıxırıq (B.e(1) -> 0 olur)
+                dayIndex = (dayIndex === 0) ? 6 : dayIndex - 1; 
+
+                // Həmin günün sayını massivə yazırıq
+                countsData[dayIndex] = item.quiz_count;
+            });
+        }
+        renderChart(fixedLabels, countsData); 
+    }
+    async function loadLeaderboard(currentUserId) {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data, error } = await client
+            .from('user_stats')
+            .select('*')
+            .order('elo_rating', { ascending: false })
+            .limit(10);
+
+        if (error || !data) return;
+
+        const tbody = document.getElementById('leaderboardBody');
+        if (!tbody) return;
+        tbody.innerHTML = ''; 
+
+        data.forEach((row, index) => {
+            const accuracy = row.total_answered_questions > 0 
+                ? Math.round((row.total_correct_answers / row.total_answered_questions) * 100) 
+                : 0;
+
+            const isMe = row.user_id === currentUserId;
+            let nameToShow = row.display_name || 'İstifadəçi #' + row.user_id.slice(0,5);
+            // YENİLİK: Əgər bazada ad varsa onu, yoxdursa ID-ni göstər
+            const displayName = isMe ? `${nameToShow} (Siz)` : nameToShow;
+            tbody.innerHTML += `
+                <tr class="${isMe ? 'current-user' : ''}" style="${isMe ? 'background: rgba(30, 144, 255, 0.1);' : ''}">
+                    <td>${index + 1}</td>
+                    <td>${displayName}</td> 
+                    <td>${row.elo_rating || 1000}</td>
+                    <td>${accuracy}%</td>
+                </tr>
+            `;
+        });
+    }
+
+    function renderChart(labels, counts) {
+        const canvas = document.getElementById('weeklyActivityChart');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        
+        if (typeof myChart !== 'undefined' && myChart) {
+            myChart.destroy();
+        }
+
+        // DÜZƏLİŞ: Dark Mode-u düzgün təyin edirik
+        const isDarkMode = document.body.classList.contains('dark-theme') || document.body.classList.contains('dark-mode');
+        
+        // Tünd moddasa ağ yazılar, işıqlı moddasa tünd boz yazılar
+        const labelColor = isDarkMode ? '#ffffff' : '#333333';
+        // Arxadakı xətlərin rəngini də modlara uyğunlaşdırırıq
+        const gridColor = isDarkMode ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)';
+
+        myChart = new Chart(ctx, {
+            type: 'line', 
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Quiz Sayı',
+                    data: counts,
+                    borderColor: '#36A2EB',
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    fill: true,
+                    tension: 0, 
+                    pointRadius: 4,
+                    pointBackgroundColor: '#36A2EB',
+                    pointHoverRadius: 6 // Üzərinə gəldikdə dairənin bir az böyüməsi üçün (opsional)
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false, // Div-ə görə formalaşması üçün
+                
+                // YENİ ƏLAVƏ EDİLƏN HİSSƏ:
+                interaction: {
+                    mode: 'index',
+                    intersect: false, // Mütləq kəsişmə tələbini ləğv edir
+                },
+                
+                plugins: { 
+                    legend: { display: false } 
+                    // İstəyə görə hover olduqda şaquli bir xətt çəkmək üçün tooltip ayarlarını da burdan genişləndirə bilərsiniz
+                },
+                scales: {
+                    y: { 
+                        beginAtZero: true, 
+                        ticks: { 
+                            color: labelColor, 
+                            stepSize: 1 
+                        },
+                        grid: { color: gridColor } // Şəbəkə rəngini dinamik etdik
+                    },
+                    x: { 
+                        ticks: { 
+                            color: labelColor 
+                        },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+    }
+    async function handleChartFilterChange(userId) {
+        const filterSelect = document.getElementById('chart-filter-select');
+        const premiumOverlay = document.getElementById('premiumOverlay');
+        const canvas = document.getElementById('weeklyActivityChart');
+
+        if (!filterSelect) return;
+
+        // Sənin localStorage üzərindəki premium yoxlanışın
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        filterSelect.addEventListener('change', async (e) => {
+            const selectedValue = e.target.value;
+
+            if (selectedValue === 'all') {
+                if (!isPremium) {
+                    // Premium deyilsə: Bluru göstər
+                    canvas?.classList.add('blurred-chart');
+                    premiumOverlay?.classList.remove('hidden');
+                } else {
+                    // Premiumdursa: Bluru qaldır və məlumatları yüklə
+                    canvas?.classList.remove('blurred-chart');
+                    premiumOverlay?.classList.add('hidden');
+                    await loadAllTimeActivityChart(userId);
+                }
+            } else {
+                // Həftəlik seçim: Standart vəziyyət
+                canvas?.classList.remove('blurred-chart');
+                premiumOverlay?.classList.add('hidden');
+                await loadActivityChart(userId); 
+            }
+        });
+    }
+    async function loadAllTimeActivityChart(userId) {
+        const client = window.globalSupabaseClient || window.supabaseClient;
+        if (!client) return;
+
+        try {
+            // 1. Məlumatları çəkirik
+            const [{ data: authData }, { data: historyData, error }] = await Promise.all([
+                client.auth.getUser(),
+                client.from('quiz_history').select('quiz_date, quiz_count').eq('user_id', userId)
+            ]);
+
+            if (error) throw error;
+            const user = authData?.user;
+            if (!user) return;
+
+            const startDate = new Date(user.created_at);
+            const endDate = new Date();
+            const monthNames = ["Yanvar", "Fevral", "Mart", "Aprel", "May", "İyun", "İyul", "Avqust", "Sentyabr", "Oktyabr", "Noyabr", "Dekabr"];
+
+            const monthlyTotals = {};
+
+            // 2. Qrafik üçün ayları hazırlayırıq (Boş aylar 0 olaraq qalır)
+            let tempDate = new Date(startDate.getFullYear(), startDate.getMonth(), 1);
+            while (tempDate <= endDate) {
+                const label = `${monthNames[tempDate.getMonth()]} ${tempDate.getFullYear()}`;
+                monthlyTotals[label] = 0;
+                tempDate.setMonth(tempDate.getMonth() + 1);
+            }
+
+            // 3. Tarixçəni hesablayırıq
+            if (historyData) {
+                historyData.forEach(item => {
+                    // UTC istifadə edərək vaxt zonası sürüşməsinin qarşısını alırıq
+                    const d = new Date(item.quiz_date);
+                    const monthIndex = d.getUTCMonth(); 
+                    const year = d.getUTCFullYear();
+                    const label = `${monthNames[monthIndex]} ${year}`;
+                    
+                    if (monthlyTotals[label] !== undefined) {
+                        monthlyTotals[label] += Number(item.quiz_count);
+                    }
+                });
+            }
+
+            // DEBUG: Konsolda yoxlayaq görək cəmi neçə tapdı
+            console.log("Aylıq hesablamalar:", monthlyTotals);
+            const totalInChart = Object.values(monthlyTotals).reduce((a, b) => a + b, 0);
+            console.log("Chart-dakı cəmi quiz sayı:", totalInChart);
+
+            // 4. Chart-ı render edirik
+            renderChart(Object.keys(monthlyTotals), Object.values(monthlyTotals));
+
+        } catch (err) {
+            console.error("Aylıq statistika xətası:", err.message);
+        }
+    }
+    // ƏSAS İŞƏSALMA
+    setTimeout(async () => {
+        const client = getSupabase();
+        if (!client) return;
+
+        const { data: { user } } = await client.auth.getUser();
+        if (!user) {
+            window.location.href = "login.html";
+            return;
+        }   
+
+        const currentUserId = user.id;
+        
+        // Sənin mövcud yükləmələrin
+        loadUserDashboard(currentUserId);
+        loadActivityChart(currentUserId); // Default olaraq həftəlik yüklənir
+        loadLeaderboard(currentUserId);
+
+        // YENİ: Filtr dəyişikliyini dinləyən funksiyanı çağırırıq
+        handleChartFilterChange(currentUserId);
+
+    }, 100);
+}
+// ---------------------- QUIZ PAGE ----------------------
+if (window.location.pathname.endsWith("quiz.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+    document.addEventListener("DOMContentLoaded", async () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const subjectId = urlParams.get('subject');
+        const currentSubjectId = urlParams.get('subject') || 'default'; 
+        if (!subjectId) {
+            console.error("No subject provided!");
+            return;
+        }
+        // ==========================================
+        // 1. AUTH VƏ GÜNDƏLİK LİMİT YOXLANIŞI
+        // ==========================================
+
+        // Sürətli olması üçün istifadəçi ID-sini birbaşa token-dən çəkirik
+        const sbSessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+        if (!sbSessionStr) {
+            const authHTML = `
+                <div style="text-align: center;">
+                    <h3 style="color: #1e90ff;">Giriş lazımdır</h3>
+                    <p>Sual işləmək üçün zəhmət olmasa hesabınıza daxil olun.</p>
+                </div>
+            `;
+            
+            showMessage(authHTML, "alert", "Daxil ol").then(() => {
+                window.location.href = "login.html";
+            });
+            
+            return;
+        }
+
+        const userId = JSON.parse(sbSessionStr).user.id;
+        const currentSessionId = Math.random().toString(36).substring(2, 15);
+        localStorage.setItem('active_session_id', currentSessionId);
+
+        async function syncSession() {
+            const sbToken = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+            if (!sbToken) return;
+
+            const uId = JSON.parse(sbToken).user.id;
+            const sId = localStorage.getItem('active_session_id');
+
+            // MÜHÜM: Update sorğusunda 'id' sütununa uyğunlaşırıq
+            const { data, error } = await supabaseClient
+                .from('user_stats')
+                .update({ "last_session_id": sId }) // Sütun adını dırnaqda yazmaq bəzən xətanın qarşısını alır
+                .match({'user_id': uId }); // .eq() yerinə .match() daha dəqiqdir
+
+            if (error) {
+                console.error("Supabase xətası:", error.message);
+            }
+        }
+
+        syncSession();
+
+        // Premium yoxlanışı
+        const cachedBitis = localStorage.getItem('premiumBitis_' + userId);
+        const isPremium = cachedBitis && new Date().getTime() < parseInt(cachedBitis);
+
+        // --- LİMİT YOXLAMA MƏNTİQİ ---
+        if (!isPremium) {
+            // 1. Cari tarixi lokal vaxtla alırıq (YYYY-MM-DD formatında)
+            const now = new Date();
+            const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+            
+            let { data: stats } = await supabaseClient
+                .from('user_stats')
+                .select('daily_limit_count, last_quiz_date')
+                .eq('user_id', userId)
+                .maybeSingle();
+
+            if (stats && stats.last_quiz_date === today && (Number(stats.daily_limit_count) || 0) >= 3) {
+                const limitHTML = `
+                    <div style="text-align: center;">
+                        <img src="../images/freeplanreminder.webp" alt="Limit" style="width: 200px; margin-bottom: 15px;">
+                        <h3 style="margin-bottom: 10px; color: #1e90ff;">Gündəlik limit doldu!</h3>
+                        <p style="font-size: 15px; opacity: 0.9;">
+                            Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
+                             Pulsuz hesabla gündə yalnız <b>3 fənn</b> (30 sual) işləyə bilərsiniz.
+                       </p>
+                    </div>
+                `;
+                
+                // showMessage funksiyasını gözləyirik (await)
+                const userChoice = await showMessage(limitHTML, "confirm", "İndi al", "Sonra"); 
+                
+                // Seçimə görə yönləndirmə
+                if (userChoice) {
+                    window.location.href = "premium.html";
+                } else {
+                    window.location.href = "fennler-menu.html";
+                }
+                return; // Funksiyadan çıxırıq ki, quiz başlamasın
+            }
+        } 
+        // --- AI YÜKLƏMƏ MƏNTİQİ ---
+        if (isPremium) {
+            const isMobile = window.innerWidth <= 768;
+            const fakeBtn = document.getElementById('fake-ai-btn');
+
+            if (isMobile) {
+                // --- 📱 MOBİL REJİM (Üzən Buton - Solda) ---
+                window.chtlConfig = { chatbotId: "3756376919" };
+                const script = document.createElement('script');
+                script.async = true;
+                script.dataset.id = "3756376919";
+                script.id = "chtl-script";
+                script.type = "text/javascript";
+                script.src = "https://chatling.ai/js/embed.js";
+                document.body.appendChild(script);
+                if (fakeBtn) fakeBtn.style.display = 'flex';
+            } else {
+                // --- 💻 DESKTOP REJİM (Səhifə İçi / Inline - Sağda) ---
+                window.chtlConfig = { chatbotId: "9896744625", display: "page_inline" };
+                // 1. Inline bot üçün div yaradırıq (Əgər HTML-də yoxdursa)
+                let inlineContainer = document.getElementById('chtl-inline-bot');
+                if (!inlineContainer) {
+                    inlineContainer = document.createElement('div');
+                    inlineContainer.id = "chtl-inline-bot";
+                    inlineContainer.style.width = "30%";
+                    inlineContainer.style.height = "calc(100vh - 30px)";
+                    inlineContainer.style.position = "fixed";
+                    inlineContainer.style.right = "0";
+                    inlineContainer.style.top = "61px";
+                    inlineContainer.style.zIndex = "1000"; 
+                    inlineContainer.style.backgroundColor = "#fff";
+                    inlineContainer.style.boxShadow = "-2px 0px 10px rgba(0,0,0,0.1)";
+                    document.body.appendChild(inlineContainer);
+                    document.querySelector('.main-content').style.width = "70%";
+                    document.querySelector('.main-content').style.maxWidth = "none";
+                    document.querySelector('.main-content').style.marginLeft = "0";
+                    document.querySelector('.main-background').style.justifyContent = "flex-start";
+                } else {
+                    inlineContainer.style.display = 'block';
+                }
+                // 2. Skripti dinamik yükləyirik və data-display parametrini veririk
+                const script = document.createElement('script');
+                script.async = true;
+                script.dataset.id = "9896744625";
+                script.dataset.display = "page_inline"; // Inline bot üçün vacib parametr
+                script.id = "chtl-script";
+                script.type = "text/javascript";
+                script.src = "https://chatling.ai/js/embed.js";
+                document.body.appendChild(script);
+                // Desktopda bot həmişə açıq olduğu üçün əlavə butona ehtiyac yoxdur, onu gizlədirik
+                if (fakeBtn) fakeBtn.style.display = 'none';
+            }
+
+        } else {
+            const fakeBtn = document.getElementById('fake-ai-btn');
+            if (fakeBtn) fakeBtn.style.display = 'none';
+            
+            const inlineContainer = document.getElementById('chtl-inline-bot');
+            if (inlineContainer) inlineContainer.style.display = 'none';
+
+            console.log("Qeyd: Pulsuz istifadəçilər üçün AI aktiv deyil.");
+        }
+        (async () => {
+            // 1. Supabase Müştərisini təyin edirik (ReferenceError-un qarşısını almaq üçün)
+            const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+            const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+            const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+            try {
+                // 2. İstifadəçi sessiyasını yoxlayırıq
+                const sessionStr = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+                if (!sessionStr) return;
+                const uId = JSON.parse(sessionStr).user.id;
+
+                // 3. Bazadan stats məlumatını çəkirik (stats burada təyin olunur)
+                const today = new Date().toISOString().split('T')[0];
+                const { data: stats } = await client
+                    .from('user_stats')
+                    .select('daily_limit_count, last_quiz_date')
+                    .eq('user_id', uId)
+                    .maybeSingle();
+
+                // 4. Sənin istifadə etdiyin dəyişən məntiqi
+                let currentLimitInDb = (stats && stats.last_quiz_date === today) ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                // 5. Ekrana yazdırma
+                const display = document.getElementById('limit-text');
+                if (display) display.innerText = currentLimitInDb;
+
+            } catch (err) {
+                console.error("Limit göstərilərkən xəta:", err.message);
+            }
+        })();
+        // ==========================================
+        // 2. QUIZ MƏNTİQİ (Sizin köhnə kodunuz)
+        // ==========================================
+        // LocalStorage-dan cari fənnin səhvlərini gətirən köməkçi funksiya
+        function getWrongQuestions(subjectId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            return wrongData[subjectId] || [];
+        }
+
+        // Səhv cavab verəndə ID-ni əlavə edən funksiya
+        function addWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            
+            // Əgər bu fənn üçün hələ array yoxdursa, yarat
+            if (!wrongData[subjectId]) {
+                wrongData[subjectId] = [];
+            }
+            
+            // Əgər bu ID artıq siyahıda yoxdursa, əlavə et
+            if (!wrongData[subjectId].includes(questionId)) {
+                wrongData[subjectId].push(questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
+
+        // Düzgün cavab verəndə ID-ni siyahıdan silən funksiya
+        function removeWrongQuestion(subjectId, questionId) {
+            let wrongData = JSON.parse(localStorage.getItem("wrong_questions")) || {};
+            
+            if (wrongData[subjectId]) {
+                // ID-ni tap və array-dən çıxar
+                wrongData[subjectId] = wrongData[subjectId].filter(id => id !== questionId);
+                localStorage.setItem("wrong_questions", JSON.stringify(wrongData));
+            }
+        }
+        fetch("subjects.json")
+            .then(res => res.json())
+            .then(data => {
+                // Hər iki massivi (global və special) bir yerə toplayırıq
+                const allSubjects = [
+                    ...(data.subject_pool.global_subjects || []),
+                    ...(data.subject_pool.special_subjects || [])
+                ];
+
+                const subject = allSubjects.find(s => s.id === subjectId);
+                
+                if (subject) {
+                    const titleEl = document.querySelector(".fenn-id h1");
+                    if (titleEl) titleEl.textContent = subject.title;
+                } else {
+                    console.warn("Fənn tapılmadı: " + subjectId);
+                }
+            })
+            .catch(err => console.error("Subject fetch error:", err));
+        // Köhnə fetch blokunu sil və bunu əlavə et:
+        async function loadQuestions() {
+            try {
+                // Supabase-dən subjectId-yə uyğun cədvəldən bütün sətirləri çəkirik
+                const { data: allQuestions, error } = await supabaseClient
+                    .from(subjectId) // Cədvəl adı fənnin ID-si ilə eyni olmalıdır
+                    .select('*');
+
+                if (error) throw error;
+
+                if (!allQuestions || allQuestions.length === 0) {
+                    console.error("Suallar tapılmadı!");
+                    return;
+                }
+
+                // BURADA SUAL SAYINI 10 EDİRİK! (və ya test üçün slice(0, 2))
+                const questions = shuffleArray(allQuestions).slice(0, 10); 
+                
+                let isQuizFinished = false;
+                let currentIndex = 0;
+                let score = 0;
+                let timerInterval;
+                let secondsElapsed = 0;
+                let userAnswers = {}; 
+
+                const questionEl = document.getElementById("question-text");
+                const optionsContainer = document.getElementById("options-container");
+                const counterEl = document.getElementById("question-counter");
+                const progressEl = document.getElementById("progress-fill");
+                const prevBtn = document.getElementById("evvelki-btn");
+                const nextBtn = document.getElementById("novbeti-btn");
+
+                if (prevBtn) prevBtn.onclick = () => navigate(-1);
+                if (nextBtn) nextBtn.onclick = () => navigate(1);
+                function formatTime(seconds) {
+                    const m = Math.floor(seconds / 60).toString().padStart(2, '0');
+                    const s = (seconds % 60).toString().padStart(2, '0');
+                    return `${m}:${s}`;
+                }
+
+                function startTimer() {
+                    if (timerInterval) clearInterval(timerInterval);
+                    secondsElapsed = 0;
+                    const timerEl = document.getElementById("quiz-timer");
+                    if(timerEl) timerEl.textContent = "00:00";
+
+                    timerInterval = setInterval(() => {
+                        secondsElapsed++;
+                        if(timerEl) timerEl.textContent = formatTime(secondsElapsed);
+                    }, 1000);
+                }
+                function checkMultiLogin() {
+                    const checkInterval = setInterval(async () => {
+                        const sbToken = localStorage.getItem('sb-xoebhhdirsvjorjlrfzi-auth-token');
+                        if (!sbToken) return;
+                        const uId = JSON.parse(sbToken).user.id;
+
+                        const { data, error } = await supabaseClient
+                            .from('user_stats')
+                            .select('last_session_id')
+                            .match({ 'user_id': uId }) 
+                            .single();
+                        if (data && data.last_session_id !== localStorage.getItem('active_session_id')) {
+                            clearInterval(checkInterval);
+                            const limitHTML = `
+                                <div style="text-align: center;">
+                                    <img src="../images/matrix-looking.webp" alt="Alert" style="width: 200px; margin-bottom: 15px;">
+                                    <h3 style="margin-bottom: 10px; color: #1e90ff;">Hesabınıza başqa cihazdan giriş edilib. Quiz dayandırıldı!</h3>
+                                    <p style="font-size: 15px; opacity: 0.9;">
+                                    Hesabınızın qorunması üçün şifrənizi dərhal yeniləməyiniz tövsiyə olunur.
+                                    Bu halın təkrarlanması platforma qaydalarının manipulyasiyası kimi qiymətləndiriləcək. Bu zaman hesabınız avtomatik olaraq 'Yüksək Risk' kateqoriyasına keçəcək.
+                                </p>
+                                </div>
+                            `;
+                            
+                            // showMessage funksiyasını gözləyirik (await)
+                            await showMessage(limitHTML, "Sonra"); 
+                            window.location.href = "fennler-menu.html"; // İstifadəçini ana səhiffəyə at
+                        }
+                    }, 10000);
+                }
+
+                // Funksiyanı başlat
+                checkMultiLogin();
+                function renderQuestion(index) {
+                    const q = questions[index];
+                    if (!q) return; // Təhlükəsizlik üçün
+                    
+                    if (questionEl) questionEl.textContent = q.question;
+                    if (counterEl) counterEl.textContent = `${index + 1} / ${questions.length}`;
+
+                    if (progressEl) {
+                        const progressPercent = ((index) / questions.length) * 100;
+                        progressEl.style.width = `${progressPercent}%`;
+                    }
+
+                    if (optionsContainer) {
+                        // Supabase-dəki sütun adlarına uyğun obyekt yaradırıq
+                        const currentOptions = {
+                            "A": q.options__A,
+                            "B": q.options__B,
+                            "C": q.options__C,
+                            "D": q.options__D,
+                            "E": q.options__E
+                        };
+
+                        // Variantları düymələrə çeviririk (Boş olan sütunları filter ilə çıxarırıq)
+                        optionsContainer.innerHTML = Object.entries(currentOptions)
+                            .filter(([key, text]) => text !== null && text !== undefined && text !== "")
+                            .map(([key, text]) =>
+                                `<button class="option-btn" data-key="${key}">${key}) ${text}</button>`
+                            ).join("");
+                    }
+                    
+                    const optionBtns = document.querySelectorAll(".option-btn");
+
+                    if (userAnswers[index]) {
+                        const savedAnswer = userAnswers[index]; 
+                        const correctAnswer = q.correct_answer; 
+                        
+                        optionsContainer.classList.add("disabled");
+                        
+                        optionBtns.forEach(btn => {
+                            const key = btn.dataset.key;
+                            if (key === savedAnswer) {
+                                btn.classList.add(key === correctAnswer ? "correct" : "wrong");
+                            }
+                            if (key === correctAnswer) {
+                                btn.classList.add("correct");
+                            }
+                        });
+                        if (nextBtn) nextBtn.disabled = false;
+                    } else {
+                        optionsContainer.classList.remove("disabled");
+                        if (nextBtn) nextBtn.disabled = true;
+
+                        optionBtns.forEach(btn => {
+                            btn.onclick = () => handleOptionClick(btn, q, index);
+                        });
+                    }
+
+                    if (prevBtn) prevBtn.disabled = (index === 0);
+                    if (nextBtn) {
+                        nextBtn.textContent = (index === questions.length - 1) ? "Nəticə" : "Növbəti";
+                    }
+                }
+                function openChatling() {
+                    if (window.chatling && typeof window.chatling.open === 'function') {
+                        window.chatling.open();
+                    } else {
+                        // Əgər API hələ hazır deyilsə, gizli orijinal düyməni klikləyirik
+                        const originalBtn = document.getElementById('chatling-embed-trigger');
+                        if (originalBtn) {
+                            // Chatling butonu daxilindəki əsl kliklənə bilən elementi tapırıq
+                            const realClickable = originalBtn.querySelector('button') || originalBtn;
+                            realClickable.click();
+                        }
+                    }
+                }
+                async function handleOptionClick(btn, questionData, index) {
+                    const selected = btn.dataset.key;
+                    userAnswers[index] = selected;
+                    
+                    const questionId = questionData.id; 
+                    const correctAnswer = questionData.correct_answer;
+
+                    // YENİLİK: Butonları tək-tək bağlamırıq, bütöv qutunu dondururuq
+                    optionsContainer.classList.add("disabled");
+
+                    if (selected === correctAnswer) {
+                        btn.classList.add("correct");
+                        if (nextBtn) nextBtn.disabled = false;
+                        score++;
+                        removeWrongQuestion(currentSubjectId, questionId);
+                    } else {
+                        btn.classList.add("wrong");
+                        if (nextBtn) nextBtn.disabled = false;
+                        addWrongQuestion(currentSubjectId, questionId);
+                        
+                        setTimeout(() => {
+                            const correctBtn = optionsContainer.querySelector(`[data-key="${correctAnswer}"]`);
+                            if (correctBtn) correctBtn.classList.add("correct");
+                        }, 500);
+                    }
+
+                    
+                    function checkAnswer(selectedOptionButton, selectedAnswerKey) {
+                        // selectedAnswerKey məsələn "A", "B", "C" və s. olacaq
+                        const correctAnswerKey = currentQuestion.correct_answer; 
+                        const questionId = currentQuestion.id;
+
+                        // Bütün variant düymələrini seçirik (CSS class-ınıza uyğun dəyişin)
+                        const allOptions = document.querySelectorAll(".option-btn"); 
+
+                        // İstifadəçi bir dəfə cavab verdikdən sonra digər düymələri deaktiv edirik ki, 2-ci dəfə basa bilməsin
+                        allOptions.forEach(btn => btn.disabled = true);
+
+                        if (selectedAnswerKey === correctAnswerKey) {
+                            // DOĞRU CAVAB
+                            selectedOptionButton.style.backgroundColor = "#4CAF50"; // Yaşıl rəng
+                            selectedOptionButton.style.color = "white";
+                            
+                            // Sualı düzgün tapdığı üçün "Səhvlər" siyahısından silirik (əgər orda var idisə)
+                            removeWrongQuestion(currentSubjectId, questionId);
+                            
+                            // Xalı artırmaq kodunuzu bura yaza bilərsiniz
+                            // score++;
+
+                        } else {
+                            // SƏHV CAVAB
+                            selectedOptionButton.style.backgroundColor = "#F44336"; // Qırmızı rəng
+                            selectedOptionButton.style.color = "white";
+
+                            // Doğru cavabı tapıb yaşıl edirik ki, istifadəçi görsün
+                            // (Bunun üçün düymələrinizə data-key="A", data-key="B" kimi atributlar verməyiniz məsləhətdir)
+                            allOptions.forEach(btn => {
+                                if (btn.getAttribute("data-key") === correctAnswerKey) {
+                                    btn.style.backgroundColor = "#4CAF50";
+                                    btn.style.color = "white";
+                                }
+                            });
+
+                            // Səhv etdiyi üçün ID-ni LocalStorage-a əlavə edirik
+                            addWrongQuestion(currentSubjectId, questionId);
+                        }
+
+                    }
+                    const container = document.getElementById("options-container");
+                    container.classList.add("disabled");
+                    nextBtn.disabled = false;
+                }
+
+                function navigate(direction) {
+                    const newIndex = currentIndex + direction;
+                                        
+                    if (newIndex >= 0 && newIndex < questions.length) {
+                        currentIndex = newIndex;
+                        renderQuestion(currentIndex);
+                    } else if (newIndex >= questions.length) {
+                        showResult();
+                    }
+                }
+                async function updatePlayerStats(uId, currentScore, currentSeconds, totalQuestions, correctAnswers) {
+                    try {
+                        const client = window.globalSupabaseClient || window.supabaseClient;
+
+                        // 1. İSTİFADƏÇİ MƏLUMATLARINI ALIRIQ
+                        const { data: { user } } = await client.auth.getUser();
+                        const fullName = user?.user_metadata?.full_name || "Adsız İstifadəçi";
+
+                        // 2. TARİXLƏRİN HESABLANMASI
+                        const now = new Date();
+                        const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+                        const yesterday = new Date(now);
+                        yesterday.setDate(now.getDate() - 1);
+                        const yesterdayStr = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, '0')}-${String(yesterday.getDate()).padStart(2, '0')}`;
+
+                        // 3. MÖVCUD STATİSTİKANIN ÇƏKİLMƏSİ (Rating Deviation daxil olmaqla)
+                        let { data: stats, error: fetchErr } = await client
+                            .from('user_stats')
+                            .select('*')
+                            .eq('user_id', uId)
+                            .maybeSingle();
+
+                        if (fetchErr) throw fetchErr;
+
+                        let lastDateInDb = stats ? stats.last_quiz_date : null;
+                        let currentStreakInDb = stats ? (Number(stats.current_streak) || 0) : 0;
+                        let currentLimitInDb = stats ? (Number(stats.daily_limit_count) || 0) : 0;
+
+                        let finalStreak = 0;
+                        let finalLimit = 1;
+
+                        // --- STREAK VƏ LİMİT MƏNTİQİ ---
+                        if (!stats) {
+                            finalStreak = 1;
+                            finalLimit = 1;
+                        } else if (lastDateInDb === todayStr) {
+                            finalStreak = currentStreakInDb;
+                            finalLimit = currentLimitInDb + 1;
+                        } else if (lastDateInDb === yesterdayStr) {
+                            finalStreak = currentStreakInDb + 1;
+                            finalLimit = 1;
+                        } else {
+                            finalStreak = 1;
+                            finalLimit = 1;
+                        }
+
+                        // --- YENİ ELO (GLICKO) HESABLAMA MƏNTİQİ ---
+                        
+                        function calculateNewRating(currentElo, currentRD, percentage) {
+                            // 1. Sabitlər
+                            const q = Math.log(10) / 400;
+                            const quizDifficulty = 1000; // Quiz-in baza çətinliyi
+                            
+                            // 2. Quiz nəticəsini 0.0 - 1.0 arasına gətiririk (Actual Score)
+                            const s = percentage / 100;
+
+                            // 3. Ehtimal olunan nəticəni hesablayırıq (Expected Score)
+                            // Düstur: E = 1 / (1 + 10^((difficulty - elo) / 400))
+                            const e = 1 / (1 + Math.pow(10, (quizDifficulty - currentElo) / 400));
+
+                            // 4. RD-nin təsiri ilə d^2 dəyərini tapırıq
+                            const dSquared = 1 / (Math.pow(q, 2) * (e * (1 - e)));
+
+                            // 5. Yeni Elo (Rating)
+                            // K-faktoru yerinə dinamik bir çarpan istifadə olunur
+                            const multiplier = q / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared));
+                            const newElo = currentElo + multiplier * (s - e);
+
+                            let newRD = Math.sqrt(1 / ((1 / Math.pow(currentRD, 2)) + (1 / dSquared)));
+                            
+                            // RD limitləri: Nə qədər usta olsa da, şübhə 30-dan aşağı düşmür
+                            newRD = Math.max(30, Math.min(350, newRD));
+
+                            return {
+                                rating: Math.round(newElo),
+                                rd: Math.round(newRD),
+                                diff: Math.round(newElo - currentElo)
+                            };
+                        }
+
+                        const percentage = (correctAnswers / totalQuestions) * 100;
+                        const currentElo = stats ? (Number(stats.elo_rating) || 1000) : 1000;
+                        const currentRD = stats ? (Number(stats.rating_deviation) || 350) : 350;
+
+                        // Hesablamanı icra edirik
+                        const eloResult = calculateNewRating(currentElo, currentRD, percentage);
+
+                        // 4. USER_STATS YENİLƏMƏSİ (Upsert)
+                        const updatePayload = {
+                            display_name: fullName,
+                            quizzes_completed: (stats ? (Number(stats.quizzes_completed) || 0) : 0) + 1,
+                            total_time_spent: (stats ? (Number(stats.total_time_spent) || 0) : 0) + currentSeconds,
+                            total_answered_questions: (stats ? (Number(stats.total_answered_questions) || 0) : 0) + totalQuestions,
+                            total_correct_answers: (stats ? (Number(stats.total_correct_answers) || 0) : 0) + correctAnswers,
+                            total_score: (stats ? (Number(stats.total_score) || 0) : 0) + currentScore,
+                            
+                            // YENİ MƏLUMATLAR
+                            elo_rating: eloResult.rating,
+                            rating_deviation: eloResult.rd, 
+                            
+                            current_streak: finalStreak,
+                            last_quiz_date: todayStr,
+                            daily_limit_count: finalLimit,
+                            updated_at: new Date().toISOString()
+                        };
+
+                        const { error: updErr } = await client
+                            .from('user_stats')
+                            .upsert({ user_id: uId, ...updatePayload });
+
+                        if (updErr) throw updErr;
+
+                        // 5. QUIZ_HISTORY (Olduğu kimi qalır)
+                        const { data: historyData } = await client
+                            .from('quiz_history')
+                            .select('quiz_count')
+                            .eq('user_id', uId)
+                            .eq('quiz_date', todayStr)
+                            .maybeSingle();
+                        
+                        const newHistoryCount = (historyData ? (Number(historyData.quiz_count) || 0) : 0) + 1;
+
+                        await client.from('quiz_history').upsert({
+                            user_id: uId,
+                            quiz_date: todayStr,
+                            quiz_count: newHistoryCount
+                        }, { onConflict: 'user_id, quiz_date' });
+
+                        // NƏTİCƏNİ QAYTARIRIQ (UI üçün eloDifference və newElo)
+                        return {
+                            diff: eloResult.diff,
+                            newElo: eloResult.rating
+                        };
+
+                    } catch (err) {
+                        console.error("Gözlənilməz xəta:", err.message);
+                        return null;
+                    }
+                }
+                async function showResult() {
+                    clearInterval(timerInterval);
+                    const finalTime = formatTime(secondsElapsed);
+                    let eloDiff = 0;
+                    let eloData = { diff: 0, newElo: 1000 }; // Default dəyərlər
+                    if (isQuizFinished) {
+                        return; 
+                    }
+                    isQuizFinished = true;
+                    if (userId) {
+                        const result = await updatePlayerStats(userId, score, secondsElapsed, questions.length, score);
+                        if (result) eloData = result; 
+                    }
+                    
+                    let eloStatusClass = "elo-neutral";
+                    let eloSign = eloData.diff > 0 ? "+" : "";
+
+                    if (eloData.diff > 0) {
+                        eloStatusClass = "elo-up";
+                    } else if (eloData.diff < 0) {
+                        eloStatusClass = "elo-down";
+                    }       
+                    const topPart = document.querySelector(".top-part");
+                    const sualWord = document.querySelector(".sual-word");
+                    const quizButtons = document.querySelector(".quiz-buttons-bg");
+                    const sualTextBg = document.querySelector(".sual-text-bg");
+                    const exitBg = document.querySelector(".exit-bg a");
+
+                    if(topPart) topPart.style.display = "none";
+                    if(sualWord) sualWord.style.display = "none";
+                    if(quizButtons) quizButtons.style.display = "none";
+                    if(sualTextBg) sualTextBg.style.display = "none";
+                    if(exitBg) exitBg.style.display = "none";
+
+                    const headerTitle = document.querySelector(".fenn-id h1");
+                    let subjectTitle = "";
+                    if (headerTitle) {
+                        subjectTitle = headerTitle.textContent;
+                        headerTitle.style.display = "none";
+                    }
+
+                    const percentage = Math.round((score / questions.length) * 100);
+                    const wrongAnswers = questions.length - score;
+                    const eloHTML = `${eloData.newElo} <span class="${eloStatusClass}" style="font-size: 0.9em; margin-left: 5px;">${eloSign}${eloData.diff}</span>`;
+                    optionsContainer.innerHTML = `
+                        <div class="result-container">
+                            <div class="circle-progress-container">
+                                <div class="circle-progress" style="--degrees: ${percentage * 3.6}deg;">
+                                    <span class="progress-value">${percentage}%</span>
+                                </div>
+                            </div>
+
+                            <h1 class="result-title">Yekun nəticə: ${score}/${questions.length}</h1>
+                            <p class="result-subject">${subjectTitle}</p>
+
+                            <div class="stats-card">
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-blue">●</span> Düzgün cavablar</span>
+                                    <span class="stat-count">${score}</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-red">●</span> Səhv cavablar</span>
+                                    <span class="stat-count">${wrongAnswers}</span>
+                                </div>
+                                
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-grey">●</span> Sərf olunan vaxt</span>
+                                    <span class="stat-count">${finalTime}</span>
+                                </div>
+
+                                <div class="stat-row last-row">
+                                    <span class="stat-label"><span class="dot-green">●</span> Keçmə faizi</span>
+                                    <span class="stat-count green-text">${percentage}%</span>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label"><span class="dot-yellow">●</span> Reytinq (Elo)</span>
+                                    <span class="stat-count" style="color: inherit; font-weight: bold;">${eloHTML}</span>
+                                </div>
+                            </div>
+
+                            <div class="result-actions">
+                                <a href="fennler-menu.html" class="link-blue">Əsas səhifə</a>
+                                <button class="btn-blue" onclick="window.location.reload()">Yenidən sına</button>
+                            </div>
+                        </div>
+                    `;
+
+                    optionsContainer.classList.remove("disabled");
+                }
+
+                // ==========================================
+                // SUALI REPORT ETMƏK (ŞİKAYƏT) FUNKSİYASI
+                // ==========================================
+                window.openReportFrame = function() {
+                    const currentQuestionText = document.getElementById("question-text").innerText;
+
+                    const reportHTML = `
+                        <h2>Sualı Şikayət Et</h2>
+                        <div>
+                            <span class="report-label">Problemli sual:</span>
+                            <div class="reported-question-box">${currentQuestionText}</div>
+                        </div>
+                        <div>
+                            <span class="report-label">Problemin təsviri:</span>
+                            <textarea id="reportReasonText" class="report-textarea" placeholder="Sualda hansı səhvi və ya problemi gördüyünüzü ətraflı yazın..."></textarea>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                            <button class="btn-continue" onclick="submitReport()">Göndər</button>
+                        </div>
+                    `;
+                    openActionModal(reportHTML); 
+                };
+
+                window.submitReport = function() {
+                    const reason = document.getElementById("reportReasonText").value.trim();
+                    if (!reason) {
+                        showMessage("Zəhmət olmasa problemin nə olduğunu qeyd edin!");
+                        return;
+                    }
+                    closeActionModal(); 
+                    showMessage("Şikayətiniz uğurla göndərildi. Təşəkkür edirik!"); 
+                };
+                
+                // Quiz-i başlat
+                renderQuestion(currentIndex);
+                startTimer();
+                // Quiz-i başlat
+                renderQuestion(currentIndex);
+                startTimer();
+
+            } catch (err) {
+                console.error("Supabase fetch error:", err.message);
+            }
+        }
+
+        // Funksiyanı çağırırıq
+        loadQuestions();
+    });
+
+    function shuffleArray(array) {
+        return array
+            .map(a => [Math.random(), a])
+            .sort((a, b) => a[0] - b[0])
+            .map(a => a[1]);
+    }
+}
+// ---------------------- PROFILE PAGE ----------------------
+if (window.location.pathname.includes("profile.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN';
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+    document.addEventListener("DOMContentLoaded", async () => {
+        // 1. İstifadəçi məlumatlarını Supabase-dən çəkirik
+        const { data: { user }, error } = await supabaseClient.auth.getUser();
+
+        if (error || !user) {
+            // Əgər istifadəçi giriş etməyibsə, login səhifəsinə atırıq
+            window.location.href = "login.html";
+            return;
+        }
+        
+        // 2. HTML-dəki inputları tapırıq və dəyərləri içinə yazırıq
+        const usernameInput = document.getElementById('username');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const createdAtText = document.getElementById('createdat');
+
+        if (usernameInput) usernameInput.value = user.user_metadata?.full_name || "";
+        if (emailInput) emailInput.value = user.email || "";
+        if (passwordInput) passwordInput.value = "********"; // Şifrə gizli qalmalıdır
+        if (createdAtText && user.created_at) {
+            const createdDate = new Date(user.created_at);
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            createdAtText.textContent = createdDate.toLocaleDateString('az-AZ', options);
+        }
+        // ==========================================
+        // 3. ABUNƏLİK YOXLANIŞI VƏ EKRANA YAZDIRILMASI
+        // ==========================================
+        const abunelikBg = document.querySelector('.abunelik-bg');
+        const premiumBg = document.querySelector('.premium-abunelik-bg');
+        const premiumText = document.querySelector('#premium-text p');
+        const bitmeTarixi = document.getElementById('bitme-tarixi');
+
+        const { data: abuneData, error: abuneError } = await supabaseClient
+            .from('abunelikler')
+            .select('*')
+            .eq('user_id', user.id)
+            .maybeSingle(); // Həmin istifadəçinin sətirini tapırıq
+
+        if (abuneData) {
+            const indi = new Date();
+            const bitis = new Date(abuneData.bitis_tarixi);
+            // Əgər vaxtı hələ bitməyibsə
+            if (indi < bitis) {
+                
+                if(abunelikBg) abunelikBg.style.display = 'none';
+                if(premiumBg) premiumBg.style.display = 'flex'; // və ya sizin css necə tələb edirsə
+                
+                // Planın adını və bitiş tarixini yaz
+                if(premiumText) premiumText.textContent = abuneData.plan_adi;
+                
+                // Tarixi qəşəng və anlaşılan formata salırıq (məs: 20 Mart 2026)
+                const options = { day: 'numeric', month: 'long', year: 'numeric' };
+                if(bitmeTarixi) bitmeTarixi.textContent = bitis.toLocaleDateString('az-AZ', options);
+            } else {
+                abunelikBg.style.display = "flex"
+            }
+        }
+        // ==========================================
+        // DƏYİŞDİRMƏ MODALI (E-poçt və Şifrə üçün)
+        // ==========================================
+        // 1. Modalı açan funksiya
+        window.openChangeFrame = function(type) {
+            if (type === 'password') {
+                // Şifrə üçün əvvəlcə e-poçtu təsdiqləməyə yönləndiririk
+                openPasswordResetStep1();
+            } else {
+                // E-poçt dəyişmə köhnə qaydada qalır (link ilə)
+                const modalHTML = `
+                    <h2>E-poçtu yenilə</h2>
+                    <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">Yeni e-poçt ünvanınızı daxil edin. Təsdiq linki göndəriləcək.</p>
+                    <div class="input-group">
+                        <label>Yeni e-poçt</label>
+                        <input type="email" id="newActionValue" placeholder="yeni@mail.com">
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                        <button class="btn-continue" id="modalSubmitBtn" onclick="submitChange('email')">Təsdiqlə</button>
+                    </div>
+                `;
+                openActionModal(modalHTML);
+            }
+        };
+
+        // 2. Şifrə dəyişmənin 1-ci mərhələsi: OTP göndərmək
+        async function openPasswordResetStep1() {
+            const { data: { user } } = await supabaseClient.auth.getUser();
+            const email = user.email;
+
+            const modalHTML = `
+                <h2>Şifrəni yenilə</h2>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">
+                    Şifrəni dəyişmək üçün <b>${email}</b> ünvanına təsdiq kodu göndərilməlidir.
+                </p>
+                <div class="action-buttons">
+                    <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                    <button class="btn-continue" id="sendOtpBtn" onclick="sendProfileOtp('${email}')">Kod Göndər</button>
+                </div>
+            `;
+            openActionModal(modalHTML);
+        }
+
+        // 3. OTP göndər və 2-ci mərhələyə keç
+        window.sendProfileOtp = async function(email) {
+            const btn = document.getElementById("sendOtpBtn");
+            btn.textContent = "Göndərilir...";
+            btn.disabled = true;
+
+            const { error } = await supabaseClient.auth.resetPasswordForEmail(email);
+
+            if (error) {
+                await showMessage("Xəta: " + error.message);
+                btn.disabled = false;
+                btn.textContent = "Kod Göndər";
+            } else {
+                showProfileOtpEntry(email);
+            }
+        };
+
+        // 4. OTP və Yeni Şifrə daxil etmə modalı
+        function showProfileOtpEntry(email) {
+            const modalContent = document.getElementById("actionModalContent");
+            modalContent.innerHTML = `
+                <h2>Təsdiqləmə</h2>
+                <p style="font-size: 14px; opacity: 0.8; margin-bottom: 15px;">E-poçtunuza gələn kodu və yeni şifrəni daxil edin.</p>
+                <div class="input-group">
+                    <label>OTP Kod</label>
+                    <input type="text" id="otpCodeInput" placeholder="12345678" maxlength="8">
+                </div>
+                <div class="input-group">
+                    <label>Yeni Şifrə</label>
+                    <input type="password" id="newProfilePassword" placeholder="Ən azı 8 simvol">
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-cancel" onclick="closeActionModal()">Ləğv et</button>
+                    <button class="btn-continue" id="finalSubmitBtn" onclick="verifyAndFinish('${email}')">Yenilə</button>
+                </div>
+            `;
+        }
+
+        // 5. Kodu yoxla və bitir
+        window.verifyAndFinish = async function(email) {
+            const token = document.getElementById("otpCodeInput").value.trim();
+            const password = document.getElementById("newProfilePassword").value.trim();
+            const btn = document.getElementById("finalSubmitBtn");
+
+            if (token.length < 8 || password.length < 6) {
+                await showMessage("Kod və şifrə tam doldurulmalıdır!");
+                return;
+            }
+
+            btn.textContent = "Gözləyin...";
+            btn.disabled = true;
+
+            // Kodu yoxlayırıq
+            const { error: verifyError } = await supabaseClient.auth.verifyOtp({
+                email,
+                token,
+                type: 'recovery'
+            });
+
+            if (verifyError) {
+                await showMessage("Kod yanlışdır!");
+                btn.disabled = false;
+                btn.textContent = "Yenilə";
+            } else {
+                // Şifrəni yeniləyirik
+                const { error: updateError } = await supabaseClient.auth.updateUser({ password });
+                
+                closeActionModal();
+                if (updateError) {
+                    await showMessage("Xəta: " + updateError.message);
+                } else {
+                    await showMessage("Şifrəniz uğurla yeniləndi!");
+                }
+            }
+        };
+        // ==========================================
+        // DƏYİŞİKLİKLƏRİ SAXLA (Yalnız Ad üçün)
+        // ==========================================
+        const saveBtn = document.querySelector('.btn-save');
+        if (saveBtn) {
+            saveBtn.addEventListener('click', async () => {
+                const newName = usernameInput.value.trim();
+                
+                if (!newName) {
+                    await showMessage("İstifadəçi adı boş ola bilməz!");
+                    return;
+                }
+
+                const originalText = saveBtn.textContent;
+                saveBtn.textContent = "Saxlanılır...";
+                saveBtn.disabled = true;
+
+                // Adı metadata kimi yeniləyirik
+                const { data, error } = await supabaseClient.auth.updateUser({
+                    data: { full_name: newName }
+                });
+
+                saveBtn.textContent = originalText;
+                saveBtn.disabled = false;
+
+                if (error) {
+                    await showMessage("Xəta: " + error.message);
+                } else {
+                    await showMessage("Profil məlumatlarınız uğurla yadda saxlanıldı!", "showMessage", "Tamam");
+                }
+            });
+        }
+
+        // ==========================================
+        // HESABDAN ÇIX (Logout)
+        // ==========================================
+        const logoutBtn = document.querySelector('.btn-logout');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', async () => {
+                // Sizin yaratdığınız "confirm" tipli showMessage ilə soruşuruq
+                const isConfirmed = await showMessage("Hesabdan çıxmaq istədiyinizə əminsiniz?", "confirm");
+                
+                if (isConfirmed) {
+                    await supabaseClient.auth.signOut();
+                    window.location.href = "login.html";
+                }
+            });
+        }
+
+        // ==========================================
+        // HESABI SİL (Supabase Cədvəlinə Yazmaq - Spam qorumalı)
+        // ==========================================
+        const deleteBtn = document.querySelector('.btn-delete');
+        if (deleteBtn) {
+            deleteBtn.addEventListener('click', async () => {
+                const isConfirmed = await showMessage("Hesabınızı silmək istədiyinizə əminsiniz? Bu əməliyyat geri qaytarıla bilməz!", "confirm");
+                
+                if (isConfirmed) {
+                    deleteBtn.textContent = "Yoxlanılır...";
+                    deleteBtn.disabled = true;
+
+                    const userEmail = user.email; 
+
+                    // 1. Əvvəlcə yoxlayırıq: Bu e-poçt artıq cədvəldə varmı?
+                    const { data: existingData, error: checkError } = await supabaseClient
+                        .from('hesab_silme_telebleri')
+                        .select('email')
+                        .eq('email', userEmail); // Cədvəldəki 'email' sütunu istifadəçinin e-poçtuna bərabər olanları tap
+
+                    if (checkError) {
+                        await showMessage("Sorğu yoxlanılarkən xəta baş verdi: " + checkError.message);
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return;
+                    }
+
+                    // 2. Əgər data içində nəticə varsa, deməli artıq müraciət edib
+                    if (existingData && existingData.length > 0) {
+                        await showMessage("Sizin hesab silmə istəyiniz artıq qeydə alınıb və hazırda icra olunur.", "showMessage", "Tamam");
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return; // funksiyanı buradaca dayandırırıq ki, yenidən bazaya yazmasın
+                    }
+
+                    // 3. Əgər əvvəllər müraciət etməyibsə, cədvələ yeni sorğu kimi əlavə edirik
+                    deleteBtn.textContent = "Göndərilir...";
+                    
+                    const { error: insertError } = await supabaseClient
+                        .from('hesab_silme_telebleri')
+                        .insert([
+                            { email: userEmail }
+                        ]);
+
+                    if (insertError) {
+                        await showMessage("Sorğu göndərilərkən xəta baş verdi: " + insertError.message);
+                        deleteBtn.textContent = "Hesabı sil";
+                        deleteBtn.disabled = false;
+                        return;
+                    }
+
+                    // Uğurla yazıldıqdan sonra istifadəçiyə yekun mesajı veririk
+                    await showMessage("Hesab silmə tələbiniz qeydə alındı. 1 həftə içərisində hesabınız tamamilə silinəcək.", "showMessage", "Tamam");
+                    
+                    // Sistemdən çıxış edib login-ə atırıq
+                    await supabaseClient.auth.signOut();
+                    window.location.href = "login.html";
+                }
+            });
+        }
+
+    });
+}
+// ---------------------- PREMIUM PAGE ----------------------
+if (window.location.pathname.includes("premium.html")) {
+    const supabaseUrl = 'https://xoebhhdirsvjorjlrfzi.supabase.co';
+    const supabaseKey = 'sb_publishable_FpT1VBCd5NKEnrYQbmx9Gw_MqWxVMvN'; 
+    const supabaseClient = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+    // --- 1. SƏHİFƏ AÇILANDA ABUNƏLİYİ YOXLA VƏ DÜYMƏLƏRİ KİLİDLƏ ---
+    // DOMContentLoaded əvəzinə xüsusi asinxron funksiya yaradıb dərhal çağırırıq
+    async function checkActivePlan() {
+        const { data: { user } } = await supabaseClient.auth.getUser();
+        
+        if (user) {
+            const { data: abuneData } = await supabaseClient
+                .from('abunelikler')
+                .select('*')
+                .eq('user_id', user.id)
+                .maybeSingle();
+
+            if (abuneData) {
+                const indi = new Date();
+                const bitis = new Date(abuneData.bitis_tarixi);
+                
+                if (indi < bitis) {
+                    // Bütün premium düymələrini tapırıq
+                    const freePlanBtn = document.querySelector('.plan-free .btn-plan-current');
+                    if (freePlanBtn) {
+                        freePlanBtn.textContent = "Mövcud planınız var";
+                        freePlanBtn.style.opacity = "0.5"
+                    }
+                    const btns = document.querySelectorAll('.btn-plan-active');
+                    
+                    btns.forEach(btn => {
+                        // Əgər bu düymə istifadəçinin aldığı plandırsa:
+                        if (btn.getAttribute('onclick').includes(abuneData.plan_adi)) {
+                            btn.textContent = "Aktivdir";
+                            btn.disabled = true;
+                            btn.style.backgroundColor = "#4CAF50"; // Yaşıl rəng
+                            btn.style.cursor = "default";
+                        } 
+                        // Digər planlardırsa:
+                        else {
+                            btn.textContent = "Mövcud planınız var";
+                            btn.disabled = true;
+                            btn.style.opacity = "0.5";
+                            btn.style.cursor = "not-allowed";
+                        }
+                    });
+                }
+            }
+        }
+    }
+    
+    // Funksiyanı dərhal işə salırıq
+    checkActivePlan();
+
+
+    window.activatePlan = async function(planAdi) {
+        // İstifadəçiyə göstəriləcək şəkilli "Hazırlanır" mesajı
+        const tezlikleHTML = `
+            <div style="text-align: center;">
+                <img src="../images/cattyping.gif" alt="Hazırlanır" style="width: 200px; margin-bottom: 15px; opacity: 0.8;">
+                
+                <h3 style="margin-bottom: 10px; color: #1e90ff;">Tezliklə!</h3>
+                <p style="font-size: 15px; opacity: 0.9; line-height: 1.5;">
+                    <b>${planAdi}</b> paketini almaq funksiyası hazırda yenilənmə mərhələsindədir. <br><br> Çox yaxında real ödəniş sistemi ilə istifadənizə veriləcək. Bizi izləməyə davam edin!
+                </p>
+            </div>
+        `;
+        
+        // Yeni qurduğumuz showMessage funksiyası ilə ekrana çıxarırıq (tək "Bağla" düyməsi ilə)
+        await showMessage(tezlikleHTML, "alert", "Bağla"); 
+    };
+}
