@@ -34,10 +34,12 @@
         .logo {
             position: absolute;
             margin-left: 0px;
+            display: flex;
         }
         #confirmBtn {
             background-color: #1e90ff;
         }
+
     </style>
 </head>
 <body>
@@ -98,6 +100,17 @@
                         
                     </div>
                     <div class="quiz-buttons-bg">
+                        <button id="open-ai-btn"><img src="../images/ai-chat.webp" alt="AI"></button>
+                        <div class="sound-wrapper">
+                            <button id="sound-toggle-btn"><img src="../images/audio-off.png" alt="Səs"></button>                            
+                            <!-- Düymənin tam üzərində açılacaq xüsusi menyu -->
+                            <div id="custom-noise-menu" style="display: none;">
+                                <div class="noise-option" data-value="none">Söndür</div>
+                                <div class="noise-option" data-value="white">White Noise</div>
+                                <div class="noise-option" data-value="brown">Brown Noise</div>
+                                <div class="noise-option" data-value="rain">Yağış Səsi</div>
+                            </div>
+                        </div>
                         <button onclick="openReportFrame()" id="report"><img src="../images/report.png" alt="Bildir"></button>
                         <button id="evvelki-btn">Əvvəlki</button>
                         <button id="novbeti-btn">Növbəti</button>

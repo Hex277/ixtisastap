@@ -926,7 +926,7 @@ button {
     padding: 5px 0;
     color: var(--text-color);
     text-align: left;
-    font-size: 18px;
+    font-size: 19px;
     transition: background-color .3s, transform .2s;
     box-sizing: border-box;
     text-decoration: none;
@@ -1433,7 +1433,7 @@ body.dark-theme #report img {
     width: 30px;
     position: relative;
 }
-#report:hover {
+#report:hover, #sound-toggle-btn:hover, #open-ai-btn:hover {
     transform: translateY(-1px);
 }
 #report img {
@@ -1488,6 +1488,87 @@ body.dark-theme #report img {
     display: block;
     text-align: left;
     margin-bottom: 8px;
+}
+#open-ai-btn {
+    background-color: transparent;
+    padding: 0;
+    width: 45px;
+}
+#open-ai-btn img {
+    width: 45px;
+    height: 45px;
+    margin-top: -2px;
+    margin-left: 10px;
+}
+/* Səs düyməsi və menyusunu bir yerdə saxlayan ana qutu */
+.sound-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#sound-toggle-btn {
+    padding: 0;
+    background-color: transparent;
+}
+#sound-toggle-btn img {
+    width: 31px;
+    height: 31px;
+}
+body.dark-theme #sound-toggle-btn img {
+    filter: invert(1);
+}
+/* Düymənin tam üstündə açılan menyu paneli */
+#custom-noise-menu {
+    position: absolute;
+    bottom: calc(100% + 10px); /* Düymənin tam olaraq üstündə (10px məsafədə) açılır */
+    left: 50%;
+    transform: translateX(-50%); /* Menyunu düyməyə görə tam üfüqi mərkəzləşdirir */
+    background-color: var(--surface);
+    border: 1px solid var(--surface2);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    min-width: 140px;
+    z-index: 1050;
+    overflow: hidden;
+    animation: fadeInUp 0.2s ease-out; /* Açılış animasiyası */
+}
+
+/* Menyu daxilindəki səs seçimləri */
+.noise-option {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Seçimin üzərinə gəldikdə (Hover) */
+.noise-option:hover {
+    background-color: var(--border);
+    color: var(--main-color); /* Sənin saytın ana rənginə uyğun dəyişə bilərsən */
+}
+
+/* Söndür seçiminin fərqlənməsi üçün kiçik toxunuş */
+.noise-option[data-value="none"] {
+    border-bottom: 1px solid #eeeeee;
+    color: rgb(255, 48, 48);
+}
+.noise-option[data-value="none"]:hover {
+    background-color: var(--border);
+    color: red;
+}
+
+/* Rəvan açılış animasiyası */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate(-50__, 10px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50__, 0);
+    }
 }
 .option-btn.correct {
     background-color: var(--correct); 
@@ -1796,5 +1877,8 @@ button:disabled {
     }
     .leaderboard-table {
         font-size: 14px; /* Mobildə cədvəl sığsın deyə yazıları kiçildiririk */
+    }
+    #open-ai-btn {
+        display: none;
     }
 }
