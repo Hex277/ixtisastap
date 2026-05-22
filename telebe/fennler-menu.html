@@ -103,6 +103,8 @@
             <a href="./premium.html">Premium abunəlik</a>
         </div>
     </nav>
+    
+    
     <div class="main-background">
         <div class="main-content">
             <div class="header-bg">
@@ -111,15 +113,32 @@
             <div class="infotext-bg">
                 <p>Aşağıdakı fənnlər semestr və kollekvium imtahan proqramına uyğun hazırlanıb. Burada təqdim olunan fənnlər tələbələrin keçdiyi əsas mövzuları əhatə edir. Sadəcə fənnini seç və quizləri həll etməyə başla.</p>
             </div>
+            
             <div class="search-bg">
                 <input type="search" name="search" id="search-input" placeholder="Axtar.">
                 <button id="search-button">Axtar</button>
+            </div>
+
+            <!-- ========================================== -->
+            <!-- YENİ: Filter Dropdownları -->
+            <!-- ========================================== -->
+            <div class="filter-bg" id="filter-container" style="display: none;">
+                <div class="filter-group">
+                    <select id="university-select">
+                        <option value="">Universitet Seçin</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <select id="faculty-select" disabled>
+                        <option value="">Fakültə Seçin</option>
+                    </select>
+                </div>
             </div>
             <div class="movcud-fenn-bg">
                 <p>MÖVCUD FƏNNLƏR</p>
             </div>
             <div class="subjects-grid" id="subjects-bg">
-                
+                <!-- Fənn kartları buraya JS ilə gələcək -->
             </div>
         </div>
     </div>
@@ -130,6 +149,17 @@
                 <button id="okBtn">OK</button>
                 <button id="cancelBtn" style="display:none;">Ləğv et</button>
                 <button id="confirmBtn" style="display:none;">Təsdiqlə</button>
+            </div>
+        </div>
+    </div>
+    <div class="info-modal-overlay" id="infoModal" style="display:none;">
+        <div class="info-modal-content">
+            <div class="info-modal-header">
+                <h3>Fənn Məlumatı</h3>
+                <span class="close-modal" id="closeInfoModal">&times;</span>
+            </div>
+            <div class="info-modal-body">
+                <p id="infoModalText">Məlumat yüklənir...</p>
             </div>
         </div>
     </div>

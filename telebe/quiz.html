@@ -39,6 +39,56 @@
         #confirmBtn {
             background-color: #1e90ff;
         }
+        .loader-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            text-align: center;
+            min-height: 300px;
+        }
+
+        /* Fırlanan Spinner animasiyası */
+        .quiz-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0, 123, 255, 0.1);
+            border-radius: 50%;
+            border-top-color: #007bff; /* Sənin dizayna uyğun mavi rəng */
+            animation: quizSpin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        /* Loader mətni */
+        .loader-text {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Yumşaq keçid (Fade-in) animasiyası */
+        .sfx-fade-in {
+            animation: quizFadeIn 0.6s ease-out forwards;
+        }
+
+        /* Animasiya qaydaları (Keyframes) */
+        @keyframes quizSpin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes quizFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
     </style>
 </head>
