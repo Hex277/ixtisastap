@@ -40,7 +40,7 @@ body {
     flex-direction: column;
 }
 input {
-    border: 2px solid #4a90e2;
+    border: 1px solid #4a90e2;
     border-radius: 25px;
     padding: 10px;
     font-size: 18px;
@@ -694,7 +694,7 @@ button {
 }
 
 .input-group input:focus {
-    border:2px solid var(--main-color);
+    border:1px solid var(--main-color);
 }
 
 .profile-buttons {
@@ -1327,7 +1327,7 @@ body.dark-theme #report img {
 .filter-group select {
     padding: 12px 16px;
     border-radius: 25px;
-    border: 2px solid #1e90ff;
+    border: 1px solid #1e90ff;
     background-color: var(--surface);
     color: var(--text-color);
     font-size: 15px;
@@ -1936,6 +1936,14 @@ button:disabled {
     }
     .subject-card {
         width: 100%;
+    }
+    .search-bg {
+        width: 90%;
+        gap: 15px;
+        padding: 15px;
+    }
+    .filter-bg {
+        width: 90%;
     }
     .header-bg, .infotext-bg, .search-bg{
         width: 90%;
